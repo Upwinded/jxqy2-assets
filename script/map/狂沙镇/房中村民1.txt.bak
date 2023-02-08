@@ -1,0 +1,16 @@
+//房中村民1
+
+	//第一次进入狂沙镇
+	If($KsOQieHuan==0) @Talk1;
+	
+	//进入狂沙镇与柴嵩对完话睡觉过后
+	If($KsOQieHuan==1) @Talk2;
+	
+@Talk1:
+	Talk("CunMing1");
+	Return;
+	
+@Talk2:
+	Talk("CunMing11");
+	Return;
+	

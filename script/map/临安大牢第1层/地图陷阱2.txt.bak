@@ -1,0 +1,35 @@
+		If ($ShaoJiFeng == 2) @Lable1;
+		FadeOut();
+//		NpcGotoDir("南宫飞云",3,2);
+		SetPlayerPos(52,112);
+		SetPlayerDir(3);
+		FadeIn();
+		Talk("NoFinish");
+		SetMapTrap(2,"地图陷阱2.txt");
+		Return;
+@Lable1:
+		If ($AnZang == 1) @Label2;
+		FadeOut();
+		SaveNpc();
+		SaveObj();
+		LoadMap("大牢出口.map");
+        	SetMainLum(20);
+		SetMapTime(2);
+		SetPlayerLum(0);
+		SetPlayerPos(3,25);
+		SetPlayerDir(6);
+		FadeIn();
+        	Return;
+@Label2:
+		FadeOut();
+		SaveNpc();
+		SaveObj();
+		LoadMap("大牢出口1.map");
+		LoadObj("DaLaoChuKou.obj");
+        	SetMainLum(20);
+		SetMapTime(2);
+		SetPlayerLum(0);
+		SetPlayerPos(3,25);
+		SetPlayerDir(6);
+		FadeIn();
+        	Return;

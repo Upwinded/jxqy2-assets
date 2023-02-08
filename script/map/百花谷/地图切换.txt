@@ -1,0 +1,25 @@
+  --"百花谷"-"铁门寨-百花谷"
+  
+  --进入小屋见到燕若雪之前
+  if getvar("baihuaguoqiehuan") == 0 then
+    
+    talk("changemap2");
+    playergotodir(4,2);
+    setmaptrap(1,"地图切换.txt");
+    return;
+  end
+  
+  --进入小屋见过燕若雪之后
+  if getvar("baihuaguoqiehuan") == 2 then
+    
+    talk("changemap3");
+    playergotodir(4,2);
+    setmaptrap(1,"地图切换.txt");
+    return;
+  end
+  
+  
+  talk("changemap2");
+  playergotodir(4,2);
+  setmaptrap(1,"地图切换.txt");
+  return;

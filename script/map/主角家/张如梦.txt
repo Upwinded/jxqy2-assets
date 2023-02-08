@@ -1,0 +1,11 @@
+  --张如梦
+  
+  if getvar("zhangrumeng") == 1 then
+    
+    talk("zym2");
+    return;
+  end
+  talk("zym1");
+  assign("zhangrumeng",1);
+  --addmagic("player-magic-天意剑诀.ini");
+  return;

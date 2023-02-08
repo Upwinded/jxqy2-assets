@@ -1,0 +1,17 @@
+  
+  setmaptrap(3,"");
+  savemaptrap();
+  disablenpcai();
+  playergoto(25,35);
+  setplayerdir(3);
+  sleep(300);
+  setplayerdir(7);
+  sleep(300);
+  setplayerdir(5);
+  talk("somethinghappen");
+  npcgoto("黑刹",29,29);
+  talk("metsomeone");
+  npcattack("黑刹",25,35);
+  talk("metsomeone1");
+  enablenpcai();
+  return;

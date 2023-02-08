@@ -1,0 +1,4 @@
+  --酒店客人?
+  
+  talk("jiuke1");
+  return;

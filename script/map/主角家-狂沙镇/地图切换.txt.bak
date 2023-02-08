@@ -1,0 +1,7 @@
+// 沙漠野外 -主角的家 
+
+	Talk("changemap2");
+	NpcGotoDir("南宫飞云",1,2);
+	SetMapTrap(1,"地图切换.txt");
+	Return;
+

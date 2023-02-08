@@ -1,0 +1,57 @@
+  --"百花谷小屋"
+  
+  setnpcactionfile("燕若雪",0,"z-燕若雪-被困.mpc");
+  setnpcactionfile("燕若雪",1,"z-燕若雪-被困.mpc");
+  playmusic("ks68.wav");
+  movescreen(5,60);
+  playergoto(13,16);
+  setplayerdir(5);
+  talk("yangruoxue1");
+  playergoto(14,15);
+  setplayerdir(3);
+  npcspecialaction("南宫飞云","z-飞云-解绳子.mpc");
+  sleep(2000);
+  npcspecialaction("燕若雪","z-燕若雪-站起.mpc");
+  setnpcactionfile("燕若雪",0,"z02-燕若雪-st.mpc");
+  setnpcactionfile("燕若雪",1,"z02-燕若雪-sp.mpc");
+  sleep(2000);
+  
+  talk("yangruoxue3");
+  npcgoto("燕若雪",10,19);
+  playergoto(10,18);
+  setplayerdir(7);
+  talk("yangruoxue4");
+  
+  npcgoto("燕若雪",8,21);
+  talk("yangruoxue41");
+  playergoto(9,22);
+  setplayerdir(3);
+  talk("yangruoxue5");
+  
+  setmaptrap(2,"");
+  savemaptrap();
+  assign("bhgotalktoyrx",1);
+  assign("baihuaguoqiehuan",2);
+  playergoto(4,31);
+  fadeout();
+  savenpc("bhgxw.npc");
+  loadmap("百花谷.map");
+  loadobj("bhg.obj");
+  setplayerpos(35,14);
+  setplayerdir(1);
+  fadein();
+  
+  playergoto(33,33);
+  talk("fangyan1");
+  playergoto(39,34);
+  setplayerdir(3);
+  talk("fangyan2");
+  --fadeout();
+  npcspecialaction("南宫飞云","z-飞云-解绳子.mpc");
+  sleep(2000);
+  addobj("火堆.ini",38,33,0);
+  assign("bhgofire",1);
+  --fadein();
+  playsound("背-火.wav");
+  talk("fangyan3");
+  return;

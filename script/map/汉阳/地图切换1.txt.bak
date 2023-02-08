@@ -1,0 +1,6 @@
+//汉阳－别离村
+
+	Talk("BeiChengMen");
+	NpcGotoDir("南宫飞云",7,2);
+	SetMapTrap(1,"地图切换1.txt");
+	Return;;

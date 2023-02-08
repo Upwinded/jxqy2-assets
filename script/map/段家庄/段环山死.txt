@@ -1,0 +1,18 @@
+  
+  sleep(1000);
+  fadeout();
+  disablenpcai();
+  delnpc("壮丁");
+  delnpc("壮丁b");
+  setplayerpos(52,99);
+  setplayerdir(5);
+  delobj("段环山尸体");
+  addnpc("g_npc009.ini",53,97,1);
+  fadein();
+  talk("duandie");
+  playergoto(53,98);
+  npcattack("南宫飞云",53,97);
+  sleep(1500);
+  enablenpcai();
+  assign("duanhuanshan",1);
+  return;

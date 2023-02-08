@@ -1,0 +1,14 @@
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("天忍教.map");
+  loadnpc("trj.npc");
+  loadobj("trj.obj");
+  setmaptime(0);
+  setmainlum(31);
+  setplayerpos(53,115);
+  setplayerdir(6);
+  setplayerlum(0);
+  fadein();
+  showmessage("天忍教总舵");
+  return;

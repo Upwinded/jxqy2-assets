@@ -1,0 +1,15 @@
+  if getvar("tanhua") == 1 then
+    
+    fadeout();
+    loadmap("临安-凤池山庄.map");
+    setplayerpos(8,45);
+    setplayerdir(4);
+    setmaptrap(3,"trap3至大牢出口.txt");
+    savemaptrap();
+    fadein();
+    return;
+  end
+  playgoto(25,29);
+  talk("tanhua");
+  setmaptrap(2,"trap1-to临安.txt");
+  return;

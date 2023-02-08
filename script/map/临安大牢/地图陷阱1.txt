@@ -1,0 +1,19 @@
+  if getvar("linandalao11") == 1 then
+    
+    fadeout();
+    savenpc();
+    saveobj();
+    loadmap("临安大牢-3.map");
+    loadnpc("linandalao3.npc");
+    loadobj("linandalao3.obj");
+    setmainlum(16);
+    setplayerpos(14,159);
+    setplayerdir(5);
+    playmusic("ks74.wav");
+    fadein();
+    return;
+  end
+  playergoto(77,79);
+  talk("yinger");
+  setmaptrap(1,"地图陷阱1.txt");
+  return;

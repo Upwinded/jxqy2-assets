@@ -1,0 +1,40 @@
+//µØÍ¼ÏÝÚå7
+       If($ZhongDuHouHuaYuan==6) @Talk4;
+       If($FromFengChi==20) @Talk3;
+       If($ZhongDuHouHuaYuan==5) @Talk2;
+       If($ZhongDuZhuangYuanDoor==2) @Talk1;
+       Talk("zhuangyuan1");
+       PlayerGoto(139,266);
+       SetMapTrap(7,"Trap-7.txt");
+       Talk("zhuangyuan2");
+       Return;
+       
+@Talk1:
+      Talk("zhuangyuan5"); 
+      PlayerGoto(139,266);
+      SetMapTrap(7,"Trap-7.txt");
+      Return;
+      
+@Talk2:
+      Return;
+      
+@Talk3:
+      Talk("ZhuangYuan11");  
+      PlayMusic("ks75.wav");	
+      PlayerRunTo(146,261);
+      PlayerRunTo(150,242);
+      PlayerGoto(153,236);
+      Talk("ZhuangYuan12");
+      PlayerGoto(154,228);
+      Talk("ZhuangYuan13");
+      PlayerGoto(156,223);
+      Talk("ZhuangYuan13");
+      Assign($ZhongDuHouHuaYuan,6);
+      SetMapTrap(7,"Trap-7.txt");
+      SetMapTrap(5,"ÁúÒôËÂÃÅ¿ÚµØÍ¼ÏÝÚå5.txt");      
+      SaveMapTrap();
+      Return;
+      
+@Talk4:
+      Talk("ZhuangYuan14");
+      Return;

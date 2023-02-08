@@ -1,0 +1,4 @@
+		
+		Talk("DaSou1");
+		EnableNpcAI();
+		Return;

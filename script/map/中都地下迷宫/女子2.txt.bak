@@ -1,0 +1,7 @@
+		SetNpcScript("女子2","");
+		Talk("Thanks");
+		AddRandGoods("7级物品.ini");
+		FadeOut();
+		DelNpc("女子2");
+		FadeIn();
+		Return;

@@ -1,0 +1,35 @@
+// ºÚÉ·
+	
+	If ($HeiSha == 1) @talk2;
+	Talk("black1");
+	SetNpcDir("ºÚÉ·",5);
+	NpcGotoEx("ºÚÉ·",23,59);
+	Sleep(1000);
+	PlayerGoto(24,58);
+	SetNpcDir("ºÚÉ·",5);
+	Talk("black2");
+	SetNpcDir("ºÚÉ·",7);
+	SetPlayerDir(7);
+	DisableNpcAI();
+	SetNpcRelation("Ê¯Í·",1);
+	NpcAttack("ºÚÉ·",26,64);
+	Sleep(2000);
+	EnableNpcAI();
+	SetNpcDir("ºÚÉ·",5);
+	SetPlayerDir(1);
+	Talk("black3");
+	FadeOut();
+	AddMagic("player-magic-º®ËªÕÆ.ini");
+	Sleep(1000);
+	FadeIn();
+	Talk("black5");
+	NpcGoto("ºÚÉ·",23,63);
+	NpcGotoEx("ºÚÉ·",31,78);
+	Assign($HeiSha, 1);
+	SetObjKind("ËéÊ¯Í·",0);
+	Return;
+
+@talk2:
+	Talk("black4");
+	SetNpcDir("ºÚÉ·",5);
+	Return;

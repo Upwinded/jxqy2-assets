@@ -1,0 +1,5 @@
+  --小二
+  
+  talk("xiaoer");
+  addtomemo("龙门客栈附近似乎有强盗出没。");
+  return;

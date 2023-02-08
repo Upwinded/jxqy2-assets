@@ -1,0 +1,22 @@
+  if getvar("fromfengchi") >= 14 then
+    
+    fadeout();
+    setmainlum(31);
+    setmaptime(0);
+    savenpc();
+    saveobj();
+    loadmap("汉阳.map");
+    loadnpc("hanyan.npc");
+    loadobj("hanyan.obj");
+    setplayerpos(77,173);
+    setplayerdir(3);
+    delnpc("孟廷威");
+    delnpc("史忠良");
+    delnpc("旁观者");
+    fadein();
+    return;
+  end
+  talk("return");
+  playergotodir(5,2);
+  setmaptrap(3,"trap3至汉阳.txt");
+  return;

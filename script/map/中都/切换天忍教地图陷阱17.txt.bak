@@ -1,0 +1,22 @@
+
+      If($JieTouXiaoFan==1) @Talk1;
+      Talk("exit1");
+      PlayerGoto(176,124);
+      SetMapTrap(17,"切换天忍教地图陷阱17.txt");
+      Return;
+@Talk1:
+        FadeOut();
+	SaveNpc();
+	SaveObj();
+	SetMapTrap(12,"切换天忍教地图陷阱12.txt");
+	SaveMapTrap();
+        LoadMap("中都-天忍教.map");
+//	LoadNpc(".npc");
+//	LoadObj(".obj");
+	SetMapTime(0);	
+	SetPlayerPos(3,23);
+	SetPlayerDir(5);
+	DisableFight();
+	ShowMessage("野外");
+	FadeIn();
+	Return;

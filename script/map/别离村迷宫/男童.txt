@@ -1,0 +1,7 @@
+  
+  talk("talk1");
+  setnpckind("男童-1",3);
+  disablejump();
+  disablerun();
+  assign("bielimg",1);
+  return;

@@ -1,0 +1,11 @@
+	StopMusic();
+	FadeOut();
+	ClearBody();
+	SaveObj();
+	LoadMap("ººÑô-½ð±øÓªÕ¯.map");
+	SetPlayerPos(30,22);
+	SetPlayerDir(1);
+	ShowMessage("½¼Íâ");
+	PlayMusic("ks67.wav");
+	FadeIn();
+	Return;

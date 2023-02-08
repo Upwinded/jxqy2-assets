@@ -1,0 +1,15 @@
+  --第一次进临安
+  
+  if getvar("fromfengchi") >= 14 then
+    
+    talk("end1");
+    savemaptrap();
+    return;
+  end
+  talk("first0");
+  playmusic("ks69.wav");
+  addtomemo("到临安城东面柴嵩的家去找燕若雪。");
+  --去掉不能回去的限制
+  --setmaptrap(2,"noout0.txt");
+  savemaptrap();
+  return;

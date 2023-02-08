@@ -1,0 +1,14 @@
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("临安地下迷宫.map");
+  loadnpc("linanmg.npc");
+  loadobj("linanmg.obj");
+  setmaptime(0);
+  setmainlum(16);
+  setplayerlum(0);
+  setplayerpos(74,138);
+  setplayerdir(1);
+  playmusic("ks77.wav");
+  fadein();
+  return;

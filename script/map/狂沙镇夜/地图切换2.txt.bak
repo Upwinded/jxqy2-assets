@@ -1,0 +1,46 @@
+//  "狂沙镇" - "狂沙镇-铁门寨"
+
+	//单独第一次进入地图和酒店老板讲话之前
+	If($KsOQieHuan==0) @out1;
+	
+	//单独第一次进入地图和酒店老板讲话之后（正常情况下使用）
+	If($KsOQieHuan==1) @out2;
+	
+	//和燕若雪一起的时候未进入酒店
+	If($KsOQieHuan==2) @out3;
+	
+	//和燕若雪一起的时候进入酒店后
+	If($KsOQieHuan==3) @out4;
+		
+@out1:
+	Talk("goout1");
+	PlayerGotoDir(1,2);
+	SetMapTrap(3,"地图切换2.txt");
+	Return;
+
+@out2:
+	FadeOut();
+	SetMainLum(31);
+	SaveNpc("");
+	SaveObj("");
+	StopMusic();
+	LoadMap("狂沙镇-铁门寨.map");
+	LoadNpc("ks-tmz.npc");
+	LoadObj("ks-tmz.obj");
+	SetPlayerPos(7,81);
+	SetPlayerDir(4);
+	FadeIn();
+	ShowMessage("野外");
+	Return;
+
+@out3:
+	Talk("newout2");
+	PlayerGotoDir(1,2);
+	SetMapTrap(3,"地图切换2.txt");
+	Return;
+
+@out4:
+	Talk("newout3");
+	PlayerGotoDir(1,2);
+	SetMapTrap(3,"地图切换2.txt");
+	Return;

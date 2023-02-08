@@ -1,0 +1,10 @@
+
+	If ($TangLi >= 3) @Label;
+	Talk("TangLi1");
+	Add($TangLi,1);
+	Return;
+@Label:
+	Talk("TangLi2");
+	SetNpcRelation("Ã∆¿Î",1);
+	Return;
+	

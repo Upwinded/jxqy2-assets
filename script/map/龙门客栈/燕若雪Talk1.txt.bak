@@ -1,0 +1,8 @@
+//
+        Talk("ZMGReturn2");
+        SetNpcKind("—‡»Ù—©",3);
+        DisableJump();
+	DisableRun();
+        SetNpcScript("—‡»Ù—©","—‡»Ù—©Talk.txt");
+        Assign($LMKZOZhanMaGang,0);
+    	Return;

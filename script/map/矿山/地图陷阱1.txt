@@ -1,0 +1,14 @@
+  fadeout();
+  showsnow(0);
+  saveobj("kuangshan1.obj");
+  savenpc("kuangshan1.npc");
+  loadmap("中都-矿山.map");
+  loadobj("zhongdu-kuangshan.obj");
+  setmaptime(0);
+  setplayerpos(14,11);
+  setplayerdir(1);
+  showmessage("野外");
+  assign("kuangshan121",1);
+  showrandomsnow();
+  fadein();
+  return;

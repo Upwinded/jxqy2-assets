@@ -1,0 +1,18 @@
+     		If($LinAnDaLao11==1) @Talk1;
+		PlayerGoto(77,79);
+		Talk("yinger");
+		SetMapTrap(1,"µÿÕºœ›⁄Â1.txt");
+		Return;
+@Talk1:
+	        FadeOut();
+		SaveNpc();
+		SaveObj();
+		LoadMap("¡Ÿ∞≤¥Û¿Œ-3.map");
+		LoadNpc("LinAnDaLao3.npc");
+		LoadObj("LinAnDaLao3.obj");
+		SetMainLum(16);
+		SetPlayerPos(14,159);
+		SetPlayerDir(5);
+		PlayMusic("ks74.wav");
+		FadeIn();
+		Return;

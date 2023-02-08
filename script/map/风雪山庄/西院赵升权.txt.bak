@@ -1,0 +1,20 @@
+
+	
+	If($XiYuanZhao == 1) @Lable1;
+	Talk("XiYuanZhao1");
+	NpcGoto("赵升权",18,124);
+	SetNpcDir("赵升权",5);
+	Talk("XiYuanZhao2");
+	NpcGoto("赵升权",20,128);
+	SetNpcDir("赵升权",5);
+	Talk("XiYuanZhao2");
+	NpcGoto("赵升权",19,126);
+	SetNpcDir("赵升权",5);
+	Talk("XiYuanZhao3");
+	AddMagic("player-magic-风雪狂刀.ini");
+	Assign($XiYuanZhao,1);
+	Return;
+	
+@Lable1:
+	Talk("XiYuanZhao");
+	Return;	

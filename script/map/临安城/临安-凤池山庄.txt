@@ -1,0 +1,18 @@
+  
+  if getvar("fromfengchi") == 0 then
+    
+    talk("first2");
+    playergotodir(3,2);
+    setmaptrap(3,"临安-凤池山庄.txt");
+    return;
+  end
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("临安-凤池山庄.map");
+  setplayerpos(2,7);
+  setplayerdir(7);
+  playmusic("ks67.wav");
+  fadein();
+  showmessage("临安野外");
+  return;

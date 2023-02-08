@@ -1,0 +1,15 @@
+
+	If($NoFindChaisong == 0) @lable0;
+	If($NoFindChaisong == 1) @lable1;
+	Return;
+
+@lable0:
+	Talk("First1");
+	PlayerGoto(36,323);
+	SetMapTrap(2,"NoOut0.txt");
+	Return;
+@lable1:
+	Talk("First2");
+	PlayerGoto(36,323);
+	SetMapTrap(2,"NoOut0.txt");
+	Return;

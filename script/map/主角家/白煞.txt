@@ -1,0 +1,14 @@
+  --白煞
+  
+  if getvar("baisha") == 1 then
+    
+    talk("white2");
+    return;
+  end
+  talk("white1");
+  --fadeout();
+  --addmagic("player-magic-杀意.ini");
+  --sleep(1000);
+  --fadein();
+  assign("baisha",1);
+  return;

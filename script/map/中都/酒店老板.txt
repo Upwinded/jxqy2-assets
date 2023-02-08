@@ -1,0 +1,34 @@
+  --酒店老板
+  
+  if getvar("zhongdutroublesroom") == 2 then
+    
+    talk("jiudian3");
+    
+    return;
+  end
+  if getvar("zhongdutroublesroom") == 1 then
+    
+    talk("jiudian2-1");
+    playmusic("ks69.wav");
+    addgoods("goods-sj-10-长安好酒.ini");
+    assign("zhongdutroublesroom",2);
+    addnpc("z03-许若冰.ini",79,31,3);
+    setnpcscript("柴嵩","柴嵩.txt");
+    return;
+  end
+  if getvar("zhongdulys") == 1 then
+    
+    talk("jiudian3");
+    
+    return;
+  end
+  if getvar("zhongdujiudianlaoban") == 1 then
+    
+    talk("jiudian1-1");
+    return;
+  end
+  talk("jiudian1");
+  assign("zhongdujiudianlaoban",1);
+  setmaptrap(4,"地图陷阱4.txt");
+  savemaptrap();
+  return;

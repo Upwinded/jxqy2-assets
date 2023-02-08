@@ -1,0 +1,40 @@
+  fadeout();
+  loadmap("唐门.map");
+  if getvar("cuiyanmen2finish") == 1 then
+    
+    disablenpcai();
+    loadnpc("tangmen1.npc");
+    loadobj("tangmen1.obj");
+    setplayerpos(50,284);
+    setplayerdir(5);
+    fadein();
+    showmessage("唐门");
+    enablenpcai();
+    return;
+  end
+  if getvar("cuiyanmen2allfinish") >= 2 then
+    
+    disablenpcai();
+    loadnpc("tangmen1.npc");
+    loadobj("tangmen1.obj");
+    setplayerpos(50,284);
+    setplayerdir(5);
+    fadein();
+    showmessage("唐门");
+    enablenpcai();
+    return;
+  end
+  if getvar("cuiyanmen2cunlan") == 1 then
+    
+    disablenpcai();
+    loadnpc("tangmen.npc");
+    loadobj("tangmen.obj");
+    setplayerpos(50,284);
+    setplayerdir(5);
+    showmessage("唐门");
+    fadein();
+    runscript("开打.txt");
+    enablenpcai();
+    return;
+  end
+  return;

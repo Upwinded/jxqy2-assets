@@ -1,0 +1,6 @@
+  openbox();
+  playsound("物-箱子开.wav");
+  addrandgoods("5级物品.ini");
+  setobjscript("","");
+  assign("tianwangpier",3);
+  return;

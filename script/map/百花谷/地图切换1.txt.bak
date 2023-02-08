@@ -1,0 +1,22 @@
+// "百花谷" - "百花谷小屋"
+
+	FadeOut();
+	SaveObj();
+	LoadMap("百花谷小屋.map");
+	LoadNpc("bhgxw.npc");
+	PlaySound("背-门.wav");
+	SetPlayerPos(4,31);
+	SetPlayerDir(5);
+	ShowMessage("百花谷小屋");
+	FadeIn();
+	//进入小屋见到燕若雪之前	
+	If ($BaiHuaGuOQieHuan==0) @enter1;
+	//进入小屋见过燕若雪之后
+	Return;
+	
+@enter1:
+	Sleep(2000);
+	Talk("changemap1");
+	Assign($BaiHuaGuOQieHuan,1);
+	Return;
+	

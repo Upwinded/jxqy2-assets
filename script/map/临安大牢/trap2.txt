@@ -1,0 +1,4 @@
+  
+  talk("dasou1");
+  enablenpcai();
+  return;

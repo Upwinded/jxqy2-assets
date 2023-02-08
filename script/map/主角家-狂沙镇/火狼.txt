@@ -1,0 +1,6 @@
+  --火狼死亡
+  
+  assign("ksocunzhang",2);
+  showmessage("你杀死了火狼，村长应该乐于给你一点奖赏。");
+  addtomemo("你杀死了火狼，这里的村长应该乐于给你一点奖赏。");
+  return;

@@ -1,0 +1,20 @@
+
+
+	If ($ZhongDuChenXiDanPuLiuQin==1) @Talk1;
+	If ($ZhongDuChenXiDanPuLiuQin==2) @Talk2;
+	Talk("ChenXiLiuQin");
+	Return;
+	
+@Talk1:
+	Talk("ChenXiLiuQin1");
+	FadeOut();
+	Talk("ChenXiLiuQin11");
+	FadeIn();
+	Talk("ChenXiLiuQin2");
+	//µ√µΩŒ‰π¶√ÿÛ≈
+	Assign($ZhongDuChenXiDanPuLiuQin,2);
+	Return;
+
+@Talk2:
+	Talk("ChenXiLiuQin3");
+	Return;

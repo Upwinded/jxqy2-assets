@@ -1,0 +1,11 @@
+
+	Talk("Win2");
+	FadeOut();
+	Talk("Win3");
+	LoadMap("主角家.map");
+	LoadNpc("home.npc");
+	LoadObj("home.obj");
+	SetPlayerPos(20,64);
+	SetPlayerState(0);
+	RunScript("开始游戏.txt");
+	Return;

@@ -1,0 +1,19 @@
+  --房中村民1
+  
+  --第一次进入狂沙镇
+  if getvar("ksoqiehuan") == 0 then
+    
+    talk("cunming1");
+    return;
+  end
+  
+  --进入狂沙镇与柴嵩对完话睡觉过后
+  if getvar("ksoqiehuan") == 1 then
+    
+    talk("cunming11");
+    return;
+  end
+  
+  
+  talk("cunming1");
+  return;

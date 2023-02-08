@@ -1,0 +1,46 @@
+  --客店老板
+  
+  if getvar("chaisongtalk") == 0 then
+    
+    --第一次和酒店老板讲话之后
+    talk("laoban2");
+    return;
+  end
+  
+  --第一次和酒店老板讲话之前
+  if getvar("ksoqiehuan") == 0 then
+    
+    talk("laoban1");
+    npcgoto("小三子",99,190);
+    setnpcdir("小三子",5);
+    talk("xiaosan1");
+    npcgotoex("小三子",86,207);
+    playergoto(85,209);
+    setnpcdir("小三子",1);
+    setnpcdir("南宫飞云",5);
+    talk("xiaosan2");
+    npcgoto("小三子",91,202);
+    talk("shuijiao1");
+    fadeout();
+    talk("shuijiao2");
+    loadmap("狂沙镇夜.map");
+    playmusic("ks66.wav");
+    fulllife();
+    fullthew();
+    fullmana();
+    loadnpc("ks-1.npc");
+    loadobj("ks.obj");
+    setplayerpos(85,206);
+    setplayerdir(7);
+    setmainlum(20);
+    setmaptime(1);
+    fadein();
+    talk("goout2");
+    assign("ksoqiehuan",1);
+    return;
+  end
+  
+  
+  --第一次和酒店老板讲话之后
+  talk("laoban2");
+  return;

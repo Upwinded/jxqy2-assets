@@ -1,0 +1,4 @@
+  --离开地图
+  talk("outjiudian");
+  savemaptrap();
+  return;

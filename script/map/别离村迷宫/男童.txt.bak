@@ -1,0 +1,7 @@
+        
+   	Talk("talk1");
+	SetNpcKind("ÄÐÍ¯-1",3);
+   	DisableJump();
+	DisableRun();
+	Assign($BieLiMG,1);
+   	Return;        

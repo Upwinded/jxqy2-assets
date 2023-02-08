@@ -1,0 +1,3 @@
+  addgoods("book-霹雳手法.ini");
+  setobjscript("","");
+  return;

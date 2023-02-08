@@ -1,0 +1,37 @@
+  if getvar("shaojifeng") == 2 then
+    
+    if getvar("anzang") == 1 then
+      
+      fadeout();
+      savenpc();
+      saveobj();
+      loadmap("大牢出口1.map");
+      loadobj("dalaochukou.obj");
+      setmainlum(20);
+      setmaptime(2);
+      setplayerlum(0);
+      setplayerpos(3,25);
+      setplayerdir(6);
+      fadein();
+      return;
+    end
+    fadeout();
+    savenpc();
+    saveobj();
+    loadmap("大牢出口.map");
+    setmainlum(20);
+    setmaptime(2);
+    setplayerlum(0);
+    setplayerpos(3,25);
+    setplayerdir(6);
+    fadein();
+    return;
+  end
+  fadeout();
+  --npcgotodir("南宫飞云",3,2);
+  setplayerpos(52,112);
+  setplayerdir(3);
+  fadein();
+  talk("nofinish");
+  setmaptrap(2,"地图陷阱2.txt");
+  return;

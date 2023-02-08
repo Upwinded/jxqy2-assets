@@ -1,0 +1,4 @@
+  --客人乙
+  
+  talk("keren2");
+  return;

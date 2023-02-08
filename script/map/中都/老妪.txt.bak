@@ -1,0 +1,8 @@
+    If($1KuangShan==1) @Lable1;
+    Talk("LaoYu");
+    Assign($1KuangShan,1);
+    Return;
+
+@Lable1:
+    Talk("LaoYu1");
+    Return;

@@ -1,0 +1,5 @@
+  --官府
+  talk("xianya");
+  playergotodir(3,2);
+  setmaptrap(6,"trap-6.txt");
+  return;

@@ -1,0 +1,6 @@
+  
+  
+  playergoto(51,49);
+  playergoto(55,44);
+  talk("returnkuangshan");
+  return;

@@ -1,0 +1,2 @@
+  talk("zhaoxing");
+  return;

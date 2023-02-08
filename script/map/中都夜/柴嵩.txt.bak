@@ -1,0 +1,19 @@
+//Вёсд
+
+     If($ZhongDuTroublesRoom==4) @Talk3;
+     Talk("troublesroom6");
+     Assign($ZhongDuTroublesRoom,4);
+     StopMusic(0);
+     FadeOut();
+     SetPlayerPos(142,326);
+     SetNpcPos("Вёсд",142,327);
+     SetNpcKind("Вёсд",3);
+     DisableRun();
+     DisableJump();
+     
+     FadeIn();
+     Return;
+     
+@Talk3:
+     Talk("cs1");
+     Return;

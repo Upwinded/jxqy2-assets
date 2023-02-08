@@ -1,0 +1,10 @@
+//得到官印
+
+	OpenBox();
+	PlaySound("物-箱子开.wav");
+	Talk("GuanFuYaYi5");
+	AddGoods("goods-sj-4-官印.ini");
+	SetObjScript("","");
+	AddToMemo("你得到了官府大印，似乎可以凭这个跟上官豹做笔交易。");
+	Assign($ChangAnGuanYin,1);
+	Return;

@@ -1,0 +1,30 @@
+  --村长
+  
+  if getvar("ksocunzhang") == 0 then
+    
+    talk("cunzhang-1");
+    assign("ksocunzhang",1);
+    addtomemo("村长请你帮他杀火狼。");
+    return;
+  end
+  if getvar("ksocunzhang") == 1 then
+    
+    talk("cunzhang-2");
+    return;
+  end
+  if getvar("ksocunzhang") == 2 then
+    
+    talk("cunzhang-3");
+    addmoney(500);
+    addgoods("goods-jian-2-桃花剑.ini");
+    showmessage("你从村长的手里得到了五百两银子和一柄桃花剑。");
+    assign("ksocunzhang",3);
+    addtomemo("你完成了“杀火狼”的任务。");
+    return;
+  end
+  if getvar("ksocunzhang") == 3 then
+    
+    talk("cunzhang-4");
+    return;
+  end
+  return;

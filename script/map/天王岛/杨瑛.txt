@@ -1,0 +1,13 @@
+  
+  
+  talk("end");
+  talk("end2");
+  talk("end3");
+  npcgoto("杨瑛",47,83);
+  npcgoto("杨瑛",45,90);
+  npcgoto("杨瑛",38,77);
+  delnpc("杨瑛");
+  addnpc("杨瑛独孤剑.ini",20,56,7);
+  savenpc();
+  addmagic("player-magic-洗髓经.ini");
+  return;

@@ -1,0 +1,11 @@
+  if getvar("linanmianju") == 1 then
+    
+    talk("jiangjunfu1");
+    assign("fromfengchi",17);
+    setnpcrelation("宋朝长刀手2",1);
+    setnpcrelation("宋朝长刀手3",1);
+    enablefight();
+    return;
+  end
+  talk("jiangjunfuguanbin");
+  return;

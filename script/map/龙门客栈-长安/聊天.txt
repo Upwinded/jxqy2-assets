@@ -1,0 +1,12 @@
+  --聊天
+  
+  talk("talk1");
+  playmusic("ks64.wav");
+  playergoto(15,21);
+  sleep(2000);
+  setplayerdir(0);
+  setnpcdir("燕若雪",5);
+  talk("talk2");
+  setmaptrap(3,"");
+  savemaptrap();
+  return;

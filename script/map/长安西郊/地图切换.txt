@@ -1,0 +1,18 @@
+  --长安西郊－长安
+  
+  fadeout();
+  loadmap("长安.map");
+  loadnpc("changan1.npc");
+  loadobj("changan.obj");
+  setplayerpos(41,313);
+  setplayerdir(5);
+  showmessage("长安");
+  fadein();
+  if getvar("changanzhifu") == 0 then
+    
+    setmaptrap(7,"maptrap7.txt");
+    savemaptrap();
+    assign("changanzhifu",1);
+    return;
+  end
+  return;

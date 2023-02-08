@@ -1,0 +1,18 @@
+  if getvar("qiu") == 1 then
+    
+    if getvar("zhao") == 1 then
+      
+      disablenpcai();
+      playerrunto(15,133);
+      setplayerdir(5);
+      talk("dalao12");
+      sleep(1000);
+      setplayerdir(6);
+      talk("dalao11");
+      savemaptrap();
+      enablenpcai();
+      return;
+    end
+    return;
+  end
+  return;

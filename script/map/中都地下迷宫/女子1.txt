@@ -1,0 +1,7 @@
+  setnpcscript("女子1","");
+  talk("thanks");
+  addrandmoney(9000,20000);
+  fadeout();
+  delnpc("女子1");
+  fadein();
+  return;

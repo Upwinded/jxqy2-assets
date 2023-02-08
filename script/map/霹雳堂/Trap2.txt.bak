@@ -1,0 +1,5 @@
+	DisableNpcAI();
+	Talk("DaYuan2");
+	EnableNpcAI();
+	SetNpcKind("À×»Î",1);
+	Return;

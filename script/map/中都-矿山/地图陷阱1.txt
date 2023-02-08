@@ -1,0 +1,34 @@
+  --
+  
+  fadeout();
+  savenpc();
+  saveobj();
+  showsnow(0);
+  loadmap("中都.map");
+  loadnpc("zhongdu.npc");
+  loadobj("zhongdu.obj");
+  setmaptime(0);
+  setplayerpos(30,94);
+  setplayerdir(7);
+  showmessage("中都");
+  if getvar("4jiangling") == 4 then
+    
+    showrandomsnow();
+    fadein();
+    playmusic("ks69.wav");
+    return;
+  end
+  if getvar("kuanggongzoule") == 1 then
+    
+    delnpc("寺庙老妪");
+    setmaptrap(17,"地图陷阱17.txt");
+    assign("4jiangling",4);
+    showrandomsnow();
+    fadein();
+    playmusic("ks69.wav");
+    return;
+  end
+  showrandomsnow();
+  fadein();
+  playmusic("ks69.wav");
+  return;

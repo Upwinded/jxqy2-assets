@@ -1,0 +1,44 @@
+		Add($YRXTalk,1);
+		If($YRXTalk == 1) @Lable1;
+		If($YRXTalk == 2) @Lable2;
+		If($YRXTalk == 3) @Lable3;
+		If($YRXTalk == 4) @Lable4;
+		If($YRXTalk == 5) @Lable5;
+		If($YRXTalk == 6) @Lable6;
+		If($YRXTalk == 7) @Lable7;
+		If($YRXTalk == 8) @Lable8;
+		If($YRXTalk == 9) @Lable9;			
+		If($YRXTalk == 10) @Lable10;
+		Assign($YRXTalk,0);
+		Return;
+@Lable1:
+		Talk("YRXToFY");
+		Return;
+@Lable2:
+		Talk("YRXToFY1");
+		Return;
+@Lable3:
+		Talk("YRXToFY2");
+		Return;
+@Lable4:
+		Talk("YRXToFY3");
+		Return;
+@Lable5:
+		Talk("YRXToFY4");
+		Return;
+@Lable6:
+		Talk("YRXToFY5");
+		Return;
+@Lable7:
+		Talk("YRXToFY6");
+		Return;
+@Lable8:
+		Talk("YRXToFY7");
+		Return;
+@Lable9:
+		Talk("YRXToFY8");
+		Return;
+@Lable10:
+		Talk("YRXToFY9");
+		Assign($YRXTalk,0);
+		Return;

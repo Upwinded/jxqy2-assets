@@ -1,0 +1,22 @@
+// 游戏开始
+
+	PlayMovie("begin.avi");
+	ShowBottomWnd();
+	PlayMusic("ks69.wav");
+	SetPlayerPos(7,67);
+	SetPlayerDir(5);
+	SetPlayerScn();
+	SetLevelFile("level-hard.ini");
+	SetMainLum(31);
+//	Talk("Dark");
+	FadeIn();
+	Talk("Enter0");
+	PlayerGoto(9,63);
+	SetPlayerDir(3);
+	Sleep(300);
+	SetPlayerDir(7);
+	Sleep(300);
+	SetPlayerDir(5);
+	Talk("Enter");
+	AddToMemo("搜索这片废墟看看有没有可疑的地方。");
+	Return;

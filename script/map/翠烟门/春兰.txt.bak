@@ -1,0 +1,22 @@
+//  第一次入翠烟门
+
+	If ($CuiYanMen2CunLan == 1) @Talk1;
+	PlayerGoto(128,94);
+	SetPlayerDir(1);
+	SetNpcDir("春兰",5);
+	Talk("cuiyan1");
+	SetNpcPos("秋依水",122,109);
+	NpcGoto("秋依水",128,96);
+	PlayerGoto(128,95);
+	SetPlayerDir(1);
+	Talk("cuiyan2");
+	AddToMemo("替秋依水将唐秋二人的定情信物交到唐影手里，唐门在别离村的东面。");
+	Assign($CuiYanMen2CunLan,1);
+	Assign($CuiYanMen2CunLanMusic,1);
+	AddGoods("goods-sj-7-唐门宝箱.ini");
+	PlayMusic("ks67.wav");
+	Return;
+	
+@Talk1:
+	Talk("CunLan");
+	Return;

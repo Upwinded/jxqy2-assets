@@ -1,0 +1,43 @@
+	
+	If($FromFengChi == 6) Goto @Lable0;	
+
+	Talk("Sleep");
+	PlayerGoto(86,131);
+
+	StopMusic();
+	FadeOut();
+	LoadNpc("FengCi.npc");
+	SetMainLum(31);
+	SetNpcPos("偏厅家丁",86,143);	
+	SetNpcdir("偏厅家丁",1);
+	SetPlayerPos(85,132);
+	SetPlayerDir(7);
+	Assign($FromFengChi,4);
+	SetNpcPos("后门家丁",55,207);	
+	SetNpcDir("后门家丁",1);
+	SetNpcScript("守门家丁","大门家丁.txt");
+	SetNpcPos("守门家丁",65,226);	
+	SetNpcDir("守门家丁",1);	
+	SetMapTrap(2,"");
+	SetMapTrap(5,"DaTingTalk.txt");
+	DisableFight();
+	SetNpcScript("守门家丁","大门家丁.txt");
+	SaveMapTrap();
+	PlayMusic("ks65.wav");
+	FadeIn();
+	Return;
+@Lable0:
+	PlayerGotoEx(85,131);
+	SetNpcPos("敖管家",78,164);
+	NpcGoto("敖管家",84,148);	
+	NpcGoto("敖管家",85,132);
+	SetNpcDir("敖管家",5);
+	SetPlayerDir(1);
+	Talk("Guanjia1");
+	NpcGoto("敖管家",86,144);
+	NpcGoto("敖管家",81,155);
+	SetNpcPos("敖管家",82,178);
+	SetNpcDir("敖管家",1);
+	SetMapTrap(5,"DaTingTalk.txt");	
+	SaveMapTrap();
+	Return;

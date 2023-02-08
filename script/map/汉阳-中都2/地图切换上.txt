@@ -1,0 +1,89 @@
+  if getvar("fromfengchi") >= 20 then
+    
+    fadeout();
+    savenpc();
+    showsnow(0);
+    loadmap("中都.map");
+    loadnpc("zhongdu.npc");
+    loadobj("zhongdu.obj");
+    setplayerpos(25,317);
+    setplayerdir(5);
+    playmusic("ks66.wav");
+    showrandomsnow();
+    fadein();
+    showmessage("中都");
+    return;
+  end
+  if getvar("tozhongdu") == 1 then
+    
+    fadeout();
+    savenpc();
+    showsnow(0);
+    loadmap("中都.map");
+    loadnpc("zhongdu.npc");
+    loadobj("zhongdu.obj");
+    setplayerpos(25,317);
+    setplayerdir(5);
+    playmusic("ks66.wav");
+    showrandomsnow();
+    fadein();
+    showmessage("中都");
+    return;
+  end
+  if getvar("zhongduhouhuayuan") >= 5 then
+    
+    talk("out");
+    playergotodir(1,2);
+    setmaptrap(1,"地图切换上.txt");
+    return;
+  end
+  if getvar("yanruoxuemusic") == 1 then
+    
+    fadeout();
+    savenpc();
+    showsnow(0);
+    loadmap("中都.map");
+    loadnpc("zhongdu.npc");
+    loadobj("zhongdu.obj");
+    setplayerpos(25,317);
+    setplayerdir(5);
+    if getvar("yanruoxuemusic") == 0 then
+      
+      showrandomsnow();
+      fadein();
+      showmessage("中都");
+      return;
+    end
+    playmusic("ks67.wav");
+    
+    
+    showrandomsnow();
+    fadein();
+    showmessage("中都");
+    return;
+  end
+  stopmusic();
+  
+  
+  fadeout();
+  savenpc();
+  showsnow(0);
+  loadmap("中都.map");
+  loadnpc("zhongdu.npc");
+  loadobj("zhongdu.obj");
+  setplayerpos(25,317);
+  setplayerdir(5);
+  if getvar("yanruoxuemusic") == 0 then
+    
+    showrandomsnow();
+    fadein();
+    showmessage("中都");
+    return;
+  end
+  playmusic("ks67.wav");
+  
+  
+  showrandomsnow();
+  fadein();
+  showmessage("中都");
+  return;

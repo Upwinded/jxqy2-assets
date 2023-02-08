@@ -1,0 +1,8 @@
+  fadeout();
+  loadmap("大牢出口1.map");
+  loadobj("dalaochukou.obj");
+  setplayerpos(25,31);
+  setplayerdir(3);
+  fadein();
+  showmessage("荒郊");
+  return;

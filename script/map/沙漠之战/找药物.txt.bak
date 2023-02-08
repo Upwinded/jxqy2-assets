@@ -1,0 +1,7 @@
+
+	Talk("FindSomething");
+	PlayerGoto(15,67);
+	PlayerJumpTo(18,78);
+	SetMapTrap(2,"");
+	SaveMapTrap();
+	Return;

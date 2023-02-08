@@ -1,0 +1,20 @@
+  --稻香村－临安
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("临安城.map");
+  loadnpc("linan.npc");
+  loadobj("linan.obj");
+  setplayerpos(37,322);
+  setplayerdir(5);
+  if getvar("fromfengchi") == 8 then
+    
+    setmaptrap(9,"trap9.txt");
+    savemaptrap();
+    fadein();
+    showmessage("临安城");
+    return;
+  end
+  fadein();
+  showmessage("临安城");
+  return;

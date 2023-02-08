@@ -1,0 +1,34 @@
+  --"龙门客栈"-"狂沙镇-龙门客栈"
+  
+  --与柴嵩对话前
+  if getvar("lmkzoqiehuan") == 0 then
+    
+    talk("out1");
+    playergotodir(7,2);
+    setmaptrap(1,"地图切换.txt");
+    return;
+  end
+  
+  --决定去葬马岗没解决
+  if getvar("lmkzozhanmagang") == 1 then
+    
+    talk("out3");
+    playergotodir(7,2);
+    setmaptrap(1,"地图切换.txt");
+    return;
+  end
+  
+  --与柴嵩对话后
+  if getvar("lmkzoqiehuan") == 1 then
+    
+    talk("out2");
+    playergotodir(7,2);
+    setmaptrap(1,"地图切换.txt");
+    return;
+  end
+  
+  
+  talk("out1");
+  playergotodir(7,2);
+  setmaptrap(1,"地图切换.txt");
+  return;

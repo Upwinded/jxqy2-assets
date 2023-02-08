@@ -1,0 +1,4 @@
+  --酒店小二
+  
+  talk("xiaoer2");
+  return;

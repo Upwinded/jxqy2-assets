@@ -1,0 +1,23 @@
+  --凤池山庄－临安
+  
+  fadeout();
+  savenpc();
+  saveobj();
+  setmaptrap(1,"凤池-临安.txt");
+  savemaptrap();
+  loadmap("临安-凤池山庄.map");
+  setplayerpos(10,13);
+  setplayerdir(1);
+  playmusic("ks67.wav");
+  if getvar("fengchi") == 0 then
+    
+    setmainlum(25);
+    showsnow(0);
+    fadein();
+    showmessage("临安野外");
+    
+    return;
+  end
+  fadein();
+  showmessage("临安野外");
+  return;

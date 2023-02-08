@@ -1,0 +1,13 @@
+//第一次进入唐门
+	
+	DisableNpcAI();
+	PlayerGoto(53,277);
+	Talk("TanMenDiZi1");
+	PlayerGotoEx(58,265);
+	NpcGoto("唐门弟子1",60,262);
+	SetNpcDir("唐门弟子1",1);
+	PlayMusic("KS77.wav");
+	Talk("TanMenDiZi2");
+	EnableNpcAI();
+	Assign($TanMenFighting,1);
+	Return;

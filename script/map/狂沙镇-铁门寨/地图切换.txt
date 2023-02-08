@@ -1,0 +1,8 @@
+  --"狂沙镇-铁门寨"-"狂沙镇"
+  
+  
+  playergoto(8,84);
+  setplayerdir(4);
+  talk("notout");
+  setmaptrap(1,"地图切换.txt");
+  return;

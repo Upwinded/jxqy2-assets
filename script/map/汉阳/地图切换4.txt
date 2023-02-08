@@ -1,0 +1,22 @@
+  --此路不通
+  --if($duanhuanshan,1)@talk1;
+  --talk("ximenshibin");
+  --npcgotodir("南宫飞云",5,2);
+  --setmaptrap(4,"地图切换4.txt");
+  --return;
+  
+  --@talk1:
+  if getvar("duanjiazhuangclose") == 1 then
+    
+    talk("duanjiazhuangclose");
+    npcgotodir("南宫飞云",5,2);
+    setmaptrap(4,"地图切换4.txt");
+    return;
+  end
+  fadeout();
+  saveobj();
+  loadmap("汉阳-段家庄.map");
+  setplayerpos(27,14);
+  fadein();
+  playmusic("ks69.wav");
+  return;

@@ -1,0 +1,14 @@
+  if getvar("jian") == 1 then
+    
+    talk("tiejianglaoban1");
+    --addmoney(-99999999);
+    setmoneynum(0);
+    addlife(2000);
+    delgoods("goods-奇矿石.ini");
+    addgoods("goods-jian-14-剑中之剑.ini");
+    assign("jian",0);
+    return;
+  end
+  talk("tiejianglaoban");
+  buygoods("5-中都-铁匠老板.ini");
+  return;

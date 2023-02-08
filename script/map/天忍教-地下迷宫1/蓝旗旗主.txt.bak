@@ -1,0 +1,3 @@
+	AddGoods("goods-sj-11-½ð¸Õ´¸.ini");
+	Assign($TrjDxmgshijiang,2);
+	Return;

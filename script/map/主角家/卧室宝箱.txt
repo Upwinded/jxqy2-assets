@@ -1,0 +1,17 @@
+  --从宝箱得到药物
+  
+  openbox();
+  addgoods("goods-yaowu-1-凝神丹.ini");
+  addgoods("goods-yaowu-1-凝神丹.ini");
+  addgoods("goods-yaowu-1-凝神丹.ini");
+  addgoods("goods-yaowu-1-凝神丹.ini");
+  addgoods("goods-yaowu-1-凝神丹.ini");
+  addgoods("goods-yaowu-5-大补散.ini");
+  addgoods("goods-yaowu-5-大补散.ini");
+  addgoods("goods-yaowu-5-大补散.ini");
+  addgoods("goods-yaowu-5-大补散.ini");
+  addgoods("goods-yaowu-5-大补散.ini");
+  playsound("物-箱子开.wav");
+  showmessage("你从箱子里找到了一些丹药。");
+  setobjscript("","");
+  return;

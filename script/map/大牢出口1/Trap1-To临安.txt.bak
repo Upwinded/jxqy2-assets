@@ -1,0 +1,21 @@
+		If ($DaLaoChuKouFirst==1) @Label2;
+		FadeOut();
+		LoadMap("临安-凤池山庄.map");
+		SetPlayerPos(8,45);
+		SetPlayerDir(4);
+		SetMapTrap(3,"Trap3至大牢出口.txt");
+		SaveMapTrap();
+		FadeIn();
+		Return;
+@Label2:	    	
+		FadeOut();
+		LoadMap("临安-凤池山庄.map");
+		SetPlayerPos(8,45);
+		SetPlayerDir(4);
+		SetMapTrap(3,"Trap3至大牢出口.txt");
+		SaveMapTrap();
+		FadeIn();
+        	Talk("MengKou");
+        	Assign($DaLaoChuKouFirst,1);
+        	Return;
+

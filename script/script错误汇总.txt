@@ -1,0 +1,24 @@
+script\map\天王岛\苹儿1.txt 去掉两个playmusic指令最后多余的双引号
+script\map\翠烟门\弟子1.txt——弟子6.txt add指令去掉$符号
+script\map\唐门\地图切换1.txt enablenpcai指令结尾加上()
+script\map\龙门客栈\地图切换.txt setmaptrap(2,"地图切换1.txt");改为setmaptrap(1,"地图切换.txt"); //暂时没改，不知道有没有错
+script\map\长安\trap-3.txt showmessage(("长安西郊");有两个前括号，去掉一个
+script\map\汉阳\地图切换4.txt if条件语法有误
+script\map\中都地下迷宫\trap1to中都.txt setplayerdir指令拼写有误
+script\map\中都夜\燕若雪.txt setplayerpos中文分号改为英文分号
+script\map\临安城\燕若雪.txt setplayerpos、playergoto中文逗号改为英文逗号
+script\map\临安城\柴嵩.txt setnpcdir("柴嵩",3); 中dir改为dir；npcgoto("孟廷威",115,106) 结尾加上分号；setnpcdir("孟廷威",0); npc改为大写npc；
+script\map\临安城\trap8.txt assign（$fromfengchi,18); 改为assign("fromfengchi",18);
+script\map\临安城\trap9.txt setplayerdir(7);中player首字母大写
+script\map\凤池山庄\maptrap4.txt setnpcscript引号位置错误 setnpcdir("后门家丁",1);的dir改为大写dir
+script\map\凤池山庄\datingtalk.txt setnpcdir的dir改为大写dir
+script\map\凤池山庄-比武场\唐影败.txt setnpcdir("唐影","5) 去掉多余的引号
+script\map\凤池山庄-比武场\孟廷威败.txt setnpcdir("孟廷威",5); 去掉多余的引号
+script\map\凤池山庄-比武场\柴嵩败.txt setnpcdir("柴嵩",5); 去掉多余的引号
+script\map\凤池山庄-比武场\杨干败.txt setnpcdir("杨干",5); 去掉多余的引号
+script\map\凤池山庄-比武场\邵骑风败.txt setnpcdir("邵骑风",5); 去掉多余的引号
+script\map\凤池山庄-比武场\史忠良败.txt setnpcdir("史忠良",5); 去掉多余的引号
+script\map\凤池山庄-比武场\唐离败.txt setnpcdir("唐离",5); 去掉多余的引号
+script\map\凤池山庄-比武场\赵升权败.txt setnpcdir("赵升权",5); 去掉多余的引号
+script\map\临安大牢\地图陷阱1.txt setmaptrap(1"地图陷阱1.txt"); 添加逗号 if结尾添加return;
+script\map\天忍教-地下迷宫3\大结局.txt happyending里面playergotoex改为playergoto

@@ -1,0 +1,20 @@
+  
+  
+  if getvar("xiyuanzhao") == 1 then
+    
+    talk("xiyuanzhao");
+    return;
+  end
+  talk("xiyuanzhao1");
+  npcgoto("赵升权",18,124);
+  setnpcdir("赵升权",5);
+  talk("xiyuanzhao2");
+  npcgoto("赵升权",20,128);
+  setnpcdir("赵升权",5);
+  talk("xiyuanzhao2");
+  npcgoto("赵升权",19,126);
+  setnpcdir("赵升权",5);
+  talk("xiyuanzhao3");
+  addmagic("player-magic-风雪狂刀.ini");
+  assign("xiyuanzhao",1);
+  return;

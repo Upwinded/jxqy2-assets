@@ -1,0 +1,11 @@
+//别离村－长安
+
+	StopMusic();
+	FadeOut();
+	LoadMap("长安.map");
+	LoadNpc("changan.npc");
+	LoadObj("changan.obj");
+	SetPlayerPos(141,281);
+	SetPlayerDir(3);
+	FadeIn();
+	Return;

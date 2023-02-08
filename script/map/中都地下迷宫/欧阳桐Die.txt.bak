@@ -1,0 +1,13 @@
+	DisableNpcAI();
+	Sleep(2000);
+	FadeOut();
+	DelNpc("打手");
+	DelObj("牢房门");
+	FadeIn();
+	Sleep(1000);
+	Talk("Success");
+	AddToMemo("你已杀死了欧阳桐。");
+	Assign($ZDBiWu,4);
+	Assign($OuYangMusic,1);
+	EnableNpcAI();
+	Return;

@@ -1,0 +1,30 @@
+  --上官家的管家
+  
+  if getvar("changanguanyin") == 1 then
+    
+    if getvar("changanshangguanguanjia") == 1 then
+      
+      talk("shangguanjiading5");
+      return;
+    end
+    talk("shangguanjiading3");
+    npcgoto("上官二管家",148,216);
+    setnpcdir("上官二管家",3);
+    --follownpc("南宫飞云","上官大管家");
+    npcgotoex("上官大管家",168,167);
+    playergoto(147,204);
+    playergoto(149,202);
+    playergoto(156,195);
+    playergoto(169,164);
+    setnpcdir("上官豹",7);
+    setplayerdir(3);
+    talk("shangguanjiading4");
+    delgoods("goods-sj-4-官印.ini");
+    addgoods("goods-sj-5-玉圭.ini");
+    addtomemo("你用官印和上官豹换来了玉圭，杨七爷要高兴死了。");
+    assign("changanshangguanguanjia",1);
+    assign("changanyuguifinish",1);
+    return;
+  end
+  talk("shangguanjiading2");
+  return;

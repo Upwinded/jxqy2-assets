@@ -1,0 +1,9 @@
+	DisableNpcAI();
+	FadeOut();
+	Talk("ShaoQiFengDie");
+	Sleep(1000);
+	Assign($FromFengChi,14);
+	DelObj("…€∆Ô∑Á ¨ÃÂ");
+	FadeIn();
+	EnableNpcAI();
+	Return;

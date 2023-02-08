@@ -1,0 +1,14 @@
+	FadeOut();
+    	SaveNpc();
+	SaveObj();
+	LoadMap("天忍教.map");
+	LoadNpc("TRJ.npc");
+    	LoadObj("TRJ.obj");
+    	SetMapTime(0);
+    	SetMainLum(31);
+	SetPlayerPos(53,115);
+	SetPlayerDir(6);
+	SetPlayerLum(0);
+	FadeIn();
+	ShowMessage("天忍教总舵");
+	Return;

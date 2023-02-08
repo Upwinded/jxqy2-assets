@@ -1,0 +1,5 @@
+  disablenpcai();
+  talk("dayuan2");
+  enablenpcai();
+  setnpckind("雷晃",1);
+  return;

@@ -1,0 +1,5 @@
+	DisableNpcAI();	
+	Talk("DaTing");
+	EnableNpcAI();
+	SetNpcKind("À×Í¬",1);
+	Return;

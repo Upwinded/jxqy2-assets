@@ -1,0 +1,8 @@
+  --关上比武场的门
+  
+  DelObj("比武场门闭左");
+  DelObj("比武场门闭中");
+  DelObj("比武场门闭右");
+  AddObj("obj-比武场门开右.ini",17,75);
+  AddObj("obj-比武场门开左.ini",15,71);
+  return;

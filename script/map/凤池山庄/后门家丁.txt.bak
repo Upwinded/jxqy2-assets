@@ -1,0 +1,35 @@
+//后门家丁
+	If($FromFengChi == 2) @Lable0;
+	If($FromFengChi == 4) @Lable1;
+	If($FromFengChi == 6) @Lable2;
+	If($FromFengChi == 10) @Lable3;
+	Talk("woshi1");
+	Return;
+@Lable0:	
+	Talk("HouMenjiading");
+	NpcGotoEx("后门家丁",55,201);
+	SetMapTrap(2,"");
+	SaveMapTrap();
+	Return;
+@Lable1:
+	If( $FengChiHouJiaTing == 1) @Lable4;
+	Talk("BackDoor");
+	NpcGotoEx("后门家丁",53,209);
+	Assign($FengChiHouJiaTing,1);
+	SetNpcDir("后门家丁",7);
+	Return;
+@Lable2:
+	Talk("BackDoor1");
+	PlayMusic("ks65.wav");
+	NpcGotoEx("后门家丁",55,201);
+	Return;
+@Lable3:
+	PlayMusic("ks65.wav");
+	Talk("BackDoor2");
+	NpcGotoEx("后门家丁",55,201);
+	Return;
+@Lable4:
+	Talk("BackDoor3");
+	NpcGotoEx("后门家丁",53,209);
+	SetNpcDir("后门家丁",7);
+	Return;

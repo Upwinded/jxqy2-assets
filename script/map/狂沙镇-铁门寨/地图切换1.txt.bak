@@ -1,0 +1,30 @@
+// "狂沙镇-铁门寨" - "铁门寨"
+
+	FadeOut();
+	SaveNpc("");
+	SaveObj("");
+	StopMusic();
+	LoadMap("铁门寨.map");
+	LoadNpc("tmz.npc");
+	LoadObj("tmz.obj");
+	PlayMusic("Ks76.wav");
+	SetPlayerPos(4,117);
+	SetPlayerDir(5);
+	SetPlayerState(0);
+	FadeIn();
+	Talk("entertmz2");
+	PlayerGoto(9,116);
+	SetPlayerDir(5);
+	Talk("entertmz21");
+	PlayerGoto(9,112);
+	SetPlayerDir(7);
+	Talk("entertmz22");
+	PlayerGoto(10,113);
+	SetPlayerDir(1);
+	Talk("entertmz23");
+	PlayerGoto(10,116);
+	SetPlayerDir(4);
+	Talk("entertmz24");
+	SetPlayerDir(1);
+	Talk("entertmz25");
+	Return;

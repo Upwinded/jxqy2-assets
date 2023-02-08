@@ -1,0 +1,2 @@
+  addmagic("magic-佛门狮子吼.ini");
+  return;

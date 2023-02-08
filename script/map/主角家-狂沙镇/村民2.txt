@@ -1,0 +1,14 @@
+  --村民2
+  
+  if getvar("ksocunming2") == 0 then
+    
+    talk("guard3-1");
+    assign("ksocunming2",1);
+    return;
+  end
+  if getvar("ksocunming2") == 1 then
+    
+    talk("guard3-2");
+    return;
+  end
+  return;

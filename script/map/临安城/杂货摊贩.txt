@@ -1,0 +1,9 @@
+  if getvar("fromfengchi") == 16 then
+    
+    talk("xiaofan");
+    buygoods("7-临安-杂货摊贩.ini");
+    return;
+  end
+  talk("xiaofan1");
+  buygoods("7-临安-杂货摊贩.ini");
+  return;

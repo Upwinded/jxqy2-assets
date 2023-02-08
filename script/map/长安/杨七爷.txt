@@ -1,0 +1,43 @@
+  --和杨七爷谈话
+  
+  if getvar("changanxiaofan") == 1 then
+    
+    --已和小贩谈过话
+    if getvar("changanyangqiye") >= 1 then
+      
+      if getvar("changanyuguifinish") == 1 then
+        
+        if getvar("changanyangqiye") >= 2 then
+          
+          talk("yangqiye8");
+          return;
+        end
+        talk("yangqiye9");
+        delgoods("goods-sj-5-玉圭.ini");
+        addgoods("goods-sj-6-夜明珠.ini");
+        playergoto(69,167);
+        talk("yangqiye10");
+        addtomemo("你从杨七爷手里得到了夜明珠，还不赶快回客栈献宝去。");
+        assign("changanyangqiye",2);
+        return;
+      end
+      talk("yangqiye6");
+      return;
+    end
+    talk("yangqiye2");
+    playergoto(62,181);
+    talk("yangqiye3");
+    playergoto(64,178);
+    talk("yangqiye4");
+    playergoto(61,183);
+    setplayerdir(1);
+    setnpcdir("杨七爷",5);
+    talk("yangqiye5");
+    playergoto(69,167);
+    talk("yangqiye7");
+    addtomemo("到城东的上官豹那里去帮杨七爷把祖传的玉圭拿回来。");
+    assign("changanyangqiye",1);
+    return;
+  end
+  talk("yangqiye1");
+  return;

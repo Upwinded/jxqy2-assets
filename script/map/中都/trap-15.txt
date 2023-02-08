@@ -1,0 +1,4 @@
+  playergotodir(1,1);
+  talk("jiudian19");
+  setmaptrap(15,"trap-15.txt");
+  return;

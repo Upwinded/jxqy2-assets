@@ -1,0 +1,17 @@
+[head]
+map=中都-矿山.map
+count=1
+
+[obj000]
+objname=宝箱
+objfile=obj-宝箱01.ini
+wavfile=
+scriptfile=秘籍.txt
+kind=1
+dir=0
+lum=0
+mapx=41
+mapy=20
+damage=0
+frame=0
+

@@ -1,0 +1,16 @@
+	StopMusic();
+	FadeOut();
+	SaveObj();
+	SaveNpc();
+	LoadMap("长安.map");
+	LoadNpc("Changan.npc");
+	LoadObj("changan.obj");
+	PlayMusic("ks69.wav");
+	DisableFight();
+	SetPlayerPos(151,114);
+	SetPlayerDir(1);
+	SetMainLum(31);
+	SetPlayerLum(0);		
+	ShowMessage("长安");
+	FadeIn();
+	Return;

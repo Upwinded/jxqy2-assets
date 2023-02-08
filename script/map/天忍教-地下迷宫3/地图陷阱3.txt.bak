@@ -1,0 +1,8 @@
+	DisableNpcAI();
+	PlayMusic("ks74.wav");
+	PlayerGoto(24,58);
+	SetPlayerDir(3);
+	Talk("talk1");
+	EnableNpcAI();
+	SaveMapTrap();
+	Return;

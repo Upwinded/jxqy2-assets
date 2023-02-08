@@ -1,0 +1,42 @@
+  --"龙门客栈"-"龙门客栈--长安"
+  
+  
+  --与柴嵩对话前
+  if getvar("lmkzoqiehuan") == 0 then
+    
+    talk("out1");
+    playergotodir(3,2);
+    setmaptrap(2,"地图切换1.txt");
+    return;
+  end
+  
+  --决定去葬马岗没解决
+  if getvar("lmkzozhanmagang") == 1 then
+    
+    talk("out3");
+    playergotodir(3,2);
+    setmaptrap(2,"地图切换1.txt");
+    return;
+  end
+  
+  --与柴嵩对话后
+  if getvar("lmkzoqiehuan") == 1 then
+    
+    fadeout();
+    stopmusic();
+    loadmap("龙门客栈-长安.map");
+    loadobj("lmkz-ca.obj");
+    setplayerpos(5,10);
+    setplayerdir(0);
+    setnpcpos("燕若雪",5,8);
+    setnpcdir("燕若雪",0);
+    showmessage("树林");
+    fadein();
+    return;
+  end
+  
+  
+  talk("out1");
+  playergotodir(3,2);
+  setmaptrap(2,"地图切换1.txt");
+  return;

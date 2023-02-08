@@ -1,0 +1,26 @@
+//大门家丁
+	
+	If($FenCiDaMenJiaDin==1) @Talk1;
+	If($FenCiDaMenJiaDin==2) @Talk2;
+	If($FenCiDaMenJiaDin==3) @Talk3;
+
+	Talk("DaMen");
+	SetNpcDir("守门家丁",1);
+	NpcGoto("守门家丁",63,227);
+	SetMapTrap(1,"凤池-临安.txt");
+	SaveMapTrap();
+	Assign($FenCiDaMenJiaDin,1);
+	Return;
+	
+@Talk1:
+	Talk("DaMen1");
+	Return;
+@Talk2:
+	Talk("DaMen2");
+	NpcGoto("守门家丁",66,217);
+	SetNpcDir("守门家丁",7);
+	Assign($FenCiDaMenJiaDin,3);
+	Return;
+@Talk3:
+	Talk("DaMen2");
+	Return;

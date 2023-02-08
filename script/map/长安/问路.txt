@@ -1,0 +1,9 @@
+  --问路
+  
+  if getvar("changanyanruoxuexiaoshi") == 1 then
+    
+    talk("wenlu");
+    return;
+  end
+  talk("wenlu01");
+  return;

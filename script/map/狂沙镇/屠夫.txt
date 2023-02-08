@@ -1,0 +1,4 @@
+  --屠夫
+  
+  talk("tufu1");
+  return;

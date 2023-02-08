@@ -1,0 +1,85 @@
+  --至别离村
+  
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("别离村.map");
+  if getvar("bielishengan") == 1 then
+    
+    loadnpc("bielicun1.npc");
+    loadobj("bielicun.obj");
+    setplayerstate(0);
+    setplayerpos(60,40);
+    setplayerdir(0);
+    fadein();
+    showmessage("别离村");
+    if getvar("bielimg") == 1 then
+      
+      setnpckind("男童-1",0);
+      npcgotoex("男童-1",60,54);
+      playergoto(60,56);
+      setplayerdir(4);
+      setnpcdir("男童-1",0);
+      playmusic("ks66.wav");
+      talk("talk2");
+      addgoods("goods-sj-9-别离村钥匙.ini");
+      setplayerdir(7);
+      npcgoto("男童-1",67,66);
+      delnpc("男童-1");
+      enablejump();
+      enablerun();
+      assign("bielimg",2);
+      return;
+    end
+    return;
+  end
+  loadnpc("bielicun.npc");
+  loadobj("bielicun.obj");
+  setplayerpos(60,46);
+  setplayerdir(0);
+  if getvar("bielimg") == 1 then
+    
+    playmusic("ks66.wav");
+    fadein();
+    showmessage("别离村");
+    if getvar("bielimg") == 1 then
+      
+      setnpckind("男童-1",0);
+      npcgotoex("男童-1",60,54);
+      playergoto(60,56);
+      setplayerdir(4);
+      setnpcdir("男童-1",0);
+      playmusic("ks66.wav");
+      talk("talk2");
+      addgoods("goods-sj-9-别离村钥匙.ini");
+      setplayerdir(7);
+      npcgoto("男童-1",67,66);
+      delnpc("男童-1");
+      enablejump();
+      enablerun();
+      assign("bielimg",2);
+      return;
+    end
+    return;
+  end
+  fadein();
+  showmessage("别离村");
+  if getvar("bielimg") == 1 then
+    
+    setnpckind("男童-1",0);
+    npcgotoex("男童-1",60,54);
+    playergoto(60,56);
+    setplayerdir(4);
+    setnpcdir("男童-1",0);
+    playmusic("ks66.wav");
+    talk("talk2");
+    addgoods("goods-sj-9-别离村钥匙.ini");
+    setplayerdir(7);
+    npcgoto("男童-1",67,66);
+    delnpc("男童-1");
+    enablejump();
+    enablerun();
+    assign("bielimg",2);
+    return;
+  end
+  return;

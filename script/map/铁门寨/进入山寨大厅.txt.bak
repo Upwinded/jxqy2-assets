@@ -1,0 +1,19 @@
+//进入铁门寨大厅
+
+	AddNpc("z20-铁门寨寨主.ini",24,28);
+	PlaySound("攻-男死01a.wav");
+	Talk("enterhall1");
+	PlayerGoto(24,30);
+	SetPlayerDir(3);
+	Talk("toumu1");
+	NpcSpecialAction("铁门寨寨主","z20-铁门寨寨主-die.mpc");
+	PlaySound("攻-男死05a.wav");
+	DelNpc("铁门寨寨主");
+	AddObj("29-特级弓箭手尸体.ini",24,28,1);
+	PlayerGoto(26,34);
+	Talk("toumu2");
+	AddToMemo("到后山百花谷去放Yan。");
+	SetMapTrap(4,"");
+	SaveMapTrap();
+	Assign($TMZOQieHuan,1);
+	Return;

@@ -1,0 +1,37 @@
+//翠烟门-野外
+
+	If ($CuiYanMen2Fighting==1) @Talk1;
+	If ($CuiYanMen2Fighting==2) @Talk2;
+	FadeOut();
+	SaveNpc();
+	LoadMap("别离村-翠烟门.map");
+	LoadNpc("BieToCui.npc");
+	LoadObj("BieToCui.obj");
+	SetPlayerPos(5,153);
+	SetPlayerDir(5);
+	If($CuiYanMen2CunLanMusic == 0) @Label1;
+	PlayMusic("ks67.wav");
+	
+@Label1:
+	FadeIn();
+	If ($CuiYanMen2AllFinish==1) @Talk3;
+	ShowMessage("野外");
+	Return;
+	
+@Talk1:
+	DisableNpcAI();
+	Talk("Fighting");
+	NpcGotoDir("南宫飞云",1,1);
+	SetMapTrap(1,"地图陷阱1.txt");
+	EnableNpcAI();
+	Return;
+	
+@Talk2:
+	Talk("Fighting1");
+	NpcGotoDir("南宫飞云",1,1);
+	SetMapTrap(1,"地图陷阱1.txt");
+	Return;
+	
+@Talk3:
+	Assign($CuiYanMen2AllFinish,2);
+	return;

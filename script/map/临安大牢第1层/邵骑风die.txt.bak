@@ -1,0 +1,10 @@
+	DisableNpcAI();
+	Sleep(2000);
+	Say("终于除掉了邵骑风这个恶贼！");
+	Assign($ShaoJiFeng,2);
+	SetMapTrap(4,"Trap-4.txt");
+	SetMapTrap(5,"Trap-5.txt");
+	SaveMapTrap();	
+	EnableNpcAI();
+	Assign($DuanJiaZhuangClose,1);
+	Return;

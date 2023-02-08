@@ -1,0 +1,17 @@
+  savenpc();
+  saveobj();
+  showsnow(0);
+  fadeout();
+  setmaptime(0);
+  
+  loadmap("中都-天忍教.map");
+  --loadnpc(".npc");
+  --loadobj(".obj");
+  
+  setplayerpos(17,48);
+  setplayerdir(1);
+  disablefight();
+  talk("name");
+  showrandomsnow();
+  fadein();
+  return;

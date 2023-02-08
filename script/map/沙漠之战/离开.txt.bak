@@ -1,0 +1,5 @@
+
+	Talk("Out");
+	PlayerGotoDir(5,2);
+	SetMapTrap(1,"АлїЄ.txt");
+	Return

@@ -1,0 +1,6 @@
+  --地图陷阱8
+  
+  talk("door2");
+  playergotodir(1,1);
+  setmaptrap(8,"trap-8.txt");
+  return;

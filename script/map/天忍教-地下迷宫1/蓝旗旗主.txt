@@ -1,0 +1,3 @@
+  addgoods("goods-sj-11-金刚锤.ini");
+  assign("trjdxmgshijiang",2);
+  return;

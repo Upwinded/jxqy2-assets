@@ -1,0 +1,8 @@
+// ´äÑÌÃÅ
+
+	Talk("outdoor");
+	PlayerGotoDir(5,2);
+	SetMapTrap(2,"µØÍ¼ÏİÚå2.txt");
+	Return;
+	
+	

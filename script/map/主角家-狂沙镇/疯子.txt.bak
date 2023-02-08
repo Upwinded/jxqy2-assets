@@ -1,0 +1,14 @@
+// ·è×Ó
+
+	If ($ksOshushen1 == 0) @talk1;
+	If ($ksOshushen1 == 1) @talk2;
+	Return;
+
+@talk1:
+	Talk("shushen1-1");
+	Assign($ksOshushen1, 1);
+	Return;
+
+@talk2:
+	Talk("shushen1-2");
+	Return;

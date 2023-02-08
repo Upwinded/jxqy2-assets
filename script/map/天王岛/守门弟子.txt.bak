@@ -1,0 +1,19 @@
+//ÊØÃÅµÄµÜ×Ó
+
+	If ($TianWanShouMenDiZi==1) @Talk1;
+	Talk("DiZi");
+	Return;
+	
+@Talk1:
+	Talk("DiZi1");
+	StopMusic();
+	FadeOut();
+	LoadMap("ººÑô.map");
+	LoadNpc("HanYan.npc");
+	LoadObj("HanYan.obj");
+	SetPlayerPos(40,40);
+	SetPlayerDir(7);
+	ShowMessage("ººÑô");
+	PlayMusic("ks69.wav");
+	FadeIn();
+	Return;

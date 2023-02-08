@@ -1,0 +1,12 @@
+  savenpc();
+  fadeout();
+  loadmap("汉阳.map");
+  loadnpc("hanyan.npc");
+  loadobj("hanyan.obj");
+  setplayerpos(78,64);
+  setplayerdir(1);
+  disablefight();
+  playmusic("ks69.wav");
+  fadein();
+  showmessage("汉阳");
+  return;

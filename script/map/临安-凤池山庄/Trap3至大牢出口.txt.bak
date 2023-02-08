@@ -1,0 +1,8 @@
+		FadeOut();
+		LoadMap("´óÀÎ³ö¿Ú1.map");
+		LoadObj("DaLaoChuKou.obj");
+		SetPlayerPos(25,31);
+		SetPlayerDir(3);
+		FadeIn();
+		ShowMessage("»Ä½¼");
+		Return;

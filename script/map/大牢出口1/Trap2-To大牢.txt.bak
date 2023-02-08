@@ -1,0 +1,14 @@
+//		FadeOut();
+//		SaveNpc();
+//		SaveObj();
+//		LoadMap("临安大牢第1层.map");
+//		LoadNpc("LinAnDaLao12.npc");
+//		LoadObj("LinAnDaLao12.obj");
+//		SetMainLum(16);
+//		SetPlayerPos(51,109);
+//		SetPlayerDir(1);
+//		FadeIn();
+Talk("In");
+PlayerGoto(3,25);
+SetMapTrap(1,"Trap2-To大牢.txt");
+Return;

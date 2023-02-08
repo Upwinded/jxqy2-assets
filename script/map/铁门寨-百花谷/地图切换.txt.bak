@@ -1,0 +1,13 @@
+// "铁门寨-百花谷" - "铁门寨"
+
+	FadeOut();
+	SaveNpc("");
+	SaveObj("");
+	LoadMap("铁门寨.map");
+	LoadNpc("tmz.npc");
+	LoadObj("tmz.obj");
+	SetPlayerPos(64,22);
+	SetPlayerDir(1);
+	FadeIn();
+	Return;
+

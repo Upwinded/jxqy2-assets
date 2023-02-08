@@ -1,0 +1,25 @@
+			SetMapTrap(7,"Trap7.txt");
+			SaveMapTrap();
+			NpcGotoEx("≤Ò·‘",110,123);	
+			PlayMusic("ks74.wav");
+			PlayerGoto(111,125);
+			SetPlayerDir(5);
+			SetNpcDir("≤Ò·‘",5);
+			MoveScreen(5,200);
+			Talk("YeDaTing");
+			SetPlayerScn();
+			Talk("YeDaTing6");
+			EnableFight();
+			SetNpcRelation("∑Ô≥ÿº“∂°",1);
+			SetNpcRelation("∑Ô≥ÿº“∂°1",1);
+			SetNpcRelation("…€∆Ô∑Á",1);
+			SetNpcRelation("∞Ωπ‹º“",1);
+			Assign($FengChiFight,1);
+			EnableNpcAI();
+			Talk("YeDaTing7");
+			SetNpcKind("≤Ò·‘",1);
+			NpcGotoEx("≤Ò·‘",113,117);
+			EnableJump();
+			EnableRun();	
+			Return;	
+	

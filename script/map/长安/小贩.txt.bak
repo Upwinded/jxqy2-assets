@@ -1,0 +1,18 @@
+//向小贩买东西
+	
+	If( $ChangAnLaoban == 0 ) @Talk1;
+	If ($ChangAnXiaofan==1) @Talk2;
+	Talk("xiaofan1");
+	//AddMoney(-100);
+	//SetMapTrap(5,"送项链.txt");
+	//激活客栈的陷阱脚本
+	Assign($ChangAnXiaofan,1);
+	AddToMemo("买杨七爷的夜明珠送给小仙女，杨七爷家就在孙二毛对面。");
+	Return;
+	
+@Talk2:
+	Talk("xiaofan2");
+	Return;
+@Talk1:
+	Talk("xiaofan3");
+	Return;	

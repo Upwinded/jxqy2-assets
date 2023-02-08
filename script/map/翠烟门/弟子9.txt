@@ -1,0 +1,4 @@
+  --翠烟门弟子
+  
+  talk("dizi9");
+  return;

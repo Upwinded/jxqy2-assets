@@ -1,0 +1,12 @@
+//风雪山庄守门家丁
+
+	If ($FXSZZhaoRen == 1) @Lable1;
+	Talk("fx4");
+	StopMusic();
+	SetNpcRelation("家丁",1);
+	Return;
+@Lable1:
+	Talk("fx1");
+	StopMusic();
+	SetNpcRelation("家丁",1);	
+	Return;

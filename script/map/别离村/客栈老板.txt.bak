@@ -1,0 +1,14 @@
+		
+		Talk("ZhuDian");
+		AddMoney(-40);
+		FadeOut();
+		Sleep(5000);
+		SetPlayerPos(6,78);
+		SetPlayerDir(7);
+		FullLife();
+		FullThew();
+		FullMana();
+		UpdateState();
+		FadeIn();
+		Return;
+		

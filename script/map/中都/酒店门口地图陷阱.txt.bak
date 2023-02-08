@@ -1,0 +1,7 @@
+//¾ÆµêÃÅ¿Ú
+        If($ZhongDuLYS==1) @Talk1;
+        Talk("jiudiandoor");
+        SaveMapTrap();
+        Return;
+@Talk1:
+        return;

@@ -1,0 +1,51 @@
+//—‡»Ù—©
+
+	If ($BHGOFire==0) @talk1;
+	If ($BHGOFire==1) @talk2;
+	Return;
+
+@talk1:
+	Talk("YangRuoXue6");
+	Return;
+	
+@talk2:
+	Talk("YangRuoXue8");
+	SetNpcKind("—‡»Ù—©",3);
+	PlayerGoto(4,31);
+	FadeOut();
+	Talk("YangRuoXue9");
+	StopMusic();
+	
+	LoadMap("Ã˙√≈’Ø.map");
+	LoadObj("tmz.obj");
+	SetPlayerDir(1);
+	SetPlayerPos(65,20);
+	PlayMusic("Ks66.wav");
+	SetMapTrap(3,"");
+	FadeIn();
+	PlayerGoto(53,37);
+	Talk("YangRuoXu10");
+	PlayerGoto(45,50);
+	PlayerGoto(39,59);
+	Talk("YangRuoXu11");
+	PlayerGoto(30,77);
+	PlayerGoto(24,92);
+	FadeOut();
+	StopMusic();
+
+	LoadMap("øÒ…≥’Ú.map");
+	LoadNpc("ks-2.npc");
+	LoadObj("ks.obj");
+	SetPlayerDir(1);
+	SetPlayerPos(126,77);
+	PlayMusic("ks69.wav");
+	DisableJump();
+	DisableRun();
+	FadeIn();
+	Talk("YangRuoXu12");
+	SetMapTrap(5,"Õ∂µÍ.txt");
+	SaveMapTrap();
+	SetNpcScript("—‡»Ù—©","—‡»Ù—©Talk.txt");
+	Assign($KsOQieHuan,2);
+	AddToMemo("¥¯–°œ…≈Æ»•øÕ’ªÕ∂µÍ°£");
+	Return;

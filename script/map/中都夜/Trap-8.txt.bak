@@ -1,0 +1,6 @@
+//µØÍ¼ÏÝÚå8
+
+      Talk("door2");
+      PlayerGotoDir(1,1);
+      SetMapTrap(8,"Trap-8.txt");
+      Return;

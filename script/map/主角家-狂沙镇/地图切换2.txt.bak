@@ -1,0 +1,18 @@
+// «–ªª»Î√‘π¨
+
+	FadeOut();
+	SaveNpc("");
+	SaveObj("");
+	StopMusic();
+	LoadMap("…≥ƒÆ√‘π¨.map");
+	LoadNpc("smmg.npc");
+	LoadObj("smmg.obj");
+	PlayMusic("KS77.wav");
+	SetPlayerPos(12,65);
+	SetPlayerDir(7);
+	SetPlayerLum(0);
+	SetMainLum(15);
+	FadeIn();
+	ShowMessage("…≥ƒÆ√‘π¨");
+	Return;
+

@@ -1,0 +1,21 @@
+  --"百花谷"-"百花谷小屋"
+  
+  fadeout();
+  saveobj();
+  loadmap("百花谷小屋.map");
+  loadnpc("bhgxw.npc");
+  playsound("背-门.wav");
+  setplayerpos(4,31);
+  setplayerdir(5);
+  showmessage("百花谷小屋");
+  fadein();
+  --进入小屋见到燕若雪之前
+  if getvar("baihuaguoqiehuan") == 0 then
+    
+    sleep(2000);
+    talk("changemap1");
+    assign("baihuaguoqiehuan",1);
+    return;
+  end
+  --进入小屋见过燕若雪之后
+  return;

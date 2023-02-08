@@ -1,0 +1,4 @@
+  talk("frontdoor");
+  playergoto(60,237);
+  setmaptrap(2,"前门.txt");
+  return;

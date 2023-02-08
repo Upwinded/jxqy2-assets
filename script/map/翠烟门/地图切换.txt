@@ -1,0 +1,34 @@
+  --翠烟门-野外
+  
+  if getvar("cuiyanmen2fighting") == 1 then
+    
+    disablenpcai();
+    talk("fighting");
+    playergoto(144,61);
+    setmaptrap(1,"地图切换.txt");
+    enablenpcai();
+    return;
+  end
+  if getvar("cuiyanmen2fighting") == 2 then
+    
+    talk("fighting1");
+    playergoto(144,61);
+    setmaptrap(1,"地图切换.txt");
+    return;
+  end
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("别离村-翠烟门.map");
+  loadnpc("bie-cui.npc");
+  loadobj("bie-cui.obj");
+  setplayerpos(2,6);
+  setplayerdir(7);
+  fadein();
+  if getvar("cuiyanmen2allfinish") == 1 then
+    
+    assign("cuiyanmen2allfinish",2);
+    return;
+  end
+  showmessage("野外");
+  return;

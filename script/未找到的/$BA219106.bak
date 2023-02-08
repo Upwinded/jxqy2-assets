@@ -1,0 +1,11 @@
+	If ($DaoZei >= 1) @Label1;
+	DisableNpcAI();
+	NpcGoto("ÀîËÄ",5,37);
+	Talk("DaJie");
+	EnableNpcAI();
+	SetNpcRelation("·Ë",1);
+	Assign($DaoZei,1);
+	Return;
+	
+@Label1:
+	Return;

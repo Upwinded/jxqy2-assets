@@ -1,0 +1,293 @@
+//≤Ò·‘
+
+	If ($LinAnChaiSong == 1) @Lable1;
+	If ($FromFengChi == 1) @Lable0;
+	If ($LinAnChaiSong == 2) @Lable2;
+	If ($LinAnChaiSong == 3) @Lable3;
+
+	Talk("CaiSong");
+	Assign($LinAnYanRuoXue,2);
+	Assign($LinAnChaiSong,3);
+	Return;
+@Lable3:
+	Talk("CaiSong2");
+	Return;
+@Lable0:
+	Talk("ChaiSong2");
+	Assign($LinAnChaiSong,1);
+	AddMagic("player-magic-√Œµ˚…Òπ¶.ini");
+	Assign($FromFengChi,2);
+	Assign($LinAnYanRuoXue,14);
+	Return;
+@Lable1:
+	Talk("ChaiSong3");
+	Return; 
+@Lable2:
+	Talk("ChaiSong4");
+	SetNpcDir("≤Ò·‘",1);
+	PlayerGoto(180,190);
+	SetPlayerDir(1);
+	Talk("ChaiSong5");
+	NpcGoto("≤Ò·‘",180,189);
+	SetNpcDir("≤Ò·‘",1);
+	SetPlayerDir(5);
+	Talk("ChaiSong6");
+	NpcGoto("≤Ò·‘",181,191);
+	SetNpcDir("≤Ò·‘",5);
+	Talk("ChaiSong7");
+	PlayerGoto(181,190);
+	SetPlayerDir(5);
+	Talk("ChaiSong8");
+	SetNpcPos("Êº∂˘",176,180);
+	NpcGoto("Êº∂˘",180,191);
+	SetNpcDir("Êº∂˘",5);
+	SetNpcDir("≤Ò·‘",2);
+	SetPlayerDir(1);
+	Talk("JieEr4");
+	FadeOut();
+	SetNpcPos("—‡»Ù—©",154,104);
+	SetNpcDir("—‡»Ù—©",7);
+	AddNpc("z12-Ã∆”∞.ini",155,104,1);
+	AddNpc("z14-«Ô“¿ÀÆ.ini",155,106,3);	
+	SetPlayerPos(146,129);
+	SetPlayerDir(5);
+	SetNpcPos("Êº∂˘",143,134);
+	SetNpcDir("Êº∂˘",1);
+	PlayMusic("ks69.wav");
+	FadeIn();
+
+	NpcGotoEx("Ã∆”∞",152,114);
+	NpcGotoEx("«Ô“¿ÀÆ",152,116);
+	NpcGotoEx("ƒœπ¨∑…‘∆",150,119);
+	NpcGoto("—‡»Ù—©",150,116);
+	SetNpcDir("Ã∆”∞",1);
+	SetNpcDir("«Ô“¿ÀÆ",1);
+	SetNpcDir("—‡»Ù—©",7);
+	SetPlayerDir(5);
+	Talk("DaTing");
+	NpcGoto("«Ô“¿ÀÆ",149,117);
+	SetNpcDir("«Ô“¿ÀÆ",5);
+	SetNpcDir("«Ô“¿ÀÆ",7);
+	Talk("DaTing1");
+	SetPlayerDir(4);
+	Talk("DaTing2");
+	SetNpcDir("«Ô“¿ÀÆ",6);
+	Talk("DaTing3");
+	SetNpcPos("Êº∂˘",147,136);
+	NpcGoto("Êº∂˘",149,121);
+	SetNpcDir("Êº∂˘",5);
+	Talk("DaTing4");
+	SetPlayerDir(1);
+	SetNpcDir("«Ô“¿ÀÆ",0);
+	SetNpcDir("—‡»Ù—©",0);
+	Talk("DaTing5");
+	AddNpc("z08-’‘ŒﬁÀ´.ini",147,136);
+	NpcGoto("’‘ŒﬁÀ´",147,125);
+	NpcGotoEx("Êº∂˘",150,123);
+	NpcGotoEx("ƒœπ¨∑…‘∆",149,121);
+	NpcGoto("’‘ŒﬁÀ´",149,122);
+	SetNpcDir("’‘ŒﬁÀ´",5);
+	SetPlayerDir(7);
+	SetNpcDir("Êº∂˘",3);
+	Talk("DaTing6");
+	SetPlayerDir(1);
+	NpcGotoEx("Êº∂˘",143,134);
+	SetNpcDir("Êº∂˘",1);
+	NpcGotoEx("«Ô“¿ÀÆ",149,120);
+	NpcGoto("Ã∆”∞",150,121);
+	SetNpcDir("«Ô“¿ÀÆ",0);
+	Talk("DaTing7");	
+	SetNpcPos("≤Ò·‘",147,136);
+	NpcGoto("≤Ò·‘",147,125);
+	
+	Talk("DaTing8");
+	SetNpcDir("’‘ŒﬁÀ´",1);
+	SetNpcDir("—‡»Ù—©",0);
+	SetNpcDir("Ã∆”∞",2);
+	Talk("DaTing81");
+	NpcGoto(148,120);
+	NpcGotoEx("’‘ŒﬁÀ´",148,123);
+	NpcGotoEx("≤Ò·‘",148,124);
+	Talk("DaTing9");
+	NpcGoto("Ã∆”∞",149,125);
+	SetNpcDir("Ã∆”∞",2);
+	Talk("DaTing10");
+	SetNpcDir("≤Ò·‘",6);
+	Talk("DaTing11");
+	NpcGotoEx("—‡»Ù—©",149,119);
+	PlayerGoto(149,123);
+	SetNpcDir("—‡»Ù—©",1);
+	SetPlayerDir(1);
+	Talk("DaTing12");
+	SetNpcDir("’‘ŒﬁÀ´",6);
+	Talk("DaTing13");
+	FadeOut();
+	
+	NpcGotoEx("≤Ò·‘",147,126);
+	NpcGotoEx("’‘ŒﬁÀ´",147,124);
+	NpcGotoEx("Ã∆”∞",148,128);
+	NpcGotoEx("«Ô“¿ÀÆ",147,127);
+	NpcGotoEx("—‡»Ù—©",148,125);
+	PlayerGoto(148,124);
+	// µ⁄»˝¥Œ”ŒŒ˜∫˛
+	HideBottomWnd();
+	PlayMovie("xihu3.avi");
+	ShowBottomWnd();
+	
+	DelNpc("’‘ŒﬁÀ´");
+	DelNpc("≤Ò·‘");
+	DelNpc("Ã∆”∞");
+	DelNpc("«Ô“¿ÀÆ");
+	SetNpcPos("—‡»Ù—©",147,84);
+	SetNpcDir("—‡»Ù—©",0);
+	SetPlayerPos(143,94);
+	SetPlayerDir(5);
+	Talk("NextDay");
+	PlayMusic("Ks66.wav");
+	FadeIn();
+	
+	NpcGoto("—‡»Ù—©",143,93);
+	SetNpcDir("—‡»Ù—©",1);
+	Talk("DaTing14");
+	PlayerGoto(141,109);
+
+	// ±»Œ‰¥Ûª·
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("∑Ô≥ÿ…Ω◊Ø.map");
+	LoadNpc("Fengci1.npc");
+	LoadObj("Fengci.obj");
+	SetPlayerPos(63,232);
+	SetPlayerDir(5);
+	Assign($FromFengChi,10);
+	Assign($FenCiDaMenJiaDin,2);
+	FadeIn();
+	PlayerGoto(64,227);
+	SetPlayerDir(5);
+	Talk("DaMen2");
+	NpcGoto(" ÿ√≈º“∂°",66,223);
+	PlayerGoto(66,224);
+	NpcGotoEx(" ÿ√≈º“∂°",66,217);
+	Assign($FenCiDaMenJiaDin,3);
+	FadeOut();
+	// ¥Ûª·
+	SetPlayerPos(113,118);
+	SetPlayerDir(5);
+	PlayMusic("ks69.wav");
+	FadeIn();
+	NpcGotoEx("’‘ŒﬁÀ´",114,121);
+	NpcGoto("≤Ò·‘",114,119);
+	SetNpcDir("≤Ò·‘",2);
+	SetNpcDir("’‘ŒﬁÀ´",3);
+	SetPlayerDir(6);
+	Talk("WuLinDaHui");
+
+	NpcGotoEx("«Ô“¿ÀÆ",113,123);
+	Sleep(1000);
+	NpcGoto("Ã∆”∞",114,122);
+	
+	SetNpcDir("Ã∆”∞",3);
+	SetNpcDir("«Ô“¿ÀÆ",4);
+	Talk("WuLinDaHui1");
+	Talk("WuLinDaHui2");
+	SetPlayerDir(4);
+	NpcGotoEx("’‘ŒﬁÀ´",115,120);
+	NpcGoto("«Ô“¿ÀÆ",114,123);
+	SetNpcDir("’‘ŒﬁÀ´",5);
+	SetNpcDir("«Ô“¿ÀÆ",5);
+	SetNpcDir("≤Ò·‘",5);
+	SetNpcDir("Ã∆”∞",5);
+	Talk("WuLinDaHui3");
+	Talk("WuLinDaHui4");
+	Talk("WuLinDaHui5");
+	SetPlayerDir(6);
+	Talk("WuLinDaHui6");
+	SetNpcDir("Ã∆œÙ",3);
+
+	Talk("WuLinDaHui7");
+	SetPlayerDir(4);
+	MoveScreen(4,80);
+	Talk("WuLinDaHui8");
+	MoveScreen(6,100);
+	SetPlayerDir(5);
+	Talk("WuLinDaHui9");
+	MoveScreen(7,100);
+	SetPlayerDir(6);
+	Talk("WuLinDaHui10");
+	SetPlayerDir(5);
+	Talk("WuLinDaHui11");
+	MoveScreen(2,200);
+
+	PlayerGoto(114,115);
+	Talk("WuLinDaHui12");
+	SetPlayerDir(5);
+	Talk("WuLinDaHui13");
+
+//** ∫Ûº”“ª∂Œ±»Œ‰ **
+	PlayerGoto(108,118);
+	SetPlayerDir(5);
+	Talk("BiWuDaHui");
+	PlayerGoto(110,115);
+	SetPlayerDir(5);
+	MoveScreen(5,200);
+	Talk("BiWuDaHui1");
+	MoveScreen(1,200);
+	PlayerGoto(113,112);
+	Talk("BiWuDaHui2");
+	PlayerGoto(115,110);
+	Talk("BiWuDaHui3");
+	NpcGoto("«ÿø¸",113,113);
+	SetNpcDir("«ÿø¸",5);
+	Talk("BiWuDaHui4");
+	SetPlayerDir(1);
+	Sleep(1000);
+	PlayerGoto(114,112);
+	DisableNpcAI();
+	SetNpcRelation("«ÿø¸",1);
+	NpcAttack("ƒœπ¨∑…‘∆",113,113);
+	SetNpcRelation("«ÿø¸",0);
+	Sleep(500);
+	SetNpcAction("«ÿø¸",11);
+	Sleep(1000);
+	EnableNpcAI();
+
+	FadeOut();
+	Sleep(1000);
+	ClearBody();
+	AddNpc("«ÿø¸.ini",113,113,6);	
+	FadeIn();
+
+	SetPlayerDir(5);
+	Talk("BiWuDaHui5");
+	
+	NpcGoto("≤Ò·‘",115,114);
+	SetNpcDir("≤Ò·‘",3);
+	SetPlayerDir(7);
+	Talk("BiWuDaHui6");
+	
+	NpcGoto("√œÕ¢Õ˛",115,106);
+	SetNpcDir("√œÕ¢Õ˛",0);
+	SetPlayerDir(4);
+	SetNpcDir("≤Ò·‘",3);
+	Talk("BiWuDaHui7");
+	
+	SetNpcDir("√œÕ¢Õ˛",6);
+	SetNpcDir("≤Ò·‘",5);
+	SetPlayerDir(5);
+	Talk("BiWuDaHui8");
+	Sleep(1000);
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("∑Ô≥ÿ…Ω◊Ø-±»Œ‰≥°.map");
+	LoadNpc("FengChiBW.npc");
+	LoadObj("FengChiBW.obj");
+	EnableFight();
+	SetPlayerPos(14,73);
+	SetPlayerDir(5);
+	PlayMusic("ks71.wav");
+	FadeIn();
+	RunScript("±»Œ‰ø™ º.txt");
+	Return;
+

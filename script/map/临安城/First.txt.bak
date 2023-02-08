@@ -1,0 +1,16 @@
+// 第一次进临安
+	
+	If ($FromFengChi >= 14) @Lable0;
+	Talk("First0");
+	PlayMusic("ks69.wav");
+	AddToMemo("到临安城东面柴嵩的家去找燕若雪。");
+//  去掉不能回去的限制
+//  SetMapTrap(2,"NoOut0.txt");
+	SaveMapTrap();
+	Return;
+	
+@Lable0:
+	Talk("End1");
+	SaveMapTrap();
+	Return;
+	

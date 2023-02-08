@@ -1,0 +1,51 @@
+  --燕若雪
+  
+  if getvar("bhgofire") == 0 then
+    
+    talk("yangruoxue6");
+    return;
+  end
+  if getvar("bhgofire") == 1 then
+    
+    talk("yangruoxue8");
+    setnpckind("燕若雪",3);
+    playergoto(4,31);
+    fadeout();
+    talk("yangruoxue9");
+    stopmusic();
+    
+    loadmap("铁门寨.map");
+    loadobj("tmz.obj");
+    setplayerdir(1);
+    setplayerpos(65,20);
+    playmusic("ks66.wav");
+    setmaptrap(3,"");
+    fadein();
+    playergoto(53,37);
+    talk("yangruoxu10");
+    playergoto(45,50);
+    playergoto(39,59);
+    talk("yangruoxu11");
+    playergoto(30,77);
+    playergoto(24,92);
+    fadeout();
+    stopmusic();
+    
+    loadmap("狂沙镇.map");
+    loadnpc("ks-2.npc");
+    loadobj("ks.obj");
+    setplayerdir(1);
+    setplayerpos(126,77);
+    playmusic("ks69.wav");
+    disablejump();
+    disablerun();
+    fadein();
+    talk("yangruoxu12");
+    setmaptrap(5,"投店.txt");
+    savemaptrap();
+    setnpcscript("燕若雪","燕若雪talk.txt");
+    assign("ksoqiehuan",2);
+    addtomemo("带小仙女去客栈投店。");
+    return;
+  end
+  return;

@@ -1,0 +1,4 @@
+	AddNpc("z02-—‡»Ù—©.ini",184,196,5);
+	SetNpcScript("—‡»Ù—©","—‡»Ù—©.txt");
+	SaveMapTrap();
+	Return;

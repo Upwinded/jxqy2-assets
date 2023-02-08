@@ -1,0 +1,4 @@
+  --书生
+  
+  talk("chennanjumin6");
+  return;

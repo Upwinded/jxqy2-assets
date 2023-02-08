@@ -1,0 +1,43 @@
+//史忠良
+
+	If($HanYanCTMSZL==1)  @Talk1;
+	If($HanYanCTMSZL==2)  @Talk2;
+	If($DuanHuanShan==1)  @Talk4;
+	If($HanYanCTMSZL==3)  @Talk3;
+	Talk("ChuTianMen1");
+	AddToMemo("史忠良将天王帮的弟子交给你，但也把解决这个问题的责任也转到你的身上，看来天王岛是一定要去的了。");
+	Assign($HanYanCTMSZL,1);
+	Assign($HanYanCTMHouMenDiZi,1);
+	Assign($HanYanCTMShouMenDiZi,1);
+	Return;
+	
+@Talk1:
+	Talk("ChuTianMen11");
+	Return;
+	
+@Talk2:
+	DelGoods("goods-sj-8-天王岛密函.ini");
+	ShowMessage("飞云将楚天盟弟子私通金国的密函交给了史忠良");
+	Sleep(2000);
+	Talk("ChuTianMen2");
+	AddToMemo("你把密函交给了史忠良，圆满的解决了天王帮和楚天盟之间的纠纷，是时候该到中都去了。");
+	AddMoney(2000);
+	AddToMemo("史忠良告诉你汉阳西边的段家庄有古怪，看来又是行侠仗义的时候了。");
+	Assign($HanYanCTMSZL,3);
+	If ($DuanHuanShan==1) @Talk4;
+	Talk("ChuTianMen22");
+	Talk("ChuTianMen23");
+	Return;
+	
+@Talk3:
+	Talk("ChuTianMen21");
+	Return;
+
+@Talk4:
+	Talk("ChuTianMen24");
+	AddMagic("player-magic-大梦心法.ini");
+	Assign($DuanHuanShan,0);
+	Return;
+	
+	
+	

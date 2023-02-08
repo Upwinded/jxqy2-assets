@@ -1,0 +1,24 @@
+// 沙漠野外 - 狂沙镇 
+
+	If ($ksOcunzhang==3) @Talk1;
+	Talk("OutMap");
+	NpcGotoDir("南宫飞云",5,2);
+	SetMapTrap(2,"地图切换1.txt");
+	Return;
+	
+@Talk1:
+	StopMusic();
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("狂沙镇.map");
+	LoadNpc("ks.npc");
+	LoadObj("KS.obj");
+	SetPlayerPos(56,214);
+	SetPlayerDir(5);
+	SetPlayerState(0);
+	FadeIn();
+	ShowMessage("狂沙镇");
+	PlayMusic("ks69.wav");
+	Return;
+

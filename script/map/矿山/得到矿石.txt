@@ -1,0 +1,11 @@
+  --
+  talk("kuanggong1");
+  addgoods("goods-奇矿石.ini");
+  assign("jian",1);
+  showmessage("得到奇矿石");
+  fadeout();
+  delnpc("矿工2");
+  delnpc("矿工1");
+  assign("kuanggongzoule",1);
+  fadein();
+  return;

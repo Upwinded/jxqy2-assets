@@ -1,0 +1,18 @@
+  if getvar("zdbiwu") == 2 then
+    
+    playergoto(125,175);
+    playerjumpto(129,168);
+    setmaptrap(14,"trap-14.txt");
+    return;
+  end
+  playergoto(125,175);
+  playerjumpto(129,168);
+  sleep(2000);
+  setmaptrap(14,"trap-14.txt");
+  talk("jiudian10");
+  stopmusic();
+  setnpcrelation("玄慈",1);
+  assign("zdbiwu",2);
+  enablenpcai();
+  savemaptrap();
+  return;

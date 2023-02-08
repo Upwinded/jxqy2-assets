@@ -1,0 +1,45 @@
+  add("daoxiangfight",1);
+  if getvar("daoxiangfight") >= 3 then
+    
+    sleep(3000);
+    fadeout();
+    clearbody();
+    addnpc("洪七.ini",35,339,6);
+    addnpc("王重阳.ini",38,337,0);
+    addnpc("欧阳锋.ini",37,345,3);
+    setplayerpos(37,340);
+    setplayerdir(5);
+    sleep(1000);
+    fadein();
+    talk("dajia3");
+    setplayerdir(3);
+    talk("dajia4");
+    npcgotoex("洪七",30,326);
+    sleep(1000);
+    setplayerdir(7);
+    talk("dajia5");
+    npcgotoex("欧阳锋",45,360);
+    sleep(1000);
+    setplayerdir(4);
+    talk("dajia6");
+    npcgoto("王重阳",45,323);
+    delnpc("洪七");
+    delnpc("欧阳锋");
+    delnpc("王重阳");
+    talk("dajia7");
+    sleep(800);
+    addgoods("book-天师符法秘笈.ini");
+    sleep(800);
+    addgoods("goods-yaowu-8-皇家密药.ini");
+    sleep(800);
+    addgoods("goods-yaowu-11-虎骨酒.ini");
+    playmusic("ks67.wav");
+    getmoneynum();
+    if getvar("moneynum") >= 500 then
+      
+      addmoney(-500);
+      return;
+    end
+    return;
+  end
+  return;

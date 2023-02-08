@@ -1,0 +1,12 @@
+		SaveMapTrap();
+		DisableNpcAI();
+		NpcGotoEx("将领",34,142);
+		PlayerGoto("南宫飞云",32,146);
+		SetPlayerDir(5);
+		SetNpcDir("将领",1);
+		Talk("Door");
+		EnableNpcAI();
+		SetMapTrap(3,"");
+		SaveMapTrap();
+		Return;
+			

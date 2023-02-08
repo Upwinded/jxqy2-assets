@@ -1,0 +1,10 @@
+  disablenpcai();
+  talk("zhaojiedie");
+  setmaptrap(11,"trap11-地下迷宫.txt");
+  savemaptrap();
+  fadeout();
+  delnpc("赵节");
+  fadein();
+  talk("zhaojiedie11");
+  enablenpcai();
+  return;

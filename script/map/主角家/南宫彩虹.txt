@@ -1,0 +1,17 @@
+  --南宫彩虹
+  
+  if getvar("nangongcaihong") == 1 then
+    
+    talk("ngch2");
+    setnpcdir("南宫彩虹",1);
+    assign("nangongcaihong",2);
+    return;
+  end
+  if getvar("nangongcaihong") == 2 then
+    
+    talk("ngch3");
+    return;
+  end
+  talk("ngch1");
+  assign("nangongcaihong",1);
+  return;

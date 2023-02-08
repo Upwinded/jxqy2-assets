@@ -1,0 +1,11 @@
+//
+      Talk("KuangGong1");
+      AddGoods("goods-奇矿石.ini");
+      Assign($Jian,1);
+      ShowMessage("得到奇矿石");
+      FadeOut();
+      DelNpc("矿工2");
+      DelNpc("矿工1");
+      Assign($KuangGongZouLe,1);
+      FadeIn();
+      Return;

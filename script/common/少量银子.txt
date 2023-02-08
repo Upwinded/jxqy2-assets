@@ -1,0 +1,5 @@
+  openbox();
+  playsound("物-箱子开.wav");
+  addrandmoney(10,100);
+  setobjscript("","");
+  return;

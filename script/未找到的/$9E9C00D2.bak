@@ -1,0 +1,4 @@
+	OpenBox();
+   	DelObj("ตุดฬ");
+	SetObjScript("ฟชนุ","");
+   	Return;

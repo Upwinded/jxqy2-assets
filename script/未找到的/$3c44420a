@@ -1,0 +1,10 @@
+  -- ÿ¥Û√≈¥∫¿º
+  
+  Talk("CunLan1");
+  FadeOut();
+  SaveObj("CuiYM.obj");
+  LoadNpc("CuiYM2.npc");
+  LoadObj("CuiYM1.obj");
+  FadeIn();
+  Assign("CuiYanMen2Fighting",1);
+  return;

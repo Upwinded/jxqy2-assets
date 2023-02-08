@@ -1,0 +1,22 @@
+
+	//Sleep(1000);
+	FadeOut();
+	DisableNpcAI();
+	DelObj("比武场门闭左");
+	DelObj("比武场门闭中");
+	DelObj("比武场门闭右");
+	AddObj("obj-比武场门开右.ini",17,75);
+	AddObj("obj-比武场门开左.ini",15,71);
+	SetNpcRelation("独孤剑",2);
+	SetNpcRelation("南宫飞云",0);
+	SetPlayerPos(18,62);
+	SetPlayerDir(1);
+	SetNpcPos("独孤剑",18,65);
+	SetNpcDir("独孤剑",1);
+	Sleep(300);
+	FadeIn();
+	Talk("FeiYunShengDuGu");
+	Assign($HappyEnding,1);
+	Sleep(3000);
+	RunScript("比武结束.txt");
+	Return;

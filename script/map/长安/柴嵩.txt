@@ -1,0 +1,45 @@
+  --柴嵩的大段对话
+  
+  if getvar("changancaisong") >= 1 then
+    
+    if getvar("changancaisong") >= 2 then
+      
+      talk("caisong4");
+      npcgotoex("柴嵩",89,222);
+      playergoto(89,223);
+      talk("caisong5");
+      npcgotoex("柴嵩",102,207);
+      playergoto(85,231);
+      delnpc("柴嵩");
+      addtomemo("在城里找小仙女，找不到的话可以出城到西边去碰碰运气。");
+      assign("changanyanruoxuexiaoshi",1);
+      return;
+    end
+    talk("caisong3");
+    return;
+  end
+  talk("caisong1");
+  npcgotoex("柴嵩",100,245);
+  playergoto(99,247);
+  setnpcdir("柴嵩",1);
+  setplayerdir(5);
+  talk("caisong21");
+  fadeout();
+  setnpcpos("柴嵩",84,254);
+  delobj("桌子");
+  setnpcactionfile("南宫飞云",0,"两人喝酒.mpc");
+  setplayerpos(100,247);
+  
+  fadein();
+  talk("caisong2");
+  
+  fadeout();
+  setnpcpos("柴嵩",100,245);
+  setnpcactionfile("南宫飞云",0,"z01-南宫飞云-pst.mpc");
+  setplayerpos(99,247);
+  addobj("桌子.ini",100,249);
+  fadein();
+  
+  assign("changancaisong",1);
+  assign("changanyanruoxue",2);
+  return;

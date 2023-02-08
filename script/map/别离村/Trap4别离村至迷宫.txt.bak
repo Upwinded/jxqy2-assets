@@ -1,0 +1,35 @@
+//别离村-迷宫
+	
+	If($CuiYanMen2Finish <> 1) @Lable2;
+	Talk("ChangAnNO");
+	PlayerGoto(60,44);
+	SetPlayerDir(0);
+	SetMapTrap(4,"Trap4别离村至迷宫.txt");
+	Return;
+
+@Lable2:
+	If($BieLiMG == 2) @Label1;
+	StopMusic();
+
+@Label1:	
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	SetMapTrap(4,"Trap4别离村至迷宫.txt");
+	SaveMapTrap();
+	LoadMap("别离村迷宫.map");
+	LoadNpc("bielicun-mg.npc");
+	LoadObj("bielicun-mg.obj");
+	SetPlayerPos(5,153);
+	SetPlayerDir(5);
+	ShowMessage("树林");
+	FadeIn();
+	If ($BLCMGFirstEnter==1) @Talk1;
+	Talk("FirstEnter");
+	Assign($BLCMGFirstEnter,1);
+	AddToMemo("搜索整个小树林可能会有特别的收获。");
+	Return;
+	
+@Talk1:
+	Return;
+	

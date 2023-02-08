@@ -1,0 +1,19 @@
+  stopmusic();
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("中都.map");
+  loadnpc("zhongdu.npc");
+  loadobj("zhongdu.obj");
+  setplayerpos(149,88);
+  setplayerdir(1);
+  if getvar("ouyangmusic") == 1 then
+    
+    playmusic("ks69.wav");
+    fadein();
+    return;
+  end
+  playmusic("ks67.wav");
+  showrandomsnow();
+  fadein();
+  return;

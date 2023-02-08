@@ -1,0 +1,6 @@
+//µØÍ¼ÏÝÚå7
+
+      Talk("door");
+      PlayerGotoDir(1,1);
+      SetMapTrap(7,"Trap-7.txt");
+      Return;    

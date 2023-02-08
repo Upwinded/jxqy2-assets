@@ -1,0 +1,3 @@
+  talk("dongmenluren3");
+  buygoods("5-中都-杂货老板.ini");
+  return;

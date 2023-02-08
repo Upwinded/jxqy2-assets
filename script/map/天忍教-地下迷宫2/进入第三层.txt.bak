@@ -1,0 +1,22 @@
+	If ($TrjDxmg == 3) @Talk1;
+	PlayerGoto(47,108);
+	SetPlayerDir(3);
+	Talk("Talk2");	
+	SetMapTrap(2,"进入第三层.txt");
+	Return;
+
+@Talk1:
+
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	SetMainLum(16);
+    LoadMap("天忍教-地下迷宫3.map");
+	LoadNpc("trj-dixiamigong-3.npc");
+    LoadObj("trj-dixiamigong-3.obj");
+	SetPlayerPos(64,142);
+	SetPlayerDir(3);
+	PlayMusic("KS77.wav");
+	ShowMessage("天忍教总舵第三层");
+	FadeIn();
+	Return;

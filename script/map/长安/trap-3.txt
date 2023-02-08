@@ -1,0 +1,18 @@
+  --长安－长安西郊
+  
+  if getvar("changanyanruoxuexiaoshi") >= 1 then
+    
+    fadeout();
+    loadmap("长安西郊.map");
+    loadnpc("changanx.npc");
+    loadobj("changanx.obj");
+    setplayerpos(19,16);
+    setplayerdir(1);
+    showmessage("长安西郊");
+    fadein();
+    return;
+  end
+  talk("out2");
+  playergotodir(5,2);
+  setmaptrap(3,"trap-3.txt");
+  return;

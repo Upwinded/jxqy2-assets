@@ -1,0 +1,47 @@
+  --翠烟门-野外
+  
+  if getvar("cuiyanmen2fighting") == 1 then
+    
+    disablenpcai();
+    talk("fighting");
+    npcgotodir("南宫飞云",1,1);
+    setmaptrap(1,"地图陷阱1.txt");
+    enablenpcai();
+    return;
+  end
+  if getvar("cuiyanmen2fighting") == 2 then
+    
+    talk("fighting1");
+    npcgotodir("南宫飞云",1,1);
+    setmaptrap(1,"地图陷阱1.txt");
+    return;
+  end
+  fadeout();
+  savenpc();
+  loadmap("别离村-翠烟门.map");
+  loadnpc("bietocui.npc");
+  loadobj("bietocui.obj");
+  setplayerpos(5,153);
+  setplayerdir(5);
+  if getvar("cuiyanmen2cunlanmusic") == 0 then
+    
+    fadein();
+    if getvar("cuiyanmen2allfinish") == 1 then
+      
+      assign("cuiyanmen2allfinish",2);
+      return;
+    end
+    showmessage("野外");
+    return;
+  end
+  playmusic("ks67.wav");
+  
+  
+  fadein();
+  if getvar("cuiyanmen2allfinish") == 1 then
+    
+    assign("cuiyanmen2allfinish",2);
+    return;
+  end
+  showmessage("野外");
+  return;

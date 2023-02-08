@@ -1,0 +1,33 @@
+  --别离村－长安
+  
+  if getvar("cuiyanmen2allfinish") == 2 then
+    
+    if getvar("bielishengan") == 0 then
+      
+      fadeout();
+      loadmap("长安.map");
+      loadnpc("changan1.npc");
+      loadobj("changan.obj");
+      setplayerpos(144,290);
+      setplayerdir(3);
+      showmessage("长安");
+      fadein();
+      return;
+    end
+    stopmusic();
+    
+    
+    fadeout();
+    loadmap("长安.map");
+    loadnpc("changan1.npc");
+    loadobj("changan.obj");
+    setplayerpos(144,290);
+    setplayerdir(3);
+    showmessage("长安");
+    fadein();
+    return;
+  end
+  talk("changanno");
+  playergotodir(0,2);
+  setmaptrap(1,"地图切换.txt");
+  return;

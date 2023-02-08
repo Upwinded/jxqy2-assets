@@ -1,0 +1,4 @@
+  --客栈老板
+  
+  talk("laoban");
+  return;

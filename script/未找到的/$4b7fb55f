@@ -1,0 +1,20 @@
+  
+  FadeOut();
+  LoadMap("¶Î¼Ò×¯.map");
+  LoadNpc("DuanJiaZhuan.npc");
+  LoadObj("DuanJiaZhuan.obj");
+  SetPlayerPos(89,23);
+  SetPlayerDir(1);
+  DisableNpcAI();
+  ShowMessage("¶Î¼Ò×¯");
+  FadeIn();
+  PlayMusic("Ks77.mp3");
+  if GetVar("DuanJiaZhuanFirst") ~= 1 then
+    
+    Talk("First");
+    Assign("DuanJiaZhuanFirst",1);
+    EnableNpcAI();
+    return;
+  end
+  EnableNpcAI();
+  return;

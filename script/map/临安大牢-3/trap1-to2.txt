@@ -1,0 +1,21 @@
+  if getvar("fromfengchi") <= 13 then
+    
+    fadeout();
+    setplayerpos(90,168);
+    setplayerdir(3);
+    fadein();
+    talk("nofinish");
+    setmaptrap(2,"trap1-to2.txt");
+    return;
+  end
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("临安大牢第1层.map");
+  loadnpc("linandalao12.npc");
+  loadobj("linandalao12.obj");
+  setmainlum(20);
+  setplayerpos(10,162);
+  setplayerdir(5);
+  fadein();
+  return;

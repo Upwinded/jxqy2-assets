@@ -1,0 +1,16 @@
+// 守后门春兰
+	DisableNpcAI();
+	Sleep(2000);
+	StopMusic();
+	Talk("CunLan2");
+	AddToMemo("在翠烟门内寻找小仙女。");
+	PlayMusic("ks72.wav");
+	FadeOut();
+	LoadNpc("CuiYM3.npc");
+	ClearBody();
+	Assign($CuiYanMen2Fighting,2);
+	SetMapTrap(3,"");
+	SaveMapTrap();
+	FadeIn();
+	EnableNpcAI();
+	Return;

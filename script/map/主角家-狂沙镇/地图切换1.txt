@@ -1,0 +1,23 @@
+  --沙漠野外-狂沙镇
+  
+  if getvar("ksocunzhang") == 3 then
+    
+    stopmusic();
+    fadeout();
+    savenpc();
+    saveobj();
+    loadmap("狂沙镇.map");
+    loadnpc("ks.npc");
+    loadobj("ks.obj");
+    setplayerpos(56,214);
+    setplayerdir(5);
+    setplayerstate(0);
+    fadein();
+    showmessage("狂沙镇");
+    playmusic("ks69.wav");
+    return;
+  end
+  talk("outmap");
+  npcgotodir("南宫飞云",5,2);
+  setmaptrap(2,"地图切换1.txt");
+  return;

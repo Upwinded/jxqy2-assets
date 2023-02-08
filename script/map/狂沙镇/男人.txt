@@ -1,0 +1,21 @@
+  --男人
+  
+  --第一次与男人交谈
+  if getvar("ksonanren") == 0 then
+    
+    talk("nanren");
+    assign("ksonanren",1);
+    return;
+  end
+  
+  --与男人对完话后
+  if getvar("ksonanren") == 1 then
+    
+    talk("nanren1");
+    return;
+  end
+  
+  
+  talk("nanren");
+  assign("ksonanren",1);
+  return;

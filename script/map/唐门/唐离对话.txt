@@ -1,0 +1,10 @@
+  
+  if getvar("tangli") >= 3 then
+    
+    talk("tangli2");
+    setnpcrelation("唐离",1);
+    return;
+  end
+  talk("tangli1");
+  add("tangli",1);
+  return;

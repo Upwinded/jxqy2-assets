@@ -1,0 +1,17 @@
+//别离村－翠烟门
+//别离村-野外
+
+//	If ($CuiYanMen2QiuYiShui==1) @Talk2; 
+	FadeOut();
+	LoadMap("别离村-翠烟门.map");
+	LoadNpc("BieToCui.npc");
+	LoadObj("BieToCui.obj");
+	SetPlayerPos(66,28);
+	SetPlayerDir(1);
+	ShowMessage("野外");
+	If($CuiYanMen2CunLanMusic == 1) @Label1;
+	PlayMusic("ks67.wav");
+	
+@Label1:	
+	FadeIn();
+	Return;

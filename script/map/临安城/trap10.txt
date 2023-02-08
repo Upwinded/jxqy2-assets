@@ -1,0 +1,4 @@
+  addnpc("z02-燕若雪.ini",184,196,5);
+  setnpcscript("燕若雪","燕若雪.txt");
+  savemaptrap();
+  return;

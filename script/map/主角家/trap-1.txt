@@ -1,0 +1,21 @@
+  --从主角的家-沙漠野外
+  
+  setlevelfile("level-hard.ini");
+  addtomemo("你选择了困难游戏模式。");
+  stopmusic();
+  savenpc();
+  saveobj();
+  fadeout();
+  setplayerlevel(9);
+  addexp(1700);
+  talk("self2");
+  loadmap("主角家-狂沙镇.map");
+  loadnpc("home-ks.npc");
+  loadobj("home-ks.obj");
+  playmusic("ks67.wav");
+  enablefight();
+  setplayerpos(140,55);
+  setplayerdir(1);
+  enablenpcai();
+  fadein();
+  return;

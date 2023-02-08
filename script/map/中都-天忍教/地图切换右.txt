@@ -1,0 +1,13 @@
+  fadeout();
+  showsnow(0);
+  setmaptime(0);
+  loadmap("天忍教.map");
+  loadnpc("trj.npc");
+  loadobj("trj.obj");
+  setplayerpos(81,168);
+  setplayerdir(3);
+  showmessage("天忍教");
+  playmusic("ks74.wav");
+  showrandomsnow();
+  fadein();
+  return;

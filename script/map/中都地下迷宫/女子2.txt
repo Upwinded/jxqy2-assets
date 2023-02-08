@@ -1,0 +1,7 @@
+  setnpcscript("女子2","");
+  talk("thanks");
+  addrandgoods("7级物品.ini");
+  fadeout();
+  delnpc("女子2");
+  fadein();
+  return;

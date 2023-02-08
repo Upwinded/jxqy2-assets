@@ -1,0 +1,8 @@
+  --翠烟门
+  
+  disablenpcai();
+  talk("cantgo");
+  playergoto(112,128);
+  setmaptrap(3,"地图陷阱3.txt");
+  enablenpcai();
+  return;

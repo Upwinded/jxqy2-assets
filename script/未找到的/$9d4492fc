@@ -1,0 +1,11 @@
+  FadeOut();
+  SaveNpc();
+  SaveObj();
+  SaveMapTrap();
+  LoadMap("µ¾Ïã´å.map");
+  LoadNpc("daoxiangcun.npc");
+  LoadObj("daoxiangcun.obj");
+  SetPlayerPos(47,135);
+  SetPlayerDir(7);
+  FadeIn();
+  return;

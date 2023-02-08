@@ -1,0 +1,65 @@
+  --大厅
+  
+  if getvar("fromfengchi") == 4 then
+    
+    talk("datingtalk");
+    addtomemo("还是再去找若雪好了。");
+    return;
+  end
+  if getvar("fromfengchi") == 6 then
+    
+    playergoto(80,194);
+    setplayerdir(5);
+    talk("datingtalk1");
+    addtomemo("灭了霹雳堂，霹雳堂在稻香村的西南面。");
+    setnpcpos("守门家丁",63,227);
+    setnpcdir("守门家丁",7);
+    addmagic("player-magic-暴雨梨花箭.ini");
+    playmusic("ks67.wav");
+    playergoto(70,213);
+    setnpcpos("后门家丁",55,203);
+    setnpcdir("后门家丁",7);
+    setmaptrap(4,"");
+    setmaptrap(3,"凤池-临安.txt");
+    setmaptrap(1,"凤池-临安.txt");
+    savemaptrap();
+    assign("fromfengchi",7);
+    return;
+  end
+  if getvar("fromfengchi") == 9 then
+    
+    playmusic("ks65.wav");
+    playergoto(79,196);
+    setplayerdir(5);
+    setnpcdir("独孤剑",1);
+    talk("datingtalk2");
+    npcgoto("邵骑风",78,195);
+    setnpcdir("邵骑风",7);
+    setplayerdir(3);
+    talk("datingtalk3");
+    npcgoto("赵节",79,191);
+    setnpcdir("赵节",0);
+    setplayerdir(3);
+    talk("datingtalk4");
+    npcgotoex("赵节",80,188);
+    npcgoto("邵骑风",78,189);
+    setnpcdir("赵节",1);
+    setnpcdir("邵骑风",7);
+    setmaptrap(4,"");
+    savemaptrap();
+    addtomemo("回临安城去见燕若雪和柴嵩等人。");
+    --去过若雪处
+    if getvar("linanyanruoxue") == 10 then
+      
+      assign("linanyanruoxue",12);
+      return;
+    end
+    --没有去过若雪处
+    if getvar("linanyanruoxue") == 9 then
+      
+      assign("linanyanruoxue",11);
+      return;
+    end
+    return;
+  end
+  return;

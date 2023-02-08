@@ -1,0 +1,27 @@
+  --当铺丫鬟的对话
+  
+  --对话完但未和小姐对话
+  if getvar("zhongduchenxidanpuyahuan") == 1 then
+    
+    talk("chenxidanpuyahuan01");
+    return;
+  end
+  --和小姐对话完
+  if getvar("zhongduchenxidanpuyahuan") == 2 then
+    
+    talk("chenxidanpuyahuan1");
+    --将信交给主角
+    assign("zhongduchenxidanpuyahuan",3);
+    assign("zhongduchenxidanpuliuqin",1);
+    return;
+  end
+  --再次对话完，但信未送到
+  if getvar("zhongduchenxidanpuyahuan") == 3 then
+    
+    talk("chenxidanpuyahuan11");
+    return;
+  end
+  
+  talk("chenxidanpuyahuan");
+  assign("zhongduchenxidanpuyahuan",1);
+  return;

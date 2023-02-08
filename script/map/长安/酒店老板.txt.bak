@@ -1,0 +1,47 @@
+//进酒店住店
+	
+	If ($ChangAnLaoban == 2) @Talk1;
+	If ($ChangAnLaoban == 1) @Label2;
+	Talk("laoban1");
+	PlayerGoto(68,101);
+	PlayerGoto(74,98);
+	PlayerGoto(84,88);
+	PlayerGoto(94,104);
+	SetNpcKind("燕若雪",0);
+	SetPlayerDir(3);
+	Talk("laoban2");
+	PlayerGoto(73,101);
+	Talk("laoban3");
+	PlayerGoto(62,119);
+	Talk("laoban4");
+	DelNpc("燕若雪");
+	SetMapTrap(5,"Trap-5.txt");
+	SaveMapTrap();
+	Assign($ChangAnLaoban,1);
+	EnableJump();
+	EnableRun();
+	AddToMemo("先去客栈附近那个路边站着的小贩那里给小仙女买点东西，买完东西再去酒店找柴嵩那酒鬼。");
+	Return;
+	
+@Talk1:
+		Talk("ZhuDian");
+		GetMoneyNum();
+		If ($MoneyNum <= 19)	@Label1;
+
+		AddMoney(-20);
+		FadeOut();
+		Sleep(5000);
+		SetPlayerPos(61,167);
+		SetPlayerDir(1);
+		FullLife();
+		FullThew();
+		FullMana();
+		UpdateState();
+		FadeIn();
+		Return;
+@Label1:
+		Talk("NoMoney");
+		Return;
+@Label2:
+		Talk("laoban5");
+		Return;

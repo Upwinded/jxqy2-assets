@@ -1,0 +1,16 @@
+  --守后门春兰
+  disablenpcai();
+  sleep(2000);
+  stopmusic();
+  talk("cunlan2");
+  addtomemo("在翠烟门内寻找小仙女。");
+  playmusic("ks72.wav");
+  fadeout();
+  loadnpc("cuiym3.npc");
+  clearbody();
+  assign("cuiyanmen2fighting",2);
+  setmaptrap(3,"");
+  savemaptrap();
+  fadein();
+  enablenpcai();
+  return;

@@ -1,0 +1,23 @@
+//别离村－(别离村-唐门)
+	
+	If($CuiYanMen2CunLanMusic == 0) @Label1;
+	StopMusic();
+	
+@Label1:
+	If ($CuiYanMen2CunLan==0) Goto @Lable;
+	FadeOut();
+	SaveNpc();
+	LoadMap("别离村-唐门.map");
+	LoadNpc("bielicun-tangmeng.npc");
+	LoadObj("bielicun-tm.obj");
+	SetPlayerPos(3,49);
+	SetPlayerDir(5);
+	ShowMessage("山间小路");
+	FadeIn();
+	Return;
+	
+@Lable:
+	Talk("TangMen");
+	PlayerGotoDir(3,2);
+	SetMapTrap(3,"地图切换2.txt");
+	Return;

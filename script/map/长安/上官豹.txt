@@ -1,0 +1,20 @@
+  --上官豹的话，无事件
+  if getvar("shangguan") == 1 then
+    
+    assign("shangguan",2);
+    talk("shangguanb14");
+    addrandgoods("4级物品.ini");
+    return;
+  end
+  if getvar("shangguan") == 2 then
+    
+    talk("shangguanb18");
+    return;
+  end
+  if getvar("cafight") == 1 then
+    
+    talk("shangguanb19");
+    return;
+  end
+  talk("shangguanjiading6");
+  return;

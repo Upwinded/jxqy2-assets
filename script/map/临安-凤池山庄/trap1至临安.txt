@@ -1,0 +1,83 @@
+  --凤池山庄－临安
+  
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("临安城.map");
+  loadnpc("linan.npc");
+  loadobj("linan.obj");
+  setplayerpos(153,309);
+  setplayerdir(3);
+  if getvar("fromfengchi") == 0 then
+    
+    setplayerstate(0);
+    assign("fromfengchi",1);
+    setmainlum(20);
+    setmaptime(1);
+    setnpcscript("柴嵩","柴嵩.txt");
+    setnpcpos("婕儿",145,96);
+    setnpcdir("婕儿",0);
+    setnpcpos("燕若雪",145,98);
+    setnpcdir("燕若雪",7);
+    setnpcpos("柴府家丁",139,139);
+    setnpcdir("柴府家丁",7);
+    setmaptrap(9,"trap9.txt");
+    savemaptrap();
+    showmessage("临安");
+    fadein();
+    return;
+  end
+  if getvar("fromfengchi") == 4 then
+    
+    setplayerstate(0);
+    assign("fromfengchi",5);
+    setnpcpos("婕儿",138,79);
+    delnpc("燕若雪");
+    delnpc("柴嵩");
+    setmaptrap(4,"trap4.txt");
+    setmaptrap(5,"trap5.txt");
+    savemaptrap();
+    assign("linanjieer",3);
+    fadein();
+    showmessage("临安");
+    return;
+  end
+  if getvar("fromfengchi") == 7 then
+    
+    setplayerstate(0);
+    setmaptrap(9,"trap9.txt");
+    savemaptrap();
+    assign("linanyanruoxue",7);
+    showmessage("临安");
+    fadein();
+    return;
+  end
+  if getvar("fromfengchi") == 8 then
+    
+    setplayerstate(0);
+    assign("linanyanruoxue",9);
+    showmessage("临安");
+    fadein();
+    return;
+  end
+  if getvar("fromfengchi") == 9 then
+    
+    setmaptrap(9,"trap9.txt");
+    savemaptrap();
+    fadein();
+    showmessage("临安");
+    return;
+  end
+  if getvar("fromfengchi") == 14 then
+    
+    playmusic("ks76.wav");
+    setmainlum(20);
+    setmaptime(1);
+    addtomemo("赶快到柴嵩家去找燕若雪。");
+    fadein();
+    showmessage("临安");
+    return;
+  end
+  fadein();
+  showmessage("临安");
+  return;

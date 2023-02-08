@@ -1,0 +1,22 @@
+  if getvar("trjdxmg") == 3 then
+    
+    
+    fadeout();
+    savenpc();
+    saveobj();
+    setmainlum(16);
+    loadmap("天忍教-地下迷宫3.map");
+    loadnpc("trj-dixiamigong-3.npc");
+    loadobj("trj-dixiamigong-3.obj");
+    setplayerpos(64,142);
+    setplayerdir(3);
+    playmusic("ks77.wav");
+    showmessage("天忍教总舵第三层");
+    fadein();
+    return;
+  end
+  playergoto(47,108);
+  setplayerdir(3);
+  talk("talk2");
+  setmaptrap(2,"进入第三层.txt");
+  return;

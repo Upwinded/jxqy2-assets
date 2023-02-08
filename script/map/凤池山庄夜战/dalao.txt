@@ -1,0 +1,50 @@
+  fadeout();
+  loadmap("临安大牢.map");
+  loadnpc("linandalao11.npc");
+  loadobj("linandalao11.obj");
+  setmainlum(16);
+  setplayerstate(0);
+  setplayerpos(45,147);
+  setplayerdir(7);
+  --savegoods("\save\game\goods1.ini");
+  --cleargoods();
+  showmessage("大牢");
+  playmusic("ks66.wav");
+  fadein();
+  
+  --大牢内
+  disablenpcai()
+  setplayerdir(3);
+  sleep(500);
+  setplayerdir(7);
+  sleep(500);
+  talk("dalao");
+  sleep(500);
+  
+  playergoto(47,148);
+  sleep(500);
+  setplayerdir(5);
+  sleep(500);
+  playergoto(49,151);
+  sleep(500);
+  setplayerdir(5);
+  sleep(500);
+  playergoto(47,147);
+  setplayerdir(5);
+  talk("dalao1");
+  
+  
+  sleep(500);
+  setplayerdir(7);
+  sleep(500);
+  setplayerdir(4);
+  playergoto(46,149);
+  setplayerdir(5);
+  talk("dalao2");
+  playergoto(46,146);
+  talk("dalao6");
+  
+  playergoto(46,150);
+  setplayerdir(5);
+  talk("dalao7");
+  return;

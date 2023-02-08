@@ -1,0 +1,20 @@
+  --ÓÎÏ·¿ªÊ¼
+  
+  PlayMovie("begin.avi");
+  ShowBottomWnd();
+  PlayMusic("ks69.mp3");
+  SetPlayerPos(7,67);
+  SetPlayerDir(5);
+  SetPlayerScn();
+  SetMainLum(31);
+  Talk("Dark");
+  FadeIn();
+  Talk("Enter0");
+  PlayerGoto(9,63);
+  SetPlayerDir(3);
+  Sleep(300);
+  SetPlayerDir(7);
+  Sleep(300);
+  SetPlayerDir(5);
+  Talk("Enter");
+  return;

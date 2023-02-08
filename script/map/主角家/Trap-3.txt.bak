@@ -1,0 +1,36 @@
+	
+	If ($NanGongCaiHong <> 2) @talk1;
+	If ($ZhangRuMeng <> 1) @talk1;
+	If ($HeiSha <> 1) @talk1;
+	If ($BaiSha <> 1) @talk1;
+	SetMapTrap(3,"");
+	SaveMapTrap();
+	PlayerGoto(9,79);
+	SetPlayerDir(3);
+	Sleep(500);
+	SetPlayerDir(7);
+	Talk("LevelChoice1");
+	PlayerGoto(7,76);
+	SetPlayerDir(1);
+	Sleep(500);
+	SetPlayerDir(4);
+	Talk("LevelChoice2");
+	PlayerGoto(12,86);
+	SetPlayerDir(0);
+	Sleep(500);
+	SetPlayerDir(7);
+	Talk("LevelChoice3");
+	PlayerGoto(9,79);
+	SetPlayerDir(3);
+	Sleep(500);
+	SetPlayerDir(7);
+	Sleep(500);
+	SetPlayerDir(1);
+	Talk("LevelChoice4");
+	Return;
+
+@talk1:
+	Talk("self1");
+	PlayerGotoDir(5,2);
+	SetMapTrap(3,"Trap-3.txt");
+	Return;

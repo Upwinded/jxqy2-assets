@@ -1,0 +1,15 @@
+        FadeOut();
+        ShowSnow(0);
+	SaveObj("KuangShan1.obj");
+        SaveNpc("KuangShan1.npc");
+        LoadMap("中都-矿山.map");
+        LoadObj("zhongdu-KuangShan.obj");
+	SetMapTime(0);	
+	SetPlayerPos(14,11);
+	SetPlayerDir(1);
+	ShowMessage("野外");
+        Assign($KuangShan121,1);
+        ShowRandomSnow();
+	FadeIn();
+	Return;
+       

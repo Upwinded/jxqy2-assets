@@ -1,0 +1,7 @@
+  if GetVar("TianWangPiEr") == 2 then
+    
+    Talk("YanJiuTingBanZhong1");
+    return;
+  end
+  Talk("HouYuanBanZhong2");
+  return;

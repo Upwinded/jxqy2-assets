@@ -1,0 +1,23 @@
+  --中都->天忍教
+  
+  if getvar("longyinshiliaoran") == 1 then
+    
+    fadeout();
+    savenpc();
+    saveobj();
+    showsnow(0);
+    loadmap("中都-天忍教.map");
+    loadnpc();
+    loadobj();
+    setmaptime(0);
+    setplayerpos(3,23);
+    setplayerdir(5);
+    showmessage("野外");
+    showrandomsnow();
+    fadein();
+    return;
+  end
+  talk("exit1");
+  playergotodir(1,2);
+  setmaptrap(12,"trap-12.txt");
+  return;

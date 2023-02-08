@@ -1,0 +1,5 @@
+  --
+  talk("kuanggongkill");
+  enablenpcai();
+  savemaptrap();
+  return;

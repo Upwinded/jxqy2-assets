@@ -1,0 +1,4 @@
+  --老人
+  
+  talk("keren5");
+  return;

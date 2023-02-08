@@ -1,0 +1,13 @@
+  talk("chaisong");
+  
+  assign("tanhua",1);
+  fadeout();
+  assign("anzang",1);
+  loadmap("大牢出口1.map");
+  loadobj("dalaochukou.obj");
+  loadnpc("none.npc")
+  setplayerpos(18,14);
+  fadein();
+  playergoto(17,13);
+  talk("anzhang4");
+  return;

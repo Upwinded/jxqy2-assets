@@ -1,0 +1,15 @@
+  --中都->汉阳
+  
+  fadeout();
+  showsnow(0);
+  setmaptime(0);
+  loadmap("汉阳-中都2.map");
+  loadobj("hanyan-zd2.obj");
+  setplayerpos(13,29);
+  setplayerdir(1);
+  setmaptime(0);
+  setmainlum(31);
+  fadein();
+  showmessage("野外");
+  showrandomsnow();
+  return;

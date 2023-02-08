@@ -1,0 +1,33 @@
+//地图切换 唐门-(别离村-唐门)
+
+	If ($TanMenFighting==1) @Talk1;
+	GetGoodsNum("book-唐门秘笈.ini");
+	If ($GoodsNum == 0) @Talk2;
+	FadeOut();
+	SaveNpc();
+	LoadMap("别离村-唐门.map");
+	LoadNpc("bielicun-tangmeng.npc");
+	LoadObj("bielicun-tm.obj");
+	SetPlayerPos(10,12);
+	SetPlayerDir(1);
+	ShowMessage("野外");
+	If($NaDaoMiJiMusic == 0) @Label1;
+	PlayMusic("ks67.wav");
+	
+@Label1:	
+	FadeIn();
+	Return;
+
+@Talk1:
+	DisableNpcAI();
+	Talk("Out");
+	PlayerGotoDir(5,1);
+	SetMapTrap(1,"地图切换1.txt");
+	EnableNpcAI();
+	Return;
+
+@Talk2:
+	Talk("Out2");
+	PlayerGotoDir(5,1);
+	SetMapTrap(1,"地图切换1.txt");
+	Return;	

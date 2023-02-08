@@ -1,0 +1,10 @@
+	OpenBox();
+	SetObjScript("","");	
+	Add($TrjDxmgKg,1);
+    If ($TrjDxmgKg>=4) @Talk1;
+    Return;
+      
+@Talk1:
+    DelObj("ÌúÃÅ¹Ø1");
+    Return;
+          

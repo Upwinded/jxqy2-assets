@@ -1,0 +1,21 @@
+  if getvar("shaojifeng") == 2 then
+    
+    fadeout();
+    savenpc();
+    saveobj();
+    loadmap("临安大牢-3.map");
+    loadnpc("linandalao3.npc");
+    loadobj("linandalao3.obj");
+    setmainlum(16);
+    setplayerpos(91,170);
+    setplayerdir(3);
+    fadein();
+  end
+  fadeout();
+  --npcgotodir("南宫飞云",3,2);
+  setplayerpos(9,165);
+  setplayerdir(3);
+  fadein();
+  talk("nofinish");
+  setmaptrap(1,"地图陷阱1.txt");
+  return;

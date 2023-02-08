@@ -1,0 +1,6 @@
+//进城门
+	
+	Talk("talk2");
+	AddToMemo("先去投店，客栈就在北门东边。");
+	SaveMapTrap();
+	Return;

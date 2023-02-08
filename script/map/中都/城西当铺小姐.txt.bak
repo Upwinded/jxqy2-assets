@@ -1,0 +1,12 @@
+//当铺小姐的对话
+
+	If ($ZhongDuChenXiDanPuXiaoJie==1) @Talk1;
+	Talk("ChenXiDanPuWangXiaoJie");
+	Assign($ZhongDuChenXiDanPuXiaoJie,1);
+	Assign($ZhongDuChenXiDanPuYaHuan,2);
+	Return;
+	
+@Talk1:
+	Talk("ChenXiDanPuWangXiaoJie01");
+	Return;
+	

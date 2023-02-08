@@ -1,0 +1,10 @@
+// ´äÑÌÃÅ
+
+	DisableNpcAI();
+	Talk("CantGo");
+	PlayerGoto(112,128);
+	SetMapTrap(3,"µØÍ¼ÏİÚå3.txt");
+	EnableNpcAI();
+	Return;
+	
+	

@@ -1,0 +1,6 @@
+If($Cai==1) @Talk1;
+Return;
+
+@Talk1:
+DelNpc("Вёсд");
+Return;

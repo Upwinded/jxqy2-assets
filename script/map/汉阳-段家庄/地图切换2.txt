@@ -1,0 +1,20 @@
+  
+  fadeout();
+  loadmap("段家庄.map");
+  loadnpc("duanjiazhuan.npc");
+  loadobj("duanjiazhuan.obj");
+  setplayerpos(89,23);
+  setplayerdir(1);
+  disablenpcai();
+  showmessage("段家庄");
+  fadein();
+  playmusic("ks77.mp3");
+  if getvar("duanjiazhuanfirst") ~= 1 then
+    
+    talk("first");
+    assign("duanjiazhuanfirst",1);
+    enablenpcai();
+    return;
+  end
+  enablenpcai();
+  return;

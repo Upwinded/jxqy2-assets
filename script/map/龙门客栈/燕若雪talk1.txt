@@ -1,0 +1,8 @@
+  --
+  talk("zmgreturn2");
+  setnpckind("燕若雪",3);
+  disablejump();
+  disablerun();
+  setnpcscript("燕若雪","燕若雪talk.txt");
+  assign("lmkzozhanmagang",0);
+  return;

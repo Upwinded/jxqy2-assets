@@ -1,0 +1,285 @@
+  
+  disablenpcai();
+  hideinterface();
+  sleep(3000);
+  fadeout();
+  clearbody();
+  setplayerpos(21,50);
+  setplayerdir(1);
+  delobj("比武场门闭左");
+  delobj("比武场门闭中");
+  delobj("比武场门闭右");
+  addobj("obj-比武场门开右.ini",17,75);
+  addobj("obj-比武场门开左.ini",15,71);
+  
+  --败在赵无双手上
+  if getvar("fcbw") == 1 then
+    
+    
+    setnpcrelation("赵无双",2);
+    setnpcpos("赵无双",18,56);
+    setnpcdir("赵无双",5);
+    fadein();
+    talk("zwssuccessed");
+    npcgotoex("赵无双",18,64);
+    playergoto(18,65);
+    setplayerdir(1);
+    setnpcdir("赵无双",1);
+    talk("fyfailed");
+    playergotoex(15,77);
+    sleep(500);
+    npcgoto("赵无双",17,78);
+    setplayerdir(5);
+    setnpcdir("赵无双",4);
+    npcgoto("独孤剑",18,65);
+    setnpcdir("独孤剑",1);
+    runscript("独孤剑.txt");
+    return;
+  end
+  --败在秋依水手上
+  if getvar("fcbw") == 2 then
+    
+    
+    setnpcrelation("秋依水",2);
+    setnpcpos("秋依水",18,56);
+    setnpcdir("秋依水",5);
+    fadein();
+    talk("qyssuccessed");
+    npcgotoex("秋依水",18,64);
+    sleep(500);
+    playergoto(18,65);
+    setplayerdir(1);
+    setnpcdir("秋依水",1);
+    talk("fyfailed");
+    playergotoex(15,77);
+    sleep(500);
+    npcgoto("秋依水",18,79);
+    setplayerdir(5);
+    setnpcdir("秋依水",4);
+    npcgoto("独孤剑",18,65);
+    setnpcdir("独孤剑",1);
+    
+    runscript("独孤剑.txt");
+    return;
+  end
+  --败在唐影手上
+  if getvar("fcbw") == 3 then
+    
+    
+    setnpcrelation("唐影",2);
+    setnpcpos("唐影",18,56);
+    setnpcdir("唐影",5);
+    fadein();
+    talk("tysuccessed");
+    npcgotoex("唐影",18,64);
+    playergoto(18,65);
+    setplayerdir(1);
+    setnpcdir("唐影",1);
+    talk("fyfailed");
+    playergotoex(15,77);
+    sleep(500);
+    npcgoto("唐影",18,78);
+    setplayerdir(5);
+    setnpcdir("唐影",4);
+    npcgoto("独孤剑",18,65);
+    setnpcdir("独孤剑",1);
+    
+    runscript("独孤剑.txt");
+    return;
+  end
+  --败在孟廷威手上
+  if getvar("fcbw") == 4 then
+    
+    
+    setnpcrelation("孟廷威",2);
+    setnpcpos("孟廷威",18,56);
+    setnpcdir("孟廷威",5);
+    fadein();
+    talk("mtwsuccessed");
+    
+    npcgotoex("孟廷威",18,64);
+    playergoto(18,65);
+    setplayerdir(1);
+    setnpcdir("孟廷威",1);
+    talk("fyfailed");
+    playergotoex(15,77);
+    sleep(500);
+    npcgoto("孟廷威",15,77);
+    setplayerdir(5);
+    setnpcdir("孟廷威",4);
+    npcgoto("独孤剑",18,65);
+    setnpcdir("独孤剑",1);
+    
+    runscript("独孤剑.txt");
+    return;
+  end
+  --败在柴嵩手上
+  if getvar("fcbw") == 5 then
+    
+    
+    setnpcrelation("柴嵩",2);
+    setnpcpos("柴嵩",18,56);
+    setnpcdir("柴嵩",5);
+    fadein();
+    talk("cssuccessed");
+    
+    npcgotoex("柴嵩",18,64);
+    playergoto(18,65);
+    setplayerdir(1);
+    setnpcdir("柴嵩",1);
+    talk("fyfailed");
+    playergotoex(15,77);
+    sleep(500);
+    npcgoto("柴嵩",16,78);
+    setplayerdir(5);
+    setnpcdir("柴嵩",4);
+    npcgoto("独孤剑",18,65);
+    setnpcdir("独孤剑",1);
+    
+    runscript("独孤剑.txt");
+    return;
+  end
+  --败在杨干手上
+  if getvar("fcbw") == 6 then
+    
+    
+    setnpcrelation("杨干",2);
+    setnpcpos("杨干",18,56);
+    setnpcdir("杨干",5);
+    fadein();
+    talk("ygsuccessed");
+    npcgotoex("杨干",18,64);
+    playergoto(18,65);
+    setplayerdir(1);
+    setnpcdir("杨干",1);
+    talk("fyfailed");
+    playergotoex(15,77);
+    sleep(500);
+    npcgoto("杨干",14,79);
+    setplayerdir(5);
+    setnpcdir("杨干",4);
+    npcgoto("独孤剑",18,65);
+    setnpcdir("独孤剑",1);
+    
+    runscript("独孤剑.txt");
+    return;
+  end
+  --败在邵骑风手上
+  if getvar("fcbw") == 7 then
+    
+    
+    setnpcrelation("邵骑风",2);
+    setnpcpos("邵骑风",18,56);
+    setnpcdir("邵骑风",5);
+    fadein();
+    talk("syfsuccessed");
+    
+    npcgotoex("邵骑风",18,64);
+    playergoto(18,65);
+    setplayerdir(1);
+    setnpcdir("邵骑风",1);
+    talk("fyfailed");
+    playergotoex(15,77);
+    sleep(500);
+    npcgoto("邵骑风",13,72);
+    setplayerdir(5);
+    setnpcdir("邵骑风",4);
+    npcgoto("独孤剑",18,65);
+    setnpcdir("独孤剑",1);
+    
+    runscript("独孤剑.txt");
+    return;
+  end
+  --败在史忠良手上
+  if getvar("fcbw") == 8 then
+    
+    
+    setnpcrelation("史忠良",2);
+    setnpcpos("史忠良",18,56);
+    setnpcdir("史忠良",5);
+    fadein();
+    talk("szlsuccessed");
+    
+    npcgotoex("史忠良",18,64);
+    playergoto(18,65);
+    setplayerdir(1);
+    setnpcdir("史忠良",1);
+    talk("fyfailed");
+    playergotoex(15,77);
+    sleep(500);
+    npcgoto("史忠良",12,70);
+    setplayerdir(5);
+    setnpcdir("史忠良",4);
+    npcgoto("独孤剑",18,65);
+    setnpcdir("独孤剑",1);
+    
+    runscript("独孤剑.txt");
+    return;
+  end
+  --败在唐离手上
+  if getvar("fcbw") == 9 then
+    
+    
+    setnpcrelation("唐离",2);
+    setnpcpos("唐离",18,56);
+    setnpcdir("唐离",5);
+    fadein();
+    talk("tlsuccessed");
+    npcgotoex("唐离",18,64);
+    playergoto(18,65);
+    setplayerdir(1);
+    setnpcdir("唐离",1);
+    talk("fyfailed");
+    playergotoex(15,77);
+    sleep(500);
+    npcgoto("唐离",19,77);
+    setplayerdir(5);
+    setnpcdir("唐离",4);
+    npcgoto("独孤剑",18,65);
+    setnpcdir("独孤剑",1);
+    
+    runscript("独孤剑.txt");
+    return;
+  end
+  --败在赵升权手上
+  if getvar("fcbw") == 10 then
+    
+    
+    setnpcrelation("赵升权",2);
+    setnpcpos("赵升权",18,56);
+    setnpcdir("赵升权",5);
+    fadein();
+    talk("zsqsuccessed");
+    
+    npcgotoex("赵升权",18,64);
+    playergoto(18,65);
+    setplayerdir(1);
+    setnpcdir("赵升权",1);
+    talk("fyfailed");
+    playergotoex(15,77);
+    sleep(500);
+    npcgoto("赵升权",16,77);
+    setplayerdir(5);
+    setnpcdir("赵升权",4);
+    npcgoto("独孤剑",18,65);
+    setnpcdir("独孤剑",1);
+    runscript("独孤剑.txt");
+    return;
+  end
+  --败在独孤剑手上
+  if getvar("fcbw") == 11 then
+    
+    
+    disablenpcai();
+    setnpcrelation("独孤剑",2);
+    setnpcrelation("南宫飞云",0);
+    setplayerpos(18,62);
+    setplayerdir(1);
+    setnpcpos("独孤剑",18,65);
+    setnpcdir("独孤剑",1);
+    fadein();
+    sleep(3000);
+    runscript("比武结束.txt");
+    return;
+  end
+  return;

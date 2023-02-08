@@ -1,0 +1,44 @@
+//客店老板
+
+	If ($ChaiSongTalk==0) @Talk2;
+	
+	//第一次和酒店老板讲话之前
+	If ($KsOQieHuan==0) @Talk1;
+	
+@Talk2: 
+	//第一次和酒店老板讲话之后
+	Talk("laoban2");
+	Return;
+	
+	
+@Talk1:
+	Talk("laoban1");
+	NpcGoto("小三子",99,190);
+	SetNpcDir("小三子",5);
+	Talk("xiaosan1");
+	NpcGotoEx("小三子",86,207);
+	PlayerGoto(85,209);
+	SetNpcDir("小三子",1);
+	SetNpcDir("南宫飞云",5);
+	Talk("xiaosan2");
+	NpcGoto("小三子",91,202);
+	Talk("shuijiao1");
+	FadeOut();
+	Talk("shuijiao2");
+	LoadMap("狂沙镇夜.map");
+	PlayMusic("Ks66.wav");
+	FullLife();
+	FullThew();
+	FullMana();
+	LoadNpc("ks-1.npc");
+	LoadObj("KS.Obj");
+	SetPlayerPos(85,206);
+	SetPlayerDir(7);
+	SetMainLum(20);
+	SetMapTime(1);
+	FadeIn();
+	Talk("goout2");
+	Assign($KsOQieHuan,1);
+	Return;
+
+		

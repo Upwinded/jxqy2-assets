@@ -1,0 +1,23 @@
+// 上官家丁死亡		
+		Add($SGDiaDing,1);
+		If ($SGDiaDing == 13) @Label1;
+		Return;
+@Label1:
+		If( $GuanBing <= 17)	@Label2;
+		Assign($CAFight,2);
+		Assign($ShangGuan,1);
+
+		Return;
+// 官兵没死光
+@Label2:
+		DisableNpcAI();
+		Talk("ShangGuanB12");
+		Assign($ShangGuan,1);
+		SetNpcRelation("官兵",1);
+		SetNpcRelation("枪手1",1);
+		SetNpcRelation("枪手2",1);
+		SetNpcRelation("枪手3",1);
+		SetNpcRelation("枪手4",1);
+		SetNpcRelation("枪手5",1);
+		EnableNpcAI();
+		Return;

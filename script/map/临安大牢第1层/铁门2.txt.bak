@@ -1,0 +1,17 @@
+If($laoftiemen2==1) @Talk1;
+If($laoftiemen2==2) @Talk2;
+DelObj("铁门关2");
+AddObj("铁门开2.ini",49，112);
+Assign($laoftiemen2,2);
+Return;
+
+@Talk1:
+DelObj("铁门关2");
+AddObj("铁门开2.ini",49，112);
+Assign($laoftiemen2,2);
+Return;
+@Talk2:
+DelObj("铁门开2");
+AddObj("铁门关2.ini",49，111);
+Assign($laoftiemen2,1);
+Return;

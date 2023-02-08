@@ -1,0 +1,22 @@
+  --唐门—别离村
+  
+  fadeout();
+  savenpc();
+  loadmap("别离村.map");
+  if getvar("bielishengan") == 1 then
+    
+    loadnpc("bielicun1.npc");
+    loadobj("bielicun.obj");
+    setplayerpos(80,91);
+    setplayerdir(3);
+    fadein();
+    showmessage("别离村");
+    return;
+  end
+  loadnpc("bielicun.npc");
+  loadobj("bielicun.obj");
+  setplayerpos(80,91);
+  setplayerdir(3);
+  fadein();
+  showmessage("别离村");
+  return;

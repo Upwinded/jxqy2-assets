@@ -1,0 +1,6 @@
+  if getvar("qiu") == 1 then
+    
+    delnpc("秋依水");
+    return;
+  end
+  return;

@@ -1,0 +1,51 @@
+// 至别离村
+
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("别离村.map");
+	If ($BieLiShengAn == 1) @Lable1;
+	LoadNpc("bielicun.npc");
+	LoadObj("bielicun.obj");
+	SetPlayerPos(60,46);
+	SetPlayerDir(0);
+     	If($BieLiMG == 1) @Labe3;
+	FadeIn();
+	ShowMessage("别离村");
+	If ($BieLiMG == 1) @Label2;
+	Return;
+	
+@Lable1:
+	LoadNpc("bielicun1.npc");
+	LoadObj("bielicun.obj");
+	SetPlayerState(0);
+	SetPlayerPos(60,40);
+	SetPlayerDir(0);
+	FadeIn();
+	ShowMessage("别离村");
+	If ($BieLiMG == 1) @Label2;
+	Return;
+
+@Label2:
+	SetNpcKind("男童-1",0);
+	NpcGotoEx("男童-1",60,54);
+     	PlayerGoto(60,56);
+	SetPlayerDir(4);
+	SetNpcDir("男童-1",0);
+	PlayMusic("Ks66.wav");
+     	Talk("talk2");
+     	AddGoods("goods-sj-9-别离村钥匙.ini");
+	SetPlayerDir(7);
+     	NpcGoto("男童-1",67,66);
+     	DelNpc("男童-1");
+     	EnableJump();
+     	EnableRun();	
+     	Assign($BieLiMG,2);
+	Return;
+	
+@Labe3:	
+	PlayMusic("Ks66.wav");
+	FadeIn();
+	ShowMessage("别离村");
+	If ($BieLiMG == 1) @Label2;
+	Return;

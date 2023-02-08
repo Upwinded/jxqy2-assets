@@ -1,0 +1,6 @@
+  --进城门
+  
+  talk("talk2");
+  addtomemo("先去投店，客栈就在北门东边。");
+  savemaptrap();
+  return;

@@ -1,0 +1,94 @@
+//燕若雪
+
+	If($ZhongDuTroublesRoom==4) @Talk4;
+	If($ZhongDuHouHuaYuan==3) @Talk3;
+	If($ZhongDuHouHuaYuan==2) @Talk2;
+	If($ZhongDuHouHuaYuan==1) @Talk1;
+	If($ZhongDuHouHuaYuan==0) @Talk0;
+	Talk("houhuayuan5");
+	Return;
+ 
+      
+@Talk0:
+      Talk("houhuayuan1");
+      Assign($ZhongDuHouHuaYuan,1);
+      StopMusic();
+      FadeOut();
+      SetPlayerPos(79,30);
+      SetPlayerScn();
+      SetMapTime(0);
+      PlayMusic("ks72.wav");
+      FadeIn();
+      Talk("troublesroom5");
+      FadeOut();
+      ShowSnow(0);
+      SetPlayerPos(142,311);
+      SetPlayerScn();
+      SetMapTime(1);
+      Talk("night2"); 
+      ShowRandomSnow();
+      FadeIn();
+         
+      Return;
+            
+@Talk1:
+      Talk("houhuayuan2");
+      FadeOut();
+      Talk("houhuayuan21");
+      FadeIn();
+      Talk("houhuayuan22");
+      Assign($ZhongDuHouHuaYuan,2);
+      DelGoods("goods-sj-6-夜明珠.ini");	
+      FadeOut();
+      SetPlayerPos(142,329);
+      SetPlayerScn();
+      Talk("night3");
+      ShowSnow(0);
+      ShowRandomSnow();
+      FadeIn();
+      
+      Return;
+
+@Talk2:
+      Talk("houhuayuan3");
+      Assign($ZhongDuHouHuaYuan,3);
+      FadeOut();
+      SetPlayerPos(142,329);
+      SetPlayerScn();
+      Talk("night4");
+      ShowSnow(0);
+      ShowRandomSnow();
+      FadeIn();
+      
+      Return;
+     
+@Talk3:
+      Talk("houhuayuan4");
+      PlayMusic("ks75.wav");
+      Assign($ZhongDuHouHuaYuan,4);
+      AddNpc("z03-许若冰.ini",79,31,3);
+      SetNpcScript("柴嵩","柴嵩.txt");
+      Return;
+            
+@Talk4:
+      PlayMusic("ks74.wav");
+      Talk("houhuayuan6");
+      FadeOut();
+      Talk("houhuayuan7");
+      DelNpc("柴嵩");
+      DelNpc("婕儿");
+      DelNpc("燕若雪");
+      AddToMemo("到临安柴嵩的家去见柴嵩和燕若雪。");
+      AddToMemo("要去临安应该从汉阳的南门走。");
+      SaveNpc();
+      LoadNpc("zhongdukill.npc");
+      Assign($ZhongDuHouHuaYuan,5);
+      Assign($YanRuoXueMusic,1);
+      SetMapTrap(7,"");
+      SetMapTrap(8,"");
+      SaveMapTrap();
+      EnableJump();
+      EnableRun();
+      FadeIn();
+      Return;
+      

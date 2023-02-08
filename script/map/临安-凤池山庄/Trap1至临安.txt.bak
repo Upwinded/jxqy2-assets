@@ -1,0 +1,87 @@
+//凤池山庄－临安
+
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("临安城.map");
+	LoadNpc("Linan.npc");
+	LoadObj("Linan.obj");
+	SetPlayerPos(153,309);
+	SetPlayerDir(3);
+	If ($FromFengChi == 0) @Lable0;
+	If ($FromFengChi == 4) @Lable4;
+	If ($FromFengChi == 7) @Lable7;
+	If ($FromFengChi == 8) @Lable8;
+	If ($FromFengChi == 9) @Lable10;
+	If ($FromFengChi == 14) @Label9;
+	FadeIn();
+	ShowMessage("临安");
+	Return;
+
+// 从凤池山庄第一次回临安
+@Lable0:
+	SetPlayerState(0);
+	Assign($FromFengChi,1);
+	SetMainLum(20);
+	SetMapTime(1);
+	SetNpcScript("柴嵩","柴嵩.txt");
+	SetNpcPos("婕儿",145,96);
+	SetNpcDir("婕儿",0);
+	SetNpcPos("燕若雪",145,98);
+	SetNpcDir("燕若雪",7);	
+	SetNpcPos("柴府家丁",139,139);
+	SetNpcDir("柴府家丁",7);
+	SetMapTrap(9,"Trap9.txt");
+	SaveMapTrap();
+	ShowMessage("临安");
+	FadeIn();
+	Return;
+
+// 捉迷藏
+@Lable4:
+	SetPlayerState(0);
+	Assign($FromFengChi,5);
+	SetNpcPos("婕儿",138,79);
+	DelNpc("燕若雪");
+	DelNpc("柴嵩");
+	SetMapTrap(4,"Trap4.txt");
+	SetMapTrap(5,"Trap5.txt");
+	SaveMapTrap();
+	Assign($LinAnJieEr,3);
+	FadeIn();
+	ShowMessage("临安");
+	Return;
+
+// 去霹雳堂前
+@Lable7:
+	SetPlayerState(0);
+	SetMapTrap(9,"Trap9.txt");
+	SaveMapTrap();
+	Assign($LinAnYanRuoXue,7);
+	ShowMessage("临安");
+	FadeIn();
+	Return;
+
+// 从霹雳堂回来
+@Lable8:
+	SetPlayerState(0);
+	Assign($LinAnYanRuoXue,9);
+	ShowMessage("临安");
+	FadeIn();
+	Return;
+// 从大牢回来！
+@Label9:
+	PlayMusic("Ks76.wav");
+	SetMainLum(20);
+	SetMapTime(1);
+	AddToMemo("赶快到柴嵩家去找燕若雪。");
+	FadeIn();
+	ShowMessage("临安");
+	Return;
+
+@Lable10:
+	SetMapTrap(9,"Trap9.txt");
+	SaveMapTrap();
+	FadeIn();
+	ShowMessage("临安");
+	Return;

@@ -1,0 +1,11 @@
+  --把项链交给燕若雪，发现其消失
+  
+  Talk("kezhan2");
+  PlayerGoto(81,93);
+  SetMapTrap(6,"");
+  SaveMapTrap();
+  Talk("kezhan3");
+  Assign("ChangAnLaoban",2);
+  StopMusic();
+  return;
+  

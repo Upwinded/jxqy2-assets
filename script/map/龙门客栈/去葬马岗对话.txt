@@ -1,0 +1,56 @@
+  --
+  
+  if getvar("1zmg") == 1 then
+    
+    if getvar("2zmg") == 2 then
+      
+      if getvar("3zmg") == 3 then
+        
+        if getvar("4zmg") == 4 then
+          
+          if getvar("5zmg") == 5 then
+            
+            talk("zmgreturn");
+            setnpcscript("燕若雪","燕若雪talk1.txt");
+            fadeout();
+            delnpc("无赖1");
+            fadein();
+            return;
+          end
+          talk("nozmg4");
+          return;
+        end
+        talk("nozmg3");
+        return;
+      end
+      talk("nozmg3");
+      return;
+    end
+    talk("nozmg2");
+    return;
+  end
+  if getvar("gotozmg") == 1 then
+    
+    talk("nozmg2");
+    return;
+  end
+  talk("gotozmg");
+  setplayerdir(7);
+  talk("gotozmg00");
+  assign("gotozmg",1);
+  setmaptrap(4,"地图切换4.txt");
+  savemaptrap();
+  setmaptrap(5,"地图切换5.txt");
+  addmoney(-100);
+  setnpckind("燕若雪",0);
+  npcgoto("燕若雪",46,54);
+  setnpcdir("燕若雪",7);
+  playergoto(46,55);
+  setplayerdir(3);
+  talk("gotozmg1");
+  setnpcscript("燕若雪","燕若雪talk2.txt");
+  enablejump();
+  enablerun();
+  assign("lmkzozhanmagang",1);
+  addtomemo("寻找葬马岗，并料理里面的盗贼。");
+  return;

@@ -1,0 +1,13 @@
+// πŸ∂°À¿Õˆ		
+	Add($GuanBing,1);
+	If ($GuanBing >= 18) @Label1;
+	Return;
+@Label1:
+	If ($SGDiaDing >= 13) @Label2;
+	Assign($GouGuan,1);
+	Return;
+//…œπŸº“∂°À¿π‚π‚
+@Label2:
+	Assign($GouGuan,2);
+	Assign($CAFight,2);
+	Return;

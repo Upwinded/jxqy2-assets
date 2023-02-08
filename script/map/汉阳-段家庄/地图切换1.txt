@@ -1,0 +1,10 @@
+  
+  fadeout();
+  loadmap("汉阳.map");
+  loadnpc("hanyan.npc");
+  setplayerpos(3,153);
+  setplayerdir(5);
+  showmessage("汉阳");
+  fadein();
+  playmusic("ks69.mp3");
+  return;

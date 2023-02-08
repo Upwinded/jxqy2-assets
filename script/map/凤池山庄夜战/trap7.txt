@@ -1,0 +1,28 @@
+  if getvar("fengchifight") == 1 then
+    
+    fadeout();
+    setplayerpos(102,150);
+    setplayerdir(5);
+    fadein();
+    talk("fengchifight");
+    setmaptrap(7,"trap7.txt");
+    return;
+  end
+  disablenpcai();
+  addnpc("z09-独孤剑.ini",110,173,3);
+  setnpcrelation("独孤剑",1);
+  talk("tubian23");
+  npcgotoex("独孤剑",105,167);
+  playergoto(103,163);
+  setplayerdir(7);
+  setnpcdir("独孤剑",3);
+  talk("tubian24");
+  sleep(500);
+  npcattack("独孤剑",103,163);
+  sleep(2000);
+  fadeout();
+  talk("fengchifight2");
+  savenpc();
+  saveobj();
+  runscript("dalao.txt");
+  return;

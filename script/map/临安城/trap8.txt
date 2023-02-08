@@ -1,0 +1,150 @@
+  
+  if getvar("fromfengchi") == 15 then
+    
+    --npcgotoex("宋朝长刀手2",68,135);
+    --npcgoto("宋朝长刀手3",67,137);
+    
+    setnpcdir("宋朝长刀手2",1);
+    setnpcdir("宋朝长刀手3",5);
+    talk("shaoping3");
+    setnpcdir("宋朝长刀手2",0);
+    setnpcdir("宋朝长刀手3",6);
+    playergoto(70,140);
+    setplayerdir(3);
+    talk("zhaofudamen");
+    addtomemo("找小贩买个面具戴上，杀进将军府取赵节的狗命。");
+    assign("fromfengchi",16);
+    setmaptrap(8,"trap8.txt");
+    --npcgotoex("宋朝长刀手2",68,134);
+    --npcgoto("宋朝长刀手3",67,136);
+    savemaptrap();
+    return;
+  end
+  if getvar("fromfengchi") == 16 then
+    
+    --npcgotoex("宋朝长刀手2",68,135);
+    --npcgoto("宋朝长刀手3",67,137);
+    if getvar("linanmianju") == 1 then
+      
+      playergoto(69,138);
+      setplayerdir(3);
+      setmaptrap(8,"trap8.txt");
+      talk("jiangjunfu1");
+      assign("fromfengchi",17);
+      setnpcrelation("宋朝长刀手2",1);
+      setnpcrelation("宋朝长刀手3",1);
+      enablefight();
+      return;
+    end
+    setnpcdir("宋朝长刀手2",1);
+    setnpcdir("宋朝长刀手3",5);
+    talk("shaoping3");
+    setnpcdir("宋朝长刀手2",0);
+    setnpcdir("宋朝长刀手3",6);
+    playergoto(70,140);
+    setplayerdir(3);
+    setmaptrap(8,"trap8.txt");
+    --npcgotoex("宋朝长刀手2",68,134);
+    --npcgoto("宋朝长刀手3",67,136);
+    savemaptrap();
+    return;
+  end
+  if getvar("fromfengchi") == 17 then
+    
+    disablenpcai();
+    playmusic("ks74.wav");
+    playergoto(64,123);
+    playergoto(58,114);
+    setplayerdir(3);
+    npcgotoex("普通枪手1",59,119);
+    npcgotoex("普通枪手5",60,118);
+    npcgotoex("普通枪手2",58,121);
+    npcgotoex("普通枪手6",60,115);
+    
+    npcgotoex("普通枪手3",57,121);
+    npcgotoex("普通枪手7",60,111);
+    
+    npcgotoex("普通枪手4",56,121);
+    npcgotoex("普通枪手8",60,109);
+    
+    npcgoto("赵节",53,105);
+    setnpcdir("普通枪手1",3);
+    setnpcdir("普通枪手5",3);
+    setnpcdir("普通枪手2",4);
+    setnpcdir("普通枪手6",2);
+    setnpcdir("普通枪手3",5);
+    setnpcdir("普通枪手7",1);
+    setnpcdir("普通枪手4",5);
+    setnpcdir("普通枪手8",0);
+    npcgotoex("宋朝长刀手9",56,102);
+    npcgotoex("宋朝长刀手4",52,112);
+    npcgotoex("宋朝长刀手8",55,102);
+    npcgotoex("宋朝长刀手5",52,108);
+    npcgotoex("宋朝长刀手7",54,102);
+    npcgotoex("宋朝长刀手6",52,105);
+    npcgoto("赵节",55,109);
+    
+    setnpcdir("宋朝长刀手9",7);
+    setnpcdir("宋朝长刀手4",6);
+    setnpcdir("宋朝长刀手8",7);
+    setnpcdir("宋朝长刀手5",6);
+    setnpcdir("宋朝长刀手7",7);
+    setnpcdir("宋朝长刀手6",7);
+    setnpcdir("赵节",7);
+    talk("jiangjunfu");
+    npcgoto("赵节",53,105);
+    setnpckind("赵节",1);
+    enablenpcai();
+    npcgotoex("赵节",49,99);
+    assign("fromfengchi",18);
+    setmaptrap(8,"trap8.txt");
+    return;
+  end
+  if getvar("fromfengchi") == 18 then
+    
+    fadeout();
+    --npcgotodir("南宫飞云",3,2);
+    setplayerpos(65,131);
+    setplayerdir(3);
+    fadein();
+    setmaptrap(8,"trap8.txt");
+    talk("nofinish");
+    return;
+  end
+  if getvar("fromfengchi") == 19 then
+    
+    talk("zhaojiedie1");
+    playmusic("ks67.wav");
+    assign("fromfengchi",20);
+    --playergoto(70,143);
+    savemaptrap();
+    return;
+  end
+  
+  
+  --npcgotoex("宋朝长刀手2",68,135);
+  --npcgoto("宋朝长刀手3",67,137);
+  if getvar("linanmianju") == 1 then
+    
+    playergoto(69,138);
+    setplayerdir(3);
+    setmaptrap(8,"trap8.txt");
+    talk("jiangjunfu1");
+    assign("fromfengchi",17);
+    setnpcrelation("宋朝长刀手2",1);
+    setnpcrelation("宋朝长刀手3",1);
+    enablefight();
+    return;
+  end
+  setnpcdir("宋朝长刀手2",1);
+  setnpcdir("宋朝长刀手3",5);
+  talk("shaoping3");
+  setnpcdir("宋朝长刀手2",0);
+  setnpcdir("宋朝长刀手3",6);
+  playergoto(70,140);
+  setplayerdir(3);
+  setmaptrap(8,"trap8.txt");
+  --npcgotoex("宋朝长刀手2",68,134);
+  --npcgoto("宋朝长刀手3",67,136);
+  savemaptrap();
+  return;

@@ -1,0 +1,14 @@
+  --"狂沙镇-龙门客栈"-"龙门客栈"
+  
+  fadeout();
+  stopmusic();
+  loadmap("龙门客栈.map");
+  loadnpc("lmkz.npc");
+  playmusic("ks67.wav");
+  setplayerpos(8,17);
+  setplayerdir(7);
+  setnpcpos("燕若雪",8,16);
+  setnpcdir("燕若雪",7);
+  fadein();
+  showmessage("龙门客栈");
+  return;

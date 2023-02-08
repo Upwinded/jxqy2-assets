@@ -1,0 +1,117 @@
+		
+		If($FromFengChi == 15) @Lable1;
+		If($FromFengChi == 16) @Lable2;
+		If($FromFengChi == 17) @Lable3;
+		If($FromFengChi == 18) @Lable4;
+		If($FromFengChi == 19) @Lable5;
+
+@Lable2:
+//		NpcGotoEx("宋朝长刀手2",68,135);
+//		NpcGoto("宋朝长刀手3",67,137);
+		If($LinAnMianJu == 1) Goto @Lable6;
+		SetNpcDir("宋朝长刀手2",1);
+		SetNpcDir("宋朝长刀手3",5);
+		Talk("ShaoPing3");
+		SetNpcDir("宋朝长刀手2",0);
+		SetNpcDir("宋朝长刀手3",6);
+		PlayerGoto(70,140);
+		SetPlayerDir(3);
+		SetMapTrap(8,"Trap8.txt");
+//		NpcGotoEx("宋朝长刀手2",68,134);
+//		NpcGoto("宋朝长刀手3",67,136);	
+		SaveMapTrap();
+		Return;		
+@Lable1:
+//		NpcGotoEx("宋朝长刀手2",68,135);
+//		NpcGoto("宋朝长刀手3",67,137);
+
+		SetNpcDir("宋朝长刀手2",1);
+		SetNpcDir("宋朝长刀手3",5);
+		Talk("ShaoPing3");
+		SetNpcDir("宋朝长刀手2",0);
+		SetNpcDir("宋朝长刀手3",6);
+		PlayerGoto(70,140);
+		SetPlayerDir(3);
+		Talk("ZhaoFuDaMen");
+		AddToMemo("找小贩买个面具戴上，杀进将军府取赵节的狗命。");
+		Assign($FromFengChi,16);
+		SetMapTrap(8,"Trap8.txt");
+//		NpcGotoEx("宋朝长刀手2",68,134);
+//		NpcGoto("宋朝长刀手3",67,136);	
+		SaveMapTrap();
+		Return;
+@Lable3:
+		DisableNpcAI();
+		PlayMusic("ks74.wav");
+		PlayerGoto(64,123);
+		PlayerGoto(58,114);
+		SetPlayerDir(3);
+		NpcGotoEx("普通枪手1",59,119);
+		NpcGotoEx("普通枪手5",60,118);	
+		NpcGotoEx("普通枪手2",58,121);		
+		NpcGotoEx("普通枪手6",60,115);
+
+		NpcGotoEx("普通枪手3",57,121);
+		NpcGotoEx("普通枪手7",60,111);
+
+		NpcGotoEx("普通枪手4",56,121);
+		NpcGotoEx("普通枪手8",60,109);
+		
+		NpcGoto("赵节",53,105);
+		SetNpcDir("普通枪手1",3);
+		SetNpcDir("普通枪手5",3);
+		SetNpcDir("普通枪手2",4);
+		SetNpcDir("普通枪手6",2);
+		SetNpcDir("普通枪手3",5);
+		SetNpcDir("普通枪手7",1);
+		SetNpcDir("普通枪手4",5);
+		SetNpcDir("普通枪手8",0);
+		NpcGotoEx("宋朝长刀手9",56,102);
+		NpcGotoEx("宋朝长刀手4",52,112);
+		NpcGotoEx("宋朝长刀手8",55,102);
+		NpcGotoEx("宋朝长刀手5",52,108);
+		NpcGotoEx("宋朝长刀手7",54,102);
+		NpcGotoEx("宋朝长刀手6",52,105);
+		NpcGoto("赵节",55,109);
+		
+		SetNpcDir("宋朝长刀手9",7);
+		SetNpcDir("宋朝长刀手4",6);
+		SetNpcDir("宋朝长刀手8",7);
+		SetNpcDir("宋朝长刀手5",6);
+		SetNpcDir("宋朝长刀手7",7);
+		SetNpcDir("宋朝长刀手6",7);
+		SetNpcDir("赵节",7);
+		Talk("JiangJunFu");
+		NpcGoto("赵节",53,105);
+		SetNpcKind("赵节",1);
+		EnableNpcAI();
+		NpcGotoEx("赵节",49,99);
+		Assign（$FromFengChi，18);
+		SetMapTrap(8,"Trap8.txt");
+		Return;
+@Lable4:
+		FadeOut();
+//		NpcGotoDir("南宫飞云",3,2);
+		SetPlayerPos(65,131);
+		SetPlayerDir(3);
+		FadeIn();
+		SetMapTrap(8,"Trap8.txt");
+		Talk("NoFinish");
+		Return;
+@Lable5:
+		Talk("ZhaoJieDie1");
+		PlayMusic("ks67.wav");		
+		Assign($FromFengChi,20);
+//		PlayerGoto(70,143);
+		SaveMapTrap();
+		Return;
+@Lable6:
+		PlayerGoto(69,138);
+		SetPlayerDir(3);
+		SetMapTrap(8,"Trap8.txt");
+		Talk("JiangJunFu1");
+		Assign($FromFengChi,17);
+		SetNpcRelation("宋朝长刀手2",1);
+		SetNpcRelation("宋朝长刀手3",1);
+		EnableFight();
+		Return;

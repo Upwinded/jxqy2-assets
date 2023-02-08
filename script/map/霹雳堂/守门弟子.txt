@@ -1,0 +1,2 @@
+  talk("shoumen");
+  return;

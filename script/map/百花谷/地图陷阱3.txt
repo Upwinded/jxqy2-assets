@@ -1,0 +1,19 @@
+  --看到百花谷的景色说一堆话
+  
+  playergoto(14,10);
+  setplayerdir(4);
+  talk("feihua1");
+  playergoto(19,9);
+  setplayerdir(5);
+  talk("feihua2");
+  playergoto(21,18);
+  talk("feihua3");
+  playergoto(25,18);
+  talk("feihua4");
+  playergoto(21,18);
+  talk("feihua5");
+  playergoto(25,18);
+  talk("feihua6");
+  setmaptrap(3,"");
+  savemaptrap();
+  return;

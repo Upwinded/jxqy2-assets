@@ -1,0 +1,51 @@
+  --苹儿的大段对话
+  
+  if getvar("tianwangpier") == 1 then
+    
+    playergoto(73,71);
+    setplayerdir(5);
+    setnpcdir("苹儿",1);
+    playmusic("ks72.wav");
+    talk("piner4");
+    sleep(1000);
+    stopmusic();
+    fadeout();
+    setnpcpos("苹儿",7,15);
+    setplayerpos(45,75);
+    setplayerdir(7);
+    setobjscript("梯子2","天王岛-地下迷宫的梯子.txt");
+    addtomemo("从池塘中的地道下去，到木人阵中消磨一下时间。估计把木人都干掉了，苹儿也就该回来了。");
+    playmusic("ks66.wav");
+    fadein();
+    playergoto(46,76);
+    sleep(500);
+    playergoto(45,79);
+    talk("piner5");
+    assign("tianwangpier",2);
+    return;
+  end
+  if getvar("tianwangpier") == 3 then
+    
+    talk("piner6");
+    assign("tianwanshoumendizi",1);
+    assign("hanyanctmszl",2);
+    assign("tianwangpier",4);
+    addgoods("goods-sj-8-天王岛密函.ini");
+    sleep(2000);
+    addgoods("goods-sj-1-天王令.ini");
+    sleep(2000);
+    addmagic("player-magic-大力金刚掌.ini");
+    addtomemo("将密函交给史忠良，以平息天王帮和楚天盟之间的纠纷。");
+    return;
+  end
+  if getvar("tianwangpier") == 4 then
+    
+    talk("piner7");
+    return;
+  end
+  if getvar("tianwangpier") >= 5 then
+    
+    talk("piner8");
+    return;
+  end
+  return;

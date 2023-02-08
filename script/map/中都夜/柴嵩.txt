@@ -1,0 +1,19 @@
+  --柴嵩
+  
+  if getvar("zhongdutroublesroom") == 4 then
+    
+    talk("cs1");
+    return;
+  end
+  talk("troublesroom6");
+  assign("zhongdutroublesroom",4);
+  stopmusic(0);
+  fadeout();
+  setplayerpos(142,326);
+  setnpcpos("柴嵩",142,327);
+  setnpckind("柴嵩",3);
+  disablerun();
+  disablejump();
+  
+  fadein();
+  return;

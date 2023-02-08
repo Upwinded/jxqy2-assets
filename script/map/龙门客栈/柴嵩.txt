@@ -1,0 +1,17 @@
+  --进入龙门客栈
+  
+  talk("caishong0");
+  playergoto(28,47);
+  setplayerdir(4);
+  setnpcdir("燕若雪",5);
+  talk("caishong1");
+  --fadeout();
+  --fadein();
+  talk("caishong2");
+  npcgoto("柴嵩",22,57);
+  delnpc("柴嵩");
+  talk("caishong3");
+  assign("lmkzoqiehuan",1);
+  setmaptrap(3,"");
+  savemaptrap();
+  return;

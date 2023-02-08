@@ -1,0 +1,27 @@
+  if getvar("trjdxmgshijiang") == 2 then
+    
+    talk("shijiang3");
+    playergoto(75,93);
+    setplayerdir(7);
+    npcgoto("铁匠",76,94);
+    setnpcdir(7);
+    fadeout();
+    delobj("大铁门1");
+    setnpcscript("铁匠","");
+    fadein();
+    disablenpcai();
+    npcgoto("铁匠",78,98);
+    talk("shijiang4");
+    npcgotoex("铁匠",84,115);
+    delgoods("goods-sj-11-金刚锤.ini");
+    enablenpcai();
+    return;
+  end
+  if getvar("trjdxmgshijiang") == 1 then
+    
+    talk("shijiang2");
+    return;
+  end
+  talk("shijiang1");
+  assign("trjdxmgshijiang",1);
+  return;

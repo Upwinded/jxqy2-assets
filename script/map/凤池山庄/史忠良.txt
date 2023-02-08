@@ -1,0 +1,12 @@
+  if getvar("fromfengchi") == 7 then
+    
+    talk("shizhongliang1");
+    return;
+  end
+  if getvar("fromfengchi") == 9 then
+    
+    talk("shizhongliang2");
+    return;
+  end
+  talk("shizhongliang");
+  return;

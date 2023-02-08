@@ -1,0 +1,11 @@
+	FadeOut();
+        ShowSnow(0);
+        LoadMap("中都.map");
+	LoadNpc("zhongdu.npc");
+	LoadObj("zhongdu.obj");
+	SetPlayerPos(147,60);
+	SetPlayerDir(1);
+	ShowMessage("中都");
+        ShowRandomSnow();
+	FadeIn();
+	Return;

@@ -1,0 +1,20 @@
+  --临安-稻香村.txt
+  
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("稻香村.map");
+  loadnpc("daoxiang.npc");
+  loadobj("daoxiang.obj");
+  setplayerpos(115,105);
+  setplayerdir(1);
+  if getvar("fromfengchi") == 7 then
+    
+    playmusic("ks67.wav");
+    fadein();
+    showmessage("稻香村");
+    return;
+  end
+  fadein();
+  showmessage("稻香村");
+  return;

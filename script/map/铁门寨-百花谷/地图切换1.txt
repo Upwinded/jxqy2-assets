@@ -1,0 +1,28 @@
+  --"铁门寨-百花谷"-"百花谷"
+  
+  fadeout();
+  savenpc();
+  saveobj();
+  stopmusic();
+  loadmap("百花谷.map");
+  loadobj("bhg.obj");
+  setplayerpos(8,40);
+  setplayerdir(4);
+  setplayerstate(0);
+  fadein();
+  
+  if getvar("bhgofirstenter") == 0 then
+    
+    talk("changemap1");
+    assign("bhgofirstenter",1);
+    return;
+  end
+  if getvar("bhgofirstenter") == 1 then
+    
+    return;
+  end
+  
+  
+  talk("changemap1");
+  assign("bhgofirstenter",1);
+  return;

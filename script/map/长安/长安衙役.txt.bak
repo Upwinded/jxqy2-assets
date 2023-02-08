@@ -1,0 +1,29 @@
+//与衙役交谈
+
+	If($ChangAnYaYi==1) @Talk2;
+	If ($ChangAnYangQiYe==1) @Talk1;
+	Talk("GuanFuYaYi1");
+	Return;
+
+@Talk1:
+	Talk("GuanFuYaYi2");
+	PlayerGoto(120,144);
+	Talk("GuanFuYaYi3");
+	PlayerGoto(114,133);
+	Talk("GuanFuYaYi31");
+	PlayerGoto(121,120);
+	SetPlayerDir(7);
+	Talk("GuanFuYaYi32");
+	AddToMemo("长安官府侧面院墙可以用轻功跳过去，到衙门里寻找官印。");
+	StopMusic();
+//	AddObj("长安官印箱.ini",142,113,0);
+//	SetObjScript("宝箱","获得官印.txt");
+	SetMapTrap(10,"Trap-长安迷宫.txt");
+	SaveMapTrap();
+	Assign($ChangAnYaYi,1);
+	Return;
+	
+@Talk2:
+	Talk("GuanFuYaYi4");
+	Return;
+	

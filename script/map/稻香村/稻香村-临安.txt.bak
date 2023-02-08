@@ -1,0 +1,19 @@
+//稻香村－临安
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("临安城.map");
+	LoadNpc("Linan.npc");
+	LoadObj("Linan.obj");
+	SetPlayerPos(37,322);
+	SetPlayerDir(5);
+	If ($FromFengChi == 8 ) @Label1;
+	FadeIn();
+	ShowMessage("临安城");	
+	Return;
+@Label1:
+	SetMapTrap(9,"Trap9.txt");
+	SaveMapTrap();
+	FadeIn();
+	ShowMessage("临安城");	
+	Return;

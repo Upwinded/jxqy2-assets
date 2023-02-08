@@ -1,0 +1,9 @@
+// Æ¬Í·½Å±¾
+
+	HideMouseCursor();
+	HideBottomWindow();
+	PlayMovie("logo.avi");
+	PlayMovie("title.avi");
+	ShowMouseCursor();
+	ReturnToTitle();
+	Return;

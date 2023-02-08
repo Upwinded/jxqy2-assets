@@ -1,0 +1,26 @@
+  
+  
+  disablenpcai();
+  delnpc("白刹");
+  sleep(200);
+  talk("win1");
+  enablenpcai();
+  
+  if getvar("shamofirst") == 1 then
+    
+    talk("win2");
+    fadeout();
+    fulllife();
+    fullthew();
+    fullmana();
+    talk("win3");
+    loadmap("主角家.map");
+    loadnpc("home.npc");
+    loadobj("home.obj");
+    setplayerpos(20,64);
+    setplayerstate(0);
+    runscript("开始游戏.txt");
+    return;
+  end
+  assign("shamofirst",1);
+  return;

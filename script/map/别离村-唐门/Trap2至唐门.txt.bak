@@ -1,0 +1,29 @@
+	FadeOut();
+	LoadMap("唐门.map");
+	If( $CuiYanMen2Finish == 1) @Talk2;
+	If ($CuiYanMen2AllFinish >= 2) @Talk2;
+	If ($CuiYanMen2CunLan==1) @Talk1;
+	Return;
+
+@Talk1:
+	DisableNpcAI();
+	LoadNpc("TangMen.npc");
+	LoadObj("TangMen.obj");
+	SetPlayerPos(50,284);
+	SetPlayerDir(5);
+	ShowMessage("唐门");
+	FadeIn();
+	RunScript("开打.txt");
+	EnableNpcAI();
+	Return;
+	
+@Talk2:
+	DisableNpcAI();
+	LoadNpc("TangMen1.npc");
+	LoadObj("TangMen1.obj");
+	SetPlayerPos(50,284);
+	SetPlayerDir(5);
+	FadeIn();
+	ShowMessage("唐门");
+	EnableNpcAI();
+	Return;

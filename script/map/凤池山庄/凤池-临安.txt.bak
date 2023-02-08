@@ -1,0 +1,22 @@
+//凤池山庄－临安
+
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	SetMapTrap(1,"凤池-临安.txt");
+	SaveMapTrap();
+	LoadMap("临安-凤池山庄.map");
+	SetPlayerPos(10,13);
+	SetPlayerDir(1);
+	PlayMusic("ks67.wav");
+	If ($FengChi == 0) Goto @Label1;
+	FadeIn();
+	ShowMessage("临安野外");
+        Return;
+@Label1:
+	SetMainLum(25);
+        ShowSnow(0);
+	FadeIn();
+	ShowMessage("临安野外");
+	
+        Return;

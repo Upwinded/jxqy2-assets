@@ -1,0 +1,4 @@
+	PlayerGotoDir(1,1);
+	Talk("JiuDian19");
+	SetMapTrap(15,"Trap-15.txt");
+	Return;

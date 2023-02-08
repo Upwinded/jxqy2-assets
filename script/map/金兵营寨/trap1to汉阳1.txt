@@ -1,0 +1,11 @@
+  stopmusic();
+  fadeout();
+  clearbody();
+  saveobj();
+  loadmap("汉阳-金兵营寨.map");
+  setplayerpos(30,22);
+  setplayerdir(1);
+  showmessage("郊外");
+  playmusic("ks67.wav");
+  fadein();
+  return;

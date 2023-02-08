@@ -1,0 +1,30 @@
+	If($LinAnMianJu == 1)  @Label3;
+	If($FromFengChi == 15) @Label1;
+	If($FromFengChi == 16) @Label2;
+@Label1:
+	PlayerGotoDir(5,2);
+	SetPlayerDir(1);
+	Talk("ZhaoFuDaMen");
+	AddToMemo("找小贩买个面具戴上，杀进将军府取赵节的狗命。");
+	Assign($FromFengChi,16);
+	SetMapTrap(14,"Trap14.txt");
+	Return;
+@Label2:
+	PlayerGotoDir(5,2);
+	SetPlayerDir(1);
+	Talk("ZhaoFuDaMen1");
+	SetMapTrap(14,"Trap14.txt");
+	Return;
+@Label3:
+	PlayerGoto(69,138);
+	SetPlayerDir(3);
+	SetMapTrap(12,"");
+	SetMapTrap(13,"");
+	SetMapTrap(14,"");
+	SaveMapTrap();
+	Talk("JiangJunFu1");
+	Assign($FromFengChi,17);
+	SetNpcRelation("宋朝长刀手2",1);
+	SetNpcRelation("宋朝长刀手3",1);
+	EnableFight();
+	Return;

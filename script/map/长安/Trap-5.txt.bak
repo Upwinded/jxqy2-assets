@@ -1,0 +1,46 @@
+//—‡»Ù—©Œ‘∑ø
+	
+	If ($ChangAnYangQiYe==2) @Talk1;
+	Talk("kezhan0");
+	PlayerGotoDir(3,2);
+	SetMapTrap(5,"Trap-5.txt");
+	SaveMapTrap();
+	Return;
+	
+@Talk1:
+	If ($ChangAnYanRuoXue==2) @Talk3;
+	Talk("kezhan1");
+	PlayerGotoDir(3,2);
+	AddNpc("z03-–Ì»Ù±˘.ini",100,241,1);
+	SetNpcScript("≤Ò·‘","≤Ò·‘.txt");
+	SetMapTrap(5,"Trap-5.txt");
+	SaveMapTrap();
+	Return;
+	
+@Talk3:
+	Talk("kezhan2");
+	PlayerGoto(93,105);
+	Talk("kezhan31");
+	SetPlayerDir(1);
+	Sleep(500);
+	SetPlayerDir(0);
+	Sleep(500);
+	SetPlayerDir(7);
+	Sleep(500);
+	SetPlayerDir(0);
+	Talk("kezhan3");
+	FadeOut();
+	SetPlayerPos(63,104);
+	SetPlayerDir(2);
+	StopMusic();
+	FadeIn();
+	Talk("laoban6");
+	PlayMusic("ks67.wav");
+	PlayerGoto(62,120);
+	Talk("laoban7");
+	AddToMemo("µΩæ∆µÍ’“≤Ò·‘∞Ôƒ„’“–°œ…≈Æ°£");
+	Assign($ChangAnCaiSong,2);
+	SetMapTrap(5,"");
+	SaveMapTrap();
+	Return;
+	

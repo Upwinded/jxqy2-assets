@@ -1,0 +1,25 @@
+  --赵升权攻击主角
+  
+  stopmusic();
+  disablenpcai();
+  talk("zhaoshenquan");
+  npcgoto("赵升权",45,47);
+  playergoto(47,43);
+  setplayerdir(1);
+  talk("zhaoshenquan1");
+  npcattack("赵升权",47,44);
+  sleep(2000);
+  playsound("攻-男死00.wav");
+  fadeout();
+  talk("zhaoshenquan2");
+  loadnpc("fxsz1.npc");
+  setplayerpos(50,180);
+  setplayerdir(3);
+  playmusic("ks66.wav");
+  fadein();
+  setmaptrap(2,"");
+  savemaptrap();
+  enablenpcai();
+  clearbody();
+  talk("zhaoshenquan21");
+  return;

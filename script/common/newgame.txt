@@ -1,0 +1,8 @@
+  --新游戏脚本
+  
+  stopmusic();
+  setfadelum(0);
+  loadgame(0);
+  hidebottomwnd();
+  runscript("开始游戏.txt");
+  return;

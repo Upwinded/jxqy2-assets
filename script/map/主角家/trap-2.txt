@@ -1,0 +1,30 @@
+  --从主角的家-沙漠野外
+  
+  if getvar("homechoice") >= 3 then
+    
+    talk("levelchoice6");
+    setlevelfile("level-easy.ini");
+    addtomemo("尽管西山居多方规劝，你还是选择了简单游戏模式。");
+    stopmusic();
+    savenpc();
+    saveobj();
+    fadeout();
+    setplayerlevel(9);
+    addexp(850);
+    talk("self2");
+    loadmap("主角家-狂沙镇.map");
+    loadnpc("home-ks.npc");
+    loadobj("home-ks.obj");
+    playmusic("ks67.wav");
+    enablefight();
+    setplayerpos(140,55);
+    setplayerdir(1);
+    enablenpcai();
+    fadein();
+    return;
+  end
+  talk("levelchoice5");
+  add("homechoice",1);
+  playergotodir(3,2);
+  setmaptrap(2,"trap-2.txt");
+  return;

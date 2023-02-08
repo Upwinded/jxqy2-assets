@@ -1,0 +1,6 @@
+
+	FullLife();
+	FullThew();
+	FullMana();
+	PlaySound("恢复生命.wav");
+	MessageBox("盘龙柱的蓝光包围了你，你的体力回复了");

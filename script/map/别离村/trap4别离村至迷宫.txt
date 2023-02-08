@@ -1,0 +1,56 @@
+  --别离村-迷宫
+  
+  if getvar("cuiyanmen2finish") ~= 1 then
+    
+    if getvar("bielimg") == 2 then
+      
+      fadeout();
+      savenpc();
+      saveobj();
+      setmaptrap(4,"trap4别离村至迷宫.txt");
+      savemaptrap();
+      loadmap("别离村迷宫.map");
+      loadnpc("bielicun-mg.npc");
+      loadobj("bielicun-mg.obj");
+      setplayerpos(5,153);
+      setplayerdir(5);
+      showmessage("树林");
+      fadein();
+      if getvar("blcmgfirstenter") == 1 then
+        
+        return;
+      end
+      talk("firstenter");
+      assign("blcmgfirstenter",1);
+      addtomemo("搜索整个小树林可能会有特别的收获。");
+      return;
+    end
+    stopmusic();
+    
+    
+    fadeout();
+    savenpc();
+    saveobj();
+    setmaptrap(4,"trap4别离村至迷宫.txt");
+    savemaptrap();
+    loadmap("别离村迷宫.map");
+    loadnpc("bielicun-mg.npc");
+    loadobj("bielicun-mg.obj");
+    setplayerpos(5,153);
+    setplayerdir(5);
+    showmessage("树林");
+    fadein();
+    if getvar("blcmgfirstenter") == 1 then
+      
+      return;
+    end
+    talk("firstenter");
+    assign("blcmgfirstenter",1);
+    addtomemo("搜索整个小树林可能会有特别的收获。");
+    return;
+  end
+  talk("changanno");
+  playergoto(60,44);
+  setplayerdir(0);
+  setmaptrap(4,"trap4别离村至迷宫.txt");
+  return;

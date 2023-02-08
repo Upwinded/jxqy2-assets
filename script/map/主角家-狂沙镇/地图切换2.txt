@@ -1,0 +1,17 @@
+  --切换入迷宫
+  
+  fadeout();
+  savenpc("");
+  saveobj("");
+  stopmusic();
+  loadmap("沙漠迷宫.map");
+  loadnpc("smmg.npc");
+  loadobj("smmg.obj");
+  playmusic("ks77.wav");
+  setplayerpos(12,65);
+  setplayerdir(7);
+  setplayerlum(0);
+  setmainlum(15);
+  fadein();
+  showmessage("沙漠迷宫");
+  return;

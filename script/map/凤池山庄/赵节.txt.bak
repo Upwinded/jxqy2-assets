@@ -1,0 +1,10 @@
+	If($FromFengChi == 7) @Lable0;
+	If($FromFengChi == 9) @Lable1;
+	Talk("Zhaojie");
+	Return;
+@Lable0:
+	Talk("Zhaojie1");
+	Return;
+@Lable1:
+	Talk("Zhaojie2");
+	Return;

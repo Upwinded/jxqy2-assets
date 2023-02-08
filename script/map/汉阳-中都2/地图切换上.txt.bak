@@ -1,0 +1,42 @@
+	If ($FromFengChi >= 20) @Label3; 
+	If ($ToZhongDu == 1) @Label3; 
+	If ($ZhongDuHouHuaYuan >= 5) @Label4;
+	If ($YanRuoXueMusic == 1) @Label1;
+	StopMusic();
+	
+@Label1:	
+	FadeOut();
+	SaveNpc();
+        ShowSnow(0);
+	LoadMap("中都.map");
+	LoadNpc("zhongdu.npc");
+	LoadObj("zhongdu.obj");
+	SetPlayerPos(25,317);
+	SetPlayerDir(5);
+	If($YanRuoXueMusic == 0) @Label2;
+	PlayMusic("ks67.wav");	
+
+@Label2:
+        ShowRandomSnow();	
+	FadeIn();
+	ShowMessage("中都");
+	Return;
+@Label3:
+	FadeOut();
+	SaveNpc();
+        ShowSnow(0);
+	LoadMap("中都.map");
+	LoadNpc("zhongdu.npc");
+	LoadObj("zhongdu.obj");
+	SetPlayerPos(25,317);
+	SetPlayerDir(5);
+	PlayMusic("Ks66.wav");	
+        ShowRandomSnow();
+	FadeIn();
+	ShowMessage("中都");
+	Return;
+@Label4:
+	Talk("Out");
+	PlayerGotoDir(1,2);
+	SetMapTrap(1,"地图切换上.txt");	
+	Return;	

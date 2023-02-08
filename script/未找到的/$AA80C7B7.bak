@@ -1,0 +1,9 @@
+
+	If (ZhongDuXiMenQiGai==1) @Talk1;
+	Talk("XiMenQiGai");
+	Assign(ZhongDuXiMenQiGai,1);
+	Return;
+	
+@Talk1:
+	Talk("XiMenQiGai1");
+	Return;

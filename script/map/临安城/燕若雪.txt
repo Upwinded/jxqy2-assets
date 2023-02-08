@@ -1,0 +1,294 @@
+  --燕若雪
+  
+  if getvar("linanyanruoxue") == 14 then
+    
+    talk("ruoxue4");
+    assign("linanyanruoxue",4);
+    return;
+  end
+  if getvar("linanyanruoxue") == 1 then
+    
+    talk("ruoxue11");
+    return;
+  end
+  if getvar("linanyanruoxue") == 2 then
+    
+    talk("ruoxue2");
+    playergotoex(144,101);
+    npcgoto("燕若雪",144,99);
+    fadeout();
+    
+    --与燕若雪游西湖，播放avi
+    hidebottomwnd();
+    playmovie("xihu1.avi");
+    showbottomwnd();
+    
+    setnpcpos("柴嵩",151,117);
+    setnpcpos("燕若雪",146,130);
+    setplayerpos(145,129);
+    setnpcdir("柴嵩",1);
+    setnpcdir("燕若雪",5);
+    setplayerdir(5);
+    playmusic("ks71.wav");
+    fadein();
+    npcgotoex("燕若雪",151,120);
+    playergoto(150,119);
+    setplayerdir(5);
+    setnpcdir("燕若雪",4);
+    talk("caisong1");
+    setnpcdir("燕若雪",1);
+    npcgotoex("南宫飞云",147,125);
+    npcgoto("柴嵩",147,124);
+    
+    --载入凤池山庄，第一次进入这里
+    stopmusic();
+    fadeout();
+    assign("linanyanruoxue",3);
+    assign("nofindchaisong",2);
+    setnpcpos("柴嵩",164,117);
+    setnpcpos("燕若雪",145,95);
+    savenpc();
+    saveobj();
+    savemaptrap();
+    loadmap("凤池山庄.map");
+    loadnpc("fengci.npc");
+    loadobj("fengci.obj");
+    setplayerpos(63,232);
+    setplayerdir(5);
+    playmusic("ks65.wav");
+    fadein();
+    talk("waijiao");
+    npcgotoex("柴嵩",64,228);
+    playergoto(64,229);
+    talk("jiadin1");
+    
+    --进入大厅对话
+    fadeout();
+    setnpcpos("柴嵩",80,196);
+    setplayerpos(79,196);
+    setnpcdir("柴嵩",3);
+    setplayerdir(5);
+    fadein();
+    
+    talk("datin");
+    playergoto(80,194);
+    talk("datin_s");
+    setplayerdir(3);
+    talk("datin_s2");
+    setplayerdir(4);
+    talk("datin_s3");
+    setplayerdir(5);
+    
+    --介绍赵节
+    npcgoto("柴嵩",81,194);
+    npcgoto("柴嵩",80,189);
+    playergoto(80,190);
+    setnpcdir("柴嵩",1);
+    setplayerdir(4);
+    talk("jieshao1");
+    
+    --介绍邵骑风
+    setnpcdir("柴嵩",2);
+    playergoto(79,191);
+    setplayerdir(3);
+    talk("jieshao");
+    
+    --介绍史忠良
+    npcgotoex("南宫飞云",78,193);
+    npcgoto("柴嵩",78,191);
+    setnpcdir("柴嵩",2);
+    setplayerdir(3);
+    talk("jieshao2");
+    
+    --介绍敖管家
+    npcgotoex("柴嵩",78,192);
+    playergoto(77,195);
+    setnpcdir("柴嵩",2);
+    setplayerdir(3);
+    talk("jieshao3");
+    
+    --回到独孤剑面前对话后柴嵩离开
+    npcgoto("柴嵩",79,193);
+    npcgotoex("柴嵩",81,194);
+    playergoto(80,193);
+    setnpcdir("柴嵩",4);
+    setplayerdir(5);
+    talk("jieshao4");
+    setplayerdir(1);
+    npcgoto("柴嵩",71,208);
+    delnpc("柴嵩");
+    
+    --南宫飞云到后院去
+    setnpcpos("偏厅家丁",80,181);
+    
+    --劭骑风叫家丁进来
+    talk("xiuxi1");
+    npcgoto("偏厅家丁",79,191);
+    setnpcdir("偏厅家丁",3);
+    --劭骑风和家丁对话
+    talk("xiuxi2");
+    setnpcdir("偏厅家丁",7);
+    --家丁和主角对话
+    talk("xiuxi3");
+    npcgotoex("偏厅家丁",82,180);
+    playergoto(81,183);
+    talk("datin1");
+    npcgotoex("偏厅家丁",78,173);
+    playergoto(79,175);
+    npcgotoex("偏厅家丁",78,163);
+    playergoto(78,166);
+    npcgotoex("偏厅家丁",81,158);
+    playergoto(80,160);
+    npcgotoex("偏厅家丁",84,152);
+    playergoto(83,154);
+    npcgotoex("偏厅家丁",84,141);
+    playergoto(83,143);
+    npcgotoex("偏厅家丁",87,131);
+    playergoto(88,132);
+    setnpcdir("偏厅家丁",7);
+    setplayerdir(3);
+    talk("woshi");
+    addtomemo("想办法到临安去见燕若雪。");
+    npcgoto("偏厅家丁",84,137);
+    npcgoto("偏厅家丁",86,144);
+    setnpcdir("偏厅家丁",1);
+    return;
+  end
+  if getvar("linanyanruoxue") == 3 then
+    
+    talk("ruoxue4");
+    addtomemo("去见柴大哥。");
+    assign("linanyanruoxue",4);
+    return;
+  end
+  if getvar("linanyanruoxue") == 4 then
+    
+    talk("ruoxue5");
+    if getvar("fromfengchi") ~= 2 then
+      
+      talk("ruoxue51");
+      return;
+    end
+    return;
+  end
+  if getvar("linanyanruoxue") == 5 then
+    
+    talk("micang2");
+    fadeout();
+    setnpcpos("燕若雪",145,93);
+    setnpcdir("燕若雪",0);
+    setplayerpos(145,95);
+    setplayerdir(4);
+    setnpcpos("婕儿",143,134);
+    setnpcdir("婕儿",1);
+    assign("linanyanruoxue",6);
+    assign("fromfengchi",6);
+    assign("linanjieer",1);
+    playmusic("ks75.wav");
+    fadein();
+    talk("micang3");
+    addtomemo("是时间回凤池山庄了。");
+    return;
+  end
+  if getvar("linanyanruoxue") == 6 then
+    
+    talk("micang3");
+    return;
+  end
+  if getvar("linanyanruoxue") == 7 then
+    
+    talk("ruoxue12");
+    talk("ruoxue13");
+    assign("linanyanruoxue",8);
+    return;
+  end
+  if getvar("linanyanruoxue") == 8 then
+    
+    talk("ruoxue13");
+    return;
+  end
+  if getvar("linanyanruoxue") == 9 then
+    
+    talk("ruoxue14");
+    assign("linanyanruoxue",10);
+    return;
+  end
+  if getvar("linanyanruoxue") == 10 then
+    
+    talk("ruoxue15");
+    return;
+  end
+  if getvar("linanyanruoxue") == 11 then
+    
+    talk("ruoxue14");
+    
+    
+    --霹雳堂回来游西湖
+    
+    
+    talk("ruoxue16");
+    assign("linanyanruoxue",13);
+    playergotoex(144,101);
+    npcgoto("燕若雪",144,99);
+    fadeout();
+    
+    --与燕若雪游西湖，播放avi
+    hidebottomwnd();
+    playmovie("xihu2.avi");
+    showbottomwnd();
+    
+    --回到柴嵩家
+    playmusic("ks64.wav");
+    setnpcpos("燕若雪",141,108);
+    setnpcdir("燕若雪",5);
+    setplayerpos(141,109);
+    setplayerdir(5);
+    npcgotoex("燕若雪",145,95);
+    playergotoex(143,108);
+    fadein();
+    playergoto(146,96);
+    setplayerdir(3);
+    setnpcdir("燕若雪",7);
+    talk("ruoxue17");
+    addnpc("z03-许若冰.ini",181,185,7);
+    setnpcscript("柴嵩","柴嵩.txt");
+    assign("linanchaisong",2);
+    return;
+  end
+  if getvar("linanyanruoxue") == 12 then
+    
+    talk("ruoxue16");
+    assign("linanyanruoxue",13);
+    playergotoex(144,101);
+    npcgoto("燕若雪",144,99);
+    fadeout();
+    
+    --与燕若雪游西湖，播放avi
+    hidebottomwnd();
+    playmovie("xihu2.avi");
+    showbottomwnd();
+    
+    --回到柴嵩家
+    playmusic("ks64.wav");
+    setnpcpos("燕若雪",141,108);
+    setnpcdir("燕若雪",5);
+    setplayerpos(141,109);
+    setplayerdir(5);
+    npcgotoex("燕若雪",145,95);
+    playergotoex(143,108);
+    fadein();
+    playergoto(146,96);
+    setplayerdir(3);
+    setnpcdir("燕若雪",7);
+    talk("ruoxue17");
+    addnpc("z03-许若冰.ini",181,185,7);
+    setnpcscript("柴嵩","柴嵩.txt");
+    assign("linanchaisong",2);
+    return;
+  end
+  if getvar("linanyanruoxue") == 13 then
+    
+    talk("ruoxue18");
+    return;
+  end
+  return;

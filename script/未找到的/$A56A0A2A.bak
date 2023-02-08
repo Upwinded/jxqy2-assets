@@ -1,0 +1,6 @@
+		Talk("XunZhao");
+		AddRandGoods("4级物品.ini");
+		NpcGoto("找小孩",68,67);
+		DelNpc("找小孩");
+		Assign($ZhaoChild,1);
+		Return;

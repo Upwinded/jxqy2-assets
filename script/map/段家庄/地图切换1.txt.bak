@@ -1,0 +1,10 @@
+
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("汉阳-段家庄.map");
+	SetPlayerPos(7,49);
+	SetPlayerDir(5);
+	ShowMessage("段家庄前小树林");
+	FadeIn();
+	Return;

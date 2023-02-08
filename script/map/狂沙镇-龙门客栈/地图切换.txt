@@ -1,0 +1,6 @@
+  --"狂沙镇-龙门客栈"-"狂沙镇"
+  
+  talk("wrongway1");
+  playergoto(4,19);
+  setmaptrap(1,"地图切换.txt");
+  return;

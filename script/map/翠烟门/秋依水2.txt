@@ -1,0 +1,18 @@
+  --秋依水在主角完全与翠烟门弟子对话完成后的对话
+  
+  if getvar("cuiyanmen2dizi") >= 5 then
+    
+    if getvar("cuiyanmen2qiuyishui") == 1 then
+      
+      talk("qiuyishui5");
+      return;
+    end
+    talk("qiuyishui4");
+    assign("cuiyanmen2qiuyishui",1);
+    assign("cuiyanmen2allfinish",1);
+    assign("cuiyanmen2fighting",3);
+    addgoods("book-翠烟门秘笈.ini");
+    return;
+  end
+  talk("qiuyishui6");
+  return;

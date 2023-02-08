@@ -1,0 +1,5 @@
+  --翠烟门弟子
+  
+  talk("dizi3");
+  add("cuiyanmen2dizi",1);
+  return;

@@ -1,0 +1,6 @@
+
+	Talk("CaiSong");
+	SetNpcDir("Вёсд",5);
+	PlayerGoto(90,98);
+	Talk("CaiSong1");
+	Return;

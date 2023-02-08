@@ -1,0 +1,4 @@
+  --庄园门口
+  
+  talk("door");
+  return;

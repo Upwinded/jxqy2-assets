@@ -1,0 +1,5 @@
+  --村民
+  
+  
+  talk("guard2-1");
+  return;

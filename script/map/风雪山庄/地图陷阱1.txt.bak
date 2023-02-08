@@ -1,0 +1,22 @@
+//风雪山庄－长安西郊
+	
+	If($FengXueShanZhuanFinish == 0) @Label1;
+	StopMusic();
+
+@Label1:
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("长安西郊.map");
+	LoadNpc("ChangAnX.npc");
+	LoadObj("ChangAnX.obj");
+	SetPlayerPos(8,47);
+	SetPlayerDir(5);
+	FadeIn();
+	ShowMessage("长安西郊");
+	If($FengXueShanZhuanFinish == 1) @Label2;
+	Return;
+
+@Label2:
+	PlayMusic("ks67.wav");
+	Return;

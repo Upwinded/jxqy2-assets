@@ -1,0 +1,14 @@
+  --官丁死亡
+  add("guanbing",1);
+  if getvar("guanbing") >= 18 then
+    
+    if getvar("sgdiading") >= 13 then
+      
+      assign("gouguan",2);
+      assign("cafight",2);
+      return;
+    end
+    assign("gouguan",1);
+    return;
+  end
+  return;

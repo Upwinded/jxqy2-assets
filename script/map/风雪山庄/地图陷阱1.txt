@@ -1,0 +1,40 @@
+  --风雪山庄－长安西郊
+  
+  if getvar("fengxueshanzhuanfinish") == 0 then
+    
+    fadeout();
+    savenpc();
+    saveobj();
+    loadmap("长安西郊.map");
+    loadnpc("changanx.npc");
+    loadobj("changanx.obj");
+    setplayerpos(8,47);
+    setplayerdir(5);
+    fadein();
+    showmessage("长安西郊");
+    if getvar("fengxueshanzhuanfinish") == 1 then
+      
+      playmusic("ks67.wav");
+      return;
+    end
+    return;
+  end
+  stopmusic();
+  
+  
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("长安西郊.map");
+  loadnpc("changanx.npc");
+  loadobj("changanx.obj");
+  setplayerpos(8,47);
+  setplayerdir(5);
+  fadein();
+  showmessage("长安西郊");
+  if getvar("fengxueshanzhuanfinish") == 1 then
+    
+    playmusic("ks67.wav");
+    return;
+  end
+  return;

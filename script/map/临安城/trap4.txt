@@ -1,0 +1,30 @@
+  
+  if getvar("fromfengchi") == 5 then
+    
+    playmusic("ks71.wav");
+    setplayerdir(5);
+    talk("micang1");
+    setmaptrap(5,"");
+    savemaptrap();
+    return;
+  end
+  
+  setplayerstate(0);
+  setplayerdir(5);
+  setnpcdir("燕若雪",1);
+  talk("ruoxue");
+  
+  npcgotoex("燕若雪",145,99);
+  npcgoto("南宫飞云",145,100);
+  setnpcdir("燕若雪",1);
+  setnpcdir("南宫飞云",5);
+  talk("ruoxue1");
+  
+  assign("linanyanruoxue",1);
+  
+  addnpc("z03-许若冰.ini",164,117,7);
+  setnpcscript("柴嵩","柴嵩.txt");
+  assign("nofindchaisong",1);
+  setmaptrap(5,"");
+  savemaptrap();
+  return;

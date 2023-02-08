@@ -1,0 +1,26 @@
+	If ($DaoZei == 5) @Label1;
+	If ($DaoZei == 6) @Label2;
+	If ($DaoZei == 7) @Label3;
+	If ($DaoZei == 8) @Label4;
+	Talk("DaJie4");
+	Return;
+
+@Label1:
+	Talk("DaJie1");
+	AddMoney(500);
+	ShowMessage("得到五百两银子");
+	Assign($DaoZei,6);
+	Return;
+
+@Label2:
+	Talk("DaJie5");
+	Return;
+
+@Label3:
+	Talk("DaJie2");
+	Assign($DaoZei,8);
+	Return;
+	
+@Label4:
+	Talk("DaJie3");
+	Return;

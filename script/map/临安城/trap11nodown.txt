@@ -1,0 +1,7 @@
+  fadeout();
+  setplayerpos(32,129);
+  setplayerdir(5);
+  fadein();
+  talk("");
+  setmaptrap(11,"trap11nodown.txt");
+  return;

@@ -1,0 +1,165 @@
+  --翠烟门－别离村
+  
+  if getvar("cuiyanmen2allfinish") == 2 then
+    
+    fadeout();
+    savenpc();
+    loadmap("别离村.map");
+    loadnpc("bielicun1.npc");
+    loadobj("bielicun.obj");
+    setplayerpos(21,157);
+    setplayerdir(5);
+    addnpc("z08-赵无双.ini",22,133,1);
+    assign("cuiyanmen2allfinish",3);
+    if getvar("cuiyanmen2cunlanmusic") == 0 then
+      
+      fadein();
+      showmessage("别离村");
+      npcgoto("赵无双",22,155);
+      setnpcdir("赵无双",1);
+      talk("zhaowushuan");
+      npcgoto("赵无双",22,133);
+      delnpc("赵无双");
+      addtomemo("乘船取道汉阳到中都去找柴嵩。");
+      return;
+    end
+    playmusic("ks66.wav");
+    
+    
+    fadein();
+    showmessage("别离村");
+    npcgoto("赵无双",22,155);
+    setnpcdir("赵无双",1);
+    talk("zhaowushuan");
+    npcgoto("赵无双",22,133);
+    delnpc("赵无双");
+    addtomemo("乘船取道汉阳到中都去找柴嵩。");
+    return;
+  end
+  if getvar("cuiyanmen2allfinish") == 3 then
+    
+    fadeout();
+    loadmap("别离村.map");
+    if getvar("bielishengan") == 1 then
+      
+      loadnpc("bielicun1.npc");
+      loadobj("bielicun.obj");
+      setplayerpos(21,157);
+      setplayerdir(5);
+      if getvar("cuiyanmen2cunlanmusic") == 0 then
+        
+        if getvar("cuiyanmen2cunlanmusic") == 0 then
+          
+          
+          fadein();
+          showmessage("别离村");
+          return;
+        end
+        playmusic("ks66.wav");
+        
+        
+        
+        fadein();
+        showmessage("别离村");
+        return;
+      end
+      playmusic("ks66.wav");
+      
+      
+      if getvar("cuiyanmen2cunlanmusic") == 0 then
+        
+        
+        fadein();
+        showmessage("别离村");
+        return;
+      end
+      playmusic("ks66.wav");
+      
+      
+      
+      fadein();
+      showmessage("别离村");
+      return;
+    end
+    loadnpc("bielicun.npc");
+    loadobj("bielicun.obj");
+    setplayerpos(21,157);
+    setplayerdir(5);
+    if getvar("cuiyanmen2cunlanmusic") == 0 then
+      
+      
+      fadein();
+      showmessage("别离村");
+      return;
+    end
+    playmusic("ks66.wav");
+    
+    
+    
+    fadein();
+    showmessage("别离村");
+    return;
+  end
+  
+  
+  fadeout();
+  loadmap("别离村.map");
+  if getvar("bielishengan") == 1 then
+    
+    loadnpc("bielicun1.npc");
+    loadobj("bielicun.obj");
+    setplayerpos(21,157);
+    setplayerdir(5);
+    if getvar("cuiyanmen2cunlanmusic") == 0 then
+      
+      if getvar("cuiyanmen2cunlanmusic") == 0 then
+        
+        
+        fadein();
+        showmessage("别离村");
+        return;
+      end
+      playmusic("ks66.wav");
+      
+      
+      
+      fadein();
+      showmessage("别离村");
+      return;
+    end
+    playmusic("ks66.wav");
+    
+    
+    if getvar("cuiyanmen2cunlanmusic") == 0 then
+      
+      
+      fadein();
+      showmessage("别离村");
+      return;
+    end
+    playmusic("ks66.wav");
+    
+    
+    
+    fadein();
+    showmessage("别离村");
+    return;
+  end
+  loadnpc("bielicun.npc");
+  loadobj("bielicun.obj");
+  setplayerpos(21,157);
+  setplayerdir(5);
+  if getvar("cuiyanmen2cunlanmusic") == 0 then
+    
+    
+    fadein();
+    showmessage("别离村");
+    return;
+  end
+  playmusic("ks66.wav");
+  
+  
+  
+  fadein();
+  showmessage("别离村");
+  return;

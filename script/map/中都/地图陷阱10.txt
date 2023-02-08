@@ -1,0 +1,40 @@
+  if getvar("kuangshan") == 2 then
+    
+    fadeout();
+    savenpc();
+    saveobj();
+    showsnow(0);
+    loadmap("中都-矿山.map");
+    loadnpc();
+    loadobj("zhongdu-kuangshan.obj");
+    setmaptime(0);
+    setplayerpos(27,80);
+    setplayerdir(5);
+    showmessage("野外");
+    showrandomsnow();
+    fadein();
+    return;
+  end
+  if getvar("1kuangshan") == 1 then
+    
+    talk("kuangshan1");
+    assign("kuangshan",2);
+    fadeout();
+    savenpc();
+    saveobj();
+    showsnow(0);
+    loadmap("中都-矿山.map");
+    loadnpc();
+    loadobj("zhongdu-kuangshan.obj");
+    setmaptime(0);
+    setplayerpos(27,80);
+    setplayerdir(5);
+    showmessage("野外");
+    showrandomsnow();
+    fadein();
+    return;
+  end
+  talk("kuangshan");
+  playergoto(31,96);
+  setmaptrap(10,"地图陷阱10.txt");
+  return;

@@ -1,0 +1,4 @@
+//Àë¿ªµØÍ¼
+       Talk("outjiudian");
+       SaveMapTrap();	
+       Return;

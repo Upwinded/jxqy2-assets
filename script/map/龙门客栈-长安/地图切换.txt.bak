@@ -1,0 +1,20 @@
+//龙门客栈-长安 -- 龙门客栈
+
+	Talk("WrongWay");
+	PlayerGotoDir(0,2);
+	SetMapTrap(1,"地图切换.txt");
+	Return;
+
+	FadeOut();
+	StopMusic();
+	LoadMap("龙门客栈.map");
+	LoadNpc("lmkz.npc");
+	LoadObj("lmkz.obj");
+	SetPlayerPos(45,108);
+	SetPlayerDir(4);
+	SetNpcPos("燕若雪",45,110);
+	SetNpcDir("燕若雪",4);
+	PlayMusic("ks67.wav");
+	ShowMessage("龙门客栈");
+	FadeIn();
+	Return;

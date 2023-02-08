@@ -1,0 +1,8 @@
+	If ($FromFengChi <= 6) Goto @Label1;
+	Return;
+
+@Label1:
+	Talk("Door");
+	PlayerGotoDir(1,2);
+	SetMapTrap(1,"Trap1.txt");
+	Return;

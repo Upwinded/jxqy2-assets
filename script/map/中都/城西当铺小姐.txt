@@ -1,0 +1,11 @@
+  --当铺小姐的对话
+  
+  if getvar("zhongduchenxidanpuxiaojie") == 1 then
+    
+    talk("chenxidanpuwangxiaojie01");
+    return;
+  end
+  talk("chenxidanpuwangxiaojie");
+  assign("zhongduchenxidanpuxiaojie",1);
+  assign("zhongduchenxidanpuyahuan",2);
+  return;

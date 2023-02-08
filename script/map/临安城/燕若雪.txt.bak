@@ -1,0 +1,265 @@
+//燕若雪
+	
+	If ($LinAnYanRuoXue == 14) @Label1;
+	If ($LinAnYanRuoXue==1) @Talk1;
+	If ($LinAnYanRuoXue==2) @Talk2;
+	If ($LinAnYanRuoXue==3) @Talk3;
+	If ($LinAnYanRuoXue==4) @Talk4;
+	If ($LinAnYanRuoXue==5) @Talk5;	
+	If ($LinAnYanRuoXue==6) @Talk6;
+	If ($LinAnYanRuoXue==7) @Talk7;
+	If ($LinAnYanRuoXue==8) @Talk8;
+	If ($LinAnYanRuoXue==9) @Talk9;
+	If ($LinAnYanRuoXue==10) @Talk10;
+	If ($LinAnYanRuoXue==11) @Talk11;
+	If ($LinAnYanRuoXue==12) @Talk12;
+	If ($LinAnYanRuoXue==13) @Talk13;
+	Return;
+
+@Label1:
+	Talk("RuoXue4");
+	Assign($LinAnYanRuoXue,4);
+	Return;	
+
+@Talk1:
+	Talk("RuoXue11");
+	Return;
+	
+@Talk2:
+	Talk("RuoXue2");
+	PlayerGotoEx(144,101);
+	NpcGoto("燕若雪",144,99);
+	FadeOut();
+
+	//与燕若雪游西湖，播放AVI
+	HideBottomWnd();
+	PlayMovie("xihu1.avi");
+	ShowBottomWnd();
+
+	SetNpcPos("柴嵩",151,117);
+	SetNpcPos("燕若雪",146,130);
+	SetPlayerPos(145,129);
+	SetNpcDir("柴嵩",1);
+	SetNpcDir("燕若雪",5);
+	SetPlayerDir(5);
+	PlayMusic("ks71.wav");
+	FadeIn();
+	NpcGotoEx("燕若雪",151,120);
+	PlayerGoto(150,119);
+	SetPlayerDir(5);
+	SetNpcDir("燕若雪",4);
+	Talk("CaiSong1");
+	SetNpcDir("燕若雪",1);
+	NpcGotoEx("南宫飞云",147,125);
+	NpcGoto("柴嵩",147,124);
+
+	//载入凤池山庄，第一次进入这里
+	StopMusic();
+	FadeOut();
+	Assign($LinAnYanRuoXue,3);
+	Assign($NoFindChaisong,2);
+	SetNpcPos("柴嵩",164,117);
+	SetNpcPos("燕若雪",145,95);
+	SaveNpc();
+	SaveObj();
+	SaveMapTrap();
+	LoadMap("凤池山庄.map");
+	LoadNpc("Fengci.npc");
+	LoadObj("Fengci.obj");
+	SetPlayerPos(63,232);
+	SetPlayerDir(5);
+	PlayMusic("ks65.wav");
+	FadeIn();
+	Talk("WaiJiao");
+	NpcGotoEx("柴嵩",64,228);
+	PlayerGoto(64,229);
+	Talk("JiaDin1");
+
+	//进入大厅对话
+	FadeOut();
+	SetNpcPos("柴嵩",80,196);
+	SetPlayerPos(79,196);
+	SetNpcDir("柴嵩",3);
+	SetPlayerDir(5);
+	FadeIn();
+
+	Talk("DaTin");
+	PlayerGoto(80,194);
+	Talk("DaTin_s");
+	SetPlayerDir(3);
+	Talk("DaTin_s2");
+	SetPlayerDir(4);
+	Talk("DaTin_s3");
+	SetPlayerDir(5);
+	
+	//介绍赵节
+	NpcGoto("柴嵩",81,194);
+	NpcGoto("柴嵩",80,189);
+	PlayerGoto(80,190);
+	SetNpcDir("柴嵩",1);
+	SetPlayerDir(4);
+	Talk("JieShao1");
+
+	//介绍邵骑风
+	SetNpcDir("柴嵩",2);
+	PlayerGoto(79,191);
+	SetPlayerDir(3);
+	Talk("JieShao");
+
+	//介绍史忠良
+	NpcGotoEx("南宫飞云",78,193);
+	NpcGoto("柴嵩",78,191);
+	SetNpcDir("柴嵩",2);
+	SetPlayerDir(3);
+	Talk("JieShao2");
+
+	//介绍敖管家
+	NpcGotoEx("柴嵩",78,192);
+	PlayerGoto(77,195);
+	SetNpcDir("柴嵩",2);
+	SetPlayerDir(3);
+	Talk("JieShao3");
+
+	//回到独孤剑面前对话后柴嵩离开
+	NpcGoto("柴嵩",79,193);
+	NpcGotoEx("柴嵩",81,194);
+	PlayerGoto(80,193);
+	SetNpcDir("柴嵩",4);
+	SetPlayerDir(5);
+	Talk("JieShao4");
+	SetPlayerDir(1);
+	NpcGoto("柴嵩",71,208);
+	DelNpc("柴嵩");
+
+	//南宫飞云到后院去
+	SetNpcPos("偏厅家丁",80,181);
+
+	//劭骑风叫家丁进来
+	Talk("XiuXi1");
+	NpcGoto("偏厅家丁",79,191);
+	SetNpcDir("偏厅家丁",3);
+	//劭骑风和家丁对话
+	Talk("XiuXi2");
+	SetNpcDir("偏厅家丁",7);
+	//家丁和主角对话
+	Talk("XiuXi3");
+	NpcGotoEx("偏厅家丁",82,180);
+	PlayerGoto(81,183);
+	Talk("DaTin1");
+	NpcGotoEx("偏厅家丁",78,173);
+	PlayerGoto(79,175);
+	NpcGotoEx("偏厅家丁",78,163);
+	PlayerGoto(78,166);
+	NpcGotoEx("偏厅家丁",81,158);
+	PlayerGoto(80,160);
+	NpcGotoEx("偏厅家丁",84,152);
+	PlayerGoto(83,154);
+	NpcGotoEx("偏厅家丁",84,141);
+	PlayerGoto(83,143);
+	NpcGotoEx("偏厅家丁",87,131);
+	PlayerGoto(88,132);
+	SetNpcDir("偏厅家丁",7);
+	SetPlayerDir(3);
+	Talk("WoShi");
+	AddToMemo("想办法到临安去见燕若雪。");
+	NpcGoto("偏厅家丁",84,137);
+	NpcGoto("偏厅家丁",86,144);
+	SetNpcDir("偏厅家丁",1);
+	Return;
+
+@Talk3:
+	Talk("RuoXue4");
+	AddToMemo("去见柴大哥。");
+	Assign($LinAnYanRuoXue,4);
+	Return;
+
+@Talk4:
+	Talk("RuoXue5");
+	If ($FromFengChi <> 2) @Label2;
+	Return;
+
+@Label2:
+	Talk("RuoXue51");
+	Return;
+
+// 捉迷藏
+@Talk5:
+	Talk("MiCang2");
+	FadeOut();
+	SetNpcPos("燕若雪",145,93);
+	SetNpcDir("燕若雪",0);
+	SetPlayerPos(145,95);
+	SetPlayerDir(4);
+	SetNpcPos("婕儿",143,134);
+	SetNpcDir("婕儿",1);
+	Assign($LinAnYanRuoXue,6);
+	Assign($FromFengChi,6);
+	Assign($LinAnJieEr,1);
+	PlayMusic("ks75.wav");
+	FadeIn();
+	Talk("MiCang3");
+	AddToMemo("是时间回凤池山庄了。");
+	Return;
+
+@Talk6:
+	Talk("MiCang3");
+	Return;
+
+@Talk7:
+	Talk("RuoXue12");
+	Talk("RuoXue13");
+	Assign($LinAnYanRuoXue,8);
+	Return;
+
+@Talk8:
+	Talk("RuoXue13");
+	Return;
+
+@Talk9:
+	Talk("RuoXue14");
+	Assign($LinAnYanRuoXue,10);
+	Return;
+
+@Talk10:
+	Talk("RuoXue15");
+	Return;	
+
+@Talk11:
+	Talk("RuoXue14");
+
+
+// 霹雳堂回来游西湖
+
+@Talk12:
+	Talk("RuoXue16");
+	Assign($LinAnYanRuoXue,13);
+	PlayerGotoEx(144,101);
+	NpcGoto("燕若雪",144,99);	
+	FadeOut();
+
+	//与燕若雪游西湖，播放AVI
+	HideBottomWnd();
+	PlayMovie("xihu2.avi");
+	ShowBottomWnd();
+
+	//回到柴嵩家
+	PlayMusic("ks64.wav");
+	SetNpcPos("燕若雪",141,108);
+	SetNpcDir("燕若雪",5);
+	SetPlayerPos(141,109);
+	SetPlayerDir(5);	
+	NpcGotoEx("燕若雪",145,95);
+	PlayerGotoEx(143,108);	
+	FadeIn();
+	PlayerGoto(146,96);
+	SetPlayerDir(3);
+	SetNpcDir("燕若雪",7);
+	Talk("RuoXue17");
+	AddNpc("z03-许若冰.ini",181,185,7);
+	SetNpcScript("柴嵩","柴嵩.txt");
+	Assign($LinAnChaiSong,2);
+	Return;
+
+@Talk13:
+	Talk("RuoXue18");
+	Return;

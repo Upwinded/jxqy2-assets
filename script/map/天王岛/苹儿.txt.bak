@@ -1,0 +1,23 @@
+//Æ»¶ùµÄ´ó¶Î¶Ô»°
+
+	Talk("PinEr");
+	DelGoods("goods-sj-1-ÌìÍõÁî.ini");
+	Talk("PinEr1");
+	NpcGoto("Æ»¶ù",54,76);
+	NpcGotoEx("Æ»¶ù",45,77);
+	PlayerGoto(52,78);
+	PlayerGoto(48,84);
+	PlayerGoto(46,76);
+	SetNpcDir("Æ»¶ù",5);
+	SetPlayerDir(1);
+	Talk("PinEr2");
+	StopMusic();
+	FadeOut();
+	SetNpcPos("Æ»¶ù",74,69);
+	SetNpcDir("Æ»¶ù",7);
+	PlayMusic("Ks76.wav");
+	FadeIn();
+	Talk("PinEr3");
+	SetNpcScript("Æ»¶ù","Æ»¶ù1.txt");
+	Assign($TianWangPiEr,1);
+	Return;

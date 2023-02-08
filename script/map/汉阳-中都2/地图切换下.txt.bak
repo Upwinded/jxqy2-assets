@@ -1,0 +1,12 @@
+	FadeOut();
+        ShowSnow(0);
+	LoadMap("∫∫—Ù-÷–∂º1.map");
+	LoadNpc("hanyan-zhong1.npc");
+	LoadObj("HanYan-zd1.obj");
+	SetPlayerPos(21,37);
+	SetPlayerDir(1);
+	PlayMusic("ks67.wav");
+        ShowRandomSnow();
+	FadeIn();
+	ShowMessage("“∞Õ‚");
+	Return;

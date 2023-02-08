@@ -1,0 +1,30 @@
+
+	If($FromFengChi == 5) @Lable1;
+
+	SetPlayerState(0); 	
+	SetPlayerDir(5);
+	SetNpcDir("—‡»Ù—©",1);
+	Talk("RuoXue");
+
+	NpcGotoEx("—‡»Ù—©",145,99);
+	NpcGoto("ƒœπ¨∑…‘∆",145,100);
+	SetNpcDir("—‡»Ù—©",1);
+	SetNpcDir("ƒœπ¨∑…‘∆",5);
+	Talk("RuoXue1");
+
+	Assign($LinAnYanRuoXue,1);
+	
+	AddNpc("z03-–Ì»Ù±˘.ini",164,117,7);
+	SetNpcScript("≤Ò·‘","≤Ò·‘.txt");
+	Assign($NoFindChaisong,1);
+	SetMapTrap(5,"");
+	SaveMapTrap();
+	Return;
+	
+@Lable1:
+	PlayMusic("ks71.wav");
+	SetPlayerDir(5);
+	Talk("Micang1");
+	SetMapTrap(5,"");
+	SaveMapTrap();
+	Return;

@@ -1,0 +1,18 @@
+  if getvar("laoftiemen1") == 1 then
+    
+    delobj("铁门关1");
+    addobj("铁门开1.ini",50,110);
+    assign("laoftiemen1",2);
+    return;
+  end
+  if getvar("laoftiemen1") == 2 then
+    
+    delobj("铁门开1");
+    addobj("铁门关1.ini",50,110);
+    assign("laoftiemen1",1);
+    return;
+  end
+  delobj("铁门关1");
+  addobj("铁门开1.ini",50,110);
+  assign("laoftiemen1",2);
+  return;

@@ -1,0 +1,17 @@
+[head]
+map=百花谷小屋.map
+count=1
+
+[npc000]
+name=燕若雪
+kind=0
+npcini=npc-z02-燕若雪.ini
+dir=1
+mapx=14
+mapy=14
+action=0
+walkspeed=1
+pathfinder=1
+dialogradius=1
+scriptfile=燕若雪.txt
+

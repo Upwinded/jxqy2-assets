@@ -1,0 +1,15 @@
+  stopmusic();
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("金兵营寨.map");
+  loadnpc("jinbingdayin.npc");
+  savenpc("jbdy_temp.npc");
+  loadnpc("jbdy_temp.npc");
+  loadobj("jinbingdayin.obj");
+  setplayerpos(24,170);
+  setplayerdir(5);
+  showmessage("金兵大营");
+  playmusic("ks74.wav");
+  fadein();
+  return;

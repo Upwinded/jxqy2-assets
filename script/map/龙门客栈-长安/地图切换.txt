@@ -1,0 +1,6 @@
+  --龙门客栈-长安--龙门客栈
+  
+  talk("wrongway");
+  playergotodir(0,2);
+  setmaptrap(1,"地图切换.txt");
+  return;

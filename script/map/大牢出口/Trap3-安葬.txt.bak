@@ -1,0 +1,34 @@
+//
+       If($LinAnDie>=4) @Talk2;
+       LoadNpc("LinAnDaLaoOut.npc");
+       SetMapTrap(5,"地图陷阱5.txt");
+       SetMapTrap(6,"地图陷阱6.txt");
+       SetMapTrap(4,"地图陷阱4.txt");
+       If($Zhao==1) @Talk1;
+       Return;
+
+@Talk1:
+       DelNpc("赵无双");
+       Return;
+
+@Talk2:
+	PlayerGoto(16,14)
+	SetPlayerDir(6);
+	MoveScreen(6,260);
+	Talk("AnZhang");
+	MoveScreen(2,260);
+	PlayerGoto(18,14)
+	SetPlayerDir(6);
+	Sleep(1000);
+	SetPlayerDir(2);
+	Talk("AnZhang1");
+	SaveMapTrap();
+	FadeOut();
+	Assign($AnZang,1);
+	LoadMap("大牢出口1.map");
+	LoadObj("DaLaoChuKou.obj");
+	SetPlayerPos(18,14);
+	FadeIn();
+	PlayerGoto(17,13);
+	Talk("AnZhang3");
+	Return;

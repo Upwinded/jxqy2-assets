@@ -1,0 +1,4 @@
+	Talk("exit1");
+	PlayerGotoDir(7,2);
+	SetMapTrap(3,"Trap-3.txt");
+	Return;

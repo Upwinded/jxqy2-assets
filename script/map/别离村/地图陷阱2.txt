@@ -1,0 +1,23 @@
+  --别离村－翠烟门2
+  
+  if getvar("cuiyanmen2finish") == 1 then
+    
+    stopmusic();
+    fadeout();
+    loadmap("翠烟门.map");
+    loadnpc("cuiym1.npc");
+    setplayerpos(129,91);
+    setplayerdir(1);
+    fadein();
+    talk("qiuyishui1");
+    return;
+  end
+  stopmusic();
+  fadeout();
+  loadmap("翠烟门.map");
+  loadnpc("cuiym.npc");
+  loadobj("cuiym.obj");
+  setplayerpos(129,91);
+  setplayerdir(1);
+  fadein();
+  return;

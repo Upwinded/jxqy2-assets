@@ -1,0 +1,17 @@
+
+	SetMapTrap(3,"");
+	SaveMapTrap();
+	DisableNpcAI();
+	PlayerGoto(25,35);
+	SetPlayerDir(3);
+	Sleep(300);
+	SetPlayerDir(7);
+	Sleep(300);
+	SetPlayerDir(5);
+	Talk("SomethingHappen");
+	NpcGoto("ºÚÉ²",29,29);
+	Talk("MetSomeone");
+	NpcAttack("ºÚÉ²",25,35);
+	Talk("MetSomeone1");
+	EnableNpcAI();
+	Return;

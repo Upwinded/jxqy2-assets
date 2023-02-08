@@ -1,0 +1,5 @@
+  
+  talk("houyuanshoumenbanzhong");
+  npcgotodir("南宫飞云",7,1);
+  setmaptrap(1,"杨英门口陷阱.txt");
+  return;

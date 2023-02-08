@@ -1,0 +1,18 @@
+  if getvar("longyinshiliaoran") == 1 then
+    
+    talk("longyinshiliaoran");
+    return;
+  end
+  if getvar("zhongduhouhuayuan") == 6 then
+    
+    talk("longyinshiliaoran1");
+    assign("longyinshiliaoran",1);
+    addnpc("d16-无赖1.ini",134,75,2);
+    addnpc("d17-无赖2.ini",133,77,4);
+    setmaptrap(13,"地图陷阱13.txt");
+    setmaptrap(6,"龙音寺门口地图陷阱6.txt");
+    savemaptrap();
+    return;
+  end
+  talk("longyinshiliaoran");
+  return;

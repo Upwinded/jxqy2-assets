@@ -1,0 +1,10 @@
+
+
+	If ($ZhongDuChenXiDanPuYuanWai==1) @Talk1;
+	Talk("ChenXiDanPuShanRen");
+	Assign($ZhongDuChenXiDanPuYuanWai,1);
+	Return;
+	
+@Talk1:
+	Talk("ChenXiDanPuShanRen1");
+	Return;

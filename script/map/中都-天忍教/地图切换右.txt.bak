@@ -1,0 +1,13 @@
+	FadeOut();
+        ShowSnow(0);
+        SetMapTime(0);
+        LoadMap("天忍教.map");
+	LoadNpc("TRJ.npc");
+	LoadObj("TRJ.obj");
+	SetPlayerPos(81,168);
+	SetPlayerDir(3);
+	ShowMessage("天忍教");
+	PlayMusic("ks74.wav");
+        ShowRandomSnow();
+	FadeIn();
+	Return;

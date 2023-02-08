@@ -1,0 +1,22 @@
+//出寺门，被柴嵩过来拦住
+        
+        If($LongYinShiLiaoRan==1) @Talk1; 
+        AddNpc("z03-许若冰.ini",41,105);
+        SetNpcAction("柴嵩",0);
+        PlayMusic("ks69.wav");
+        NpcGotoEx("柴嵩",44,99);
+        PlayerGoto(45,98);
+        Talk("lys6");
+        NpcGoto("柴嵩",51,112);
+        SetNpcPos("柴嵩",79,31);
+        Talk("lys7");
+        SetNpcScript("柴嵩","柴嵩.txt");
+	    AddToMemo("到龙音寺后面的小屋去找柴嵩。");
+        Assign($ZhongDuLYS,1);
+        SaveMapTrap();
+        Return;
+       
+@Talk1:
+	PlayMusic("ks75.wav");
+        Talk("LongYinShiLiaoRan2");
+        Return;

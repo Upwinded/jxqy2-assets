@@ -1,0 +1,16 @@
+     DisableNpcAI();
+     PlayerGotoEx(5,157);
+     SetNpcKind("ÄÐÍ¯",0);	
+     NpcGoto("ÄÐÍ¯",5,155);
+     SetNpcDir(0);
+     SetPlayerDir(4);
+     Talk("talk2");
+     AddGoods("goods-sj-9-±ðÀë´åÔ¿³×.ini");
+     NpcGoto("ÄÐÍ¯",3,172);
+     DelNpc("ÄÐÍ¯");
+     EnableJump();
+     EnableRun();	
+     SaveMapTrap();
+     EnableNpcAI();
+     Return;
+     

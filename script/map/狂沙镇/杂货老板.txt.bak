@@ -1,0 +1,7 @@
+// 杂货老板
+
+
+	Talk("seller-1");
+	BuyGoods("2-狂沙镇-杂货老板.ini");
+	Return;
+

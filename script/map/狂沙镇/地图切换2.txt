@@ -1,0 +1,52 @@
+  --"狂沙镇"-"狂沙镇-铁门寨"
+  
+  --单独第一次进入地图和酒店老板讲话之前
+  if getvar("ksoqiehuan") == 0 then
+    
+    talk("goout1");
+    playergotodir(1,2);
+    setmaptrap(3,"地图切换2.txt");
+    return;
+  end
+  
+  --单独第一次进入地图和酒店老板讲话之后（正常情况下使用）
+  if getvar("ksoqiehuan") == 1 then
+    
+    fadeout();
+    setmainlum(31);
+    savenpc("");
+    saveobj("");
+    stopmusic();
+    loadmap("狂沙镇-铁门寨.map");
+    loadnpc("ks-tmz.npc");
+    loadobj("ks-tmz.obj");
+    setplayerpos(8,90);
+    setplayerdir(4);
+    fadein();
+    showmessage("野外");
+    return;
+  end
+  
+  --和燕若雪一起的时候未进入酒店
+  if getvar("ksoqiehuan") == 2 then
+    
+    talk("newout2");
+    playergotodir(1,2);
+    setmaptrap(3,"地图切换2.txt");
+    return;
+  end
+  
+  --和燕若雪一起的时候进入酒店后
+  if getvar("ksoqiehuan") == 3 then
+    
+    talk("newout3");
+    playergotodir(1,2);
+    setmaptrap(3,"地图切换2.txt");
+    return;
+  end
+  
+  
+  talk("goout1");
+  playergotodir(1,2);
+  setmaptrap(3,"地图切换2.txt");
+  return;

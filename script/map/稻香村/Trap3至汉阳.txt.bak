@@ -1,0 +1,21 @@
+		If ($FromFengChi >= 14) @Lable1;
+		Talk("Return");
+		PlayerGotoDir(5,2);
+		SetMapTrap(3,"Trap3÷¡∫∫—Ù.txt");
+		Return;
+@Lable1:
+		FadeOut();
+		SetMainLum(31);
+		SetMapTime(0);
+		SaveNpc();
+		SaveObj();
+		LoadMap("∫∫—Ù.map");
+		LoadNpc("HanYan.npc");
+		LoadObj("HanYan.obj");
+		SetPlayerPos(77,173);
+		SetPlayerDir(3);
+		DelNpc("√œÕ¢Õ˛");
+		DelNpc(" ∑÷“¡º");
+		DelNpc("≈‘π€’ﬂ");
+		FadeIn();
+		Return;			

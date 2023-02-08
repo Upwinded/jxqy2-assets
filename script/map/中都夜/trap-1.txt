@@ -1,0 +1,4 @@
+  talk("exit1");
+  playergotodir(1,2);
+  setmaptrap(1,"trap-1.txt");
+  return;

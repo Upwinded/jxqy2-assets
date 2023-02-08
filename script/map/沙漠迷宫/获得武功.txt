@@ -1,0 +1,7 @@
+  --从宝箱得到怒雷指
+  
+  disablenpcai();
+  talk("wugong");
+  addmagic("player-magic-怒雷指.ini");
+  enablenpcai();
+  return;

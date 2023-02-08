@@ -1,0 +1,10 @@
+	DisableNpcAI();
+	Talk("ZhaoJieDie");
+	SetMapTrap(11,"Trap11-µØÏÂÃÔ¹¬.txt");
+	SaveMapTrap();
+	FadeOut();
+	DelNpc("ÕÔ½Ú");
+	FadeIn();
+	Talk("ZhaoJieDie11");
+	EnableNpcAI();	
+	Return;

@@ -1,0 +1,7 @@
+			DisableNpcAI();
+			PlayerGoto(77,169);
+			SetPlayerDir(7);
+			Talk("ShaoQiFeng");
+			EnableNpcAI();
+			SaveMapTrap();
+			Return;

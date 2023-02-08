@@ -1,0 +1,4 @@
+  --小孩
+  
+  talk("cunkoujumin2");
+  return;

@@ -1,0 +1,19 @@
+  --守门的弟子
+  
+  if getvar("tianwanshoumendizi") == 1 then
+    
+    talk("dizi1");
+    stopmusic();
+    fadeout();
+    loadmap("汉阳.map");
+    loadnpc("hanyan.npc");
+    loadobj("hanyan.obj");
+    setplayerpos(40,40);
+    setplayerdir(7);
+    showmessage("汉阳");
+    playmusic("ks69.wav");
+    fadein();
+    return;
+  end
+  talk("dizi");
+  return;

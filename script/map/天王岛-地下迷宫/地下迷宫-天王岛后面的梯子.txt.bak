@@ -1,0 +1,19 @@
+    	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("天王岛.map");
+	LoadNpc("TianWang.npc");
+	LoadObj("TianWang.obj");
+	SetMainLum(31);
+    	SetMapTime(0);
+	SetPlayerLum(0);
+    	SetPlayerPos(32,154);
+	SetPlayerDir(5);
+	ShowMessage("天王岛");
+	FadeIn();
+	If ($TianWangPiEr == 3) Goto @Lable1;
+	Return;
+	
+@Lable1:
+	SetNpcPos("苹儿",45,75);
+	Return;

@@ -1,0 +1,8 @@
+  --
+  talk("kuanggong");
+  fadeout();
+  delnpc("矿工2");
+  delnpc("矿工1");
+  assign("kuanggongzoule",1);
+  fadein();
+  return;

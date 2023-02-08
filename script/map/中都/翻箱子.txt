@@ -1,0 +1,10 @@
+  openbox();
+  playsound("物-箱子开.wav");
+  addmoney(100);
+  showmessage("你从箱子里找到一百两银子");
+  sleep(1000);
+  talk("housefight");
+  setnpcrelation("剑客-1",1);
+  setnpcrelation("剑客-2",1);
+  setobjscript("","");
+  return;

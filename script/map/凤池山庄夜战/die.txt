@@ -1,0 +1,18 @@
+  add("fengchikill",1);
+  if getvar("fengchikill") == 22 then
+    
+    disablenpcai();
+    sleep(1000);
+    talk("yedating4");
+    fadeout();
+    setnpcpos("邵骑风",174,9);
+    delobj("赵无双尸体");
+    delobj("唐影尸体");
+    delobj("秋依水尸体");
+    delobj("许若冰尸体");
+    setnpclevel("敖管家",45);
+    fadein();
+    enablenpcai();
+    return;
+  end
+  return;

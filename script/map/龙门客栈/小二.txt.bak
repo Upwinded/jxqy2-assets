@@ -1,0 +1,6 @@
+//小二
+
+	Talk("xiaoer");
+	AddToMemo("龙门客栈附近似乎有强盗出没。");
+	Return;
+	

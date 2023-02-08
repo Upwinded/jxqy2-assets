@@ -1,0 +1,4 @@
+  
+  talk("yao");
+  buygoods("4-汉阳-药铺老板.ini");
+  return;

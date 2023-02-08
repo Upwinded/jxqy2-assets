@@ -1,0 +1,21 @@
+  --汉阳－中都
+  
+  if getvar("hanyanctmszl") == 3 then
+    
+    fadeout();
+    saveobj();
+    savenpc();
+    loadmap("汉阳-金兵营寨.map");
+    loadobj("hanyan-jbdy.obj");
+    setplayerpos(7,72);
+    setplayerdir(5);
+    showmessage("郊外");
+    playmusic("ks67.wav");
+    fadein();
+    return;
+  end
+  --if($tianwanshoumendizi==1)@talk1;
+  talk("dongchengmen");
+  playergoto(78,64);
+  setmaptrap(2,"地图切换2.txt");
+  return;

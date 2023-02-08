@@ -1,0 +1,42 @@
+//码头上的天王帮弟子
+
+	If ($HanYanTWBDiZi==1) @Talk1;
+	Talk("TianWanBanDiZi2");
+	StopMusic();
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("天王岛.map");
+	LoadNpc("TianWang.npc");
+	LoadObj("TianWang.obj");
+	SetPlayerPos(85,20);
+	SetPlayerDir(3);
+	PlayMusic("Ks76.wav");
+	FadeIn();
+	ShowMessage("天王岛");
+	Talk("DiZi2");
+	Assign($HanYanTWBDiZi,1);
+	Return;
+	
+@Talk1:
+	Talk("TianWanBanDiZi3");
+	FadeOut();
+	LoadMap("天王岛.map");
+	LoadNpc("TianWang.npc");
+	LoadObj("TianWang.obj");
+	SetPlayerPos(85,20);
+	SetPlayerDir(3);
+	FadeIn();
+	ShowMessage("天王岛");
+	If ($FromFengChi ==20) @Lable1;
+	Return;
+	
+@Lable1:
+	PlayMusic("ks65.wav");
+	SetNpcPos("杨瑛",45,76);
+	SetNpcDir("杨瑛",7);
+	If ($TianWangPiEr==4) Goto @Lable2;
+	Return;
+@Lable2:
+	Assign($TianWangPiEr,5);
+	Return;

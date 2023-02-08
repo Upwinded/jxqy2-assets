@@ -1,0 +1,42 @@
+  --别离村－(别离村-唐门)
+  
+  if getvar("cuiyanmen2cunlanmusic") == 0 then
+    
+    if getvar("cuiyanmen2cunlan") == 0 then
+      
+      talk("tangmen");
+      playergotodir(3,2);
+      setmaptrap(3,"地图切换2.txt");
+      return;
+    end
+    fadeout();
+    savenpc();
+    loadmap("别离村-唐门.map");
+    loadnpc("bielicun-tangmeng.npc");
+    loadobj("bielicun-tm.obj");
+    setplayerpos(3,49);
+    setplayerdir(5);
+    showmessage("山间小路");
+    fadein();
+    return;
+  end
+  stopmusic();
+  
+  
+  if getvar("cuiyanmen2cunlan") == 0 then
+    
+    talk("tangmen");
+    playergotodir(3,2);
+    setmaptrap(3,"地图切换2.txt");
+    return;
+  end
+  fadeout();
+  savenpc();
+  loadmap("别离村-唐门.map");
+  loadnpc("bielicun-tangmeng.npc");
+  loadobj("bielicun-tm.obj");
+  setplayerpos(3,49);
+  setplayerdir(5);
+  showmessage("山间小路");
+  fadein();
+  return;

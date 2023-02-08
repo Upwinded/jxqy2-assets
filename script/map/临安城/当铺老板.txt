@@ -1,0 +1,3 @@
+  talk("dangpu");
+  sellgoods("7-临安-当铺老板.ini");
+  return;

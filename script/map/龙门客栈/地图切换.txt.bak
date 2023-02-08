@@ -1,0 +1,42 @@
+// "龙门客栈" - "狂沙镇-龙门客栈"
+
+	//与柴嵩对话前
+	If ($LMKZOQieHuan==0 ) @out1;
+	
+	//决定去葬马岗没解决
+	If ($LMKZOZhanMaGang==1 ) @out3;
+	
+	//与柴嵩对话后
+	If ($LMKZOQieHuan==1 ) @out2;
+	
+@out1:
+	Talk("out1");
+	PlayerGotoDir(7,2);
+	SetMapTrap(1,"地图切换.txt");
+	Return;
+	
+@out2:
+	Talk("out2");
+	PlayerGotoDir(7,2);
+	SetMapTrap(1,"地图切换.txt");
+	Return;
+
+// 地图切换    
+	FadeOut();
+	StopMusic();
+	SaveNpc("");
+	SaveObj("");
+	LoadMap("狂沙镇-龙门客栈.map");
+	LoadNpc("");
+	SetPlayerPos(23,48);
+	SetPlayerDir(4);
+	ShowMessage("树林");
+	FadeIn();
+	Return;
+	
+@out3:
+	Talk("out3");
+	PlayerGotoDir(7,2);
+	SetMapTrap(1,"地图切换.txt");
+	Return;
+

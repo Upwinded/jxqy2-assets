@@ -1,0 +1,40 @@
+  --婕儿
+  if getvar("fromfengchi") == 1 then
+    
+    talk("jieer5");
+    return;
+  end
+  if getvar("fromfengchi") == 6 then
+    
+    talk("jieer6");
+    return;
+  end
+  if getvar("linanjieer") == 1 then
+    
+    talk("jieer1");
+    return;
+  end
+  if getvar("linanjieer") == 2 then
+    
+    talk("jieer3");
+    return;
+  end
+  if getvar("linanjieer") == 3 then
+    
+    playmusic("ks71.wav");
+    talk("jieer2");
+    addtomemo("燕若雪在与捷儿捉迷藏，到处找找吧，留意一下墙角之类的隐秘地方。");
+    setmaptrap(4,"");
+    setmaptrap(5,"");
+    setmaptrap(10,"trap10.txt");
+    assign("linanjieer",2);
+    assign("linanyanruoxue",5);
+    savemaptrap();
+    return;
+  end
+  talk("jieer");
+  playmusic("ks64.wav");
+  assign("linanjieer",1);
+  npcgoto("婕儿",143,134);
+  playergoto(142,135);
+  return;

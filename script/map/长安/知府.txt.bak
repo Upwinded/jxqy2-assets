@@ -1,0 +1,15 @@
+	If( $GouGuan == 1) @Label1;
+	If( $GouGuan == 2) @Label2;
+	If ($CAFight == 1) @Fight;
+	Talk("ShangGuanB20");
+	Return;
+@Label1:
+	If ($CAFight == 2) @Label2;
+	Talk("ShangGuanB11");
+	Return;	
+@Label2:
+	Talk("ShangGuanB13");
+	Return;
+@Fight:
+	Talk("ShangGuanB17");
+	Return;

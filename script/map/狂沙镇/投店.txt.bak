@@ -1,0 +1,46 @@
+//”Î—‡»Ù—©“ª∆Õ∂µÍ
+
+	PlayerGoto(98,189);
+	SetPlayerDir(5);
+	Talk("laoban3");
+	FadeOut();
+	SetPlayerPos(72,213);
+	SetPlayerDir(6);
+	SetNpcPos("—‡»Ù—©",73,211);
+	SetNpcDir("—‡»Ù—©",1);
+	SetNpcKind("—‡»Ù—©",0);
+	FadeIn();
+	Talk("YangRuoXu13");
+	PlayerGoto(73,200);
+	PlayerGoto(77,193);
+	PlayerGoto(80,200);
+	Talk("YangRuoXu131");
+	PlayerGoto(78,203);
+	PlayerGoto(80,206);
+	Talk("YangRuoXu14");
+	PlayerGoto(82,202);
+	PlayerGoto(80,200);
+	Talk("YangRuoXu15");
+	FadeOut();
+	StopMusic();
+	Talk("shuijiao2");
+	FullLife();
+	FullThew();
+	FullMana();
+	PlayMusic("ks71.wav");
+	FadeIn();
+	Talk("YangRuoXu16");
+	PlayerGoto(79,198);
+	Talk("YangRuoXu17");
+	PlayerGoto(75,197);
+	PlayerGoto(72,203);
+	PlayerGoto(72,213);
+	SetPlayerDir(5);
+	Talk("YangRuoXu18");
+	SetNpcKind("—‡»Ù—©",3);
+	SetMapTrap(4,"");
+	SaveMapTrap();
+	Assign($KsOQieHuan,3);
+	AddToMemo("∞—≈Æ∫¢ÀÕµΩ≥§∞≤»•°£");
+	Return;
+	

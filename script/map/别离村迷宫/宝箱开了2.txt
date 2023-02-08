@@ -1,0 +1,11 @@
+  getgoodsnum("goods-sj-9-别离村钥匙.ini");
+  if getvar("goodsnum") >= 1 then
+    
+    playsound("物-箱子开.wav");
+    openbox();
+    addrandgoods("3级物品.ini");
+    setobjscript("","");
+    return;
+  end
+  showmessage("这个箱子打不开，可能需要一把钥匙。");
+  return;

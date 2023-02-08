@@ -1,0 +1,41 @@
+  if getvar("linanmianju") == 1 then
+    
+    playergoto(69,138);
+    setplayerdir(3);
+    setmaptrap(12,"");
+    setmaptrap(13,"");
+    setmaptrap(14,"");
+    savemaptrap();
+    talk("jiangjunfu1");
+    assign("fromfengchi",17);
+    setnpcrelation("宋朝长刀手2",1);
+    setnpcrelation("宋朝长刀手3",1);
+    enablefight();
+    return;
+  end
+  if getvar("fromfengchi") == 15 then
+    
+    playergotodir(5,2);
+    setplayerdir(1);
+    talk("zhaofudamen");
+    addtomemo("找小贩买个面具戴上，杀进将军府取赵节的狗命。");
+    assign("fromfengchi",16);
+    setmaptrap(14,"trap14.txt");
+    return;
+  end
+  if getvar("fromfengchi") == 16 then
+    
+    playergotodir(5,2);
+    setplayerdir(1);
+    talk("zhaofudamen1");
+    setmaptrap(14,"trap14.txt");
+    return;
+  end
+  
+  playergotodir(5,2);
+  setplayerdir(1);
+  talk("zhaofudamen");
+  addtomemo("找小贩买个面具戴上，杀进将军府取赵节的狗命。");
+  assign("fromfengchi",16);
+  setmaptrap(14,"trap14.txt");
+  return;

@@ -1,0 +1,9 @@
+  disablenpcai();
+  fadeout();
+  talk("shaoqifengdie");
+  sleep(1000);
+  assign("fromfengchi",14);
+  delobj("邵骑风尸体");
+  fadein();
+  enablenpcai();
+  return;

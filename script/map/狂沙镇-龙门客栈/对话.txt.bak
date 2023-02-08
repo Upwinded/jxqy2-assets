@@ -1,0 +1,9 @@
+//“∞Õ‚∂‘ª∞	
+
+	SetPlayerDir(2);
+	Talk("changemap1");
+	SetPlayerDir(6);
+	SetMapTrap(3,"");
+	SaveMapTrap();
+	Return;
+	

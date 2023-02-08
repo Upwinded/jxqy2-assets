@@ -1,0 +1,6 @@
+  --翠烟门
+  
+  talk("outdoor");
+  playergotodir(5,2);
+  setmaptrap(2,"地图陷阱2.txt");
+  return;

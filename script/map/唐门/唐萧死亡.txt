@@ -1,0 +1,15 @@
+  
+  disablenpcai();
+  sleep(2000);
+  talk("tanmendizi3");
+  fadeout();
+  setnpcpos("唐萧",91,191);
+  setnpcpos("唐离",90,190);
+  followplayer("唐离");
+  setnpcrelation("唐离",1);
+  setnpclevel("唐萧",100);
+  setnpclevel("唐离",100);
+  setnpcdeathscript("南宫飞云","主角被抓.txt");
+  fadein();
+  enablenpcai();
+  return;

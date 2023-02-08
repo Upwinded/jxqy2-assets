@@ -1,0 +1,10 @@
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("临安大牢.map");
+  loadnpc("linandalao14.npc");
+  loadobj("linandalao11.obj");
+  setmainlum(20);
+  setplayerpos(73,85);
+  setplayerdir(1);
+  fadein();

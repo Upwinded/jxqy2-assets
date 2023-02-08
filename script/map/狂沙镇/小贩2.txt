@@ -1,0 +1,4 @@
+  --小贩
+  
+  talk("tanfan2");
+  return;

@@ -1,0 +1,36 @@
+//婕儿
+	If ($FromFengChi == 1) @Talk4;
+	If ($FromFengChi == 6) @Talk5;
+	If ($LinAnJieEr == 1) @Talk1;
+	If ($LinAnJieEr == 2) @Talk3;
+	If ($LinAnJieEr == 3) @Talk2;
+	Talk("JieEr");
+	PlayMusic("ks64.wav");
+	Assign($LinAnJieEr,1);
+	NpcGoto("婕儿",143,134);
+	PlayerGoto(142,135);
+	Return;
+	
+@Talk1:
+	Talk("JieEr1");
+	Return;
+@Talk2:
+	PlayMusic("ks71.wav");
+	Talk("JieEr2");
+	AddToMemo("燕若雪在与捷儿捉迷藏，到处找找吧，留意一下墙角之类的隐秘地方。");
+	SetMapTrap(4,"");
+	SetMapTrap(5,"");
+	SetMapTrap(10,"Trap10.txt");
+	Assign($LinAnJieEr,2);
+	Assign($LinAnYanRuoXue,5);
+	SaveMapTrap();
+	Return;	
+@Talk3:
+	Talk("JieEr3");
+	Return;
+@Talk4:
+	Talk("JieEr5");
+	Return;
+@Talk5:
+	Talk("JieEr6");
+	Return;

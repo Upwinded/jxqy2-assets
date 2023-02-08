@@ -1,0 +1,8 @@
+  --从宝箱得到200两银子
+  
+  openbox();
+  addmoney(200);
+  playsound("物-箱子开.wav");
+  showmessage("你从箱子里找到了二百两银子。");
+  setobjscript("","");
+  return;

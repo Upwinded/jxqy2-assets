@@ -1,0 +1,9 @@
+//Æ«Ìü¼Ò¶¡
+	
+	If($FromFengChi == 2) Goto @Lable0;
+	Talk("woshi1");
+	Return;
+
+@Lable0:	
+	Talk("HouMenjiading");
+	Return;

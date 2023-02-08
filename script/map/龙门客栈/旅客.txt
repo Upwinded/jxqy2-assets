@@ -1,0 +1,4 @@
+  --旅客
+  
+  talk("keren6");
+  return;

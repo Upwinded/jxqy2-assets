@@ -1,0 +1,19 @@
+  if getvar("fromfengchi") >= 19 then
+    
+    fadeout();
+    savenpc();
+    saveobj();
+    loadmap("临安城.map");
+    loadnpc("linan.npc");
+    loadobj("linan.obj");
+    setmainlum(20);
+    setmaptime(2);
+    setplayerlum(0);
+    setplayerpos(32,129);
+    setplayerdir(5);
+    fadein();
+    showmessage("临安");
+    return;
+  end
+  talk("nofinish");
+  return;

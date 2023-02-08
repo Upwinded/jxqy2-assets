@@ -1,0 +1,43 @@
+  --码头上的天王帮弟子
+  
+  if getvar("hanyantwbdizi") == 1 then
+    
+    talk("tianwanbandizi3");
+    fadeout();
+    loadmap("天王岛.map");
+    loadnpc("tianwang.npc");
+    loadobj("tianwang.obj");
+    setplayerpos(85,20);
+    setplayerdir(3);
+    fadein();
+    showmessage("天王岛");
+    if getvar("fromfengchi") == 20 then
+      
+      playmusic("ks65.wav");
+      setnpcpos("杨瑛",45,76);
+      setnpcdir("杨瑛",7);
+      if getvar("tianwangpier") == 4 then
+        
+        assign("tianwangpier",5);
+        return;
+      end
+      return;
+    end
+    return;
+  end
+  talk("tianwanbandizi2");
+  stopmusic();
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("天王岛.map");
+  loadnpc("tianwang.npc");
+  loadobj("tianwang.obj");
+  setplayerpos(85,20);
+  setplayerdir(3);
+  playmusic("ks76.wav");
+  fadein();
+  showmessage("天王岛");
+  talk("dizi2");
+  assign("hanyantwbdizi",1);
+  return;

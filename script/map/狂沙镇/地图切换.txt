@@ -1,0 +1,43 @@
+  --"狂沙镇"-"主角家-狂沙镇"
+  
+  --单独第一次进入地图和酒店老板讲话之前
+  if getvar("ksoqiehuan") == 0 then
+    
+    talk("goout1");
+    playergotodir(5,2);
+    setmaptrap(1,"地图切换.txt");
+    return;
+  end
+  
+  --单独第一次进入地图和酒店老板讲话之后
+  if getvar("ksoqiehuan") == 1 then
+    
+    talk("newout1");
+    playergotodir(5,2);
+    setmaptrap(1,"地图切换.txt");
+    return;
+  end
+  
+  --和燕若雪一起的时候未进入酒店
+  if getvar("ksoqiehuan") == 2 then
+    
+    talk("newout2");
+    playergotodir(5,2);
+    setmaptrap(1,"地图切换.txt");
+    return;
+  end
+  
+  --和燕若雪一起的时候进入酒店后
+  if getvar("ksoqiehuan") == 3 then
+    
+    talk("newout3");
+    playergotodir(5,2);
+    setmaptrap(1,"地图切换.txt");
+    return;
+  end
+  
+  
+  talk("goout1");
+  playergotodir(5,2);
+  setmaptrap(1,"地图切换.txt");
+  return;

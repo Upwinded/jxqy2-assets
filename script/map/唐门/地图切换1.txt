@@ -1,0 +1,37 @@
+  --地图切换唐门-(别离村-唐门)
+  
+  if getvar("tanmenfighting") == 1 then
+    
+    disablenpcai();
+    talk("out");
+    playergotodir(5,1);
+    setmaptrap(1,"地图切换1.txt");
+    enablenpcai();
+    return;
+  end
+  getgoodsnum("book-唐门秘笈.ini");
+  if getvar("goodsnum") == 0 then
+    
+    talk("out2");
+    playergotodir(5,1);
+    setmaptrap(1,"地图切换1.txt");
+    return;
+  end
+  fadeout();
+  savenpc();
+  loadmap("别离村-唐门.map");
+  loadnpc("bielicun-tangmeng.npc");
+  loadobj("bielicun-tm.obj");
+  setplayerpos(10,12);
+  setplayerdir(1);
+  showmessage("野外");
+  if getvar("nadaomijimusic") == 0 then
+    
+    fadein();
+    return;
+  end
+  playmusic("ks67.wav");
+  
+  
+  fadein();
+  return;

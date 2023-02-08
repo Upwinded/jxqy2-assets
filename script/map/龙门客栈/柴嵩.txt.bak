@@ -1,0 +1,18 @@
+//进入龙门客栈
+
+	Talk("caishong0");
+	PlayerGoto(28,47);
+	SetPlayerDir(4);
+	SetNpcDir("燕若雪",5);
+	Talk("caishong1");
+//	FadeOut();
+//	FadeIn();
+	Talk("caishong2");
+	NpcGoto("柴嵩",22,57);
+	DelNpc("柴嵩");
+	Talk("caishong3");
+	Assign($LMKZOQieHuan,1);
+	SetMapTrap(3,"");
+	SaveMapTrap();
+	Return;
+	

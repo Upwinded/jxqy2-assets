@@ -1,0 +1,23 @@
+		
+		If($ZDBiWu == 1) @Lable1;
+		DisableNpcAI();
+		PlayerGoto(121,175);
+		SetPlayerDir(3);
+		Talk("JiuDian7");
+		Sleep(500);
+		SetPlayerDir(5);
+		MoveScreen(5,200);
+		Talk("JiuDian71");
+		MoveScreen(1,200);
+		Sleep(500);
+		Talk("JiuDian9");
+		Assign($ZDBiWu,1);
+		SetMapTrap(11,"µØÍ¼ÏÝÚå11.txt");
+		SaveMapTrap();
+		Return;
+@Lable1:
+		PlayerGotoDir(5,3);
+		SetPlayerDir(5);
+		Talk("JiuDian8");
+		SetMapTrap(11,"µØÍ¼ÏÝÚå11.txt");
+		Return;

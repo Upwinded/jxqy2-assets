@@ -1,0 +1,97 @@
+  
+  if getvar("fromfengchi") == 2 then
+    
+    fadeout();
+    savenpc();
+    saveobj();
+    loadmap("凤池山庄.map");
+    loadnpc("fengci2.npc");
+    loadobj("fengci.obj");
+    setplayerstate(0);
+    setplayerpos(54,248);
+    setplayerdir(5);
+    setmaptrap(1,"凤池-临安.txt");
+    setmaptrap(2,"前门.txt");
+    setmaptrap(4,"maptrap4.txt");
+    setnpcscript("守门家丁","");
+    savemaptrap();
+    setmainlum(16);
+    enablefight();
+    fadein();
+    showmessage("凤池山庄");
+    return;
+  end
+  if getvar("fromfengchi") == 6 then
+    
+    fadeout();
+    savenpc();
+    saveobj();
+    loadmap("凤池山庄.map");
+    loadnpc("fengci.npc");
+    loadobj("fengci.obj");
+    setplayerstate(0);
+    setplayerpos(54,248);
+    setplayerdir(5);
+    setnpcpos("后门家丁",55,207);
+    setnpcdir("后门家丁",3);
+    setmaptrap(4,"maptrap4.txt");
+    setmaptrap(5,"datingtalk.txt");
+    savemaptrap();
+    disablefight();
+    fadein();
+    showmessage("凤池山庄");
+    return;
+  end
+  if getvar("fromfengchi") == 8 then
+    
+    fadeout();
+    savenpc();
+    saveobj();
+    loadmap("凤池山庄.map");
+    loadnpc("fengci.npc");
+    loadobj("fengci.obj");
+    setplayerstate(0);
+    setplayerpos(54,248);
+    setplayerdir(5);
+    setmaptrap(5,"datingtalk.txt");
+    setmaptrap(3,"凤池-临安.txt");
+    setmaptrap(1,"凤池-临安.txt");
+    assign("fromfengchi",9);
+    savemaptrap();
+    setnpcdir("独孤剑",5);
+    setnpcpos("守门家丁",63,227);
+    setnpcdir("守门家丁",7);
+    disablefight();
+    fadein();
+    showmessage("凤池山庄");
+    return;
+  end
+  if getvar("fromfengchi") == 9 then
+    
+    fadeout();
+    savenpc();
+    saveobj();
+    loadmap("凤池山庄.map");
+    loadnpc("fengci.npc");
+    loadobj("fengci.obj");
+    setplayerstate(0);
+    setplayerpos(54,248);
+    setplayerdir(5);
+    setmaptrap(5,"datingtalk.txt");
+    setmaptrap(3,"凤池-临安.txt");
+    setmaptrap(1,"凤池-临安.txt");
+    assign("fromfengchi",9);
+    savemaptrap();
+    setnpcdir("独孤剑",5);
+    setnpcpos("守门家丁",63,227);
+    setnpcdir("守门家丁",7);
+    disablefight();
+    fadein();
+    showmessage("凤池山庄");
+    return;
+  end
+  playergoto(9,16);
+  setplayerdir(1);
+  setmaptrap(2,"trap2至凤池.txt");
+  talk("linanlookyrx");
+  return;

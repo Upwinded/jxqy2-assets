@@ -1,0 +1,13 @@
+// 天王帮弟子
+
+	Talk("TianWanBanDiZi");
+	AddToMemo("到码头找那天王帮弟子，坐船到天王岛去。");
+	StopMusic();
+	FadeOut();
+	SetNpcPos("天王帮弟子",41,37)
+	SetNpcDir("天王帮弟子",1);
+	SetNpcScript("天王帮弟子","天王帮弟子1.txt");
+	PlayMusic("ks67.wav");
+	FadeIn();
+	Talk("TianWanBanDiZi1");
+	Return;

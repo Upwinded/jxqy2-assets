@@ -1,0 +1,46 @@
+  --史忠良
+  
+  if getvar("hanyanctmszl") == 1 then
+    
+    talk("chutianmen11");
+    return;
+  end
+  if getvar("hanyanctmszl") == 2 then
+    
+    delgoods("goods-sj-8-天王岛密函.ini");
+    showmessage("飞云将楚天盟弟子私通金国的密函交给了史忠良");
+    sleep(2000);
+    talk("chutianmen2");
+    addtomemo("你把密函交给了史忠良，圆满的解决了天王帮和楚天盟之间的纠纷，是时候该到中都去了。");
+    addmoney(2000);
+    addtomemo("史忠良告诉你汉阳西边的段家庄有古怪，看来又是行侠仗义的时候了。");
+    assign("hanyanctmszl",3);
+    if getvar("duanhuanshan") == 1 then
+      
+      talk("chutianmen24");
+      addmagic("player-magic-大梦心法.ini");
+      assign("duanhuanshan",0);
+      return;
+    end
+    talk("chutianmen22");
+    talk("chutianmen23");
+    return;
+  end
+  if getvar("duanhuanshan") == 1 then
+    
+    talk("chutianmen24");
+    addmagic("player-magic-大梦心法.ini");
+    assign("duanhuanshan",0);
+    return;
+  end
+  if getvar("hanyanctmszl") == 3 then
+    
+    talk("chutianmen21");
+    return;
+  end
+  talk("chutianmen1");
+  addtomemo("史忠良将天王帮的弟子交给你，但也把解决这个问题的责任也转到你的身上，看来天王岛是一定要去的了。");
+  assign("hanyanctmszl",1);
+  assign("hanyanctmhoumendizi",1);
+  assign("hanyanctmshoumendizi",1);
+  return;

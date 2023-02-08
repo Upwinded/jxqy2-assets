@@ -1,0 +1,13 @@
+[fightbegin]
+head1=孟廷威.mpc
+1=孟廷威：注意，开始喽！
+
+[fightend]
+head1=孟廷威.mpc
+1=孟廷威：承让，承让！
+
+[fightend2]
+head1=南宫飞云.mpc
+1=飞云：孟帮主，好身手！
+head2=孟廷威.mpc
+2=孟廷威：咳，老了！

@@ -1,0 +1,3 @@
+  talk("zahuo");
+  buygoods("4-汉阳-杂货老板.ini");
+  return;

@@ -1,0 +1,54 @@
+  
+  if getvar("nangongcaihong") ~= 2 then
+    
+    talk("self1");
+    playergotodir(5,2);
+    setmaptrap(3,"trap-3.txt");
+    return;
+  end
+  if getvar("zhangrumeng") ~= 1 then
+    
+    talk("self1");
+    playergotodir(5,2);
+    setmaptrap(3,"trap-3.txt");
+    return;
+  end
+  if getvar("heisha") ~= 1 then
+    
+    talk("self1");
+    playergotodir(5,2);
+    setmaptrap(3,"trap-3.txt");
+    return;
+  end
+  if getvar("baisha") ~= 1 then
+    
+    talk("self1");
+    playergotodir(5,2);
+    setmaptrap(3,"trap-3.txt");
+    return;
+  end
+  setmaptrap(3,"");
+  savemaptrap();
+  playergoto(9,79);
+  setplayerdir(3);
+  sleep(500);
+  setplayerdir(7);
+  talk("levelchoice1");
+  playergoto(7,76);
+  setplayerdir(1);
+  sleep(500);
+  setplayerdir(4);
+  talk("levelchoice2");
+  playergoto(12,86);
+  setplayerdir(0);
+  sleep(500);
+  setplayerdir(7);
+  talk("levelchoice3");
+  playergoto(9,79);
+  setplayerdir(3);
+  sleep(500);
+  setplayerdir(7);
+  sleep(500);
+  setplayerdir(1);
+  talk("levelchoice4");
+  return;

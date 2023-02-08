@@ -1,0 +1,14 @@
+  talk("jietouxiaofan");
+  playergoto(134,77);
+  setnpcdir("无赖2",6);
+  setnpcdir("无赖1",0);
+  talk("jietouxiaofan1");
+  fadeout();
+  delnpc("无赖1");
+  delnpc("无赖2");
+  assign("jietouxiaofan",1);
+  addtomemo("天忍教在中都的东北方向，翻过一座山梁就到了。");
+  playmusic("ks67.wav");
+  savemaptrap();
+  fadein();
+  return;

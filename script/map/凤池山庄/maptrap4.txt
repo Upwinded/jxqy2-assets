@@ -1,0 +1,44 @@
+  
+  if getvar("fromfengchi") == 6 then
+    
+    playergotoex(85,131);
+    setnpcpos("敖管家",78,164);
+    npcgoto("敖管家",84,148);
+    npcgoto("敖管家",85,132);
+    setnpcdir("敖管家",5);
+    setplayerdir(1);
+    talk("guanjia1");
+    npcgoto("敖管家",86,144);
+    npcgoto("敖管家",81,155);
+    setnpcpos("敖管家",82,178);
+    setnpcdir("敖管家",1);
+    setmaptrap(5,"datingtalk.txt");
+    savemaptrap();
+    return;
+  end
+  
+  talk("sleep");
+  playergoto(86,131);
+  
+  stopmusic();
+  fadeout();
+  loadnpc("fengci.npc");
+  setmainlum(31);
+  setnpcpos("偏厅家丁",86,143);
+  setnpcdir("偏厅家丁",1);
+  setplayerpos(85,132);
+  setplayerdir(7);
+  assign("fromfengchi",4);
+  setnpcpos("后门家丁",55,207);
+  setnpcdir("后门家丁",1);
+  setnpcscript("守门家丁","大门家丁.txt");
+  setnpcpos("守门家丁",65,226);
+  setnpcdir("守门家丁",1);
+  setmaptrap(2,"");
+  setmaptrap(5,"datingtalk.txt");
+  disablefight();
+  setnpcscript("守门家丁","大门家丁.txt");
+  savemaptrap();
+  playmusic("ks65.wav");
+  fadein();
+  return;

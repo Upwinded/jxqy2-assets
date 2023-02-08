@@ -1,0 +1,4 @@
+  --客栈下人
+  
+  talk("xiaoer1");
+  return;

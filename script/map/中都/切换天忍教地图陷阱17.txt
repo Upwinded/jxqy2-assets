@@ -1,0 +1,23 @@
+  
+  if getvar("jietouxiaofan") == 1 then
+    
+    fadeout();
+    savenpc();
+    saveobj();
+    setmaptrap(12,"切换天忍教地图陷阱12.txt");
+    savemaptrap();
+    loadmap("中都-天忍教.map");
+    --loadnpc(".npc");
+    --loadobj(".obj");
+    setmaptime(0);
+    setplayerpos(3,23);
+    setplayerdir(5);
+    disablefight();
+    showmessage("野外");
+    fadein();
+    return;
+  end
+  talk("exit1");
+  playergoto(176,124);
+  setmaptrap(17,"切换天忍教地图陷阱17.txt");
+  return;

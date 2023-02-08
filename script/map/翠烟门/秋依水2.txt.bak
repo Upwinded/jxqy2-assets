@@ -1,0 +1,19 @@
+//秋依水在主角完全与翠烟门弟子对话完成后的对话
+
+	If ($CuiYanMen2DiZi >= 5) @Talk1;
+	Talk("QiuYiShui6");
+	Return;
+	
+@Talk1:
+	If ($CuiYanMen2QiuYiShui == 1) @Talk3;
+	Talk("QiuYiShui4");
+	Assign($CuiYanMen2QiuYiShui,1);
+	Assign($CuiYanMen2AllFinish,1);
+	Assign($CuiYanMen2Fighting,3);
+	AddGoods("book-翠烟门秘笈.ini");
+	Return;
+
+@Talk3:
+	Talk("QiuYiShui5");
+	Return;
+	

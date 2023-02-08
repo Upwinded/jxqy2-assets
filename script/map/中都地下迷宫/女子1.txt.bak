@@ -1,0 +1,7 @@
+		SetNpcScript("女子1","");
+		Talk("Thanks");
+		AddRandMoney(9000,20000);
+		FadeOut();
+		DelNpc("女子1");
+		FadeIn();
+		Return;

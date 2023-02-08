@@ -1,0 +1,7 @@
+  
+  talk("findsomething");
+  playergoto(15,67);
+  playerjumpto(18,78);
+  setmaptrap(2,"");
+  savemaptrap();
+  return;

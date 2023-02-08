@@ -1,0 +1,45 @@
+  --燕若雪卧房
+  
+  if getvar("changanyangqiye") == 2 then
+    
+    if getvar("changanyanruoxue") == 2 then
+      
+      talk("kezhan2");
+      playergoto(93,105);
+      talk("kezhan31");
+      setplayerdir(1);
+      sleep(500);
+      setplayerdir(0);
+      sleep(500);
+      setplayerdir(7);
+      sleep(500);
+      setplayerdir(0);
+      talk("kezhan3");
+      fadeout();
+      setplayerpos(63,104);
+      setplayerdir(2);
+      stopmusic();
+      fadein();
+      talk("laoban6");
+      playmusic("ks67.wav");
+      playergoto(62,120);
+      talk("laoban7");
+      addtomemo("到酒店找柴嵩帮你找小仙女。");
+      assign("changancaisong",2);
+      setmaptrap(5,"");
+      savemaptrap();
+      return;
+    end
+    talk("kezhan1");
+    playergotodir(3,2);
+    addnpc("z03-许若冰.ini",100,241,1);
+    setnpcscript("柴嵩","柴嵩.txt");
+    setmaptrap(5,"trap-5.txt");
+    savemaptrap();
+    return;
+  end
+  talk("kezhan0");
+  playergotodir(3,2);
+  setmaptrap(5,"trap-5.txt");
+  savemaptrap();
+  return;

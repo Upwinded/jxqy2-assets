@@ -1,0 +1,35 @@
+
+	If ($CuiYanMen2AllFinish >= 2) @Talk4;
+	FadeOut();
+	LoadMap("翠烟门.map");
+	LoadNpc("CuiYM1.npc");
+	LoadObj("CuiYM1.obj");
+	SetPlayerPos(137,76);
+	SetPlayerDir(1);
+	If($CuiYanMen2CunLan == 1) @Label1;
+	PlayMusic("ks65.wav");
+	
+@Label1:	
+	If($NaDaoMiJiMusic == 0) @Label2;
+	PlayMusic("ks68.wav");
+	
+@Label2:	
+	FadeIn();
+	ShowMessage("翠烟门");
+	If ($CuiYanMen2Finish == 1) @Talk1;
+	Return;
+	
+@Talk1:
+	RunScript("带唐影进翠烟门.txt");
+	Return;
+	
+@Talk4:
+	FadeOut();
+	LoadMap("翠烟门.map");
+	LoadNpc("CuiYM3.npc");
+	LoadObj("CuiYM.obj");
+	SetPlayerPos(137,76);
+	SetPlayerDir(1);
+	FadeIn();
+	ShowMessage("翠烟门");
+	Return;

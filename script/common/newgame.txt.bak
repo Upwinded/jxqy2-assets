@@ -1,0 +1,8 @@
+// 新游戏脚本
+
+	StopMusic();
+	SetFadeLum(0);
+	LoadGame(0);
+	HideBottomWnd();
+	RunScript("开始游戏.txt");
+	Return;

@@ -1,0 +1,19 @@
+	If($FromFengChi>=19) @Lable1;
+	Talk("NoFinish");
+	Return;
+// 杀死赵节
+@Lable1:
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("临安城.map");
+	LoadNpc("LinAn.npc");
+	LoadObj("LinAn.obj");
+	SetMainLum(20);
+	SetMapTime(2);
+	SetPlayerLum(0);
+	SetPlayerPos(32,129);
+	SetPlayerDir(5);
+	FadeIn();
+	ShowMessage("临安");
+	Return;

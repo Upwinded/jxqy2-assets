@@ -1,0 +1,21 @@
+	StopMusic();
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("天王岛.map");
+	LoadNpc("TianWang.npc");
+	LoadObj("TianWang.obj");
+	SetMainLum(31);
+	SetMapTime(0);
+	SetPlayerLum(0);
+	SetPlayerPos(36,111);
+	SetPlayerDir(5);
+	PlayMusic("Ks66.wav");
+	FadeIn();
+	ShowMessage("天王岛");
+	If ($TianWangPiEr == 3) Goto @Lable1;
+	Return;
+	
+@Lable1:
+	SetNpcPos("苹儿",45,75);
+	Return;

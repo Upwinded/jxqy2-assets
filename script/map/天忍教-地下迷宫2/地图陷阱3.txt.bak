@@ -1,0 +1,7 @@
+DisableNpcAI();
+PlayerGoto(19,52);
+PlayerGotoEx(17,49);
+Talk("talk1");
+EnableNpcAI();
+SaveMapTrap();
+Return;

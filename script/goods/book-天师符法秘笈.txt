@@ -1,0 +1,2 @@
+  addmagic("player-magic-天师符法.ini");
+  return;

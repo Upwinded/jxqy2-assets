@@ -1,0 +1,11 @@
+  --别离村－长安
+  
+  stopmusic();
+  fadeout();
+  loadmap("长安.map");
+  loadnpc("changan.npc");
+  loadobj("changan.obj");
+  setplayerpos(141,281);
+  setplayerdir(3);
+  fadein();
+  return;

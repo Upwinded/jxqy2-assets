@@ -1,0 +1,18 @@
+     If($Cai==1) @Lable1;
+     Return;		
+
+@Lable1:
+     If($Tang==1) @Lable2;
+     Return;
+
+@Lable2:
+                DisableNpcAI();
+                PlayerRunTo(17,129);
+		SetPlayerDir(1);
+		Talk("DaLao13");
+		Sleep(1000);
+		SetPlayerDir(7);
+		Talk("DaLao11");
+		SaveMapTrap();
+		EnableNpcAI();
+		Return;	

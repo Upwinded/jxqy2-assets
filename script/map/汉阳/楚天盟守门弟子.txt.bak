@@ -1,0 +1,11 @@
+//楚天盟守门弟子
+
+	If ($HanYanCTMShouMenDiZi==1) @Talk1;
+	Talk("ChuTianMen");
+	//NpcGotoEx("楚天盟弟子甲",83,93);
+	Assign($HanYanCTMShouMenDiZi,1);
+	Return;
+	
+@Talk1:
+	Talk("DiZi");
+	Return;

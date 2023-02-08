@@ -1,0 +1,7 @@
+// ÌÆÀëËÀÍö	
+	Sleep(2000);
+	StopMusic();
+	Talk("TangLiDie");
+	PlaySound("ÓÎÏ·½áÊø.wav");
+	ReturnToTitle();
+	Return;

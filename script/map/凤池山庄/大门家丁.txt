@@ -1,0 +1,28 @@
+  --大门家丁
+  
+  if getvar("fencidamenjiadin") == 1 then
+    
+    talk("damen1");
+    return;
+  end
+  if getvar("fencidamenjiadin") == 2 then
+    
+    talk("damen2");
+    npcgoto("守门家丁",66,217);
+    setnpcdir("守门家丁",7);
+    assign("fencidamenjiadin",3);
+    return;
+  end
+  if getvar("fencidamenjiadin") == 3 then
+    
+    talk("damen2");
+    return;
+  end
+  
+  talk("damen");
+  setnpcdir("守门家丁",1);
+  npcgoto("守门家丁",63,227);
+  setmaptrap(1,"凤池-临安.txt");
+  savemaptrap();
+  assign("fencidamenjiadin",1);
+  return;

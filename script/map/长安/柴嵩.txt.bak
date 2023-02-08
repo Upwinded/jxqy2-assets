@@ -1,0 +1,46 @@
+// 柴嵩的大段对话
+
+	If ($ChangAnCaiSong >= 1) @Talk1;
+	Talk("caisong1");
+	NpcGotoEx("柴嵩",100,245);
+	PlayerGoto(99,247);	
+	SetNpcDir("柴嵩",1);
+	SetPlayerDir(5);		
+	Talk("caisong21");
+	FadeOut();
+	SetNpcPos("柴嵩",84,254);
+	DelObj("桌子");
+	SetNpcActionFile("南宫飞云",0,"两人喝酒.mpc");
+	SetPlayerPos(100,247);
+	
+	FadeIn();
+	Talk("caisong2");
+
+	FadeOut();
+	SetNpcPos("柴嵩",100,245);
+	SetNpcActionFile("南宫飞云",0,"z01-南宫飞云-pst.mpc");
+	SetPlayerPos(99,247);	
+	AddObj("桌子.ini",100,249);
+	FadeIn();
+
+	Assign($ChangAnCaiSong,1);
+	Assign($ChangAnYanRuoXue,2);
+	Return;
+	
+	
+@Talk1:
+	If ($ChangAnCaiSong >= 2) @Talk2;
+	Talk("caisong3");
+	Return;
+
+@Talk2:	
+	Talk("caisong4");
+	NpcGotoEx("柴嵩",89,222);
+	PlayerGoto(89,223);
+	Talk("caisong5");
+	NpcGotoEx("柴嵩",102,207);
+	PlayerGoto(85,231);
+	DelNpc("柴嵩");
+	AddToMemo("在城里找小仙女，找不到的话可以出城到西边去碰碰运气。");
+	Assign($ChangAnYanRuoXueXiaoShi,1);
+	Return;

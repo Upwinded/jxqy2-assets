@@ -1,0 +1,22 @@
+  --第一次入翠烟门
+  
+  if getvar("cuiyanmen2cunlan") == 1 then
+    
+    talk("cunlan");
+    return;
+  end
+  playergoto(128,94);
+  setplayerdir(1);
+  setnpcdir("春兰",5);
+  talk("cuiyan1");
+  setnpcpos("秋依水",122,109);
+  npcgoto("秋依水",128,96);
+  playergoto(128,95);
+  setplayerdir(1);
+  talk("cuiyan2");
+  addtomemo("替秋依水将唐秋二人的定情信物交到唐影手里，唐门在别离村的东面。");
+  assign("cuiyanmen2cunlan",1);
+  assign("cuiyanmen2cunlanmusic",1);
+  addgoods("goods-sj-7-唐门宝箱.ini");
+  playmusic("ks67.wav");
+  return;

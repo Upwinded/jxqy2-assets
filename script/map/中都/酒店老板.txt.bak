@@ -1,0 +1,29 @@
+//æ∆µÍ¿œ∞Â
+       
+      If($ZhongDuTroublesRoom==2) @Talk3;
+      If($ZhongDuTroublesRoom==1) @Talk2;
+      If($ZhongDuLYS==1) @Talk3;
+      If($ZhongDuJiuDianLaoBan==1) @Talk1;
+      Talk("jiudian1");
+      Assign($ZhongDuJiuDianLaoBan,1);
+      SetMapTrap(4,"µÿÕºœ›⁄Â4.txt");
+      SaveMapTrap();
+      Return;
+      
+@Talk1:
+      Talk("jiudian1-1");
+      Return;      
+      
+@Talk2:
+      Talk("jiudian2-1");
+      PlayMusic("ks69.wav");
+      AddGoods("goods-sj-10-≥§∞≤∫√æ∆.ini");
+      Assign($ZhongDuTroublesRoom,2);
+      AddNpc("z03-–Ì»Ù±˘.ini",79,31,3);
+      SetNpcScript("≤Ò·‘","≤Ò·‘.txt");      
+      Return;
+      
+@Talk3:
+      Talk("jiudian3");
+
+      Return;

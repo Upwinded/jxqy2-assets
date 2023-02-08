@@ -1,0 +1,54 @@
+  --"狂沙镇"-"狂沙镇-龙门客栈"
+  
+  --单独第一次进入地图和酒店老板讲话之前
+  if getvar("ksoqiehuan") == 0 then
+    
+    talk("goout1");
+    playergotodir(3,2);
+    setmaptrap(2,"地图切换1.txt");
+    return;
+  end
+  
+  --单独第一次进入地图和酒店老板讲话之后（正常情况下使用）
+  if getvar("ksoqiehuan") == 1 then
+    
+    talk("newout1");
+    playergotodir(3,2);
+    setmaptrap(2,"地图切换1.txt");
+    return;
+  end
+  
+  --和燕若雪一起的时候未进入酒店
+  if getvar("ksoqiehuan") == 2 then
+    
+    talk("newout2");
+    playergotodir(3,2);
+    setmaptrap(2,"地图切换1.txt");
+    return;
+  end
+  
+  --和燕若雪一起的时候进入酒店后
+  if getvar("ksoqiehuan") == 3 then
+    
+    fadeout();
+    setmainlum(31);
+    savenpc("");
+    saveobj("");
+    stopmusic();
+    loadmap("狂沙镇-龙门客栈.map");
+    loadnpc("");
+    loadobj("ks-lmkz.obj");
+    setplayerpos(4,19);
+    setplayerdir(7);
+    setnpcpos("燕若雪",4,18);
+    setnpcdir("燕若雪",7);
+    fadein();
+    showmessage("小树林");
+    return;
+  end
+  
+  
+  talk("goout1");
+  playergotodir(3,2);
+  setmaptrap(2,"地图切换1.txt");
+  return;

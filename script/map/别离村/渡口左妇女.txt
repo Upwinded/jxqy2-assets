@@ -1,0 +1,4 @@
+  --小孩
+  
+  talk("addcunmin3");
+  return;

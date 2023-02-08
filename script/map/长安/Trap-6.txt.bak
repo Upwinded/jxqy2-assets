@@ -1,0 +1,6 @@
+// ¹Ù¸®
+	Talk("XianYa");
+	PlayerGotoDir(3,2);
+	SetMapTrap(6,"Trap-6.txt");
+	Return;
+		

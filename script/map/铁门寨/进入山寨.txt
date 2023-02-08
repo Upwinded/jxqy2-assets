@@ -1,0 +1,9 @@
+  --进入铁门寨
+  
+  talk("entertmz1");
+  playergoto(27,83);
+  setplayerdir(4);
+  talk("entertmz11");
+  setmaptrap(3,"");
+  savemaptrap();
+  return;

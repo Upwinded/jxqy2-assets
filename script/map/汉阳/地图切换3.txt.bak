@@ -1,0 +1,34 @@
+//∫∫—Ù£≠¡Ÿ∞≤
+
+	If($ZhongDuHouHuaYuan==5) @Talk1;
+	Talk("NanChengMen");
+	NpcGotoDir("ƒœπ¨∑…‘∆",3,2);
+	SetMapTrap(3,"µÿÕº«–ªª3.txt");
+	Return;
+	
+@Talk1:
+	FadeOut();
+	LoadMap("µæœ„¥Â.map");
+	LoadNpc("DaoXiang.npc");
+	LoadObj("DaoXiang.Obj");
+	SetPlayerPos(33,350);
+	SetPlayerDir(5);
+	ShowMessage("µæœ„¥Â");
+	PlayMusic("ks71.wav");
+	FadeIn();
+	If ($DaoXiangFirstEnter==0) @Talk2;
+	Return;
+	
+@Talk2:
+//	PlayerGoto(32,351);
+	MoveScreen(5,120);
+	Talk("DaJia");
+	Talk("DaJia1");
+	MoveScreen(1,120);
+	PlayerGoto(37,340);
+	Talk("DaJia2");
+	SetNpcRelation("∫È∆ﬂ",1);
+	SetNpcRelation("Õı÷ÿ—Ù",1);
+	SetNpcRelation("≈∑—Ù∑Ê",1);
+	Assign($DaoXiangFirstEnter,1);
+	Return;

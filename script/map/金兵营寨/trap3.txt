@@ -1,0 +1,11 @@
+  savemaptrap();
+  disablenpcai();
+  npcgotoex("将领",34,142);
+  playergoto("南宫飞云",32,146);
+  setplayerdir(5);
+  setnpcdir("将领",1);
+  talk("door");
+  enablenpcai();
+  setmaptrap(3,"");
+  savemaptrap();
+  return;

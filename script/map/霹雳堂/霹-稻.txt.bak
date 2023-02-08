@@ -1,0 +1,32 @@
+// Åùö¨ÌÃµ½µ¾Ïã´å
+
+	If ($FromFengChi == 7) @Lable1;
+	If ($FromFengChi == 8) @Lable2;
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("µ¾Ïã´å.map");
+	LoadNpc("DaoXiang.npc");
+	LoadObj("DaoXiang.Obj");
+	SetPlayerPos(94,297);
+	SetPlayerDir(3);
+	FadeIn();
+	Return;
+		
+@Lable1:
+	NpcGotoDir("ÄÏ¹¬·ÉÔÆ",5,2);
+	SetMapTrap(4,"Åù-µ¾.txt");
+	Talk("Out1");
+	Return;
+@Lable2:
+	FadeOut();
+	ClearBody();
+	SaveNpc();
+	SaveObj();
+	LoadMap("µ¾Ïã´å.map");
+	LoadNpc("DaoXiang.npc");
+	LoadObj("DaoXiang.Obj");
+	SetPlayerPos(94,297);
+	SetPlayerDir(3);
+	FadeIn();
+	Return;

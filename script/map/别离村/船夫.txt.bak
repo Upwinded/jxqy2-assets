@@ -1,0 +1,55 @@
+//别离村－汉阳
+
+	If ($CuiYanMen2AllFinish==3) @Talk1;
+	Talk("ChuanFu");
+	Return;
+	
+@Talk1:
+	Talk("ChuanFu1");
+	If ($HanYanFirstEnter==1) @Talk2;
+	StopMusic();
+	FadeOut();
+	LoadMap("汉阳.map");
+	LoadNpc("HanYan1.npc");
+        SetPlayerPos(42,29);
+	SetPlayerDir(0);
+	ShowMessage("汉阳");
+	FadeIn();
+	Talk("FirstEnter0");
+	PlayMusic("KS77.wav");
+	MoveScreen(0,100);
+	Talk("FirstEnter");
+	NpcGoto("史忠良",41,42);
+	Talk("FirstEnter1");
+	NpcGotoEx("史忠良",46,53);
+	NpcGotoEx("天王帮弟子",46,52);
+	NpcGotoEx("楚天盟弟子1",48,52);
+	NpcGotoEx("楚天盟弟子2",48,52);
+	NpcGotoEx("楚天盟弟子6",45,55);
+	NpcGotoEx("楚天盟弟子3",44,49);
+	NpcGotoEx("楚天盟弟子7",45,55);
+	NpcGotoEx("楚天盟弟子4",48,52);
+	NpcGoto("楚天盟弟子8",43,50);
+	StopMusic();
+	FadeOut();
+	LoadNpc("HanYan.npc");
+	LoadObj("HanYan.obj");
+	SetPlayerScn();
+	PlayMusic("ks69.wav");
+	FadeIn();	
+	Talk("FirstEnter2");
+	AddToMemo("找史忠良解决天王帮与楚天盟之间的纠纷。");
+	Assign($HanYanFirstEnter,1);
+	Return;
+	
+@Talk2:
+	StopMusic();
+	FadeOut();
+	LoadMap("汉阳.map");
+	LoadNpc("HanYan.npc");
+	LoadObj("HanYan.obj");
+	SetPlayerPos(42,29);
+	SetPlayerDir(0);
+	ShowMessage("汉阳");
+        FadeIn();
+	Return;

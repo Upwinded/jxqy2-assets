@@ -1,0 +1,49 @@
+//  "狂沙镇" - "狂沙镇-龙门客栈"
+
+	//单独第一次进入地图和酒店老板讲话之前
+	If($KsOQieHuan==0) @out1;
+	
+	//单独第一次进入地图和酒店老板讲话之后（正常情况下使用）
+	If($KsOQieHuan==1) @out2;
+	
+	//和燕若雪一起的时候未进入酒店
+	If($KsOQieHuan==2) @out3;
+	
+	//和燕若雪一起的时候进入酒店后
+	If($KsOQieHuan==3) @out4;
+		
+@out1:
+	Talk("goout1");
+	PlayerGotoDir(3,2);
+	SetMapTrap(2,"地图切换1.txt");
+	Return;
+
+@out2:
+	Talk("newout1");
+	PlayerGotoDir(3,2);
+	SetMapTrap(2,"地图切换1.txt");
+	Return;
+
+@out3:
+	Talk("newout2");
+	PlayerGotoDir(3,2);
+	SetMapTrap(2,"地图切换1.txt");
+	Return;
+	
+@out4:
+	FadeOut();
+	SetMainLum(31);
+	SaveNpc("");
+	SaveObj("");
+	StopMusic();
+	LoadMap("狂沙镇-龙门客栈.map");
+	LoadNpc("");
+	LoadObj("ks-lmkz.obj");
+	SetPlayerPos(4,19);
+	SetPlayerDir(7);
+	SetNpcPos("燕若雪",4,18);
+	SetNpcDir("燕若雪",7);
+	FadeIn();
+	ShowMessage("小树林");
+	Return;
+	

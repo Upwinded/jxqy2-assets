@@ -1,0 +1,21 @@
+//汉阳－中都
+
+	If ($HanYanCTMSZL == 3) @Talk1;
+//	If ($TianWanShouMenDiZi==1) @Talk1;
+	Talk("DongChengMen");
+	PlayerGoto(78,64);
+	SetMapTrap(2,"地图切换2.txt");
+	Return;
+	
+@Talk1:
+	FadeOut();
+	SaveObj();
+	SaveNpc();
+	LoadMap("汉阳-金兵营寨.map");
+	LoadObj("HanYan-jbdy.obj");
+	SetPlayerPos(7,72);
+	SetPlayerDir(5);
+	ShowMessage("郊外");
+	PlayMusic("ks67.wav");
+	FadeIn();
+	Return;

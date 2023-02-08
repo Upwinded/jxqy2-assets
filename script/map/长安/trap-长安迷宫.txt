@@ -1,0 +1,24 @@
+  --长安->长安官府密室
+  
+  stopmusic();
+  fadeout();
+  saveobj();
+  savenpc();
+  loadmap("长安迷宫.map");
+  loadobj("changan-mg.obj");
+  loadnpc("changan-mg.npc");
+  enablefight();
+  setplayerpos(15,138);
+  setplayerdir(7);
+  setmainlum(31);
+  setplayerlum(0);
+  playmusic("ks74.wav");
+  fadein();
+  showmessage("长安官府密室");
+  if getvar("chananmgfirstenter") == 1 then
+    
+    return;
+  end
+  talk("firstenter");
+  assign("chananmgfirstenter",1);
+  return;

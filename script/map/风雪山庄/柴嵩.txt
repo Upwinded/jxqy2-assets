@@ -1,0 +1,6 @@
+  
+  talk("caisong");
+  setnpcdir("柴嵩",5);
+  playergoto(90,98);
+  talk("caisong1");
+  return;

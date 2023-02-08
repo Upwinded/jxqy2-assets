@@ -1,0 +1,24 @@
+// "铁门寨-百花谷" - "百花谷"
+
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	StopMusic();
+	LoadMap("百花谷.map");
+	LoadObj("bhg.obj");
+	SetPlayerPos(8,40);
+	SetPlayerDir(4);
+	SetPlayerState(0);
+	FadeIn();
+	
+	If ($BhgOfirstenter==0) @enter1;
+	If ($BhgOfirstenter==1) @enter2;
+
+@enter1:
+	Talk("changemap1");
+	Assign($BhgOfirstenter,1);
+	Return;
+	
+@enter2:
+	Return;
+

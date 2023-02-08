@@ -1,0 +1,20 @@
+  
+  
+  if getvar("zhongduchenxidanpuliuqin") == 1 then
+    
+    talk("chenxiliuqin1");
+    fadeout();
+    talk("chenxiliuqin11");
+    fadein();
+    talk("chenxiliuqin2");
+    --得到武功秘笈
+    assign("zhongduchenxidanpuliuqin",2);
+    return;
+  end
+  if getvar("zhongduchenxidanpuliuqin") == 2 then
+    
+    talk("chenxiliuqin3");
+    return;
+  end
+  talk("chenxiliuqin");
+  return;

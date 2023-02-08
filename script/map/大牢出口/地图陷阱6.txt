@@ -1,0 +1,6 @@
+  if getvar("tang") == 1 then
+    
+    delnpc("唐影");
+    return;
+  end
+  return;

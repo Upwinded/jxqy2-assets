@@ -1,0 +1,4 @@
+  
+  talk("shuyuanxueshen");
+  setnpcdir("书院罚站",5);
+  return;

@@ -1,0 +1,17 @@
+// ÄÏ¹¬²Êºç
+
+	If ($NanGongCaiHong == 1) @talk2;
+	If ($NanGongCaiHong == 2) @talk3;
+	Talk("ngch1");
+	Assign($NanGongCaiHong, 1);
+	Return;
+
+@talk2:
+	Talk("ngch2");
+	SetNpcDir("ÄÏ¹¬²Êºç",1);
+	Assign($NanGongCaiHong, 2);
+	Return;
+
+@talk3:
+	Talk("ngch3");
+	Return;

@@ -1,0 +1,10 @@
+  disablenpcai();
+  sleep(2000);
+  say("终于除掉了邵骑风这个恶贼！");
+  assign("shaojifeng",2);
+  setmaptrap(4,"trap-4.txt");
+  setmaptrap(5,"trap-5.txt");
+  savemaptrap();
+  enablenpcai();
+  assign("duanjiazhuangclose",1);
+  return;

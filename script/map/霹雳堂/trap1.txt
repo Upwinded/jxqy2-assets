@@ -1,0 +1,8 @@
+  if getvar("fromfengchi") <= 6 then
+    
+    talk("door");
+    playergotodir(1,2);
+    setmaptrap(1,"trap1.txt");
+    return;
+  end
+  return;

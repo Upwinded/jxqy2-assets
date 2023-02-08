@@ -1,0 +1,6 @@
+//
+    PlayerGoto(60,48);
+    Talk("Zmg");
+    EnableNpcAI();
+    SaveMapTrap();
+    Return;

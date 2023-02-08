@@ -1,0 +1,17 @@
+[head]
+map=沙漠之战.map
+count=1
+
+[obj000]
+objname=宝箱
+objfile=obj-宝箱5.ini
+wavfile=
+scriptfile=2级物品.txt
+kind=1
+dir=0
+lum=0
+mapx=20
+mapy=82
+damage=0
+frame=0
+

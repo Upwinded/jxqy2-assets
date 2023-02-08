@@ -1,0 +1,27 @@
+	If($FengChiFight == 1) @Lable1;
+	DisableNpcAI();
+	AddNpc("z09-¶À¹Â½£.ini",110,173,3);
+	SetNpcRelation("¶À¹Â½£",1);
+	Talk("TuBian23");
+	NpcGotoEx("¶À¹Â½£",105,167);
+	PlayerGoto(103,163);
+	SetPlayerDir(7);
+	SetNpcDir("¶À¹Â½£",3);
+	Talk("TuBian24");
+	Sleep(500);
+	NpcAttack("¶À¹Â½£",103,163);
+	Sleep(2000);
+	FadeOut();
+	Talk("FengChiFight2");	
+	SaveNpc();
+	SaveObj();
+	RunScript("DaLao.txt");
+	Return;
+@Lable1:
+	FadeOut();
+	SetPlayerPos(102,150);
+	SetPlayerDir(5);
+	FadeIn();
+	Talk("FengChiFight");
+	SetMapTrap(7,"Trap7.txt");
+	Return;

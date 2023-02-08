@@ -1,0 +1,19 @@
+  --向小贩买东西
+  
+  if getvar("changanlaoban") == 0 then
+    
+    talk("xiaofan3");
+    return;
+  end
+  if getvar("changanxiaofan") == 1 then
+    
+    talk("xiaofan2");
+    return;
+  end
+  talk("xiaofan1");
+  --addmoney(-100);
+  --setmaptrap(5,"送项链.txt");
+  --激活客栈的陷阱脚本
+  assign("changanxiaofan",1);
+  addtomemo("买杨七爷的夜明珠送给小仙女，杨七爷家就在孙二毛对面。");
+  return;

@@ -1,0 +1,22 @@
+  --出寺门，被柴嵩过来拦住
+  
+  if getvar("longyinshiliaoran") == 1 then
+    
+    playmusic("ks75.wav");
+    talk("longyinshiliaoran2");
+    return;
+  end
+  addnpc("z03-许若冰.ini",41,105);
+  setnpcaction("柴嵩",0);
+  playmusic("ks69.wav");
+  npcgotoex("柴嵩",44,99);
+  playergoto(45,98);
+  talk("lys6");
+  npcgoto("柴嵩",51,112);
+  setnpcpos("柴嵩",79,31);
+  talk("lys7");
+  setnpcscript("柴嵩","柴嵩.txt");
+  addtomemo("到龙音寺后面的小屋去找柴嵩。");
+  assign("zhongdulys",1);
+  savemaptrap();
+  return;

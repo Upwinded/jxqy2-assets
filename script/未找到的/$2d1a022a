@@ -1,0 +1,26 @@
+  if GetVar("DaoZei") == 5 then
+    
+    Talk("DaJie1");
+    AddMoney(500);
+    ShowMessage("得到五百两银子");
+    Assign("DaoZei",6);
+    return;
+  end
+  if GetVar("DaoZei") == 6 then
+    
+    Talk("DaJie5");
+    return;
+  end
+  if GetVar("DaoZei") == 7 then
+    
+    Talk("DaJie2");
+    Assign("DaoZei",8);
+    return;
+  end
+  if GetVar("DaoZei") == 8 then
+    
+    Talk("DaJie3");
+    return;
+  end
+  Talk("DaJie4");
+  return;

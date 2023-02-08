@@ -1,0 +1,4 @@
+  
+  talk("zhaowushuang");
+  setnpcdir("赵无双",1);
+  return;

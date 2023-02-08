@@ -1,0 +1,21 @@
+// "百花谷" - "铁门寨-百花谷"
+
+	//进入小屋见到燕若雪之前	
+	If ($BaiHuaGuOQieHuan==0) @enter1;
+	
+	//进入小屋见过燕若雪之后
+	If ($BaiHuaGuOQieHuan==2) @enter2;
+	
+@enter1:
+	Talk("changemap2");
+	PlayerGotoDir(4,2);
+	SetMapTrap(1,"地图切换.txt");
+	Return;
+
+@enter2:
+	Talk("changemap3");
+	PlayerGotoDir(4,2);
+	SetMapTrap(1,"地图切换.txt");
+	Return;
+
+	

@@ -1,0 +1,20 @@
+				
+		Talk("ZhuDian");
+		GetMoneyNum();
+		If ($MoneyNum <= 19)	@Label1;
+
+		AddMoney(-20);
+		FadeOut();
+		Sleep(5000);
+		SetPlayerPos(61,167);
+		SetPlayerDir(1);
+		FullLife();
+		FullThew();
+		FullMana();
+		UpdateState();
+		FadeIn();
+		Return;
+@Label1:
+		Talk("NoMoney");
+		Return;
+		

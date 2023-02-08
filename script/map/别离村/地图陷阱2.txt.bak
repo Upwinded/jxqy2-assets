@@ -1,0 +1,25 @@
+//别离村－翠烟门2
+
+	If ($CuiYanMen2Finish==1) @Talk1;
+	StopMusic();
+	FadeOut();
+	LoadMap("翠烟门.map");
+	LoadNpc("CuiYM.npc");
+	LoadObj("CuiYM.obj");
+	SetPlayerPos(129,91);
+	SetPlayerDir(1);
+	FadeIn();
+	Return;
+	
+@Talk1:
+	StopMusic();
+	FadeOut();
+	LoadMap("翠烟门.map");
+	LoadNpc("CuiYM1.npc");
+	SetPlayerPos(129,91);
+	SetPlayerDir(1);
+	FadeIn();
+	Talk("QiuYiShui1");
+	Return;
+	
+	

@@ -1,0 +1,20 @@
+        	If ($ShaoJiFeng == 2) @Lable1;
+		FadeOut();
+//		NpcGotoDir("南宫飞云",3,2);
+		SetPlayerPos(9,165);
+		SetPlayerDir(3);
+		FadeIn();
+		Talk("NoFinish");
+		SetMapTrap(1,"地图陷阱1.txt");
+		Return;
+@Lable1:
+		FadeOut();
+		SaveNpc();
+		SaveObj();
+		LoadMap("临安大牢-3.map");
+		LoadNpc("LinAnDaLao3.npc");
+		LoadObj("LinAnDaLao3.obj");
+		SetMainLum(16);
+		SetPlayerPos(91,170);
+		SetPlayerDir(3);
+		FadeIn();

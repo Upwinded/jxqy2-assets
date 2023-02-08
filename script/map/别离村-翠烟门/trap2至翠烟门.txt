@@ -1,0 +1,69 @@
+  
+  if getvar("cuiyanmen2allfinish") >= 2 then
+    
+    fadeout();
+    loadmap("翠烟门.map");
+    loadnpc("cuiym3.npc");
+    loadobj("cuiym.obj");
+    setplayerpos(137,76);
+    setplayerdir(1);
+    fadein();
+    showmessage("翠烟门");
+    return;
+  end
+  fadeout();
+  loadmap("翠烟门.map");
+  loadnpc("cuiym1.npc");
+  loadobj("cuiym1.obj");
+  setplayerpos(137,76);
+  setplayerdir(1);
+  if getvar("cuiyanmen2cunlan") == 1 then
+    
+    if getvar("nadaomijimusic") == 0 then
+      
+      fadein();
+      showmessage("翠烟门");
+      if getvar("cuiyanmen2finish") == 1 then
+        
+        runscript("带唐影进翠烟门.txt");
+        return;
+      end
+      return;
+    end
+    playmusic("ks68.wav");
+    
+    
+    fadein();
+    showmessage("翠烟门");
+    if getvar("cuiyanmen2finish") == 1 then
+      
+      runscript("带唐影进翠烟门.txt");
+      return;
+    end
+    return;
+  end
+  playmusic("ks65.wav");
+  
+  
+  if getvar("nadaomijimusic") == 0 then
+    
+    fadein();
+    showmessage("翠烟门");
+    if getvar("cuiyanmen2finish") == 1 then
+      
+      runscript("带唐影进翠烟门.txt");
+      return;
+    end
+    return;
+  end
+  playmusic("ks68.wav");
+  
+  
+  fadein();
+  showmessage("翠烟门");
+  if getvar("cuiyanmen2finish") == 1 then
+    
+    runscript("带唐影进翠烟门.txt");
+    return;
+  end
+  return;

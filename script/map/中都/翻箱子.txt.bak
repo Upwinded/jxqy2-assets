@@ -1,0 +1,10 @@
+		OpenBox();
+		PlaySound("物-箱子开.wav");
+		AddMoney(100);
+		ShowMessage("你从箱子里找到一百两银子");
+		Sleep(1000);
+		Talk("HouseFight");
+		SetNpcRelation("剑客-1",1);
+		SetNpcRelation("剑客-2",1);
+		SetObjScript("","");
+		Return;

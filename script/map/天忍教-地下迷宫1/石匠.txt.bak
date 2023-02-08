@@ -1,0 +1,25 @@
+    If($TrjDxmgshijiang==2) @Talk2;
+    If($TrjDxmgshijiang==1) @Talk1;
+    Talk("shijiang1");
+    Assign($TrjDxmgshijiang,1);
+    Return;
+@Talk1:
+    Talk("shijiang2");
+    Return;
+@Talk2:
+    Talk("shijiang3");
+    PlayerGoto(75,93);	
+    SetPlayerDir(7);	
+    NpcGoto("Ìú½³",76,94);
+    SetNpcDir(7);	
+    FadeOut();
+    DelObj("´óÌúÃÅ1");		
+    SetNpcScript("Ìú½³","");
+    FadeIn();
+    DisableNpcAI();
+    NpcGoto("Ìú½³",78,98);
+    Talk("shijiang4");
+    NpcGotoEx("Ìú½³",84,115);
+    DelGoods("goods-sj-11-½ð¸Õ´¸.ini");
+    EnableNpcAI();
+    Return;

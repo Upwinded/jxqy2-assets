@@ -1,0 +1,2 @@
+  addmagic("player-magic-漫天花雨手法.ini");
+  return;

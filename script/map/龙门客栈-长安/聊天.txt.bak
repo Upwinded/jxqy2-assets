@@ -1,0 +1,12 @@
+//ÁÄÌì
+
+	Talk("talk1");
+	PlayMusic("ks64.wav");
+	PlayerGoto(15,21);
+	Sleep(2000);
+	SetPlayerDir(0);
+	SetNpcDir("ÑàÈôÑ©",5);
+	Talk("talk2");
+	SetMapTrap(3,"");
+	SaveMapTrap();
+	Return;

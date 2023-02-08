@@ -1,0 +1,9 @@
+  
+  hideinterface();
+  stopmusic();
+  sleep(2000);
+  fadeout();
+  hidebottomwnd();
+  playmovie("death.avi");
+  returntotitle();
+  return;

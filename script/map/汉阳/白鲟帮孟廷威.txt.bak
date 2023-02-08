@@ -1,0 +1,39 @@
+	
+	
+	If($HanYanBXBMTW==1) @Talk1;
+	Talk("BaiXunBangBanZhu1");
+	Assign($HanYanBXBMTW,1);
+	StopMusic();
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	DisableNpcAI();
+	LoadMap("∫∫—Ù–°Œ›.map");
+	LoadNpc("HanYangHouse.npc");
+	SaveNpc("HanYangHouse1.npc");
+	SetPlayerPos(12,26);
+	SetPlayerDir(4);
+	SetPlayerState(1);
+	FadeIn();
+	Talk("FightBegin");
+	EnableNpcAI();
+	Return;
+	
+@Talk1:
+
+	Talk("BaiXunBangBanZhu2");
+	StopMusic();
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	DisableNpcAI();
+	LoadMap("∫∫—Ù–°Œ›.map");
+	LoadNpc("HanYangHouse.npc");
+	SaveNpc("HanYangHouse1.npc");
+	SetPlayerPos(12,26);
+	SetPlayerDir(4);
+	SetPlayerState(1);
+	FadeIn();
+	Talk("FightBegin");
+	EnableNpcAI();
+	Return;

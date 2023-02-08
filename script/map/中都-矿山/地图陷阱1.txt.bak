@@ -1,0 +1,35 @@
+//
+        
+        FadeOut();
+	SaveNpc();
+	SaveObj();
+        ShowSnow(0);
+        LoadMap("中都.map");
+	LoadNpc("zhongdu.npc");
+	LoadObj("zhongdu.obj");
+	SetMapTime(0);	
+	SetPlayerPos(30,94);
+	SetPlayerDir(7);
+	ShowMessage("中都");
+        If($4JiangLing==4) @Lable5;
+        If($KuangGongZouLe==1) @Lable3;
+        ShowRandomSnow();
+	FadeIn();
+	PlayMusic("ks69.wav");
+	Return;
+       
+
+@Lable3:
+       DelNpc("寺庙老妪");
+       SetMapTrap(17,"地图陷阱17.txt");
+       Assign($4JiangLing,4);
+       ShowRandomSnow();
+       FadeIn();
+       PlayMusic("ks69.wav");
+       Return;
+
+@Lable5:
+       ShowRandomSnow();
+       FadeIn();
+       PlayMusic("ks69.wav");
+       Return;

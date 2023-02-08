@@ -1,0 +1,14 @@
+// ¥Â√Ò2
+
+	If ($ksOcunming2 == 0) @talk1;
+	If ($ksOcunming2 == 1) @talk2;
+	Return;
+
+@talk1:
+	Talk("guard3-1");
+	Assign($ksOcunming2, 1);
+	Return;
+
+@talk2:
+	Talk("guard3-2");
+	Return;

@@ -1,0 +1,4 @@
+  --金兵
+  
+  talk("shoumenguanbin");
+  return;

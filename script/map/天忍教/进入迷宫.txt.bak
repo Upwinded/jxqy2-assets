@@ -1,0 +1,19 @@
+	FadeOut();        
+	SaveNpc();
+	SaveObj();
+        ShowSnow(0);
+	LoadMap("天忍教-地下迷宫1.map");
+	LoadNpc("trj-dixiamigong-1.npc");
+   	LoadObj("trj-dixiamigong-1.obj");
+	SetMainLum(16);
+	SetPlayerPos(77,132);
+	SetPlayerDir(2);
+	SetPlayerLum(0);
+	FadeIn();
+	ShowMessage("天忍教总舵第一层");
+	
+	If($TrjDxmg == 0) @Label1;
+	 Return;
+@Label1:
+	Assign($TrjDxmg,1);	
+	Return;

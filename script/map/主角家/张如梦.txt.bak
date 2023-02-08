@@ -1,0 +1,11 @@
+// 张如梦
+	
+	If ($ZhangRuMeng == 1) @talk2;
+	Talk("zym1");
+	Assign($ZhangRuMeng,1);
+//	AddMagic("player-magic-天意剑诀.ini");
+	Return;
+
+@talk2:
+	Talk("zym2");
+	Return;

@@ -1,0 +1,4 @@
+  addrandmoney(10,100);
+  playsound("物-银子.wav");
+  setobjscript("","");
+  return;

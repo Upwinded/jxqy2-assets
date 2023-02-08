@@ -1,0 +1,15 @@
+  disablenpcai();
+  playergotoex(5,157);
+  setnpckind("男童",0);
+  npcgoto("男童",5,155);
+  setnpcdir(0);
+  setplayerdir(4);
+  talk("talk2");
+  addgoods("goods-sj-9-别离村钥匙.ini");
+  npcgoto("男童",3,172);
+  delnpc("男童");
+  enablejump();
+  enablerun();
+  savemaptrap();
+  enablenpcai();
+  return;

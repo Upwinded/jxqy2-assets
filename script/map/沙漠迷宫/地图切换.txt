@@ -1,0 +1,17 @@
+  --从迷宫到主角家--狂沙镇
+  
+  savenpc("");
+  saveobj("");
+  fadeout();
+  stopmusic();
+  loadmap("主角家-狂沙镇.map");
+  loadnpc("home-ks.npc");
+  loadobj("home-ks.obj");
+  setplayerpos(79,159);
+  playmusic("ks67.wav");
+  setplayerdir(7);
+  setmainlum(31);
+  setplayerlum(0);
+  fadein();
+  showmessage("沙洲村");
+  return;

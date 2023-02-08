@@ -1,0 +1,22 @@
+// 唐门—别离村
+	
+	FadeOut();
+	SaveNpc();
+	LoadMap("别离村.map");
+	If($BieLiShengAn==1) @Lable1;
+	LoadNpc("bielicun.npc");
+	LoadObj("bielicun.obj");
+	SetPlayerPos(80,91);
+	SetPlayerDir(3);
+	FadeIn();
+	ShowMessage("别离村");
+	Return;
+
+@Lable1:
+	LoadNpc("bielicun1.npc");
+	LoadObj("bielicun.obj");
+	SetPlayerPos(80,91);
+	SetPlayerDir(3);
+	FadeIn();
+	ShowMessage("别离村");
+	Return;

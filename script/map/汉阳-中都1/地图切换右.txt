@@ -1,0 +1,103 @@
+  
+  if getvar("yanruoxuemusic") == 1 then
+    
+    delnpc("老人");
+    savenpc();
+    fadeout();
+    showsnow(0);
+    loadmap("汉阳-中都2.map");
+    loadobj("hanyan-zd2.obj");
+    if getvar("hanyanzhongdu2") == 1 then
+      
+      setplayerpos(6,48);
+      setplayerdir(4);
+      if getvar("yanruoxuemusic") == 0 then
+        
+        showsnow(1);
+        fadein();
+        showrandomsnow();
+        showmessage("野外");
+        return;
+      end
+      playmusic("ks67.wav");
+      
+      
+      showsnow(1);
+      fadein();
+      showrandomsnow();
+      showmessage("野外");
+      return;
+    end
+    loadnpc("hanyan-zhong2.npc");
+    assign("hanyanzhongdu2",1);
+    
+    setplayerpos(6,48);
+    setplayerdir(4);
+    if getvar("yanruoxuemusic") == 0 then
+      
+      showsnow(1);
+      fadein();
+      showrandomsnow();
+      showmessage("野外");
+      return;
+    end
+    playmusic("ks67.wav");
+    
+    
+    showsnow(1);
+    fadein();
+    showrandomsnow();
+    showmessage("野外");
+    return;
+  end
+  stopmusic();
+  
+  
+  delnpc("老人");
+  savenpc();
+  fadeout();
+  showsnow(0);
+  loadmap("汉阳-中都2.map");
+  loadobj("hanyan-zd2.obj");
+  if getvar("hanyanzhongdu2") == 1 then
+    
+    setplayerpos(6,48);
+    setplayerdir(4);
+    if getvar("yanruoxuemusic") == 0 then
+      
+      showsnow(1);
+      fadein();
+      showrandomsnow();
+      showmessage("野外");
+      return;
+    end
+    playmusic("ks67.wav");
+    
+    
+    showsnow(1);
+    fadein();
+    showrandomsnow();
+    showmessage("野外");
+    return;
+  end
+  loadnpc("hanyan-zhong2.npc");
+  assign("hanyanzhongdu2",1);
+  
+  setplayerpos(6,48);
+  setplayerdir(4);
+  if getvar("yanruoxuemusic") == 0 then
+    
+    showsnow(1);
+    fadein();
+    showrandomsnow();
+    showmessage("野外");
+    return;
+  end
+  playmusic("ks67.wav");
+  
+  
+  showsnow(1);
+  fadein();
+  showrandomsnow();
+  showmessage("野外");
+  return;

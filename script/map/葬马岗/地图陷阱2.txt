@@ -1,0 +1,6 @@
+  --
+  playergoto(60,48);
+  talk("zmg");
+  enablenpcai();
+  savemaptrap();
+  return;

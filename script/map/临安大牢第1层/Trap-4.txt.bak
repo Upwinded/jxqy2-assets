@@ -1,0 +1,18 @@
+    If($Qiu==1) @Lable1;
+     Return;		
+
+@Lable1:
+     If($Zhao==1) @Lable2;
+     Return;
+
+@Lable2:
+		DisableNpcAI();
+		PlayerRunTo(15,133);
+		SetPlayerDir(5);
+		Talk("DaLao12");
+		Sleep(1000);
+		SetPlayerDir(6);
+		Talk("DaLao11");
+		SaveMapTrap();
+		EnableNpcAI();
+		Return;

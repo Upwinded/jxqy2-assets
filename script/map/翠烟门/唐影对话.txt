@@ -1,0 +1,14 @@
+  --完事后的唐影
+  
+  if getvar("cuiyanmen2qiuyishui") == 1 then
+    
+    talk("qiuyishui5");
+    return;
+  end
+  if getvar("cuiyanmen2dizi") >= 5 then
+    
+    talk("finishi");
+    return;
+  end
+  talk("tangying1");
+  return;

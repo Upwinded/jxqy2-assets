@@ -1,0 +1,11 @@
+  --从宝箱得到长剑
+  
+  openbox();
+  addgoods("goods-jian-1-桃木剑.ini");
+  addgoods("goods-pifeng-1-白布披风.ini");
+  addgoods("goods-cloth-1-书生服.ini");
+  addgoods("goods-huwan-2-月勾.ini");
+  playsound("物-箱子开.wav");
+  showmessage("你从箱子里找到了一柄木剑和一些衣物。");
+  setobjscript("","");
+  return;

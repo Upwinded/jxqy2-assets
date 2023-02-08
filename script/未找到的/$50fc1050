@@ -1,0 +1,11 @@
+  
+  
+  DisableNpcAI();
+  --PlayerGoto(130,116);
+  --SetPlayerDir(5);
+  --SetNpcDir("敖管家",1);
+  Talk("TuBian22");
+  AddToMemo("在山庄内寻找独孤剑。");
+  Assign("FengChiFight",0);
+  EnableNpcAI();
+  return;

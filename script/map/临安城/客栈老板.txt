@@ -1,0 +1,19 @@
+  
+  talk("zhudian");
+  getmoneynum();
+  if getvar("moneynum") <= 199 then
+    
+    talk("nomoney");
+    return;
+  end
+  addmoney(-200);
+  fadeout();
+  sleep(5000);
+  setplayerpos(61,167);
+  setplayerdir(1);
+  fulllife();
+  fullthew();
+  fullmana();
+  updatestate();
+  fadein();
+  return;

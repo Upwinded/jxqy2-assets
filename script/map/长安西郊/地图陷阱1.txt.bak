@@ -1,0 +1,11 @@
+//长安西郊－长安
+
+	StopMusic();
+	FadeOut();
+	LoadMap("长安.map");
+	LoadNpc("changan.npc");
+	LoadObj("changan.obj");
+	SetPlayerPos(41,313);
+	SetPlayerDir(5);
+	FadeIn();
+	Return;

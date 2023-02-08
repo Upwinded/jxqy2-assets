@@ -1,0 +1,28 @@
+//当铺丫鬟的对话
+
+	//对话完但未和小姐对话
+	If ($ZhongDuChenXiDanPuYaHuan==1) @Talk1;
+	//和小姐对话完
+	If ($ZhongDuChenXiDanPuYaHuan==2) @Talk2;
+	//再次对话完，但信未送到
+	If ($ZhongDuChenXiDanPuYaHuan==3) @Talk3;
+	
+	Talk("ChenXiDanPuYaHuan");
+	Assign($ZhongDuChenXiDanPuYaHuan,1);
+	Return;
+
+@Talk1:
+	Talk("ChenXiDanPuYaHuan01");
+	Return;
+
+@Talk2:
+	Talk("ChenXiDanPuYaHuan1");
+	//将信交给主角
+	Assign($ZhongDuChenXiDanPuYaHuan,3);
+	Assign($ZhongDuChenXiDanPuLiuQin,1);
+	Return;
+
+@Talk3:
+	Talk("ChenXiDanPuYaHuan11");
+	Return;
+

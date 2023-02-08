@@ -1,0 +1,6 @@
+  if getvar("cai") == 1 then
+    
+    delnpc("柴嵩");
+    return;
+  end
+  return;

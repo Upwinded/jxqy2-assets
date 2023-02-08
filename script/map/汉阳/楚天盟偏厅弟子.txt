@@ -1,0 +1,18 @@
+  --楚天盟偏厅弟子
+  
+  if getvar("hanyanctmhoumendizi") == 1 then
+    
+    talk("dizi2");
+    npcgoto("楚天盟弟子乙",87,72);
+    setnpcdir("楚天盟弟子乙",1);
+    setnpcscript("楚天盟弟子乙","");
+    assign("hanyanctmhoumendizi",2);
+    return;
+  end
+  if getvar("hanyanctmhoumendizi") == 2 then
+    
+    talk("dizi3");
+    return;
+  end
+  talk("dizi1");
+  return;

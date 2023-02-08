@@ -1,0 +1,13 @@
+  --第一次进入唐门
+  
+  disablenpcai();
+  playergoto(53,277);
+  talk("tanmendizi1");
+  playergotoex(58,265);
+  npcgoto("唐门弟子1",60,262);
+  setnpcdir("唐门弟子1",1);
+  playmusic("ks77.wav");
+  talk("tanmendizi2");
+  enablenpcai();
+  assign("tanmenfighting",1);
+  return;

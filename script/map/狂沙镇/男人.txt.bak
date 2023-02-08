@@ -1,0 +1,17 @@
+//男人
+
+	//第一次与男人交谈
+	If ($KsONanRen==0) @Talk1;
+	
+	//与男人对完话后
+	If ($KsONanRen==1) @Talk2;
+	
+@Talk1:
+	Talk("nanren");
+	$KsONanRen = 1;
+	Return;
+	
+@Talk2:
+	Talk("nanren1");
+	Return;
+	

@@ -1,0 +1,7 @@
+  disablenpcai();
+  playergoto(19,52);
+  playergotoex(17,49);
+  talk("talk1");
+  enablenpcai();
+  savemaptrap();
+  return;

@@ -1,0 +1,9 @@
+		SaveMapTrap();
+		Talk("DaJia");
+		Talk("DaJia1");
+		PlayerGoto(96,153);
+		Talk("DaJia2");
+		SetNpcRelation("∫È∆ﬂ",1);
+		SetNpcRelation("Õı÷ÿ—Ù",1);
+		SetNpcRelation("≈∑—Ù∑Ê",1);
+		Return;

@@ -1,0 +1,4 @@
+  --帮众4
+  
+  talk("banzhong4");
+  return;

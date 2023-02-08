@@ -1,0 +1,10 @@
+  --得到官印
+  
+  openbox();
+  playsound("物-箱子开.wav");
+  talk("guanfuyayi5");
+  addgoods("goods-sj-4-官印.ini");
+  setobjscript("","");
+  addtomemo("你得到了官府大印，似乎可以凭这个跟上官豹做笔交易。");
+  assign("changanguanyin",1);
+  return;

@@ -1,0 +1,63 @@
+//翠烟门－别离村
+
+	If ($CuiYanMen2AllFinish==2) @Talk3;
+	If ($CuiYanMen2AllFinish==3) @Talk4;
+	
+@Talk4:
+	FadeOut();
+	LoadMap("别离村.map");
+	If ($BieLiShengAn==1) @Lable1;
+	LoadNpc("bielicun.npc");
+	LoadObj("bielicun.obj");
+	SetPlayerPos(21,157);
+	SetPlayerDir(5);
+	If($CuiYanMen2CunLanMusic == 0) @Label5;
+	PlayMusic("Ks66.wav");
+	
+@Label5:	
+
+	FadeIn();
+	ShowMessage("别离村");
+	Return;
+	
+@Lable1:
+	LoadNpc("bielicun1.npc");
+	LoadObj("bielicun.obj");
+	SetPlayerPos(21,157);
+	SetPlayerDir(5);
+	If($CuiYanMen2CunLanMusic == 0) @Label3;
+	PlayMusic("Ks66.wav");
+	
+@Label3:	
+	If($CuiYanMen2CunLanMusic == 0) @Label4;
+	PlayMusic("Ks66.wav");
+	
+@Label4:	
+
+	FadeIn();
+	ShowMessage("别离村");
+	Return;
+	
+@Talk3:
+	FadeOut();
+	SaveNpc();
+	LoadMap("别离村.map");
+	LoadNpc("bielicun1.npc");
+	LoadObj("bielicun.obj");
+	SetPlayerPos(21,157);
+	SetPlayerDir(5);
+	AddNpc("z08-赵无双.ini",22,133,1);
+	Assign($CuiYanMen2AllFinish,3);
+	If($CuiYanMen2CunLanMusic == 0) @Label2;
+	PlayMusic("Ks66.wav");
+	
+@Label2:	
+	FadeIn();
+	ShowMessage("别离村");
+	NpcGoto("赵无双",22,155);
+	SetNpcDir("赵无双",1);
+	Talk("ZhaoWuShuan");
+	NpcGoto("赵无双",22,133);
+	DelNpc("赵无双");
+	AddToMemo("乘船取道汉阳到中都去找柴嵩。");
+	Return;

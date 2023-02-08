@@ -1,0 +1,12 @@
+// "百花谷小屋" - "百花谷"
+
+	FadeOut();
+	SaveNpc();
+	LoadMap("百花谷.map");
+	LoadObj("bhg.obj");
+	SetPlayerPos(35,14);
+	SetPlayerDir(1);
+	FadeIn();
+	ShowMessage("百花谷");
+	Return;
+

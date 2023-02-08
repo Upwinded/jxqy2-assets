@@ -1,0 +1,16 @@
+  
+  if getvar("nofindchaisong") == 0 then
+    
+    talk("first1");
+    playergoto(36,323);
+    setmaptrap(2,"noout0.txt");
+    return;
+  end
+  if getvar("nofindchaisong") == 1 then
+    
+    talk("first2");
+    playergoto(36,323);
+    setmaptrap(2,"noout0.txt");
+    return;
+  end
+  return;

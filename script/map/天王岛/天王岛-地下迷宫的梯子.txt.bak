@@ -1,0 +1,20 @@
+//	If ($TianWangPiEr == 2) Goto @Lable1;
+//	Return;
+	
+//@Lable1:
+	StopMusic();
+        FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("天王岛-地下迷宫.map");
+	LoadNpc("TWDDXMG.npc");
+	LoadObj("TWDDXMG.obj");
+	SetMainLum(16);
+	SetMapTime(0);
+	SetPlayerLum(0);
+	SetPlayerPos(61,26);
+	SetPlayerDir(1);
+	PlayMusic("ks74.wav");
+	FadeIn();
+	ShowMessage("天王岛迷宫");
+	Return;

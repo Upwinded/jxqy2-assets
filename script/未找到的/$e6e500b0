@@ -1,0 +1,10 @@
+  --从宝箱得到怒雷指
+  
+  DisableNpcAI();
+  OpenBox();
+  PlaySound("物-箱子开.wav");
+  Talk("wugong");
+  AddMagic("player-magic-怒雷指.ini");
+  SetObjScript("","");
+  EnableNpcAI();
+  return;

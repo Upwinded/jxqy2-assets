@@ -1,0 +1,31 @@
+//上官家的管家
+	
+	If ($ChangAnGuanYin==1) @Talk1;
+	Talk("ShangGuanJiaDing2");
+	Return;
+	
+@Talk1:
+	If ($ChangAnShangGuanGuanJia==1) @Talk2;
+	Talk("ShangGuanJiaDing3");
+	NpcGoto("上官二管家",148,216);
+	SetNpcDir("上官二管家",3);
+//	FollowNpc("南宫飞云","上官大管家");
+	NpcGotoEx("上官大管家",168,167);
+	PlayerGoto(147,204);
+	PlayerGoto(149,202);
+	PlayerGoto(156,195);
+	PlayerGoto(169,164);
+	SetNpcDir("上官豹",7);
+	SetPlayerDir(3);
+	Talk("ShangGuanJiaDing4");
+	DelGoods("goods-sj-4-官印.ini");
+	AddGoods("goods-sj-5-玉圭.ini");
+	AddToMemo("你用官印和上官豹换来了玉圭，杨七爷要高兴死了。");
+	Assign($ChangAnShangGuanGuanJia,1);
+	Assign($ChangAnYuGuiFinish,1);
+	Return;
+	
+@Talk2:
+	Talk("ShangGuanJiaDing5");
+	Return;
+	

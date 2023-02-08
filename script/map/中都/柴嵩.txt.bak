@@ -1,0 +1,45 @@
+//柴嵩
+
+     If($ZhongDuTroublesRoom==4) @Talk3;
+     If($ZhongDuHouHuaYuan==4) @Talk2;
+     If($ZhongDuTroublesRoom==2) @Talk1;
+     Talk("troublesroom");
+     NpcGoto("柴嵩",76,25);
+     NpcGoto("柴嵩",75,20);
+     NpcGoto("柴嵩",77,19);
+     DelNpc("柴嵩");
+     Talk("troublesroom1");
+     AddToMemo("到酒店去找柴嵩，酒店在城东南。");
+     Assign($ZhongDuTroublesRoom,1);
+     Return;
+     
+@Talk1:
+     Talk("troublesroom2");
+     StopMusic();
+     FadeOut();
+     DelNpc("柴嵩");
+     Talk("tomorrow");
+     PlayMusic("ks71.wav");
+     FadeIn();
+     DelGoods("goods-sj-10-长安好酒.ini");
+     Talk("troublesroom3");
+     AddToMemo("到城东北的大宅院去找小仙女。");
+     Assign($ZhongDuTroublesRoom,3);
+     Return;
+     
+@Talk2:
+     Talk("troublesroom6");
+     Assign($ZhongDuTroublesRoom,4);
+     FadeOut();
+     SetNpcPos("南宫飞云",142,326);
+     SetPlayerScn();
+     SetNpcPos("柴嵩",142,327);
+     SetNpcKind("柴嵩",3);
+     DisableRun();
+     DisableJump();
+     FadeIn();
+     Return;
+     
+@Talk3:
+     Talk("cs1");
+     Return;

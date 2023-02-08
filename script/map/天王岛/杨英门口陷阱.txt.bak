@@ -1,0 +1,5 @@
+
+	Talk("HouYuanShouMenBanZhong");
+	NpcGotoDir("до╧╛╥итф",7,1);
+	SetMapTrap(1,"яНс╒це©зощзЕ.txt");
+	Return;

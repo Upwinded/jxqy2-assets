@@ -1,0 +1,10 @@
+  
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("汉阳-段家庄.map");
+  setplayerpos(7,49);
+  setplayerdir(5);
+  showmessage("段家庄前小树林");
+  fadein();
+  return;

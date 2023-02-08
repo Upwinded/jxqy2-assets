@@ -1,0 +1,14 @@
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("¡Ÿ∞≤µÿœ¬√‘π¨.map");
+	LoadNpc("LinAnMG.npc");
+	LoadObj("LinAnMG.obj");
+	SetMapTime(0);
+	SetMainLum(16);
+	SetPlayerLum(0);
+	SetPlayerPos(74,138);
+	SetPlayerDir(1);
+	PlayMusic("KS77.wav");
+	FadeIn();
+	Return;

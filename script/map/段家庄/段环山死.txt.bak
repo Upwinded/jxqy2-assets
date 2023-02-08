@@ -1,0 +1,20 @@
+
+	Sleep(1000);
+	FadeOut();
+	DisableNpcAI();
+	DelNpc("×³¶¡");
+	DelNpc("×³¶¡B");
+	SetPlayerPos(52,99);
+	SetPlayerDir(5);
+	DelObj("¶Î»·É½Ê¬Ìå");
+	AddNpc("G_npc009.ini",53,97,1);
+	FadeIn();
+	Talk("DuanDie");
+	PlayerGoto(53,98);
+	NpcAttack("ÄÏ¹¬·ÉÔÆ",53,97);
+	Sleep(1500);
+	EnableNpcAI();
+	Assign($DuanHuanShan,1);
+	Return;
+	
+	

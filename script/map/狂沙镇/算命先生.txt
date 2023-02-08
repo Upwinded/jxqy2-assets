@@ -1,0 +1,21 @@
+  --算命先生
+  
+  --第一次与算命先生交谈
+  if getvar("ksosuanmin") == 0 then
+    
+    talk("suanmin1");
+    assign("ksosuanmin",1);
+    return;
+  end
+  
+  --与算命先生对完话后
+  if getvar("ksosuanmin") == 1 then
+    
+    talk("suanmin11");
+    return;
+  end
+  
+  
+  talk("suanmin1");
+  assign("ksosuanmin",1);
+  return;

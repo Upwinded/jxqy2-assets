@@ -1,0 +1,4 @@
+  HideBottomWnd();
+  PlayMovie("end.avi");
+  ReturnToTitle();
+  return;

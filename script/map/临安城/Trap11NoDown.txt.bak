@@ -1,0 +1,7 @@
+		FadeOut();
+		SetPlayerPos(32,129);
+		SetPlayerDir(5);
+		FadeIn();
+		Talk("");
+		SetMapTrap(11,"Trap11NoDown.txt");
+		Return;

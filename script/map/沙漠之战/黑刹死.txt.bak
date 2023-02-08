@@ -1,0 +1,25 @@
+
+	DisableNpcAI();
+	DelNpc("黑刹");
+	Sleep(200);
+	Talk("Win");
+	EnableNpcAI();
+	
+	If($ShaMoFirst==1) @Talk1;
+	Assign($ShaMoFirst,1);
+	Return;
+	
+	@Talk1:
+	Talk("Win2");
+	FadeOut();
+	FullLife();
+	FullThew();
+	FullMana();
+	Talk("Win3");
+	LoadMap("主角家.map");
+	LoadNpc("home.npc");
+	LoadObj("home.obj");
+	SetPlayerPos(20,64);
+	SetPlayerState(0);
+	RunScript("开始游戏.txt");
+	Return;

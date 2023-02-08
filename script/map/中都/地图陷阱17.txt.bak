@@ -1,0 +1,7 @@
+    	
+        
+        PlayerGoto(51,49);
+        PlayerGoto(55,44);
+        Talk("ReturnKuangShan");
+	Return;
+

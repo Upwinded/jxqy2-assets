@@ -1,0 +1,4 @@
+  --书生
+  
+  talk("xueshen1");
+  return;

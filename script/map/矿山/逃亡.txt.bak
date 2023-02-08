@@ -1,0 +1,8 @@
+//
+      Talk("KuangGong");
+      FadeOut();
+      DelNpc("ฟ๓นค2");
+      DelNpc("ฟ๓นค1");
+      Assign($KuangGongZouLe,1);
+      FadeIn();
+      Return;

@@ -1,0 +1,9 @@
+//ÎÊÂ·
+	
+	If ($ChangAnYanRuoXueXiaoShi==1) @Talk1;
+	Talk("wenlu01");
+	Return;
+
+@Talk1:
+	Talk("wenlu");
+	Return;

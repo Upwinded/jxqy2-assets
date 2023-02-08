@@ -1,0 +1,14 @@
+[head]
+count=1
+
+[obj000]
+objname=sound
+objfile=
+wavfile=背-山雀.wav
+scriptfile=
+kind=4
+dir=0
+lum=0
+mapx=48
+mapy=273
+

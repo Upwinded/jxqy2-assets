@@ -1,0 +1,20 @@
+  --离开地图
+  if getvar("zhongduhouhuayuan") == 5 then
+    
+    stopmusic();
+    fadeout();
+    savenpc();
+    loadmap("汉阳-中都2.map");
+    setplayerpos(14,28);
+    setplayerdir(1);
+    setmaptime(0);
+    setmainlum(31);
+    playmusic("ks67.wav");
+    fadein();
+    showmessage("野外");
+    return;
+  end
+  talk("exit1");
+  npcgotodir("南宫飞云",5,1);
+  setmaptrap(2,"trap-2.txt");
+  return;

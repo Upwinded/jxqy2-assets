@@ -1,0 +1,9 @@
+  openbox();
+  setobjscript("","");
+  add("trjdxmgkg",1);
+  if getvar("trjdxmgkg") >= 4 then
+    
+    delobj("铁门关1");
+    return;
+  end
+  return;

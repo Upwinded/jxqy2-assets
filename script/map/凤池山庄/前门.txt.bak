@@ -1,0 +1,4 @@
+	Talk("FrontDoor");
+	PlayerGoto(60,237);
+	SetMapTrap(2,"г╟це.txt");
+	Return;

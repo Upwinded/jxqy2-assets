@@ -1,0 +1,12 @@
+  if getvar("fromfengchi") == 7 then
+    
+    talk("dugujian1");
+    return;
+  end
+  if getvar("fromfengchi") == 9 then
+    
+    talk("dugujian2");
+    return;
+  end
+  talk("dugujian");
+  return;

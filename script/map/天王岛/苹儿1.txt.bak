@@ -1,0 +1,51 @@
+//苹儿的大段对话
+
+	If ($TianWangPiEr==1) Goto @Lable1;
+	If ($TianWangPiEr==3) Goto @Lable2;
+	If ($TianWangPiEr==4) Goto @Lable3;
+	If ($TianWangPiEr>=5) Goto @Lable4;
+	Return;
+	
+@Lable1:
+	PlayerGoto(73,71);
+	SetPlayerDir(5);
+	SetNpcDir("苹儿",1);
+	PlayMusic("ks72.wav");
+	Talk("PinEr4");
+	Sleep(1000);
+	StopMusic();
+	FadeOut();
+	SetNpcPos("苹儿",7,15);
+	SetPlayerPos(45,75);
+	SetPlayerDir(7);
+	SetObjScript("梯子2","天王岛-地下迷宫的梯子.txt");
+	AddToMemo("从池塘中的地道下去，到木人阵中消磨一下时间。估计把木人都干掉了，苹儿也就该回来了。");
+	PlayMusic("Ks66.wav");
+	FadeIn();
+	PlayerGoto(46,76);
+	Sleep(500);
+	PlayerGoto(45,79);
+	Talk("PinEr5");
+	Assign($TianWangPiEr,2);
+	Return;
+	
+//打完木人阵回来
+@Lable2:
+	Talk("PinEr6");
+	Assign($TianWanShouMenDiZi,1);
+	Assign($HanYanCTMSZL,2);
+	Assign($TianWangPiEr,4);
+	AddGoods("goods-sj-8-天王岛密函.ini");
+	Sleep(2000);
+	AddGoods("goods-sj-1-天王令.ini");
+	Sleep(2000);
+	AddMagic("player-magic-大力金刚掌.ini");
+	AddToMemo("将密函交给史忠良，以平息天王帮和楚天盟之间的纠纷。");
+	Return;
+	
+@Lable3:	
+	Talk("PinEr7");
+	Return;
+@Lable4:
+	Talk("PinEr8");
+	Return;

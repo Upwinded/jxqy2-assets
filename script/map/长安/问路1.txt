@@ -1,0 +1,10 @@
+  --问路
+  
+  if getvar("changanyanruoxuexiaoshi") == 1 then
+    
+    talk("wenlu1");
+    return;
+  end
+  talk("wenlu11");
+  assign("fxszzhaoren",1);
+  return;

@@ -1,0 +1,5 @@
+  disablenpcai();
+  talk("dating");
+  enablenpcai();
+  setnpckind("雷同",1);
+  return;

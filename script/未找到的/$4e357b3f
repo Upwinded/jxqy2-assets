@@ -1,0 +1,10 @@
+  
+  FadeOut();
+  LoadMap("บบั๔.map");
+  LoadNpc("HanYan.npc");
+  SetPlayerPos(3,153);
+  SetPlayerDir(5);
+  ShowMessage("บบั๔");
+  FadeIn();
+  PlayMusic("ks69.mp3");
+  return;

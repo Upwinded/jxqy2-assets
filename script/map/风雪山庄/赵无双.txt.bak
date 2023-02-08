@@ -1,0 +1,4 @@
+
+	Talk("ZhaoWuShuang");
+	SetNpcDir("утнчк╚",1);
+	Return;

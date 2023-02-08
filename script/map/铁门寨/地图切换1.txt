@@ -1,0 +1,58 @@
+  --"铁门寨"-"铁门寨-百花谷"
+  
+  --未进入山寨大厅
+  if getvar("tmzoqiehuan") == 0 then
+    
+    
+    talk("goout3");
+    playergotodir(1,3);
+    setmaptrap(2,"地图切换1.txt");
+    return;
+  end
+  
+  --已进入山寨大厅
+  if getvar("tmzoqiehuan") == 1 then
+    
+    
+    fadeout();
+    savenpc("");
+    saveobj("");
+    stopmusic();
+    loadmap("铁门寨-百花谷.map");
+    loadnpc("tmz-bhg.npc");
+    loadobj("tmz-bhg.obj");
+    playmusic("ks77.wav");
+    setplayerpos(24,154);
+    setplayerdir(5);
+    fadein();
+    
+    --第一次进入铁门寨山洞
+    if getvar("tmzbhgoqiehuan") == 0 then
+      
+      disablenpcai();
+      talk("changemap1");
+      assign("tmzbhgoqiehuan",1);
+      enablenpcai();
+      return;
+    end
+    
+    --不是第一次进入铁门寨山洞
+    if getvar("tmzbhgoqiehuan") == 1 then
+      
+      return;
+    end
+    
+    
+    disablenpcai();
+    talk("changemap1");
+    assign("tmzbhgoqiehuan",1);
+    enablenpcai();
+    return;
+  end
+  
+  
+  
+  talk("goout3");
+  playergotodir(1,3);
+  setmaptrap(2,"地图切换1.txt");
+  return;

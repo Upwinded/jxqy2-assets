@@ -1,0 +1,13 @@
+  
+  talk("zhudian");
+  addmoney(-40);
+  fadeout();
+  sleep(5000);
+  setplayerpos(6,78);
+  setplayerdir(7);
+  fulllife();
+  fullthew();
+  fullmana();
+  updatestate();
+  fadein();
+  return;

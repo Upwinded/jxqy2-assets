@@ -1,0 +1,8 @@
+//地图陷阱1
+        
+	PlayMusic("ks71.wav");
+        Talk("in1");
+        AddToMemo("在中都城内各处寻找小仙女和柴嵩。");
+        SetMapTrap(1,"");
+        SaveMapTrap();
+        Return;

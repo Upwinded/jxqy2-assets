@@ -1,0 +1,14 @@
+  stopmusic();
+  fadeout();
+  savenpc();
+  saveobj();
+  showsnow(0);
+  loadmap("中都地下迷宫.map");
+  loadnpc("zhongdudxmg.npc");
+  loadobj("zhongdudxmg.obj");
+  setplayerpos(24,126);
+  setplayerdir(5);
+  playmusic("ks77.wav");
+  fadein();
+  showmessage("欧阳府地下密室");
+  return;

@@ -1,0 +1,35 @@
+  --黑煞
+  
+  if getvar("heisha") == 1 then
+    
+    talk("black4");
+    setnpcdir("黑煞",5);
+    return;
+  end
+  talk("black1");
+  setnpcdir("黑煞",5);
+  npcgotoex("黑煞",23,59);
+  sleep(1000);
+  playergoto(24,58);
+  setnpcdir("黑煞",5);
+  talk("black2");
+  setnpcdir("黑煞",7);
+  setplayerdir(7);
+  disablenpcai();
+  setnpcrelation("石头",1);
+  npcattack("黑煞",26,64);
+  sleep(2000);
+  enablenpcai();
+  setnpcdir("黑煞",5);
+  setplayerdir(1);
+  talk("black3");
+  fadeout();
+  addmagic("player-magic-寒霜掌.ini");
+  sleep(1000);
+  fadein();
+  talk("black5");
+  npcgoto("黑煞",23,63);
+  npcgotoex("黑煞",31,78);
+  assign("heisha",1);
+  setobjkind("碎石头",0);
+  return;

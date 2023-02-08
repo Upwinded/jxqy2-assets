@@ -1,0 +1,25 @@
+// ÕÔÉıÈ¨¹¥»÷Ö÷½Ç
+
+	StopMusic();
+	DisableNpcAI();
+	Talk("zhaoshenquan");
+	NpcGoto("ÕÔÉıÈ¨",45,47);
+	PlayerGoto(47,43);
+	SetPlayerDir(1);
+	Talk("zhaoshenquan1");
+	NpcAttack("ÕÔÉıÈ¨",47,44);
+	Sleep(2000);
+	PlaySound("¹¥-ÄĞËÀ00.wav");
+	FadeOut();
+	Talk("zhaoshenquan2");
+	LoadNpc("fxsz1.npc");
+	SetPlayerPos(50,180);
+	SetPlayerDir(3);
+	PlayMusic("Ks66.wav");
+	FadeIn();
+	SetMapTrap(2,"");
+	SaveMapTrap();
+	EnableNpcAI();
+	ClearBody();
+	Talk("zhaoshenquan21");
+	Return;

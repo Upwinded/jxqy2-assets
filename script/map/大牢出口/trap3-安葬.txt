@@ -1,0 +1,34 @@
+  --
+  if getvar("linandie") >= 4 then
+    
+    playergoto(16,14)
+    setplayerdir(6);
+    movescreen(6,260);
+    talk("anzhang");
+    movescreen(2,260);
+    playergoto(18,14)
+    setplayerdir(6);
+    sleep(1000);
+    setplayerdir(2);
+    talk("anzhang1");
+    savemaptrap();
+    fadeout();
+    assign("anzang",1);
+    loadmap("大牢出口1.map");
+    loadobj("dalaochukou.obj");
+    setplayerpos(18,14);
+    fadein();
+    playergoto(17,13);
+    talk("anzhang3");
+    return;
+  end
+  loadnpc("linandalaoout.npc");
+  setmaptrap(5,"地图陷阱5.txt");
+  setmaptrap(6,"地图陷阱6.txt");
+  setmaptrap(4,"地图陷阱4.txt");
+  if getvar("zhao") == 1 then
+    
+    delnpc("赵无双");
+    return;
+  end
+  return;

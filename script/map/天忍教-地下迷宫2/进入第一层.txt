@@ -1,0 +1,12 @@
+  fadeout();
+  savenpc();
+  saveobj();
+  setmainlum(15);
+  loadmap("天忍教-地下迷宫1.map");
+  loadnpc("trj-dixiamigong-1.npc");
+  loadobj("trj-dixiamigong-1.obj");
+  setplayerpos(76,33);
+  setplayerdir(7);
+  fadein();
+  showmessage("天忍教总舵第一层");
+  return;

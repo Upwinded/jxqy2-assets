@@ -1,0 +1,19 @@
+//楚天盟偏厅弟子
+
+	If ($HanYanCTMHouMenDiZi==1) @Talk1;
+	If ($HanYanCTMHouMenDiZi==2) @Talk2;
+	Talk("DiZi1");
+	Return;
+
+@Talk1:
+	Talk("DiZi2");
+	NpcGoto("楚天盟弟子乙",87,72);
+	SetNpcDir("楚天盟弟子乙",1);
+	SetNpcScript("楚天盟弟子乙","");
+	Assign($HanYanCTMHouMenDiZi,2);
+	Return;
+	
+@Talk2:
+	Talk("DiZi3");
+	Return;
+

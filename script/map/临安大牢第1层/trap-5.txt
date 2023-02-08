@@ -1,0 +1,18 @@
+  if getvar("cai") == 1 then
+    
+    if getvar("tang") == 1 then
+      
+      disablenpcai();
+      playerrunto(17,129);
+      setplayerdir(1);
+      talk("dalao13");
+      sleep(1000);
+      setplayerdir(7);
+      talk("dalao11");
+      savemaptrap();
+      enablenpcai();
+      return;
+    end
+    return;
+  end
+  return;

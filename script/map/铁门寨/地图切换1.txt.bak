@@ -1,0 +1,44 @@
+// "铁门寨"-"铁门寨-百花谷"
+
+	//未进入山寨大厅
+	If ($TMZOQieHuan==0) @goout1;
+	
+	//已进入山寨大厅
+	If ($TMZOQieHuan==1) @goout2;
+	
+@goout1:
+
+	Talk("goout3");
+	PlayerGotoDir(1,3);
+	SetMapTrap(2,"地图切换1.txt");
+	Return;
+	
+@goout2:
+
+	FadeOut();
+	SaveNpc("");
+	SaveObj("");
+	StopMusic();
+	LoadMap("铁门寨-百花谷.map");
+	LoadNpc("tmz-bhg.npc");
+	LoadObj("tmz-bhg.obj");
+	PlayMusic("KS77.wav");
+	SetPlayerPos(24,154);
+	SetPlayerDir(5);
+	FadeIn();
+	
+	//第一次进入铁门寨山洞
+	If($TmzBhgOQieHuan==0) @enter1;
+	
+	//不是第一次进入铁门寨山洞
+	If($TmzBhgOQieHuan==1) @enter2;
+
+@enter1:
+	DisableNpcAI();
+	Talk("changemap1");
+	Assign($TmzBhgOQieHuan,1);
+	EnableNpcAI();
+	Return;
+	
+@enter2:
+	Return;

@@ -1,0 +1,20 @@
+  --if($tianwangpier==2)goto@lable1;
+  --return;
+  
+  --@lable1:
+  stopmusic();
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("天王岛-地下迷宫.map");
+  loadnpc("twddxmg.npc");
+  loadobj("twddxmg.obj");
+  setmainlum(16);
+  setmaptime(0);
+  setplayerlum(0);
+  setplayerpos(61,26);
+  setplayerdir(1);
+  playmusic("ks74.wav");
+  fadein();
+  showmessage("天王岛迷宫");
+  return;

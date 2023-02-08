@@ -1,0 +1,17 @@
+[head]
+map=狂沙镇.map
+count=1
+
+[obj000]
+objname=桌子
+objfile=obj-桌子.ini
+wavfile=
+scriptfile=
+kind=1
+dir=0
+lum=0
+mapx=92
+mapy=191
+frame=0
+damage=0
+

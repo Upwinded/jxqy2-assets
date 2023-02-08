@@ -1,0 +1,14 @@
+  --守门村民
+  
+  if getvar("ksoguard1") == 0 then
+    
+    talk("guard1-1");
+    assign("ksoguard1",1);
+    return;
+  end
+  if getvar("ksoguard1") == 1 then
+    
+    talk("guard1-2");
+    return;
+  end
+  return;

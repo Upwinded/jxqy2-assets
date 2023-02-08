@@ -1,0 +1,54 @@
+  add("yrxtalk",1);
+  if getvar("yrxtalk") == 1 then
+    
+    talk("yrxtofy");
+    return;
+  end
+  if getvar("yrxtalk") == 2 then
+    
+    talk("yrxtofy1");
+    return;
+  end
+  if getvar("yrxtalk") == 3 then
+    
+    talk("yrxtofy2");
+    return;
+  end
+  if getvar("yrxtalk") == 4 then
+    
+    talk("yrxtofy3");
+    return;
+  end
+  if getvar("yrxtalk") == 5 then
+    
+    talk("yrxtofy4");
+    return;
+  end
+  if getvar("yrxtalk") == 6 then
+    
+    talk("yrxtofy5");
+    return;
+  end
+  if getvar("yrxtalk") == 7 then
+    
+    talk("yrxtofy6");
+    return;
+  end
+  if getvar("yrxtalk") == 8 then
+    
+    talk("yrxtofy7");
+    return;
+  end
+  if getvar("yrxtalk") == 9 then
+    
+    talk("yrxtofy8");
+    return;
+  end
+  if getvar("yrxtalk") == 10 then
+    
+    talk("yrxtofy9");
+    assign("yrxtalk",0);
+    return;
+  end
+  assign("yrxtalk",0);
+  return;

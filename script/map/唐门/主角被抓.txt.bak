@@ -1,0 +1,59 @@
+// 南宫飞云倒下
+
+	Sleep(2000);	
+	FadeOut();
+	DelObj("南宫飞云尸体");
+	Talk("TanMenDiZi7");
+	LoadNpc("TangMen1.npc");
+	LoadObj("TangMen1.obj");
+	SetPlayerPos(95,192);
+	SetPlayerDir(5);
+	SetPlayerState(0);
+	PlayMusic("ks65.wav");
+
+	FadeIn();
+	Talk("TanMen");
+	NpcGoto("唐潇",101,208);
+	Talk("TanMen1");
+	NpcGotoEx("唐潇",97,194);
+	NpcGoto("唐影",96,192);
+	SetNpcDir("唐影",2);
+	SetNpcDir("唐潇",3);
+	SetPlayerDir(6);
+	Talk("TanMen2");
+	
+// 做交东西动作
+
+	DelGoods("goods-sj-7-唐门宝箱.ini");
+	Talk("TanMen21");
+	SetNpcDir("唐影",5);
+	Talk("TanMen22");
+	NpcGoto("唐影",94,189);
+	Talk("TanMen222");
+	NpcGoto("唐影",96,190);
+	Talk("TanMen222");
+	NpcGoto("唐影",96,193);
+	Talk("TanMen222");
+	Talk("TanMen23");
+	SetNpcDir("唐影",5);
+	SetPlayerDir(5);
+	PlayerGoto(95,191);
+	Talk("TanMen3");
+	Talk("TanMen4");
+	PlayerGoto(94,193);
+	Talk("TanMen5");
+	NpcGoto("唐离",101,208);
+	SetNpcPos("唐离",82,123);
+	NpcGoto("唐影",95,193);
+	SetNpcDir("唐影",1);
+	SetPlayerDir(6);
+	Talk("TanMen6");
+	NpcGoto("唐影",101,208);
+	SetNpcPos("唐影",109,171);
+	EnableNpcAI();
+	Assign($TanMenFighting,0);
+	Assign($CuiYanMen2Finish,1);
+	SetNpcDeathScript("南宫飞云","主角死亡.txt");
+	PlayMusic("ks69.wav");
+	Return;
+	

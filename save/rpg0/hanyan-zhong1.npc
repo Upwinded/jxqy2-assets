@@ -1,0 +1,17 @@
+[head]
+map=汉阳-中都1.map
+count=1
+
+[npc000]
+name=老人
+kind=0
+npcini=npc-c24-老人.ini
+dir=2
+mapx=4
+mapy=12
+action=0
+walkspeed=1
+pathfinder=0
+dialogradius=1
+scriptfile=问路.txt
+

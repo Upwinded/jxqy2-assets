@@ -1,0 +1,6 @@
+	If($TianWangPiEr == 2) Goto @Lable1;
+	Talk("HouYuanBanZhong2");
+	Return;
+@Lable1:
+	Talk("YanJiuTingBanZhong1");
+	Return;

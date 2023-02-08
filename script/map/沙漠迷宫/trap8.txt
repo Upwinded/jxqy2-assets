@@ -1,0 +1,6 @@
+  fadeout();
+  setplayerpos(11,64);
+  setplayerdir(3);
+  setmaptrap(8,"trap8.txt");
+  fadein();
+  return;

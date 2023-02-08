@@ -1,0 +1,14 @@
+		StopMusic();
+		FadeOut();
+		SaveNpc();
+		SaveObj();
+                ShowSnow(0);
+		LoadMap("中都地下迷宫.map");
+		LoadNpc("zhongduDXMG.npc");
+		LoadObj("zhongduDXMG.obj");
+		SetPlayerPos(24,126);
+		SetPlayerDir(5);
+		PlayMusic("KS77.wav");
+		FadeIn();
+		ShowMessage("欧阳府地下密室");
+		Return;

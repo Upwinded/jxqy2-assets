@@ -1,0 +1,24 @@
+// 长安 -> 长安官府密室
+
+	StopMusic();
+	FadeOut();
+	SaveObj();
+	SaveNpc();
+	LoadMap("长安迷宫.map");
+	LoadObj("changan-mg.obj");
+	LoadNpc("changan-mg.npc");
+	EnableFight();
+	SetPlayerPos(15,138);
+	SetPlayerDir(7);
+	SetMainLum(31);
+	SetPlayerLum(0);
+	PlayMusic("ks74.wav");
+	FadeIn();
+	ShowMessage("长安官府密室");
+	If ($ChanAnMGFirstEnter==1) @Talk1;
+	Talk("FirstEnter");
+	Assign($ChanAnMGFirstEnter,1);
+	Return;
+	
+@Talk1:
+	Return;

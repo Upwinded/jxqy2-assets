@@ -1,0 +1,12 @@
+	SaveNpc();
+	FadeOut();
+	LoadMap("บบั๔.map");
+	LoadNpc("HanYan.npc");
+	LoadObj("HanYan.obj");
+	SetPlayerPos(78,64);
+	SetPlayerDir(1);
+	DisableFight();
+	PlayMusic("ks69.wav");
+	FadeIn();
+	ShowMessage("บบั๔");
+	Return;

@@ -1,0 +1,26 @@
+  
+  if getvar("fromfengchi") == 5 then
+    
+    setplayerdir(3);
+    talk("micang1");
+    setmaptrap(4,"");
+    savemaptrap();
+    return;
+  end
+  
+  setplayerstate(0);
+  setplayerdir(3);
+  setnpcdir("燕若雪",7);
+  talk("ruoxue");
+  npcgotoex("南宫飞云",146,101);
+  npcgoto("燕若雪",146,100);
+  setnpcdir("燕若雪",7);
+  setnpcdir("南宫飞云",3);
+  talk("ruoxue1");
+  assign("linanyanruoxue",1);
+  addnpc("z03-许若冰.ini",164,117,7);
+  setnpcscript("柴嵩","柴嵩.txt");
+  assign("nofindchaisong",1);
+  setmaptrap(4,"");
+  savemaptrap();
+  return;

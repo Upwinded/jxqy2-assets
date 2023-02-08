@@ -1,0 +1,17 @@
+	If ($ZDBiWu == 2) @Label;
+	PlayerGoto(125,175);
+	PlayerJumpTo(129,168);
+	Sleep(2000);
+	SetMapTrap(14,"Trap-14.txt");
+	Talk("JiuDian10");
+	StopMusic();
+	SetNpcRelation("Πώ΄Θ",1);
+	Assign($ZDBiWu,2);
+	EnableNpcAI();
+	SaveMapTrap();
+	Return;
+@Label:
+	PlayerGoto(125,175);
+	PlayerJumpTo(129,168);
+	SetMapTrap(14,"Trap-14.txt");
+	Return;

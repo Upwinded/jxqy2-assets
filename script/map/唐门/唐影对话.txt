@@ -1,0 +1,23 @@
+  
+  talk("tangying1");
+  npcgoto("唐影",110,177);
+  playergoto(109,178);
+  setnpcdir("唐影",1);
+  setplayerdir(7);
+  talk("tangying2");
+  setnpcdir("唐影",5);
+  setplayerdir(5);
+  npcattack("唐影",112,173);
+  sleep(1000);
+  setnpcdir("唐影",1);
+  setplayerdir(7);
+  talk("tangying3");
+  setnpckind("唐影",3);
+  disablerun();
+  disablejump();
+  addgoods("book-唐门秘笈.ini");
+  playmusic("ks69.wav");
+  assign("nadaomijimusic",1);
+  addtomemo("与唐影一道回翠烟门去见秋依水。");
+  setnpcscript("","");
+  return;

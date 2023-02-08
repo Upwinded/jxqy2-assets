@@ -1,0 +1,17 @@
+[head]
+map=狂沙镇夜.map
+count=1
+
+[npc000]
+name=老板2
+kind=0
+npcini=npc-d02-老板2.ini
+dir=7
+mapx=99
+mapy=185
+action=0
+walkspeed=1
+pathfinder=0
+dialogradius=1
+scriptfile=酒店老板.txt
+

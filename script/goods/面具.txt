@@ -1,0 +1,13 @@
+  showmessage("飞云戴上一个面具");
+  delgoods("goods-sj-3-面具.ini");
+  if getvar("fromfengchi") == 15 then
+    
+    assign("linanmianju",1);
+    return;
+  end
+  if getvar("fromfengchi") == 16 then
+    
+    assign("linanmianju",1);
+    return;
+  end
+  return;

@@ -1,0 +1,2 @@
+  talk("pangguan2");
+  return;

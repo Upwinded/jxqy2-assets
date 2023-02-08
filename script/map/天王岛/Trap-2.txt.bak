@@ -1,0 +1,14 @@
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("天王岛-地下迷宫.map");
+    	LoadNpc("TWDDXMG.npc");
+	LoadObj("TWDDXMG.obj");
+    	SetMapTime(0);
+	SetMainLum(16);
+	SetPlayerLum(0);
+    	SetPlayerPos(48,143);
+	SetPlayerDir(1);
+	ShowMessage("迷宫");
+	FadeIn();
+	Return;

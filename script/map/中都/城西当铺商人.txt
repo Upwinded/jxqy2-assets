@@ -1,0 +1,10 @@
+  
+  
+  if getvar("zhongduchenxidanpuyuanwai") == 1 then
+    
+    talk("chenxidanpushanren1");
+    return;
+  end
+  talk("chenxidanpushanren");
+  assign("zhongduchenxidanpuyuanwai",1);
+  return;

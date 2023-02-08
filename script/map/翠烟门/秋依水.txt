@@ -1,0 +1,4 @@
+  --秋依水的对话
+  
+  talk("qiuyishui");
+  return;

@@ -1,0 +1,33 @@
+//与柴嵩对话
+
+	Talk("enterhotel");
+	PlayerGoto(88,196);
+	SetPlayerDir(7);
+	SetNpcDir("柴嵩",3);
+	Talk("meetxrb1");
+	NpcGotoEx("柴嵩",91,191);
+	PlayerGoto(92,193);
+	SetNpcDir("柴嵩",7);
+	SetPlayerDir(3);
+	Sleep(500);
+	FadeOut();
+	SetNpcPos("柴嵩",92,153);
+	DelObj("桌子");
+	SetNpcActionFile("南宫飞云",0,"两人喝酒.mpc");
+	SetPlayerPos(92,189);
+	FadeIn();
+	Talk("meetxrb2");
+	
+	FadeOut();
+	SetNpcPos("柴嵩",91,191);
+	SetNpcActionFile("南宫飞云",0,"z01-南宫飞云-pst.mpc");
+	SetPlayerPos(92,193);	
+	AddObj("桌子.ini",92,191);
+	FadeIn();
+
+	SetMapTrap(4,"");
+	SaveMapTrap();
+	Assign($ChaiSongTalk,1);
+	AddToMemo("先睡一觉，然后到东边山上的铁门寨去看别人打架。");
+	Talk("meetxrb3");
+	Return;

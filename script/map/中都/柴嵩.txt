@@ -1,0 +1,45 @@
+  --柴嵩
+  
+  if getvar("zhongdutroublesroom") == 4 then
+    
+    talk("cs1");
+    return;
+  end
+  if getvar("zhongduhouhuayuan") == 4 then
+    
+    talk("troublesroom6");
+    assign("zhongdutroublesroom",4);
+    fadeout();
+    setnpcpos("南宫飞云",142,326);
+    setplayerscn();
+    setnpcpos("柴嵩",142,327);
+    setnpckind("柴嵩",3);
+    disablerun();
+    disablejump();
+    fadein();
+    return;
+  end
+  if getvar("zhongdutroublesroom") == 2 then
+    
+    talk("troublesroom2");
+    stopmusic();
+    fadeout();
+    delnpc("柴嵩");
+    talk("tomorrow");
+    playmusic("ks71.wav");
+    fadein();
+    delgoods("goods-sj-10-长安好酒.ini");
+    talk("troublesroom3");
+    addtomemo("到城东北的大宅院去找小仙女。");
+    assign("zhongdutroublesroom",3);
+    return;
+  end
+  talk("troublesroom");
+  npcgoto("柴嵩",76,25);
+  npcgoto("柴嵩",75,20);
+  npcgoto("柴嵩",77,19);
+  delnpc("柴嵩");
+  talk("troublesroom1");
+  addtomemo("到酒店去找柴嵩，酒店在城东南。");
+  assign("zhongdutroublesroom",1);
+  return;

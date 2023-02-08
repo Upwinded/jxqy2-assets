@@ -1,0 +1,20 @@
+		If($FromFengChi <= 13) @Lable1;
+		FadeOut();
+		SaveNpc();
+		SaveObj();
+		LoadMap("ÁÙ°²´óÀÎµÚ1²ã.map");
+		LoadNpc("LinAnDaLao12.npc");
+		LoadObj("LinAnDaLao12.obj");
+		SetMainLum(20);
+		SetPlayerPos(10,162);
+		SetPlayerDir(5);
+		FadeIn();
+		Return;
+@Lable1:
+		FadeOut();
+		SetPlayerPos(90,168);
+		SetPlayerDir(3);
+		FadeIn();
+		Talk("NoFinish");
+		SetMapTrap(2,"Trap1-To2.txt");
+		Return;

@@ -1,0 +1,14 @@
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("天王岛-地下迷宫.map");
+  loadnpc("twddxmg.npc");
+  loadobj("twddxmg.obj");
+  setmaptime(0);
+  setmainlum(16);
+  setplayerlum(0);
+  setplayerpos(48,143);
+  setplayerdir(1);
+  showmessage("迷宫");
+  fadein();
+  return;

@@ -1,0 +1,21 @@
+  if getvar("dalaochukoufirst") == 1 then
+    
+    fadeout();
+    loadmap("临安-凤池山庄.map");
+    setplayerpos(8,45);
+    setplayerdir(4);
+    setmaptrap(3,"trap3至大牢出口.txt");
+    savemaptrap();
+    fadein();
+    talk("mengkou");
+    assign("dalaochukoufirst",1);
+    return;
+  end
+  fadeout();
+  loadmap("临安-凤池山庄.map");
+  setplayerpos(8,45);
+  setplayerdir(4);
+  setmaptrap(3,"trap3至大牢出口.txt");
+  savemaptrap();
+  fadein();
+  return;

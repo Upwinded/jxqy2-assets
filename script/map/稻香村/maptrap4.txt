@@ -1,0 +1,9 @@
+  savemaptrap();
+  talk("dajia");
+  talk("dajia1");
+  playergoto(96,153);
+  talk("dajia2");
+  setnpcrelation("洪七",1);
+  setnpcrelation("王重阳",1);
+  setnpcrelation("欧阳锋",1);
+  return;

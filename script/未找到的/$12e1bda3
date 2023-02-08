@@ -1,0 +1,11 @@
+  Talk("Dasou");
+  FadeOut();
+  LoadNpc("LinAnDaLao14.npc");
+  SetMapPos(33,116);
+  SetMapTrap(2,"Trap2.txt");
+  Assign("FromFengChi",13);
+  FadeIn();
+  DelObj("牢房门飞云关");
+  AddObj("牢房门飞云开.ini",37,127);
+  Talk("FeiYun1");
+  return;

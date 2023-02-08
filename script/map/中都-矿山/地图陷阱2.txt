@@ -1,0 +1,38 @@
+  --
+  fadeout();
+  saveobj();
+  showsnow(0);
+  loadmap("矿山.map");
+  if getvar("kuanggongzoule") == 1 then
+    
+    loadnpc("kuangshan.npc");
+    delnpc("矿工2");
+    delnpc("矿工1");
+    loadobj("kuangshan.obj");
+    setmaptime(0);
+    setplayerpos(66,162);
+    setplayerdir(5);
+    showmessage("矿山");
+    showrandomsnow();
+    fadein();
+    playmusic("ks77.wav");
+    return;
+  end
+  loadnpc("kuangshan1.npc");
+  loadobj("kuangshan.obj");
+  setmaptime(0);
+  setplayerpos(66,162);
+  setplayerdir(5);
+  showmessage("矿山");
+  if getvar("kuangshan121") == 1 then
+    
+    showrandomsnow();
+    fadein();
+    playmusic("ks77.wav");
+    return;
+  end
+  disablenpcai();
+  showrandomsnow();
+  fadein();
+  playmusic("ks77.wav");
+  return;

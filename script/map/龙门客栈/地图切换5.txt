@@ -1,0 +1,2 @@
+  talk("gotozmg2");
+  return;

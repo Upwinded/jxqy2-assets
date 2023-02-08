@@ -1,0 +1,33 @@
+  --霹雳堂到稻香村
+  
+  if getvar("fromfengchi") == 7 then
+    
+    npcgotodir("南宫飞云",5,2);
+    setmaptrap(4,"霹-稻.txt");
+    talk("out1");
+    return;
+  end
+  if getvar("fromfengchi") == 8 then
+    
+    fadeout();
+    clearbody();
+    savenpc();
+    saveobj();
+    loadmap("稻香村.map");
+    loadnpc("daoxiang.npc");
+    loadobj("daoxiang.obj");
+    setplayerpos(94,297);
+    setplayerdir(3);
+    fadein();
+    return;
+  end
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("稻香村.map");
+  loadnpc("daoxiang.npc");
+  loadobj("daoxiang.obj");
+  setplayerpos(94,297);
+  setplayerdir(3);
+  fadein();
+  return;

@@ -1,0 +1,6 @@
+  openbox();
+  --loadgoods("\save\game\goods1.ini");
+  --talk("feiyun2");
+  addrandgoods("7级物品.ini");
+  setobjscript("","");
+  return;

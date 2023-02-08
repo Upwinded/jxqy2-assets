@@ -1,0 +1,18 @@
+	Add($FengChiKill,1);
+	If($FengChiKill == 22) @Lable1;
+	Return;
+	
+@Lable1:
+	DisableNpcAI();
+	Sleep(1000);
+	Talk("YeDaTing4");
+	FadeOut();
+	SetNpcPos("邵骑风",174,9);
+	DelObj("赵无双尸体");
+	DelObj("唐影尸体");
+	DelObj("秋依水尸体");
+	DelObj("许若冰尸体");
+	SetNpcLevel("敖管家",45);
+	FadeIn();
+	EnableNpcAI();
+	Return;

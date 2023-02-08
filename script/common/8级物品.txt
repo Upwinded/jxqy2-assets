@@ -1,0 +1,5 @@
+  openbox();
+  playsound("物-箱子开.wav");
+  addrandgoods("8级物品.ini");
+  setobjscript("","");
+  return;

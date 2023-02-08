@@ -1,0 +1,19 @@
+// "狂沙镇-龙门客栈" - "狂沙镇" 
+
+	Talk("WrongWay1");
+	PlayerGoto(4,19);
+	SetMapTrap(1,"地图切换.txt");
+	Return;
+	
+	FadeOut();
+	LoadMap("狂沙镇.map");
+	LoadNpc("ks-2.npc");
+	LoadObj("KS.obj");
+	SetPlayerPos(143,257);
+	SetPlayerDir(3);
+	SetNpcPos("燕若雪",143,258);
+	SetNpcDir("燕若雪",3);
+	ShowMessage("狂沙镇");
+	FadeIn();
+	Return;
+

@@ -1,0 +1,9 @@
+//½øÈëÌúÃÅÕ¯
+
+	Talk("entertmz1");
+	PlayerGoto(27,83);
+	SetPlayerDir(4);
+	Talk("entertmz11");
+	SetMapTrap(3,"");
+	SaveMapTrap();
+	Return;

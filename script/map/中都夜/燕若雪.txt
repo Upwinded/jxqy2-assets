@@ -1,0 +1,92 @@
+  --燕若雪
+  
+  if getvar("zhongdutroublesroom") == 4 then
+    
+    playmusic("ks74.wav");
+    talk("houhuayuan6");
+    fadeout();
+    talk("houhuayuan7");
+    delnpc("柴嵩");
+    delnpc("婕儿");
+    delnpc("燕若雪");
+    addtomemo("到临安柴嵩的家去见柴嵩和燕若雪。");
+    addtomemo("要去临安应该从汉阳的南门走。");
+    savenpc();
+    loadnpc("zhongdukill.npc");
+    assign("zhongduhouhuayuan",5);
+    assign("yanruoxuemusic",1);
+    setmaptrap(7,"");
+    setmaptrap(8,"");
+    savemaptrap();
+    enablejump();
+    enablerun();
+    fadein();
+    return;
+  end
+  if getvar("zhongduhouhuayuan") == 3 then
+    
+    talk("houhuayuan4");
+    playmusic("ks75.wav");
+    assign("zhongduhouhuayuan",4);
+    addnpc("z03-许若冰.ini",79,31,3);
+    setnpcscript("柴嵩","柴嵩.txt");
+    return;
+  end
+  if getvar("zhongduhouhuayuan") == 2 then
+    
+    talk("houhuayuan3");
+    assign("zhongduhouhuayuan",3);
+    fadeout();
+    setplayerpos(142,329);
+    setplayerscn();
+    talk("night4");
+    showsnow(0);
+    showrandomsnow();
+    fadein();
+    
+    return;
+  end
+  if getvar("zhongduhouhuayuan") == 1 then
+    
+    talk("houhuayuan2");
+    fadeout();
+    talk("houhuayuan21");
+    fadein();
+    talk("houhuayuan22");
+    assign("zhongduhouhuayuan",2);
+    delgoods("goods-sj-6-夜明珠.ini");
+    fadeout();
+    setplayerpos(142,329);
+    setplayerscn();
+    talk("night3");
+    showsnow(0);
+    showrandomsnow();
+    fadein();
+    
+    return;
+  end
+  if getvar("zhongduhouhuayuan") == 0 then
+    
+    talk("houhuayuan1");
+    assign("zhongduhouhuayuan",1);
+    stopmusic();
+    fadeout();
+    setplayerpos(79,30);
+    setplayerscn();
+    setmaptime(0);
+    playmusic("ks72.wav");
+    fadein();
+    talk("troublesroom5");
+    fadeout();
+    showsnow(0);
+    setplayerpos(142,311);
+    setplayerscn();
+    setmaptime(1);
+    talk("night2");
+    showrandomsnow();
+    fadein();
+    
+    return;
+  end
+  talk("houhuayuan5");
+  return;

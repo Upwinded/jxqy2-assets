@@ -1,0 +1,8 @@
+  if getvar("1kuangshan") == 1 then
+    
+    talk("laoyu1");
+    return;
+  end
+  talk("laoyu");
+  assign("1kuangshan",1);
+  return;

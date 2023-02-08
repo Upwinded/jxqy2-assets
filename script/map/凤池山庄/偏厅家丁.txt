@@ -1,0 +1,9 @@
+  --偏厅家丁
+  
+  if getvar("fromfengchi") == 2 then
+    
+    talk("houmenjiading");
+    return;
+  end
+  talk("woshi1");
+  return;

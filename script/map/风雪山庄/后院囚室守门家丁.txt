@@ -1,0 +1,52 @@
+  --后院囚室守门家丁
+  
+  talk("qiushi1");
+  npcgoto("赵无双",47,174);
+  setnpcdir("赵无双",7);
+  talk("zws1");
+  playergoto(50,180);
+  setplayerdir(3);
+  npcgoto("守囚室家丁",49,177);
+  setnpcdir("守囚室家丁",1);
+  npcgoto("赵无双",49,178);
+  setnpcdir("赵无双",7);
+  talk("qiushi2");
+  
+  fadeout();
+  loadobj("fxsz1.obj");
+  setplayerpos(61,34);
+  setplayerdir(7);
+  fadein();
+  
+  playergoto(65,42);
+  talk("qiushi3");
+  setplayerdir(3);
+  talk("chumen");
+  playergoto(61,34);
+  
+  stopmusic();
+  fadeout();
+  loadnpc("fxsz2.npc");
+  setplayerpos(80,106);
+  setplayerdir(5);
+  playmusic("ks65.wav");
+  fadein();
+  
+  playergoto(84,98);
+  playergoto(86,100);
+  setplayerdir(5);
+  movescreen(5,100);
+  talk("qiushi4");
+  movescreen(1,100);
+  playergoto(89,95);
+  setplayerdir(3);
+  talk("qiushi5");
+  talk("qiushi6");
+  talk("qiushi7");
+  setnpcdir("柴嵩",5);
+  playergoto(87,103);
+  talk("qiushi8");
+  addtomemo("先回长安然后出南门到翠烟门去找小仙女。");
+  assign("fengxueshanzhuanfinish",1);
+  assign("changanyanruoxuexiaoshi",2);
+  return;

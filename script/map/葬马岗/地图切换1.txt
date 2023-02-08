@@ -1,0 +1,14 @@
+  --"葬马岗"-"龙门客栈"
+  
+  fadeout();
+  saveobj();
+  savenpc();
+  stopmusic();
+  loadmap("龙门客栈.map");
+  loadnpc("lmkz.npc");
+  playmusic("ks67.wav");
+  setplayerpos(24,101);
+  setplayerdir(5);
+  fadein();
+  showmessage("龙门客栈");
+  return;

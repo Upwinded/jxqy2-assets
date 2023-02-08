@@ -1,0 +1,21 @@
+  --"龙门客栈"-"葬马岗"
+  
+  fadeout();
+  stopmusic();
+  savenpc();
+  saveobj();
+  loadmap("葬马岗.map");
+  loadobj("zmg.obj");
+  loadnpc("zmg.npc");
+  setplayerpos(71,25);
+  setplayerdir(1);
+  showmessage("葬马岗");
+  fadein();
+  playmusic("ks77.wav");
+  if getvar("zmg1") == 1 then
+    
+    return;
+  end
+  disablenpcai();
+  assign("zmg1",1);
+  return;

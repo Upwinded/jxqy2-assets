@@ -1,0 +1,22 @@
+  --游戏开始
+  
+  playmovie("begin.avi");
+  showbottomwnd();
+  playmusic("ks69.wav");
+  setplayerpos(7,67);
+  setplayerdir(5);
+  setplayerscn();
+  setlevelfile("level-hard.ini");
+  setmainlum(31);
+  --talk("dark");
+  fadein();
+  talk("enter0");
+  playergoto(9,63);
+  setplayerdir(3);
+  sleep(300);
+  setplayerdir(7);
+  sleep(300);
+  setplayerdir(5);
+  talk("enter");
+  addtomemo("搜索这片废墟看看有没有可疑的地方。");
+  return;

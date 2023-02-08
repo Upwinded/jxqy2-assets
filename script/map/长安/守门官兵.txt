@@ -1,0 +1,4 @@
+  --守门官兵
+  
+  talk("guanbin");
+  return;

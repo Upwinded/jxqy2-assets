@@ -1,0 +1,21 @@
+// "龙门客栈" - "葬马岗"
+	
+	FadeOut();
+	StopMusic();
+        SaveNpc();
+	SaveObj();
+	LoadMap("葬马岗.map");
+	LoadObj("Zmg.obj");
+        LoadNpc("Zmg.npc");
+	SetPlayerPos(71,25);
+	SetPlayerDir(1);
+	ShowMessage("葬马岗");
+        FadeIn();
+        PlayMusic("Ks77.wav");
+        If($Zmg1==1) @Lable1;
+	DisableNpcAI();
+        Assign($Zmg1,1);
+        Return;
+
+@Lable1:
+        Return;

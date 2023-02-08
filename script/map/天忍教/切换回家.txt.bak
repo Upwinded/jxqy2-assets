@@ -1,0 +1,17 @@
+        SaveNpc();
+	SaveObj();
+        ShowSnow(0);
+        FadeOut();
+        SetMapTime(0);
+
+        LoadMap("中都-天忍教.map");
+//	LoadNpc(".npc");
+//	LoadObj(".obj");
+	
+	SetPlayerPos(17,48);
+	SetPlayerDir(1);
+	DisableFight();
+	Talk("Name");
+        ShowRandomSnow();
+	FadeIn();
+	Return;

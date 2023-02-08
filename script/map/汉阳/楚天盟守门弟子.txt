@@ -1,0 +1,11 @@
+  --楚天盟守门弟子
+  
+  if getvar("hanyanctmshoumendizi") == 1 then
+    
+    talk("dizi");
+    return;
+  end
+  talk("chutianmen");
+  --npcgotoex("楚天盟弟子甲",83,93);
+  assign("hanyanctmshoumendizi",1);
+  return;

@@ -1,0 +1,57 @@
+  --庄园门口
+  
+  if getvar("zhongduzhuangyuandoor") == 2 then
+    
+    talk("zhuangyuan5");
+    return;
+  end
+  if getvar("zhongduzhuangyuandoor") == 1 then
+    
+    talk("zhuangyuan4");
+    addmoney(-100);
+    assign("zhongduzhuangyuandoor",2);
+    playergoto(135,262);
+    talk("jieer");
+    setplayerdir(7);
+    setnpcpos("丫鬟-1",141,262);
+    npcgoto("丫鬟-1",135,263);
+    talk("zhuangyuan6");
+    npcgoto("丫鬟-1",141,262);
+    setnpcpos("丫鬟-1",186,182);
+    talk("zhuangyuan7");
+    stopmusic();
+    fadeout();
+    showsnow(0);
+    delnpc("燕若雪");
+    delnpc("丫鬟-1");
+    delnpc("燕府家丁");
+    savenpc();
+    saveobj();
+    loadmap("中都夜.map");
+    loadnpc("zhongduye.npc");
+    loadobj("zhongduye.obj");
+    setplayerpos("南宫飞云",79,29);
+    addtomemo("晚上去见小仙女，穿过城西南的树林，有堵墙有个缺口，跳进去……从湖上再跳……。");
+    setmaptime(1);
+    setmainlum(20);
+    setmappos(182,171);
+    playmusic("ks75.wav");
+    showrandomsnow();
+    fadein();
+    talk("night1");
+    fadeout();
+    setnpcpos("燕若雪",162,319);
+    setnpcdir("燕若雪",1);
+    setnpcpos("婕儿",164,320);
+    setplayerscn();
+    fadein();
+    return;
+  end
+  if getvar("zhongdutroublesroom") == 3 then
+    
+    talk("zhuangyuan3");
+    assign("zhongduzhuangyuandoor",1);
+    return;
+  end
+  talk("zhuangyuan1");
+  return;

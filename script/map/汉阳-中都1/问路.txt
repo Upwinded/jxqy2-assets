@@ -1,0 +1,4 @@
+  talk("wenlu");
+  npcgoto("老人",0,8);
+  delnpc("老人");
+  return;

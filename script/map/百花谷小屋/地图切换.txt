@@ -1,0 +1,11 @@
+  --"百花谷小屋"-"百花谷"
+  
+  fadeout();
+  savenpc();
+  loadmap("百花谷.map");
+  loadobj("bhg.obj");
+  setplayerpos(35,14);
+  setplayerdir(1);
+  fadein();
+  showmessage("百花谷");
+  return;

@@ -1,0 +1,13 @@
+        Talk("QiuYiShui");
+        
+        Assign($TanHua,1);
+        FadeOut();
+	Assign($AnZang,1);
+        LoadMap("´óÀÎ³ö¿Ú1.map");
+	LoadObj("DaLaoChuKou.obj");
+        LoadNpc("None.npc")
+	SetPlayerPos(18,14);
+	FadeIn();
+	PlayerGoto(17,13);
+	Talk("AnZhang4");
+	Return;

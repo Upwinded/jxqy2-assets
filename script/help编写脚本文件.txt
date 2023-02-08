@@ -1,0 +1,570 @@
+//-----------------------------------------------------------------------------
+// sword2 script function table (c) 1999-2000 kingsoft
+// 
+// 剑二脚本函数列表
+//
+// by wangwei
+//-----------------------------------------------------------------------------
+
+//	流程控制函数
+	{ "if", funcif },
+	{ "goto", funcgoto },
+	{ "assign", funcassign },
+	{ "add", funcadd },
+	{ "return", funcreturn },
+	
+//	人物对话函数
+	{ "say", funcsay },
+	{ "talk", functalk },
+	
+//  工具函数
+	{ "fadein", funcfadein },
+	{ "fadeout", funcfadeout },
+	{ "setfadelum", funcsetfadelum },
+	{ "setmainlum", funcsetmainlum },
+	{ "playmusic", funcplaymusic },
+	{ "stopmusic", funcstopmusic },
+	{ "playsound", funcplaysound },
+	{ "runscript", funcrunscript },
+	{ "movescreen", funcmovescreen },
+	{ "sleep", funcsleep },
+	{ "playmovie", funcplaymovie },
+	{ "stopmovie", funcstopmovie },
+	
+//  地图函数
+	{ "loadmap", funcloadmap },
+	{ "loadgame", funcloadgame },
+	{ "setmappos", funcsetmappos },
+	{ "setmaptrap", funcsetmaptrap },
+	{ "savemaptrap", funcsavemaptrap },
+	{ "setmaptime", funcsetmaptime },
+	
+//  物品函数
+	{ "loadobj", funcloadobj },
+	{ "saveobj", funcsaveobj },
+	{ "addobj", funcaddobj },
+	{ "delobj", funcdelobj },
+	{ "setobjpos", funcsetobjpos },
+	{ "setobjkind", funcsetobjkind },
+	{ "setobjscript", funcsetobjscript },
+	{ "clearbody", funcclearbody },
+	{ "openbox", funcopenbox },
+	{ "closebox", funcclosebox },
+	
+//  人物函数
+	{ "loadnpc", funcloadnpc },
+	{ "savenpc", funcsavenpc },
+	{ "addnpc", funcaddnpc },
+	{ "delnpc", funcdelnpc },
+	{ "setnpcres", funcsetnpcres },
+	{ "setnpcscript", funcsetnpcscript },
+	{ "setnpcdeathscript", funcsetnpcdeathscript },
+	{ "npcgoto", funcnpcgoto },
+	{ "npcgotoex", funcnpcgotoex },
+	{ "npcgotodir", funcnpcgotodir },
+	{ "follownpc", funcfollownpc },
+	{ "followplayer", funcfollowplayer },
+	{ "enablenpcai", funcenablenpcai },
+	{ "disablenpcai", funcdisablenpcai },
+	{ "npcattack", funcnpcattack },
+	{ "setnpcpos", funcsetnpcpos },
+	{ "setnpcdir", funcsetnpcdir },
+	{ "setnpckind", funcsetnpckind },
+	{ "setnpclevel", funcsetnpclevel },
+	{ "setnpcaction", funcsetnpcaction },
+	{ "setnpcrelation", funcsetnpcrelation },
+	{ "setnpcactiontype", funcsetnpcactiontype },
+	{ "setnpcactionfile", funcsetnpcactionfile },
+	{ "npcspecialaction", funcnpcspecialaction },
+	
+//  主角函数
+	{ "loadplayer", funcloadplayer },
+	{ "saveplayer", funcsaveplayer },
+	{ "setplayerpos", funcsetplayerpos },
+	{ "setplayerdir", funcsetplayerdir },
+	{ "setplayerscn", funcsetplayerscn },
+	{ "setplayerlum", funcsetplayerlum },
+	{ "setlevelfile", funcsetlevelfile },
+	{ "setmagiclevel", funcsetmagiclevel },
+	{ "setplayerlevel", funcsetplayerlevel },
+	{ "setplayerstate", funcsetplayerstate },
+	{ "enablerun", funcenablerun },
+	{ "disablerun", funcdisablerun },
+	{ "enablejump", funcenablejump },
+	{ "disablejump", funcdisablejump },
+	{ "enablefight", funcenablefight },
+	{ "disablefight", funcdisablefight },
+	{ "playergoto", funcplayergoto },
+	{ "playergotoex", funcplayergotoex },
+	{ "playerrunto", funcplayerrunto },
+	{ "playerjumpto", funcplayerjumpto },
+	{ "playergotodir", funcplayergotodir },
+	
+//  改变主角属性函数
+	{ "addlife", funcaddlife },
+	{ "addlifemax", funcaddlifemax },
+	{ "addthew", funcaddthew },
+	{ "addthewmax", funcaddthewmax },
+	{ "addmana", funcaddmana },
+	{ "addmanamax", funcaddmanamax },
+	{ "addattack", funcaddattack },
+	{ "adddefend", funcadddefend },
+	{ "addevade", funcaddevade },
+	{ "addexp", funcaddexp },
+	{ "addmoney", funcaddmoney },
+	{ "addrandmoney", funcaddrandmoney },
+	{ "addgoods", funcaddgoods },
+	{ "addrandgoods", funcaddrandgoods },
+	{ "addmagic", funcaddmagic },
+	{ "delgoods", funcdelgoods },
+	{ "delmagic", funcdelmagic },
+	{ "addmagicexp", funcaddmagicexp },
+	{ "fulllife", funcfulllife },
+	{ "fullthew", funcfullthew },
+	{ "fullmana", funcfullmana },
+	{ "updatestate", funcupdatestate },
+	{ "savegoods", funcsavegoods },
+	{ "loadgoods", funcloadgoods },
+	{ "cleargoods", funccleargoods },
+	{ "getgoodsnum", funcgetgoodsnum },
+	{ "getmoneynum", funcgetmoneynum },
+	{ "setmoneynum", funcsetmoneynum },
+	
+//  界面函数
+	{ "showmessage", funcshowmessage },
+	{ "addtomemo", funcaddtomemo },
+	{ "clearmemo", funcclearmemo },
+	{ "buygoods", funcbuygoods },
+	{ "sellgoods", funcsellgoods },
+	{ "returntotitle", funcreturntotitle },
+	{ "enableinput", funcenableinput },
+	{ "disableinput", funcdisableinput },
+	{ "hideinterface", funchideinterface },
+	{ "hidebottomwnd", funchidebottomwnd },
+	{ "showbottomwnd", funcshowbottomwnd },
+	{ "hidemousecursor", funchidemousecursor },
+	{ "showmousecursor", funcshowmousecursor },
+	{ "showmousecursor", funcshowmousecursor },
+	{ "showsnow",funcshowsnow},
+	{ "showrandomsnow",funcshowrandomsnow},
+
+//-----------------------------------------------------------------------------
+// 下面是脚本函数的详细说明
+//-----------------------------------------------------------------------------
+
+if
+功能：条件跳转
+参数：等于：    ==
+      大于等于：>=
+      小于等于：<=
+      不等于：  !=
+
+goto
+功能：无条件跳转
+参数：@标号名称
+
+assign(a,b)
+功能：赋值
+参数：a: 变量名
+      b: 数值
+
+return()
+功能：返回		
+参数：无
+
+say(a)
+功能：对话
+参数：a: 对话文本
+
+talk(a)
+功能：对话
+参数：a: 对话段落标号
+
+fadein()
+功能：淡入
+参数：无
+
+fadeout()
+功能：淡出
+参数：无
+
+setfadelum(a)
+功能：设置淡入淡出亮度
+参数：a: 亮度(0-32)
+
+setmainlum(a)
+功能：设置地图场景亮度	
+参数：a: 亮度(0-32)
+
+playmusic(a)
+功能：播放音乐
+参数：a: 音乐文件名
+
+stopmusic()
+功能：停放音乐
+参数：无
+
+playsound(a)
+功能：播放声效
+参数：a: 音效文件名
+
+runscript(a)
+功能：运行脚本
+参数：a: 脚本文件名
+
+movescreen(a,b)
+功能：移动屏幕
+参数：a - 方向
+      b - 距离
+
+loadmap(a)
+功能：载入地图
+参数：a - 地图文件名
+
+
+loadgame(a)
+功能：载入游戏进度
+参数：a - 进度索引(0-5)
+
+setmappos(a,b)
+功能：设置地图位置
+参数：a - 地图x坐标
+      b - 地图y坐标
+
+setmaptrap(a,b)
+功能：设置地图陷阱
+参数：a - 陷阱索引
+      b - 脚本文件名
+      
+savemaptrap()
+功能：保存地图陷阱
+参数：无
+
+setmaptime(a)
+功能：设置地图时间
+参数：a = 0 — 白天
+		  1 — 夜晚
+		  2 — 黄昏
+		  3 — 黎明
+
+loadnpc(a)
+功能：载入人物
+参数：a: 文件名
+
+savenpc()
+功能：保存人物
+参数：无
+
+addnpc(a,b,c,d)
+功能：增加人物
+参数：a: ini文件名
+      b: x地图坐标
+      c: y地图坐标
+      d: 方向(0-7)
+
+delnpc(a)
+功能：删除人物
+参数：a: 人物名称
+
+setnpcscript(a,b)
+功能：设置人物脚本(尽量用条件判断代替)
+参数：a: 人物名称
+      b: 脚本文件名
+
+npcgoto(a,b,c)
+功能：人物走到某地图坐标
+参数：a: 人物名称
+      b: x地图坐标
+      c: y地图坐标
+
+npcgotoex(a,b,c)
+功能：人物走到某地图坐标
+参数：a: 人物名称
+      b: x地图坐标
+      c: y地图坐标
+
+follownpc(a,b)
+功能：使当前对话的npc跟随另一个npc
+参数：a: 跟随的人物名称
+      b: 被跟随人物名字
+
+enablenpcai()
+功能：打开人物ai
+参数：无
+
+disablenpcai()
+功能：关闭人物ai
+参数：无
+
+setnpcpos(a,b,c)
+功能：设置npc的位置
+参数：a: npc的名字
+      b: x坐标
+      c: y坐标
+     
+setnpcdir(a,b)
+功能：设置npc的方向
+参数：a: npc的名字
+      b: 方向值(0-7)
+   
+setnpckind(a,b)
+功能：设置npc的类型
+参数：a: npc的名字
+      b: 类型0-6
+
+setnpclevel(a,b)
+功能：设置npc的等级
+参数：a: npc的名字
+      b: 等级1-60
+
+setnpcactiontype(a,b)
+功能：设置npc的行为类型
+参数：a: npc的名字
+      b: 类型0-1 0 = 站立 1 = 走动
+
+setnpcactionfile(a,b,c);
+功能：设置npc的动作mpc文件名
+参数：a: npc的名字
+      b: 行为
+      c: mpc文件名
+
+npcspecailaction(a,b);
+功能：让npc作一个特殊动作，动画由mpc文件给出。
+参数：a: npc的名字
+      b: mpc文件名
+
+npcattack(a,b,c);
+功能：让npc攻击一个目标点。
+参数：a: npc的名字
+      b: 目标x坐标
+      c: 目标y坐标
+      
+loadobj(a)
+功能：载入物品
+参数：a: obj的文件名
+
+saveobj()
+功能：保存物品
+参数：无
+
+addobj(a,b,c,d);
+功能：增加物品
+参数：a: ini文件名
+      b: x地图坐标
+      c: y地图坐标
+      d: 方向(0-7)
+
+delobj(a)
+功能：删除物品
+参数：a: 物品名字
+
+setobjscript(a,b)
+功能：设置物品脚本
+参数：a: 物品的名字
+      b: 脚本文件名
+
+loadplayer(a)
+功能：载入主角
+参数：a: 文件名(没有也可以)
+
+saveplayer(a)
+功能：保存主角
+参数：a: 文件名(没有也可以)
+
+setplayerpos(a,b)
+功能：设置主角位置
+参数：a: x坐标
+      b: y坐标
+
+setplayerdir(a)
+功能：设置主角方向
+参数：b: 方向值(0-7)
+
+setplayerscn()
+功能：设置主角位于屏幕中心
+参数：无
+
+enablefight()
+功能：使主角能够战斗
+参数：无
+
+disablefight()
+功能：使主角不能战斗
+参数：无
+
+playergoto(a,b)
+功能：主角走到某处
+参数：a: x坐标
+      b: y坐标
+
+addlife(a)
+功能：增加生命
+参数：a: 数值
+
+addlifemax(a)
+功能：增加生命的最大值
+参数：a: 数值
+
+addthew(a)
+功能：增加体力
+参数：a: 数值
+
+addthewmax(a)
+功能：增加体力的最大值
+参数：a: 数值
+
+addmana(a)
+功能：增加内力
+参数：a: 数值
+
+addmanamax(a)
+功能：增加内力的最大值
+参数：a: 数值
+
+addattack(a)
+功能：增加攻击力
+参数：a: 数值
+
+adddefend(a)
+功能：增加防御力
+参数：a: 数值
+
+addevade(a)
+功能：增加闪避力	
+参数：a: 数值
+
+addantiheat(a)
+功能：增加抗热
+参数：a: 数值
+
+addanticold(a)
+功能：增加抗寒
+参数：a: 数值
+
+addantipoison(a)
+功能：增加抗毒
+参数：a: 数值
+
+addexp(a)
+功能：增加经验
+参数：a: 数值
+
+addmoney(a)
+功能：增加金钱	
+参数：a: 数值
+
+addrandmoney(a,b);
+功能：给主角增加随机数量的银子,在提示栏会自动出提示。
+参数：a:最小值
+      b:最大值
+
+addgoods(a)
+功能：增加物品
+参数：a: 物品ini文件名
+
+addrandgoods(a)
+功能：增加一个随机物品
+参数：a: 物品列表文件名
+
+addmagic(a)
+功能：增加武功
+参数：a: 魔法ini文件名
+
+delmagic(a)
+功能：删除魔法
+参数：a: 魔法ini文件名
+
+delgoods(a)
+功能：删除主角的一个物品
+参数：a: 物品ini文件名
+
+savegoods(a);
+功能：保存主角的物品
+参数：a: 物品文件名
+
+loadgoods(a);
+功能：读取主角的物品
+参数：a: 物品文件名
+
+cleargoods();
+功能：清空主角的物品
+参数：无
+
+fulllife();
+功能：主角的生命全满
+参数：无
+
+fullthew();
+功能：主角的体力全满
+参数：无
+
+fullmana();
+功能：主角的内力全满
+参数：无
+
+updatestate();
+功能：更新主角的状态
+参数：无
+
+setplayerlevel(a);
+功能：设置主角的战斗等级
+参数：a: 等级
+
+setplayerstate(a);
+功能：设置主角的状态
+参数：a = 0 平常状态
+	  a = 1 战斗状态
+
+setmagiclevel(a,b);
+功能：设置主角的魔法等级
+参数：a: 魔法的ini文件名
+      b: 等级
+
+showmessage(a)
+功能：消息提示
+参数：a: 消息文本
+
+addtomemo(a)
+功能：增加信息到备忘录
+参数：a: 备忘信息文本
+
+clearmemo()
+功能：清空备忘录
+参数：无
+
+buygoods(a)
+功能：购买物品
+参数：a: 物品列表ini文件名
+
+sellgoods()
+功能：卖出物品
+参数：无
+
+returntotitle()
+功能：回到主画面
+
+sleep(a)
+功能：等待一定时间
+参数：a: 毫秒数
+
+setnpcres(a,b)
+功能：设置人物图形npcres
+参数：a: 人物名称
+      b: ini文件名(\ini\npcres)
+
+getmoneynum(a)
+功能：取得主角的银子数量，存放到变量a
+参数：a: 变量名称
+
+setmoneynum(a)
+功能：设置主角的银子数量
+参数：a: 数量
+
+showsnow(a)
+功能：设置下雪效果
+参数：a＝0：停雪
+	   ＝1：下雪
+
+showrandomsnow()
+功能：随机下雪效果
+参数：无

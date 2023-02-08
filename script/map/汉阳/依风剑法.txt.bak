@@ -1,0 +1,5 @@
+        PlaySound("物-箱子开.wav");
+	OpenBox();
+	AddMagic("player-magic-依风剑法.ini");
+	SetObjScript("","");
+	Return;

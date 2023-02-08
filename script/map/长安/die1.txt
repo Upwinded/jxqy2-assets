@@ -1,0 +1,24 @@
+  --上官家丁死亡
+  add("sgdiading",1);
+  if getvar("sgdiading") == 13 then
+    
+    if getvar("guanbing") <= 17 then
+      
+      disablenpcai();
+      talk("shangguanb12");
+      assign("shangguan",1);
+      setnpcrelation("官兵",1);
+      setnpcrelation("枪手1",1);
+      setnpcrelation("枪手2",1);
+      setnpcrelation("枪手3",1);
+      setnpcrelation("枪手4",1);
+      setnpcrelation("枪手5",1);
+      enablenpcai();
+      return;
+    end
+    assign("cafight",2);
+    assign("shangguan",1);
+    
+    return;
+  end
+  return;

@@ -1,0 +1,8 @@
+  --野外对话
+  
+  setplayerdir(2);
+  talk("changemap1");
+  setplayerdir(6);
+  setmaptrap(3,"");
+  savemaptrap();
+  return;

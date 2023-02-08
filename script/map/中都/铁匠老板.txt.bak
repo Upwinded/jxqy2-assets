@@ -1,0 +1,14 @@
+        If($Jian==1) @Lable1;
+	Talk("TieJiangLaoBan");
+	BuyGoods("5-中都-铁匠老板.ini");
+	Return;
+
+@Lable1:
+        Talk("TieJiangLaoBan1");
+//     	AddMoney(-99999999);
+	SetMoneyNum(0);
+        AddLife(2000);
+        DelGoods("goods-奇矿石.ini");
+        AddGoods("goods-jian-14-剑中之剑.ini");
+        Assign($Jian,0);
+        Return;

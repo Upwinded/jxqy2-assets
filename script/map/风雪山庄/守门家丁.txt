@@ -1,0 +1,13 @@
+  --风雪山庄守门家丁
+  
+  if getvar("fxszzhaoren") == 1 then
+    
+    talk("fx1");
+    stopmusic();
+    setnpcrelation("家丁",1);
+    return;
+  end
+  talk("fx4");
+  stopmusic();
+  setnpcrelation("家丁",1);
+  return;

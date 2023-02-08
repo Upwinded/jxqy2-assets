@@ -1,0 +1,34 @@
+  --汉阳－临安
+  
+  if getvar("zhongduhouhuayuan") == 5 then
+    
+    fadeout();
+    loadmap("稻香村.map");
+    loadnpc("daoxiang.npc");
+    loadobj("daoxiang.obj");
+    setplayerpos(33,350);
+    setplayerdir(5);
+    showmessage("稻香村");
+    playmusic("ks71.wav");
+    fadein();
+    if getvar("daoxiangfirstenter") == 0 then
+      
+      --playergoto(32,351);
+      movescreen(5,120);
+      talk("dajia");
+      talk("dajia1");
+      movescreen(1,120);
+      playergoto(37,340);
+      talk("dajia2");
+      setnpcrelation("洪七",1);
+      setnpcrelation("王重阳",1);
+      setnpcrelation("欧阳锋",1);
+      assign("daoxiangfirstenter",1);
+      return;
+    end
+    return;
+  end
+  talk("nanchengmen");
+  npcgotodir("南宫飞云",3,2);
+  setmaptrap(3,"地图切换3.txt");
+  return;

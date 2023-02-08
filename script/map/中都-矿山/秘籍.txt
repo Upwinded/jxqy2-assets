@@ -1,0 +1,8 @@
+  
+  --showmessage("得到一本书");
+  openbox();
+  playsound("物-箱子开.wav");
+  setobjscript("","");
+  talk("mj");
+  addmagic("player-magic-弯刀冷光.ini");
+  return;

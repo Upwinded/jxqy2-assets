@@ -1,0 +1,38 @@
+//
+        FadeOut();
+        SaveObj();
+        ShowSnow(0);
+	LoadMap("矿山.map");
+        If($KuangGongZouLe==1) @Lable1;
+	LoadNpc("KuangShan1.npc");
+	LoadObj("KuangShan.obj");
+	SetMapTime(0);	
+	SetPlayerPos(66,162);
+	SetPlayerDir(5);
+	ShowMessage("矿山");
+        If($KuangShan121==1) @Lable2;
+        DisableNpcAI();
+        ShowRandomSnow();
+	FadeIn();
+	PlayMusic("Ks77.wav");
+	Return;
+       
+@Lable1:
+        LoadNpc("KuangShan.npc");
+        DelNpc("矿工2");
+        DelNpc("矿工1");
+	LoadObj("KuangShan.obj");
+	SetMapTime(0);	
+	SetPlayerPos(66,162);
+	SetPlayerDir(5);
+	ShowMessage("矿山");
+        ShowRandomSnow();
+        FadeIn();
+        PlayMusic("Ks77.wav");
+	Return;
+       
+@Lable2:
+        ShowRandomSnow();
+        FadeIn();
+        PlayMusic("Ks77.wav");
+	Return;

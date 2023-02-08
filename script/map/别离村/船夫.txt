@@ -1,0 +1,55 @@
+  --别离村－汉阳
+  
+  if getvar("cuiyanmen2allfinish") == 3 then
+    
+    talk("chuanfu1");
+    if getvar("hanyanfirstenter") == 1 then
+      
+      stopmusic();
+      fadeout();
+      loadmap("汉阳.map");
+      loadnpc("hanyan.npc");
+      loadobj("hanyan.obj");
+      setplayerpos(42,29);
+      setplayerdir(0);
+      showmessage("汉阳");
+      fadein();
+      return;
+    end
+    stopmusic();
+    fadeout();
+    loadmap("汉阳.map");
+    loadnpc("hanyan1.npc");
+    setplayerpos(42,29);
+    setplayerdir(0);
+    showmessage("汉阳");
+    fadein();
+    talk("firstenter0");
+    playmusic("ks77.wav");
+    movescreen(0,100);
+    talk("firstenter");
+    npcgoto("史忠良",41,42);
+    talk("firstenter1");
+    npcgotoex("史忠良",46,53);
+    npcgotoex("天王帮弟子",46,52);
+    npcgotoex("楚天盟弟子1",48,52);
+    npcgotoex("楚天盟弟子2",48,52);
+    npcgotoex("楚天盟弟子6",45,55);
+    npcgotoex("楚天盟弟子3",44,49);
+    npcgotoex("楚天盟弟子7",45,55);
+    npcgotoex("楚天盟弟子4",48,52);
+    npcgoto("楚天盟弟子8",43,50);
+    stopmusic();
+    fadeout();
+    loadnpc("hanyan.npc");
+    loadobj("hanyan.obj");
+    setplayerscn();
+    playmusic("ks69.wav");
+    fadein();
+    talk("firstenter2");
+    addtomemo("找史忠良解决天王帮与楚天盟之间的纠纷。");
+    assign("hanyanfirstenter",1);
+    return;
+  end
+  talk("chuanfu");
+  return;

@@ -1,0 +1,10 @@
+		FadeOut();
+		SaveNpc();
+		SaveObj();
+		LoadMap("¡Ÿ∞≤¥Û¿Œ.map");
+		LoadNpc("LinAnDaLao14.npc");
+		LoadObj("LinAnDaLao11.obj");
+		SetMainLum(20);
+		SetPlayerPos(73,85);
+		SetPlayerDir(1);
+		FadeIn();

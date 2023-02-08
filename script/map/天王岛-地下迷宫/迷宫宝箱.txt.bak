@@ -1,0 +1,6 @@
+	OpenBox();
+	PlaySound("物-箱子开.wav");
+	AddRandGoods("5级物品.ini");
+	SetObjScript("","");
+	Assign($TianWangPiEr,3);
+	Return;

@@ -1,0 +1,8 @@
+//告示牌前面的话
+
+	PlayerGoto(63,193);
+	SetPlayerDir(5);
+	Talk("gaoshi");
+	SetMapTrap(6,"");
+	// SaveMapTrap();
+	Return;

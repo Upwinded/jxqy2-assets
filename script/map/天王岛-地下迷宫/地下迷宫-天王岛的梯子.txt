@@ -1,0 +1,21 @@
+  stopmusic();
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("天王岛.map");
+  loadnpc("tianwang.npc");
+  loadobj("tianwang.obj");
+  setmainlum(31);
+  setmaptime(0);
+  setplayerlum(0);
+  setplayerpos(36,111);
+  setplayerdir(5);
+  playmusic("ks66.wav");
+  fadein();
+  showmessage("天王岛");
+  if getvar("tianwangpier") == 3 then
+    
+    setnpcpos("苹儿",45,75);
+    return;
+  end
+  return;

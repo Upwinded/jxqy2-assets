@@ -1,0 +1,9 @@
+  disablenpcai();
+  sleep(3000);
+  talk("zhaojiedie");
+  assign("fromfengchi",19);
+  assign("tozhongdu",1);
+  setmaptrap(8,"trap8.txt");
+  savemaptrap();
+  enablenpcai();
+  return;

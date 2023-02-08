@@ -1,0 +1,26 @@
+	
+	If ($FromFengChi == 5) @Lable1;
+	
+	SetPlayerState(0);
+	SetPlayerDir(3);
+	SetNpcDir("—‡»Ù—©",7);	
+	Talk("RuoXue");
+	NpcGotoEx("ƒœπ¨∑…‘∆",146,101);
+	NpcGoto("—‡»Ù—©",146,100);
+	SetNpcDir("—‡»Ù—©",7);
+	SetNpcDir("ƒœπ¨∑…‘∆",3);
+	Talk("RuoXue1");
+	Assign($LinAnYanRuoXue,1);
+	AddNpc("z03-–Ì»Ù±˘.ini",164,117,7);
+	SetNpcScript("≤Ò·‘","≤Ò·‘.txt");
+	Assign($NoFindChaisong,1);
+	SetMapTrap(4,"");
+	SaveMapTrap();
+	Return;
+	
+@Lable1:
+	SetPlayerDir(3);
+	Talk("Micang1");
+	SetMapTrap(4,"");
+	SaveMapTrap();
+	Return;

@@ -1,0 +1,14 @@
+  --疯子
+  
+  if getvar("ksoshushen1") == 0 then
+    
+    talk("shushen1-1");
+    assign("ksoshushen1",1);
+    return;
+  end
+  if getvar("ksoshushen1") == 1 then
+    
+    talk("shushen1-2");
+    return;
+  end
+  return;

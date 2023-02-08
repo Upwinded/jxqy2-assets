@@ -1,0 +1,20 @@
+//ÁÙ°²-µ¾Ïã´å.txt
+	
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("µ¾Ïã´å.map");
+	LoadNpc("DaoXiang.npc");
+	LoadObj("DaoXiang.Obj");
+	SetPlayerPos(115,105);
+	SetPlayerDir(1);
+	If ($FromFengChi == 7) @Lable1;
+	FadeIn();
+	ShowMessage("µ¾Ïã´å");
+	Return;
+@Lable1:
+	PlayMusic("ks67.wav");
+	FadeIn();
+	ShowMessage("µ¾Ïã´å");
+	Return;
+	

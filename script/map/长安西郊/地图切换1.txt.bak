@@ -1,0 +1,23 @@
+//长安西郊－风雪山庄
+
+	If ($FengXueShanZhuanFinish == 1) @label1;
+	FadeOut();
+	LoadMap("风雪山庄.map");
+	LoadNpc("fxsz.npc");
+	LoadObj("fxsz.obj");
+	SetPlayerPos(93,33);
+	SetPlayerDir(1);
+	ShowMessage("风雪山庄");
+	FadeIn();
+	Return;
+
+@label1:
+	FadeOut();
+	LoadMap("风雪山庄.map");
+	LoadNpc("fxsz2.npc");
+	LoadObj("fxsz1.obj");
+	SetPlayerPos(93,33);
+	SetPlayerDir(1);
+	ShowMessage("风雪山庄");
+	FadeIn();
+	Return;

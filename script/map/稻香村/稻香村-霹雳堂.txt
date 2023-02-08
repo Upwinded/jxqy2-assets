@@ -1,0 +1,29 @@
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("霹雳堂.map");
+  loadnpc("pilitang.npc");
+  loadobj("pilitang.obj");
+  setplayerpos(17,162);
+  setplayerdir(5);
+  
+  if getvar("fromfengchi") == 7 then
+    
+    --领任务消灭霹雳堂
+    disablenpcai();
+    setmappos(62,25);
+    setnpcrelation("守门弟子",1);
+    showmessage("霹雳堂");
+    playmusic("ks74.wav");
+    fadein();
+    talk("leishixiongdi");
+    setnpcpos("雷晃",29,132);
+    setnpcdir("雷晃",1);
+    setplayerscn();
+    talk("dameng");
+    enablenpcai();
+    return;
+  end
+  showmessage("霹雳堂");
+  fadein();
+  return;

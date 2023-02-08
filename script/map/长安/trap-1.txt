@@ -1,0 +1,6 @@
+  --长安－龙门客栈－长安
+  
+  talk("out1");
+  playergotodir(7,2);
+  setmaptrap(1,"trap-1.txt");
+  return;

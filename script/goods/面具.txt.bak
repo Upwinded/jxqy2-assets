@@ -1,0 +1,9 @@
+	ShowMessage("飞云戴上一个面具");
+	DelGoods("goods-sj-3-面具.ini");
+	If($FromFengChi == 15)	Goto @Lable1;
+	If($FromFengChi == 16)	Goto @Lable1;
+	Return;
+	
+@Lable1:
+	Assign($LinAnMianJu,1);
+	Return;

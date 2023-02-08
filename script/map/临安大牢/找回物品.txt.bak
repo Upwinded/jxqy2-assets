@@ -1,0 +1,7 @@
+	OpenBox();
+//	LoadGoods("\save\game\Goods1.ini");
+//	Talk("FeiYun2");
+	AddRandGoods("7º∂ŒÔ∆∑.ini");
+	SetObjScript("","");
+	Return;
+	

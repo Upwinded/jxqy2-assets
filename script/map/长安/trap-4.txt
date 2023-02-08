@@ -1,0 +1,62 @@
+  --长安－别离村
+  
+  if getvar("bielishengan") == 1 then
+    
+    if getvar("fengxueshanzhuanfinish") == 1 then
+      
+      fadeout();
+      loadmap("别离村.map");
+      if getvar("bielishengan") == 1 then
+        
+        loadnpc("bielicun1.npc");
+        loadobj("bielicun.obj");
+        setplayerpos(21,36);
+        setplayerdir(7);
+        showmessage("别离村");
+        fadein();
+        return;
+      end
+      loadnpc("bielicun.npc");
+      loadobj("bielicun.obj");
+      setplayerpos(22,42);
+      setplayerdir(7);
+      showmessage("别离村");
+      playmusic("ks66.wav");
+      fadein();
+      return;
+    end
+    talk("out2");
+    playergotodir(3,2);
+    setmaptrap(4,"trap-4.txt");
+    return;
+  end
+  stopmusic();
+  
+  
+  if getvar("fengxueshanzhuanfinish") == 1 then
+    
+    fadeout();
+    loadmap("别离村.map");
+    if getvar("bielishengan") == 1 then
+      
+      loadnpc("bielicun1.npc");
+      loadobj("bielicun.obj");
+      setplayerpos(21,36);
+      setplayerdir(7);
+      showmessage("别离村");
+      fadein();
+      return;
+    end
+    loadnpc("bielicun.npc");
+    loadobj("bielicun.obj");
+    setplayerpos(22,42);
+    setplayerdir(7);
+    showmessage("别离村");
+    playmusic("ks66.wav");
+    fadein();
+    return;
+  end
+  talk("out2");
+  playergotodir(3,2);
+  setmaptrap(4,"trap-4.txt");
+  return;

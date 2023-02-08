@@ -1,0 +1,33 @@
+//长安－别离村
+
+	If ($BieLiShengAn==1) @Talk3;
+	StopMusic();
+	
+@Talk3:
+	If ($FengXueShanZhuanFinish==1) @Talk2;
+	Talk("out2");
+	PlayerGotoDir(3,2);
+	SetMapTrap(4,"Trap-4.txt");
+	Return;
+
+@Talk2:
+	FadeOut();
+	LoadMap("别离村.map");
+	If ($BieLiShengAn==1) @Talk1;
+	LoadNpc("bielicun.npc");
+	LoadObj("bielicun.obj");
+	SetPlayerPos(22,42);
+	SetPlayerDir(7);
+	ShowMessage("别离村");
+	PlayMusic("Ks66.wav");
+	FadeIn();
+	Return;
+	
+@Talk1:
+	LoadNpc("bielicun1.npc");
+	LoadObj("bielicun.obj");
+	SetPlayerPos(21,36);
+	SetPlayerDir(7);
+	ShowMessage("别离村");
+	FadeIn();
+	Return;

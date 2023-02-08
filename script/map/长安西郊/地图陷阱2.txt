@@ -1,0 +1,25 @@
+  --长安西郊－风雪山庄
+  
+  if getvar("fengxueshanzhuanfinish") == 1 then
+    
+    stopmusic();
+    fadeout();
+    loadmap("风雪山庄.map");
+    loadnpc("fxsz2.npc");
+    loadobj("fxsz.obj");
+    setplayerpos(93,33);
+    setplayerdir(1);
+    talk("name");
+    fadein();
+    return;
+  end
+  stopmusic();
+  fadeout();
+  loadmap("风雪山庄.map");
+  loadnpc("fxsz.npc");
+  loadobj("fxsz.obj");
+  setplayerpos(93,33);
+  setplayerdir(1);
+  talk("name");
+  fadein();
+  return;

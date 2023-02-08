@@ -1,0 +1,16 @@
+  sleep(2000);
+  disablenpcai();
+  talk("fightend2");
+  fadeout();
+  loadmap("汉阳.map");
+  loadnpc("hanyan.npc");
+  loadobj("hanyan.obj");
+  setplayerpos(65,128);
+  setplayerdir(7);
+  setnpcdir("孟廷威",3);
+  playmusic("ks71.wav");
+  fadein();
+  showmessage("汉阳");
+  talk("win1");
+  enablenpcai();
+  return;

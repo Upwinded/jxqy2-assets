@@ -1,0 +1,39 @@
+        If($KuangShan==2) @Lable2;
+        If($1KuangShan==1) @Lable1;
+        Talk("KuangShan");
+	PlayerGoto(31,96);
+        SetMapTrap(10,"地图陷阱10.txt");
+	Return;
+
+@Lable1:
+        Talk("KuangShan1");
+        Assign($KuangShan,2);
+        FadeOut();
+	SaveNpc();
+	SaveObj();
+        ShowSnow(0);
+        LoadMap("中都-矿山.map");
+	LoadNpc();
+	LoadObj("zhongdu-KuangShan.obj");
+	SetMapTime(0);	
+	SetPlayerPos(27,80);
+	SetPlayerDir(5);
+	ShowMessage("野外");
+        ShowRandomSnow();
+	FadeIn();
+	Return;
+@Lable2:
+        FadeOut();
+	SaveNpc();
+	SaveObj();
+        ShowSnow(0);
+        LoadMap("中都-矿山.map");
+	LoadNpc();
+	LoadObj("zhongdu-KuangShan.obj");
+	SetMapTime(0);	
+	SetPlayerPos(27,80);
+	SetPlayerDir(5);
+	ShowMessage("野外");
+        ShowRandomSnow();
+	FadeIn();
+	Return;    

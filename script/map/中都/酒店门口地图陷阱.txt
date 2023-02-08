@@ -1,0 +1,8 @@
+  --酒店门口
+  if getvar("zhongdulys") == 1 then
+    
+    return;
+  end
+  talk("jiudiandoor");
+  savemaptrap();
+  return;

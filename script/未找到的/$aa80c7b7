@@ -1,0 +1,6 @@
+  
+  If(ZhongDuXiMenQiGai==1)@Talk1;
+  end
+  Talk("XiMenQiGai");
+  Assign(ZhongDuXiMenQiGai,1);
+  return;

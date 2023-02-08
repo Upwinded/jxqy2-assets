@@ -1,0 +1,23 @@
+  --苹儿的大段对话
+  
+  talk("piner");
+  delgoods("goods-sj-1-天王令.ini");
+  talk("piner1");
+  npcgoto("苹儿",54,76);
+  npcgotoex("苹儿",45,77);
+  playergoto(52,78);
+  playergoto(48,84);
+  playergoto(46,76);
+  setnpcdir("苹儿",5);
+  setplayerdir(1);
+  talk("piner2");
+  stopmusic();
+  fadeout();
+  setnpcpos("苹儿",74,69);
+  setnpcdir("苹儿",7);
+  playmusic("ks76.wav");
+  fadein();
+  talk("piner3");
+  setnpcscript("苹儿","苹儿1.txt");
+  assign("tianwangpier",1);
+  return;

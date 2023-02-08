@@ -1,0 +1,15 @@
+
+	DisableNpcAI();
+	Sleep(2000);
+	Talk("TanMenDiZi3");
+	FadeOut();
+	SetNpcPos("Ã∆œÙ",91,191);
+	SetNpcPos("Ã∆¿Î",90,190);
+	FollowPlayer("Ã∆¿Î");
+	SetNpcRelation("Ã∆¿Î",1);
+	SetNpcLevel("Ã∆œÙ",100);
+	SetNpcLevel("Ã∆¿Î",100);
+	SetNpcDeathScript("ƒœπ¨∑…‘∆","÷˜Ω«±ª◊•.txt");
+	FadeIn();
+	EnableNpcAI();
+	Return;

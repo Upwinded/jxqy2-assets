@@ -1,0 +1,21 @@
+  --别离村－翠烟门
+  --别离村-野外
+  
+  --if($cuiyanmen2qiuyishui==1)@talk2;
+  fadeout();
+  loadmap("别离村-翠烟门.map");
+  loadnpc("bietocui.npc");
+  loadobj("bietocui.obj");
+  setplayerpos(66,28);
+  setplayerdir(1);
+  showmessage("野外");
+  if getvar("cuiyanmen2cunlanmusic") == 1 then
+    
+    fadein();
+    return;
+  end
+  playmusic("ks67.wav");
+  
+  
+  fadein();
+  return;

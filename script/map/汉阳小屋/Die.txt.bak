@@ -1,0 +1,16 @@
+		Sleep(2000);
+		DisableNpcAI();
+		Talk("FightEnd2");
+		FadeOut();
+		LoadMap("ººÑô.map");
+		LoadNpc("HanYan.npc");
+		LoadObj("HanYan.Obj");
+		SetPlayerPos(65,128);
+		SetPlayerDir(7);
+		SetNpcDir("ÃÏÍ¢Íþ",3);
+		PlayMusic("ks71.wav");
+		FadeIn();
+		ShowMessage("ººÑô");
+		Talk("Win1");
+		EnableNpcAI();
+		Return;

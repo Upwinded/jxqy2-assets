@@ -1,0 +1,16 @@
+// 中都 -> 汉阳
+        
+	FadeOut();
+        ShowSnow(0);
+	SetMapTime(0);
+	LoadMap("汉阳-中都2.map");
+	LoadObj("HanYan-zd2.obj");
+	SetPlayerPos(13,29);
+	SetPlayerDir(1);
+    	SetMapTime(0);
+    	SetMainLum(31);
+	FadeIn();
+	ShowMessage("野外");
+        ShowRandomSnow();
+	Return;
+   

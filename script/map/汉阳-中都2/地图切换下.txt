@@ -1,0 +1,12 @@
+  fadeout();
+  showsnow(0);
+  loadmap("汉阳-中都1.map");
+  loadnpc("hanyan-zhong1.npc");
+  loadobj("hanyan-zd1.obj");
+  setplayerpos(21,37);
+  setplayerdir(1);
+  playmusic("ks67.wav");
+  showrandomsnow();
+  fadein();
+  showmessage("野外");
+  return;

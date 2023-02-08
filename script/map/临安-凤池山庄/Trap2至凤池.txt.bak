@@ -1,0 +1,74 @@
+
+	If($FromFengChi == 2) Goto @Lable1;
+	If($FromFengChi == 6) Goto @Lable2;
+	If($FromFengChi == 8) Goto @Lable3;
+	If($FromFengChi == 9) Goto @Lable3;
+	PlayerGoto(9,16);
+	SetPlayerDir(1);
+	SetMapTrap(2,"Trap2至凤池.txt");
+	Talk("LinAnLookYRX");
+	Return;
+@Lable1:
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("凤池山庄.map");
+	LoadNpc("Fengci2.npc");
+	LoadObj("Fengci.obj");
+	SetPlayerState(0);
+	SetPlayerPos(54,248);
+	SetPlayerDir(5);
+	SetMapTrap(1,"凤池-临安.txt");
+	SetMapTrap(2,"前门.txt");
+	SetMapTrap(4,"MapTrap4.txt");
+	SetNpcScript("守门家丁","");
+	SaveMapTrap();
+	SetMainLum(16);
+	EnableFight();
+	FadeIn();
+	ShowMessage("凤池山庄");
+	Return;
+@Lable2:
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("凤池山庄.map");
+	LoadNpc("Fengci.npc");
+	LoadObj("Fengci.obj");
+	SetPlayerState(0);
+	SetPlayerPos(54,248);
+	SetPlayerDir(5);
+	SetNpcPos("后门家丁",55,207);
+	SetNpcDir("后门家丁",3);
+	SetMapTrap(4,"MapTrap4.txt");
+	SetMapTrap(5,"DaTingTalk.txt");
+	SaveMapTrap();
+	DisableFight();
+	FadeIn();
+	ShowMessage("凤池山庄");
+	Return;
+
+// 完成霹雳堂任务回来
+@Lable3:
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("凤池山庄.map");
+	LoadNpc("Fengci.npc");
+	LoadObj("Fengci.obj");
+	SetPlayerState(0);
+	SetPlayerPos(54,248);
+	SetPlayerDir(5);
+	SetMapTrap(5,"DaTingTalk.txt");
+	SetMapTrap(3,"凤池-临安.txt");
+	SetMapTrap(1,"凤池-临安.txt");
+	Assign($FromFengChi,9);
+	SaveMapTrap();
+	SetNpcDir("独孤剑",5);
+	SetNpcPos("守门家丁",63,227);
+	SetNpcDir("守门家丁",7);
+	DisableFight();
+	FadeIn();
+	ShowMessage("凤池山庄");
+	Return;
+

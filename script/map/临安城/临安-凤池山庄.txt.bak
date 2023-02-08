@@ -1,0 +1,18 @@
+
+	If ($FromFengChi == 0) @Lable0;
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("临安-凤池山庄.map");
+	SetPlayerPos(2,7);
+	SetPlayerDir(7);
+	PlayMusic("ks67.wav");
+        FadeIn();
+	ShowMessage("临安野外");
+	Return;
+	
+@Lable0:
+	Talk("First2");
+	PlayerGotoDir(3,2);
+	SetMapTrap(3,"临安-凤池山庄.txt");
+	Return;

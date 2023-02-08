@@ -1,0 +1,57 @@
+//庄园门口
+
+	If($ZhongDuZhuangYuanDoor==2) @Talk3;
+	If($ZhongDuZhuangYuanDoor==1) @Talk2;
+	If($ZhongDuTroublesRoom==3) @Talk1;
+	Talk("zhuangyuan1");
+	Return;
+       
+@Talk1:
+    Talk("zhuangyuan3");
+    Assign($ZhongDuZhuangYuanDoor,1);
+    Return;
+       
+@Talk2:
+    Talk("zhuangyuan4");
+    AddMoney(-100);
+    Assign($ZhongDuZhuangYuanDoor,2);
+    PlayerGoto(135,262);
+    Talk("Jieer");
+    SetPlayerDir(7);
+    SetNpcPos("丫鬟-1",141,262);
+    NpcGoto("丫鬟-1",135,263);
+    Talk("zhuangyuan6");
+    NpcGoto("丫鬟-1",141,262);
+    SetNpcPos("丫鬟-1",186,182);
+	Talk("zhuangyuan7");
+	StopMusic();
+	FadeOut();
+        ShowSnow(0);
+	DelNpc("燕若雪");
+	DelNpc("丫鬟-1");
+	DelNpc("燕府家丁");
+	SaveNpc();
+    SaveObj();
+    LoadMap("中都夜.map");
+    LoadNpc("zhongduye.npc");
+    LoadObj("zhongduye.obj");
+	SetPlayerPos("南宫飞云",79,29);
+	AddToMemo("晚上去见小仙女，穿过城西南的树林，有堵墙有个缺口，跳进去……从湖上再跳……。");
+    SetMapTime(1);
+    SetMainLum(20);
+    SetMapPos(182,171);
+    PlayMusic("ks75.wav");
+    ShowRandomSnow();
+    FadeIn();
+    Talk("night1");
+    FadeOut();
+    SetNpcPos("燕若雪",162,319);
+    SetNpcDir("燕若雪",1);
+    SetNpcPos("婕儿",164,320);
+    SetPlayerScn();
+    FadeIn();
+    Return;
+       
+@Talk3:
+    Talk("zhuangyuan5"); 
+    Return;      

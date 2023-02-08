@@ -1,0 +1,4 @@
+  --书生
+  
+  talk("yaodiankeren1");
+  return;

@@ -1,0 +1,59 @@
+// "∞Ÿª®π»–°Œ›"
+
+	SetNpcActionFile("—‡»Ù—©",0,"Z-—‡»Ù—©-±ª¿ß.mpc");
+	SetNpcActionFile("—‡»Ù—©",1,"Z-—‡»Ù—©-±ª¿ß.mpc");
+	PlayMusic("ks68.wav");
+	MoveScreen(5,60);
+	PlayerGoto(13,16);
+	SetPlayerDir(5);
+	Talk("YangRuoXue1");
+	PlayerGoto(14,15);
+	SetPlayerDir(3);
+	NpcSpecialAction("ƒœπ¨∑…‘∆","z-∑…‘∆-Ω‚…˛◊”.mpc");
+	Sleep(2000);
+	NpcSpecialAction("—‡»Ù—©","Z-—‡»Ù—©-’æ∆.mpc");
+	SetNpcActionFile("—‡»Ù—©",0,"z02-—‡»Ù—©-st.mpc");
+	SetNpcActionFile("—‡»Ù—©",1,"z02-—‡»Ù—©-sp.mpc");
+	Sleep(2000);
+
+	Talk("YangRuoXue3");
+	NpcGoto("—‡»Ù—©",10,19);
+	PlayerGoto(10,18);
+	SetPlayerDir(7);
+	Talk("YangRuoXue4");
+	
+	NpcGoto("—‡»Ù—©",8,21);
+	Talk("YangRuoXue41");
+	PlayerGoto(9,22);
+	SetPlayerDir(3);
+	Talk("YangRuoXue5");
+	
+	SetMapTrap(2,"");
+	SaveMapTrap();
+	Assign($BHGOTalkToYRX,1);
+	Assign($BaiHuaGuOQieHuan,2);
+	PlayerGoto(4,31);
+	FadeOut();
+	SaveNpc("bhgxw.npc");
+	LoadMap("∞Ÿª®π».map");
+	LoadObj("bhg.obj");
+	SetPlayerPos(35,14);
+	SetPlayerDir(1);
+	FadeIn();
+	
+	PlayerGoto(33,33);
+	Talk("FangYan1");
+	PlayerGoto(39,34);
+	SetPlayerDir(3);
+	Talk("FangYan2");
+//	FadeOut();
+	NpcSpecialAction("ƒœπ¨∑…‘∆","z-∑…‘∆-Ω‚…˛◊”.mpc");
+	Sleep(2000);
+	AddObj("ª∂—.ini",38,33,0);
+	Assign($BHGOFire,1);
+//	FadeIn();
+	PlaySound("±≥-ª.wav");
+	Talk("FangYan3");
+	Return;
+	
+	

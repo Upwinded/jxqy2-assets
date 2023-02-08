@@ -1,0 +1,285 @@
+
+	DisableNpcAI();
+	HideInterface();
+	Sleep(3000);
+	FadeOut();
+	ClearBody();
+	SetPlayerPos(21,50);
+	SetPlayerDir(1);
+	DelObj("比武场门闭左");
+	DelObj("比武场门闭中");
+	DelObj("比武场门闭右");
+	AddObj("obj-比武场门开右.ini",17,75);
+	AddObj("obj-比武场门开左.ini",15,71);
+	
+//败在赵无双手上			
+	If ($FCBW == 1) @Label1;
+//败在秋依水手上
+	If ($FCBW == 2) @Label2;
+//败在唐影手上
+	If ($FCBW == 3) @Label3;
+//败在孟廷威手上
+	If ($FCBW == 4) @Label4;
+//败在柴嵩手上
+	If ($FCBW == 5) @Label5;
+//败在杨干手上
+	If ($FCBW == 6) @Label6;
+//败在邵骑风手上
+	If ($FCBW == 7) @Label7;
+//败在史忠良手上
+	If ($FCBW == 8) @Label8;
+//败在唐离手上
+	If ($FCBW == 9) @Label9;
+//败在赵升权手上
+	If ($FCBW == 10) @Label10;
+//败在独孤剑手上
+	If ($FCBW == 11) @Label11;
+	Return;
+
+@Label1:
+
+	SetNpcRelation("赵无双",2);
+	SetNpcPos("赵无双",18,56);
+	SetNpcDir("赵无双",5);
+	FadeIn();
+	Talk("ZWSSuccessed");
+	NpcGotoEx("赵无双",18,64);
+	PlayerGoto(18,65);
+	SetPlayerDir(1);
+	SetNpcDir("赵无双",1);
+	Talk("FYFailed");
+	PlayerGotoEx(15,77);
+	Sleep(500);
+	NpcGoto("赵无双",17,78);
+	SetPlayerDir(5);
+	SetNpcDir("赵无双",4);
+	NpcGoto("独孤剑",18,65);
+	SetNpcDir("独孤剑",1);
+	RunScript("独孤剑.txt");
+	Return;
+	
+@Label2:
+
+	SetNpcRelation("秋依水",2);
+	SetNpcPos("秋依水",18,56);
+	SetNpcDir("秋依水",5);
+	FadeIn();
+	Talk("QYSSuccessed");
+	NpcGotoEx("秋依水",18,64);
+	Sleep(500);
+	PlayerGoto(18,65);
+	SetPlayerDir(1);
+	SetNpcDir("秋依水",1);
+	Talk("FYFailed");
+	PlayerGotoEx(15,77);
+	Sleep(500);
+	NpcGoto("秋依水",18,79);
+	SetPlayerDir(5);
+	SetNpcDir("秋依水",4);
+	NpcGoto("独孤剑",18,65);
+	SetNpcDir("独孤剑",1);
+
+	RunScript("独孤剑.txt");
+	Return;
+	
+@Label3:
+
+	SetNpcRelation("唐影",2);
+	SetNpcPos("唐影",18,56);
+	SetNpcDir("唐影",5);
+	FadeIn();
+	Talk("TYSuccessed");
+	NpcGotoEx("唐影",18,64);
+	PlayerGoto(18,65);
+	SetPlayerDir(1);
+	SetNpcDir("唐影",1);
+	Talk("FYFailed");
+	PlayerGotoEx(15,77);
+	Sleep(500);
+	NpcGoto("唐影",18,78);
+	SetPlayerDir(5);
+	SetNpcDir("唐影",4);
+	NpcGoto("独孤剑",18,65);
+	SetNpcDir("独孤剑",1);
+
+	RunScript("独孤剑.txt");
+	Return;	
+	
+@Label4:
+
+	SetNpcRelation("孟廷威",2);
+	SetNpcPos("孟廷威",18,56);
+	SetNpcDir("孟廷威",5);
+	FadeIn();
+	Talk("MTWSuccessed");
+
+	NpcGotoEx("孟廷威",18,64);
+	PlayerGoto(18,65);
+	SetPlayerDir(1);
+	SetNpcDir("孟廷威",1);
+	Talk("FYFailed");
+	PlayerGotoEx(15,77);
+	Sleep(500);
+	NpcGoto("孟廷威",15,77);
+	SetPlayerDir(5);
+	SetNpcDir("孟廷威",4);
+	NpcGoto("独孤剑",18,65);
+	SetNpcDir("独孤剑",1);
+
+	RunScript("独孤剑.txt");
+	Return;	
+	
+@Label5:
+
+	SetNpcRelation("柴嵩",2);
+	SetNpcPos("柴嵩",18,56);
+	SetNpcDir("柴嵩",5);
+	FadeIn();
+	Talk("CSSuccessed");
+
+	NpcGotoEx("柴嵩",18,64);
+	PlayerGoto(18,65);
+	SetPlayerDir(1);
+	SetNpcDir("柴嵩",1);
+	Talk("FYFailed");
+	PlayerGotoEx(15,77);
+	Sleep(500);
+	NpcGoto("柴嵩",16,78);
+	SetPlayerDir(5);
+	SetNpcDir("柴嵩",4);
+	NpcGoto("独孤剑",18,65);
+	SetNpcDir("独孤剑",1);
+
+	RunScript("独孤剑.txt");
+	Return;	
+	
+@Label6:
+
+	SetNpcRelation("杨干",2);
+	SetNpcPos("杨干",18,56);
+	SetNpcDir("杨干",5);
+	FadeIn();
+	Talk("YGSuccessed");
+	NpcGotoEx("杨干",18,64);
+	PlayerGoto(18,65);
+	SetPlayerDir(1);
+	SetNpcDir("杨干",1);
+	Talk("FYFailed");
+	PlayerGotoEx(15,77);
+	Sleep(500);
+	NpcGoto("杨干",14,79);
+	SetPlayerDir(5);
+	SetNpcDir("杨干",4);
+	NpcGoto("独孤剑",18,65);
+	SetNpcDir("独孤剑",1);
+
+	RunScript("独孤剑.txt");
+	Return;	
+	
+@Label7:
+
+	SetNpcRelation("邵骑风",2);
+	SetNpcPos("邵骑风",18,56);
+	SetNpcDir("邵骑风",5);
+	FadeIn();
+	Talk("SYFSuccessed");
+
+	NpcGotoEx("邵骑风",18,64);
+	PlayerGoto(18,65);
+	SetPlayerDir(1);
+	SetNpcDir("邵骑风",1);
+	Talk("FYFailed");
+	PlayerGotoEx(15,77);
+	Sleep(500);
+	NpcGoto("邵骑风",13,72);
+	SetPlayerDir(5);
+	SetNpcDir("邵骑风",4);
+	NpcGoto("独孤剑",18,65);
+	SetNpcDir("独孤剑",1);
+
+	RunScript("独孤剑.txt");
+	Return;	
+	
+@Label8:
+
+	SetNpcRelation("史忠良",2);
+	SetNpcPos("史忠良",18,56);
+	SetNpcDir("史忠良",5);
+	FadeIn();
+	Talk("SZLSuccessed");
+
+	NpcGotoEx("史忠良",18,64);
+	PlayerGoto(18,65);
+	SetPlayerDir(1);
+	SetNpcDir("史忠良",1);
+	Talk("FYFailed");
+	PlayerGotoEx(15,77);
+	Sleep(500);
+	NpcGoto("史忠良",12,70);
+	SetPlayerDir(5);
+	SetNpcDir("史忠良",4);
+	NpcGoto("独孤剑",18,65);
+	SetNpcDir("独孤剑",1);
+
+	RunScript("独孤剑.txt");
+	Return;	
+	
+@Label9:
+
+	SetNpcRelation("唐离",2);
+	SetNpcPos("唐离",18,56);
+	SetNpcDir("唐离",5);
+	FadeIn();
+	Talk("TLSuccessed");
+	NpcGotoEx("唐离",18,64);
+	PlayerGoto(18,65);
+	SetPlayerDir(1);
+	SetNpcDir("唐离",1);
+	Talk("FYFailed");
+	PlayerGotoEx(15,77);
+	Sleep(500);
+	NpcGoto("唐离",19,77);
+	SetPlayerDir(5);
+	SetNpcDir("唐离",4);
+	NpcGoto("独孤剑",18,65);
+	SetNpcDir("独孤剑",1);
+
+	RunScript("独孤剑.txt");
+	Return;	
+	
+@Label10:
+
+	SetNpcRelation("赵升权",2);
+	SetNpcPos("赵升权",18,56);
+	SetNpcDir("赵升权",5);
+	FadeIn();
+	Talk("ZSQSuccessed");
+
+	NpcGotoEx("赵升权",18,64);
+	PlayerGoto(18,65);
+	SetPlayerDir(1);
+	SetNpcDir("赵升权",1);
+	Talk("FYFailed");
+	PlayerGotoEx(15,77);
+	Sleep(500);
+	NpcGoto("赵升权",16,77);
+	SetPlayerDir(5);
+	SetNpcDir("赵升权",4);
+	NpcGoto("独孤剑",18,65);
+	SetNpcDir("独孤剑",1);
+	RunScript("独孤剑.txt");
+	Return;
+	
+@Label11:
+	
+	DisableNpcAI();
+	SetNpcRelation("独孤剑",2);
+	SetNpcRelation("南宫飞云",0);
+	SetPlayerPos(18,62);
+	SetPlayerDir(1);
+	SetNpcPos("独孤剑",18,65);
+	SetNpcDir("独孤剑",1);
+	FadeIn();
+	Sleep(3000);
+	RunScript("比武结束.txt");
+	Return;

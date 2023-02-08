@@ -1,0 +1,39 @@
+//  "狂沙镇" - "主角家-狂沙镇"
+
+	//单独第一次进入地图和酒店老板讲话之前
+	If($KsOQieHuan==0) @out1;
+	
+	//单独第一次进入地图和酒店老板讲话之后
+	If($KsOQieHuan==1) @out2;
+	
+	//和燕若雪一起的时候未进入酒店
+	If($KsOQieHuan==2) @out3;
+	
+	//和燕若雪一起的时候进入酒店后
+	If($KsOQieHuan==3) @out4;
+		
+@out1:
+	Talk("goout1");
+	PlayerGotoDir(5,2);
+	SetMapTrap(1,"地图切换.txt");
+	Return;
+
+@out2:
+	Talk("newout1");
+	PlayerGotoDir(5,2);
+	SetMapTrap(1,"地图切换.txt");
+	Return;
+
+@out3:
+	Talk("newout2");
+	PlayerGotoDir(5,2);
+	SetMapTrap(1,"地图切换.txt");
+	Return;
+
+@out4:
+	Talk("newout3");
+	PlayerGotoDir(5,2);
+	SetMapTrap(1,"地图切换.txt");
+	Return;
+
+

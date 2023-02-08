@@ -1,0 +1,17 @@
+        If($LongYinShiLiaoRan==1) @Talk2; 
+        If($ZhongDuHouHuaYuan==6) @Talk1;
+        Talk("LongYinShiLiaoRan");
+	Return;
+
+@Talk2:	
+	Talk("LongYinShiLiaoRan");
+	Return;
+@Talk1:
+        Talk("LongYinShiLiaoRan1");
+        Assign($LongYinShiLiaoRan,1);
+        AddNpc("d16-无赖1.ini",134,75,2);
+        AddNpc("d17-无赖2.ini",133,77,4);
+        SetMapTrap(13,"地图陷阱13.txt");
+        SetMapTrap(6,"龙音寺门口地图陷阱6.txt");
+        SaveMapTrap();
+        Return;	

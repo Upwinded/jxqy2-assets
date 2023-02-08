@@ -1,0 +1,31 @@
+// 村长
+
+	If ($ksOcunzhang == 0) @talk1;
+	If ($ksOcunzhang == 1) @talk2;
+	If ($ksOcunzhang == 2) @talk3;
+	If ($ksOcunzhang == 3) @talk4;
+	Return;
+
+@talk1:
+	Talk("cunzhang-1");
+	Assign($ksOcunzhang, 1);
+	AddToMemo("村长请你帮他杀火狼。");
+	Return;
+
+@talk2:
+	Talk("cunzhang-2");
+	Return;
+
+@talk3:
+	Talk("cunzhang-3");
+	AddMoney(500);
+	AddGoods("goods-jian-2-桃花剑.ini");
+	ShowMessage("你从村长的手里得到了五百两银子和一柄桃花剑。");
+	Assign($ksOcunzhang, 3);
+	AddToMemo("你完成了“杀火狼”的任务。");
+	Return;
+	
+@talk4:
+	Talk("cunzhang-4");
+	Return;
+

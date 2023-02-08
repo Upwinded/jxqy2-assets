@@ -1,0 +1,24 @@
+
+	Talk("TangYing1");
+	NpcGoto("唐影",110,177);
+	PlayerGoto(109,178);
+	SetNpcDir("唐影",1);
+	SetPlayerDir(7);
+	Talk("TangYing2");
+	SetNpcDir("唐影",5);
+	SetPlayerDir(5);
+	NpcAttack("唐影",112,173);
+	Sleep(1000);
+	SetNpcDir("唐影",1);
+	SetPlayerDir(7);
+	Talk("TangYing3");
+	SetNpcKind("唐影",3);
+	DisableRun();
+	DisableJump();
+	AddGoods("book-唐门秘笈.ini");
+	PlayMusic("ks69.wav");
+	Assign($NaDaoMiJiMusic,1);
+	AddToMemo("与唐影一道回翠烟门去见秋依水。");
+	SetNpcScript("","");
+	Return;
+	

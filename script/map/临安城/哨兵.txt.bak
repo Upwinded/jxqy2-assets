@@ -1,0 +1,19 @@
+	If($LinAnMianJu == 1) @Lable2;
+	If($ZhaoFuQinBing == 0) @Lable0;
+	If($ZhaoFuQinBing == 1) @Lable1;
+	Return;
+@Lable0:
+	Talk("ShaoPing");
+	Assign($ZhaoFuQinBing,1);
+	Return;	
+@Lable1:
+	Talk("ShaoPing2");
+	Assign($ZhaoFuQinBing,0);
+	Return;	
+@Lable2:
+	Talk("JiangJunFu1");
+	Assign($FromFengChi,17);
+	SetNpcRelation("宋朝长刀手2",1);
+	SetNpcRelation("宋朝长刀手3",1);
+	EnableFight();
+	Return;

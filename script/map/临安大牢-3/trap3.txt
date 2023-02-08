@@ -1,0 +1,7 @@
+  disablenpcai();
+  playergoto(77,169);
+  setplayerdir(7);
+  talk("shaoqifeng");
+  enablenpcai();
+  savemaptrap();
+  return;

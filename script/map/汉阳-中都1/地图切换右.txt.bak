@@ -1,0 +1,26 @@
+	
+        If($YanRuoXueMusic == 1) @Label1;
+	StopMusic();
+	
+@Label1:
+	DelNpc("老人");
+        SaveNpc();
+	FadeOut();
+        ShowSnow(0);
+	LoadMap("汉阳-中都2.map");
+	LoadObj("HanYan-zd2.obj");
+	If ($HanYanZhongDu2==1) @Talk1;
+	LoadNpc("HanYan-Zhong2.npc");
+	Assign($HanYanZhongDu2,1);
+@Talk1:
+	SetPlayerPos(6,48);
+	SetPlayerDir(4);
+	If($YanRuoXueMusic == 0) @Label2;
+	PlayMusic("ks67.wav");
+	
+@Label2:
+	ShowSnow(1);
+        FadeIn();
+        ShowRandomSnow();
+	ShowMessage("野外");
+	Return;

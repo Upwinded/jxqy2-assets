@@ -1,0 +1,49 @@
+  --进酒店住店
+  
+  if getvar("changanlaoban") == 2 then
+    
+    talk("zhudian");
+    getmoneynum();
+    if getvar("moneynum") <= 19 then
+      
+      talk("nomoney");
+      return;
+    end
+    
+    addmoney(-20);
+    fadeout();
+    sleep(5000);
+    setplayerpos(61,167);
+    setplayerdir(1);
+    fulllife();
+    fullthew();
+    fullmana();
+    updatestate();
+    fadein();
+    return;
+  end
+  if getvar("changanlaoban") == 1 then
+    
+    talk("laoban5");
+    return;
+  end
+  talk("laoban1");
+  playergoto(68,101);
+  playergoto(74,98);
+  playergoto(84,88);
+  playergoto(94,104);
+  setnpckind("燕若雪",0);
+  setplayerdir(3);
+  talk("laoban2");
+  playergoto(73,101);
+  talk("laoban3");
+  playergoto(62,119);
+  talk("laoban4");
+  delnpc("燕若雪");
+  setmaptrap(5,"trap-5.txt");
+  savemaptrap();
+  assign("changanlaoban",1);
+  enablejump();
+  enablerun();
+  addtomemo("先去客栈附近那个路边站着的小贩那里给小仙女买点东西，买完东西再去酒店找柴嵩那酒鬼。");
+  return;

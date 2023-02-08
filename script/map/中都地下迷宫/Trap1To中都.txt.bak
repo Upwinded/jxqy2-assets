@@ -1,0 +1,20 @@
+		StopMusic();
+		FadeOut();
+		SaveNpc();
+		SaveObj();
+		LoadMap("ÖÐ¶¼.map");
+		LoadNpc("ZhongDu.npc");
+		LoadObj("ZhongDu.obj");
+		SetPlayerPos(149,88);
+		SetPlayerDir(1);
+		If($OuYangMusic == 1) @Label1;
+		PlayMusic("ks67.wav");
+                ShowRandomSnow();
+		FadeIn();
+		Return;
+		
+@Label1:
+		PlayMusic("ks69.wav");
+		FadeIn();
+		Return;
+		

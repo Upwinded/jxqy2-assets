@@ -1,0 +1,22 @@
+//此路不通
+//	If($DuanHuanShan,1) @Talk1;
+//	Talk("XiMenShiBin");
+//	NpcGotoDir("南宫飞云",5,2);
+//	SetMapTrap(4,"地图切换4.txt");
+//	Return;
+	
+//@Talk1:
+	If($DuanJiaZhuangClose,1) @Talk1;
+	FadeOut();
+	SaveObj();
+	LoadMap("汉阳-段家庄.map");
+	SetPlayerPos(27,14);
+	FadeIn();
+	PlayMusic("ks69.wav");
+	Return;
+	
+@Talk1:
+	Talk("DuanJiaZhuangClose");
+	NpcGotoDir("南宫飞云",5,2);
+	SetMapTrap(4,"地图切换4.txt");
+	Return;

@@ -1,0 +1,16 @@
+		If($TanHua==1) @Talk1;
+                PlayGoto(25,29);
+                Talk("TanHua");
+                SetMapTrap(2,"Trap1-To临安.txt");
+                Return;
+                
+@Talk1:
+                FadeOut();
+		LoadMap("临安-凤池山庄.map");
+		SetPlayerPos(8,45);
+		SetPlayerDir(4);
+		SetMapTrap(3,"Trap3至大牢出口.txt");
+		SaveMapTrap();
+		FadeIn();
+		Return;
+ 

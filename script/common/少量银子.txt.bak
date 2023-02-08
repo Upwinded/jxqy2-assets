@@ -1,0 +1,5 @@
+OpenBox();
+PlaySound("Îï-Ïä×Ó¿ª.wav");
+AddRandMoney(10,100);
+SetObjScript("","");
+Return;

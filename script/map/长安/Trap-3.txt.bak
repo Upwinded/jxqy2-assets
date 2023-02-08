@@ -1,0 +1,18 @@
+//长安－长安西郊
+	
+	If ($ChangAnYanRuoXueXiaoShi>=1) @Talk2;
+	Talk("out2");
+	PlayerGotoDir(5,2);
+	SetMapTrap(3,"Trap-3.txt");
+	Return;
+
+@Talk2:
+	FadeOut();
+	LoadMap("长安西郊.map");
+	LoadNpc("changanx.npc");
+	LoadObj("changanx.obj");
+	SetPlayerPos(19,16);
+	SetPlayerDir(1);
+	ShowMessage("长安西郊");
+	FadeIn();
+	Return;

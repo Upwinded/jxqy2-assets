@@ -1,0 +1,11 @@
+  fadeout();
+  showsnow(0);
+  loadmap("中都.map");
+  loadnpc("zhongdu.npc");
+  loadobj("zhongdu.obj");
+  setplayerpos(147,60);
+  setplayerdir(1);
+  showmessage("中都");
+  showrandomsnow();
+  fadein();
+  return;

@@ -1,0 +1,36 @@
+// "龙门客栈" - "龙门客栈--长安"
+	
+	
+	//与柴嵩对话前
+	If ($LMKZOQieHuan==0 ) @out1;
+	
+	//决定去葬马岗没解决
+	If ($LMKZOZhanMaGang==1 ) @out3;
+	
+	//与柴嵩对话后
+	If ($LMKZOQieHuan==1 ) @out2;
+		
+@out1:
+	Talk("out1");
+	PlayerGotoDir(3,2);
+	SetMapTrap(2,"地图切换1.txt");
+	Return;
+
+@out2:	
+	FadeOut();
+	StopMusic();
+	LoadMap("龙门客栈-长安.map");
+	LoadObj("lmkz-ca.obj");
+	SetPlayerPos(5,10);
+	SetPlayerDir(0);
+	SetNpcPos("燕若雪",5,8);
+	SetNpcDir("燕若雪",0);
+	ShowMessage("树林");
+	FadeIn();
+	Return;
+
+@out3:
+	Talk("out3");
+	PlayerGotoDir(3,2);
+	SetMapTrap(2,"地图切换1.txt");
+	Return;

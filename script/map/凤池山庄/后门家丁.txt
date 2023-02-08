@@ -1,0 +1,40 @@
+  --后门家丁
+  if getvar("fromfengchi") == 2 then
+    
+    talk("houmenjiading");
+    npcgotoex("后门家丁",55,201);
+    setmaptrap(2,"");
+    savemaptrap();
+    return;
+  end
+  if getvar("fromfengchi") == 4 then
+    
+    if getvar("fengchihoujiating") == 1 then
+      
+      talk("backdoor3");
+      npcgotoex("后门家丁",53,209);
+      setnpcdir("后门家丁",7);
+      return;
+    end
+    talk("backdoor");
+    npcgotoex("后门家丁",53,209);
+    assign("fengchihoujiating",1);
+    setnpcdir("后门家丁",7);
+    return;
+  end
+  if getvar("fromfengchi") == 6 then
+    
+    talk("backdoor1");
+    playmusic("ks65.wav");
+    npcgotoex("后门家丁",55,201);
+    return;
+  end
+  if getvar("fromfengchi") == 10 then
+    
+    playmusic("ks65.wav");
+    talk("backdoor2");
+    npcgotoex("后门家丁",55,201);
+    return;
+  end
+  talk("woshi1");
+  return;

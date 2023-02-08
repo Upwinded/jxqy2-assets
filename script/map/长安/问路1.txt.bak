@@ -1,0 +1,10 @@
+//ÎÊÂ·
+
+	If ($ChangAnYanRuoXueXiaoShi==1) @Talk1;
+	Talk("wenlu11");
+	Assign($FXSZZhaoRen,1);
+	Return;
+	
+@Talk1:
+	Talk("wenlu1");
+	Return;

@@ -1,0 +1,20 @@
+//离开地图
+    If ($ZhongDuHouHuaYuan==5) @Talk1;
+	Talk("exit1");
+	NpcGotoDir("南宫飞云",5,1);
+	SetMapTrap(2,"Trap-2.txt");
+	Return;
+	
+@Talk1:
+	StopMusic();
+   	FadeOut();
+   	SaveNpc();
+	LoadMap("汉阳-中都2.map");
+	SetPlayerPos(14,28);
+	SetPlayerDir(1);
+   	SetMapTime(0);
+   	SetMainLum(31);
+	PlayMusic("ks67.wav");
+	FadeIn();
+	ShowMessage("野外");
+	Return;

@@ -1,0 +1,17 @@
+//长安西郊－长安
+
+	FadeOut();
+	LoadMap("长安.map");
+	LoadNpc("changan1.npc");
+	LoadObj("changan.obj");
+	SetPlayerPos(41,313);
+	SetPlayerDir(5);
+	ShowMessage("长安");
+	FadeIn();
+	If($ChangAnZhiFu == 0) @Lable1;
+	Return;
+@Lable1:
+	SetMapTrap(7,"MapTrap7.txt");
+	SaveMapTrap();
+	Assign($ChangAnZhiFu,1);
+	Return;

@@ -1,0 +1,56 @@
+//
+    
+    If($1ZMG==1) @Lable2;
+    If($GotoZMG==1) @Lable1;
+    Talk("GotoZMG");
+    SetPlayerDir(7);
+    Talk("GotoZMG00");
+    Assign($GotoZMG,1);
+    SetMapTrap(4,"µÿÕº«–ªª4.txt");
+    SaveMapTrap();
+    SetMapTrap(5,"µÿÕº«–ªª5.txt");
+    AddMoney(-100);
+    SetNpcKind("—‡»Ù—©",0);
+    NpcGoto("—‡»Ù—©",46,54);
+    SetNpcDir("—‡»Ù—©",7);
+    PlayerGoto(46,55);
+    SetPlayerDir(3);
+    Talk("GotoZMG1");
+    SetNpcScript("—‡»Ù—©","—‡»Ù—©Talk2.txt");
+    EnableJump();
+    EnableRun();
+    Assign($LMKZOZhanMaGang,1);
+    AddToMemo("—∞’“‘·¬Ì∏⁄£¨≤¢¡œ¿Ì¿Ô√Êµƒµ¡‘Ù°£");
+    Return;
+
+@Lable1:
+    Talk("NoZMG2");
+    Return;
+
+@Lable2:
+    If($2ZMG==2) @Lable3;
+    Talk("NoZMG2");
+    Return;
+
+@Lable3:
+    If($3ZMG==3) @Lable4;
+    Talk("NoZMG3");
+    Return;
+
+@Lable4:
+    If($4ZMG==4) @Lable5;
+    Talk("NoZMG3");
+    Return;
+
+@Lable5:
+    If($5ZMG==5) @Lable7;
+    Talk("NoZMG4");
+    Return;
+
+@Lable7:
+    Talk("ZMGReturn");
+    SetNpcScript("—‡»Ù—©","—‡»Ù—©Talk1.txt");
+    FadeOut();
+    DelNpc("Œﬁ¿µ1");
+    FadeIn();
+    Return;

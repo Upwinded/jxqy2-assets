@@ -1,0 +1,29 @@
+	FadeOut();
+	SaveNpc();
+	SaveObj();
+	LoadMap("Åùö¨ÌÃ.map");
+	LoadNpc("PiLiTang.npc");
+	LoadObj("PiLiTang.obj");
+	SetPlayerPos(17,162);
+	SetPlayerDir(5);
+	
+	If ($FromFengChi == 7) Goto @Lable0;
+	ShowMessage("Åùö¨ÌÃ");
+	FadeIn();
+	Return;
+
+@Lable0:
+	// ÁìÈÎÎñÏûÃğÅùö¨ÌÃ
+	DisableNpcAI();
+	SetMapPos(62,25);
+	SetNpcRelation("ÊØÃÅµÜ×Ó",1);
+	ShowMessage("Åùö¨ÌÃ");
+	PlayMusic("ks74.wav");
+	FadeIn();
+	Talk("Leishixiongdi");
+	SetNpcPos("À×»Î",29,132);
+	SetNpcDir("À×»Î",1);
+	SetPlayerScn();
+	Talk("DaMeng");
+	EnableNpcAI();
+	Return;

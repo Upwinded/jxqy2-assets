@@ -1,0 +1,12 @@
+  npcgotodir("南宫飞云",5,2);
+  setplayerdir(5);
+  if getvar("fengchifight") == 1 then
+    
+    talk("fengchifight");
+    setmaptrap(1,"trap1.txt");
+    return;
+  end
+  
+  talk("yedating3");
+  setmaptrap(1,"trap1.txt");
+  return;

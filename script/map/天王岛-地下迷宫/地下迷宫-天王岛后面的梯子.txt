@@ -1,0 +1,19 @@
+  fadeout();
+  savenpc();
+  saveobj();
+  loadmap("天王岛.map");
+  loadnpc("tianwang.npc");
+  loadobj("tianwang.obj");
+  setmainlum(31);
+  setmaptime(0);
+  setplayerlum(0);
+  setplayerpos(32,154);
+  setplayerdir(5);
+  showmessage("天王岛");
+  fadein();
+  if getvar("tianwangpier") == 3 then
+    
+    setnpcpos("苹儿",45,75);
+    return;
+  end
+  return;

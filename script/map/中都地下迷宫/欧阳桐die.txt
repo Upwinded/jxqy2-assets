@@ -1,0 +1,13 @@
+  disablenpcai();
+  sleep(2000);
+  fadeout();
+  delnpc("打手");
+  delobj("牢房门");
+  fadein();
+  sleep(1000);
+  talk("success");
+  addtomemo("你已杀死了欧阳桐。");
+  assign("zdbiwu",4);
+  assign("ouyangmusic",1);
+  enablenpcai();
+  return;

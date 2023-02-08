@@ -1,0 +1,15 @@
+// 龙门客栈-长安 -- 长安
+
+	Talk("talk3");
+	FadeOut();
+	StopMusic();
+	LoadMap("长安.map");
+	LoadNpc("Changan.npc");
+	LoadObj("changan.obj");
+	PlayMusic("ks69.wav");
+	SetPlayerPos(33,69);
+	SetPlayerDir(7);
+	ShowMessage("长安");
+	FadeIn();
+	Talk("talk1");
+	Return;

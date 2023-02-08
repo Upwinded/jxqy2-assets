@@ -1,0 +1,65 @@
+// 大厅	
+
+	If($FromFengChi == 4) @Lable2;	
+	If($FromFengChi == 6) @Lable0;
+	If($FromFengChi == 9) @Lable1;
+	Return;
+	
+@Lable2:
+	Talk("DaTingTalk");
+	AddToMemo("还是再去找若雪好了。");
+	Return;
+	
+// 领去霹雳堂的任务！
+@Lable0:
+	PlayerGoto(80,194);
+	SetPlayerDir(5);
+	Talk("DaTingTalk1");
+	AddToMemo("灭了霹雳堂，霹雳堂在稻香村的西南面。");
+	SetNpcPos("守门家丁",63,227);
+	SetNpcDir("守门家丁",7);
+	AddMagic("player-magic-暴雨梨花箭.ini");
+	PlayMusic("ks67.wav");
+	PlayerGoto(70,213);
+	SetNpcPos("后门家丁",55,203);
+	SetNpcDir("后门家丁",7);
+	SetMapTrap(4,"");
+	SetMapTrap(3,"凤池-临安.txt");
+	SetMapTrap(1,"凤池-临安.txt");
+	SaveMapTrap();
+	Assign($FromFengChi,7);
+	Return;
+
+//霹雳堂回来
+@Lable1:
+	PlayMusic("ks65.wav");
+	PlayerGoto(79,196);
+	SetPlayerDir(5);
+	SetNpcDir("独孤剑",1);
+	Talk("DaTingTalk2");
+	NpcGoto("邵骑风",78,195);
+	SetNpcDir("邵骑风",7);
+	SetPlayerDir(3);
+	Talk("DaTingTalk3");
+	NpcGoto("赵节",79,191);
+	SetNpcDir("赵节",0);
+	SetPlayerDir(3);
+	Talk("DaTingTalk4");
+	NpcGotoEx("赵节",80,188);
+	NpcGoto("邵骑风",78,189);
+	SetNpcDir("赵节",1);
+	SetNpcDir("邵骑风",7);
+	SetMapTrap(4,"");
+	SaveMapTrap();
+	AddToMemo("回临安城去见燕若雪和柴嵩等人。");
+// 去过若雪处
+	If($LinAnYanRuoXue == 10)  Goto @Lable12;
+// 没有去过若雪处
+	If($LinAnYanRuoXue == 9)   Goto @Lable13;
+	Return;
+@Lable12:
+	Assign($LinAnYanRuoXue,12);
+	Return;
+@Lable13:
+	Assign($LinAnYanRuoXue,11);
+	Return;

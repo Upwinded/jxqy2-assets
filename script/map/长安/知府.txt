@@ -1,0 +1,22 @@
+  if getvar("gouguan") == 1 then
+    
+    if getvar("cafight") == 2 then
+      
+      talk("shangguanb13");
+      return;
+    end
+    talk("shangguanb11");
+    return;
+  end
+  if getvar("gouguan") == 2 then
+    
+    talk("shangguanb13");
+    return;
+  end
+  if getvar("cafight") == 1 then
+    
+    talk("shangguanb17");
+    return;
+  end
+  talk("shangguanb20");
+  return;

@@ -1,0 +1,7 @@
+  if getvar("tianwangpier") == 2 then
+    
+    talk("yanjiutingbanzhong1");
+    return;
+  end
+  talk("houyuanbanzhong1");
+  return;

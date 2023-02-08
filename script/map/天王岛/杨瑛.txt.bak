@@ -1,0 +1,13 @@
+
+
+		Talk("End");
+		Talk("End2");
+		Talk("End3");
+		NpcGoto("Ñîçø",47,83);
+		NpcGoto("Ñîçø",45,90);
+		NpcGoto("Ñîçø",38,77);
+		DelNpc("Ñîçø");
+		AddNpc("Ñîçø¶À¹Â½£.ini",20,56,7);
+		SaveNpc();
+		AddMagic("player-magic-Ï´Ëè¾­.ini");
+		Return;

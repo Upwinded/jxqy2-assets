@@ -1,0 +1,39 @@
+  
+  
+  if getvar("hanyanbxbmtw") == 1 then
+    
+    
+    talk("baixunbangbanzhu2");
+    stopmusic();
+    fadeout();
+    savenpc();
+    saveobj();
+    disablenpcai();
+    loadmap("汉阳小屋.map");
+    loadnpc("hanyanghouse.npc");
+    savenpc("hanyanghouse1.npc");
+    setplayerpos(12,26);
+    setplayerdir(4);
+    setplayerstate(1);
+    fadein();
+    talk("fightbegin");
+    enablenpcai();
+    return;
+  end
+  talk("baixunbangbanzhu1");
+  assign("hanyanbxbmtw",1);
+  stopmusic();
+  fadeout();
+  savenpc();
+  saveobj();
+  disablenpcai();
+  loadmap("汉阳小屋.map");
+  loadnpc("hanyanghouse.npc");
+  savenpc("hanyanghouse1.npc");
+  setplayerpos(12,26);
+  setplayerdir(4);
+  setplayerstate(1);
+  fadein();
+  talk("fightbegin");
+  enablenpcai();
+  return;

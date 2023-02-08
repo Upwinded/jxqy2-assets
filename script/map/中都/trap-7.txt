@@ -1,0 +1,40 @@
+  --地图陷阱7
+  if getvar("zhongduhouhuayuan") == 6 then
+    
+    talk("zhuangyuan14");
+    return;
+  end
+  if getvar("fromfengchi") == 20 then
+    
+    talk("zhuangyuan11");
+    playmusic("ks75.wav");
+    playerrunto(146,261);
+    playerrunto(150,242);
+    playergoto(153,236);
+    talk("zhuangyuan12");
+    playergoto(154,228);
+    talk("zhuangyuan13");
+    playergoto(156,223);
+    talk("zhuangyuan13");
+    assign("zhongduhouhuayuan",6);
+    setmaptrap(7,"trap-7.txt");
+    setmaptrap(5,"龙音寺门口地图陷阱5.txt");
+    savemaptrap();
+    return;
+  end
+  if getvar("zhongduhouhuayuan") == 5 then
+    
+    return;
+  end
+  if getvar("zhongduzhuangyuandoor") == 2 then
+    
+    talk("zhuangyuan5");
+    playergoto(139,266);
+    setmaptrap(7,"trap-7.txt");
+    return;
+  end
+  talk("zhuangyuan1");
+  playergoto(139,266);
+  setmaptrap(7,"trap-7.txt");
+  talk("zhuangyuan2");
+  return;

@@ -1,0 +1,24 @@
+  
+  if getvar("zdbiwu") == 1 then
+    
+    playergotodir(5,3);
+    setplayerdir(5);
+    talk("jiudian8");
+    setmaptrap(11,"地图陷阱11.txt");
+    return;
+  end
+  disablenpcai();
+  playergoto(121,175);
+  setplayerdir(3);
+  talk("jiudian7");
+  sleep(500);
+  setplayerdir(5);
+  movescreen(5,200);
+  talk("jiudian71");
+  movescreen(1,200);
+  sleep(500);
+  talk("jiudian9");
+  assign("zdbiwu",1);
+  setmaptrap(11,"地图陷阱11.txt");
+  savemaptrap();
+  return;

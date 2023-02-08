@@ -1,0 +1,22 @@
+  
+  --sleep(1000);
+  fadeout();
+  disablenpcai();
+  delobj("比武场门闭左");
+  delobj("比武场门闭中");
+  delobj("比武场门闭右");
+  addobj("obj-比武场门开右.ini",17,75);
+  addobj("obj-比武场门开左.ini",15,71);
+  setnpcrelation("独孤剑",2);
+  setnpcrelation("南宫飞云",0);
+  setplayerpos(18,62);
+  setplayerdir(1);
+  setnpcpos("独孤剑",18,65);
+  setnpcdir("独孤剑",1);
+  sleep(300);
+  fadein();
+  talk("feiyunshengdugu");
+  assign("happyending",1);
+  sleep(3000);
+  runscript("比武结束.txt");
+  return;
