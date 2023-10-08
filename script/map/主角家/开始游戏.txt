@@ -27,8 +27,9 @@
   setnpcdir("南宫彩虹",7);
   sleep(1000);
   talk("start321");
-  npcgotoex("白煞",27,45);
-  npcgoto("黑煞",28,47);
+  npcgotoex("黑煞",28,47);
+  npcgoto("白煞",27,45);
+  setnpcdir("白煞",5);
   setnpcdir("张如梦",1);
   setnpcdir("南宫彩虹",1);
   talk("start4");
